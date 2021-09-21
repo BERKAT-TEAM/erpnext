@@ -471,11 +471,12 @@
  "idx": 5,
  "image_field": "image",
  "links": [],
- "modified": "2021-08-04 00:24:57.208590",
+ "modified": "2021-09-21 10:16:06.972316",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Lead",
  "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -528,6 +529,19 @@
    "read": 1,
    "report": 1,
    "role": "Sales User"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
  "search_fields": "lead_name,lead_owner,status",
