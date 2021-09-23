@@ -214,10 +214,11 @@
  "icon": "fa fa-flag",
  "idx": 1,
  "links": [],
- "modified": "2021-08-12 16:10:36.464690",
+ "modified": "2021-09-22 09:33:31.741690",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Leave Type",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -245,6 +246,28 @@
   {
    "read": 1,
    "role": "Employee"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1
   }
  ],
  "sort_field": "modified",

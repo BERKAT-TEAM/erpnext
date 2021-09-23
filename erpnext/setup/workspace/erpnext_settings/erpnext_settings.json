@@ -5,6 +5,7 @@
  "creation": "2020-03-12 14:47:51.166455",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
+ "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -17,7 +18,7 @@
  "is_standard": 0,
  "label": "ERPNext Settings",
  "links": [],
- "modified": "2021-08-05 12:15:59.052327",
+ "modified": "2021-09-22 07:25:49.867905",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "ERPNext Settings",
@@ -29,7 +30,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 12,
+ "sequence_id": 29,
  "shortcuts": [
   {
    "icon": "project",

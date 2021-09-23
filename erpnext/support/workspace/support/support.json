@@ -5,6 +5,7 @@
  "creation": "2020-03-02 15:48:23.224699",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
+ "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -176,7 +177,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-08-05 12:16:02.699923",
+ "modified": "2021-09-22 07:25:49.609509",
  "modified_by": "Administrator",
  "module": "Support",
  "name": "Support",
@@ -188,7 +189,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 25,
+ "sequence_id": 23,
  "shortcuts": [
   {
    "color": "Yellow",

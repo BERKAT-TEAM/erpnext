@@ -10,6 +10,7 @@
  "creation": "2020-05-27 19:54:23.405607",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
+ "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -319,7 +320,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-08-05 12:16:01.335324",
+ "modified": "2021-09-22 07:25:49.492581",
  "modified_by": "Administrator",
  "module": "Payroll",
  "name": "Payroll",
@@ -331,7 +332,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 19,
+ "sequence_id": 20,
  "shortcuts": [
   {
    "label": "Salary Structure",
