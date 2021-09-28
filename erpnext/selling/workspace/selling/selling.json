@@ -570,7 +570,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-27 18:13:12.772073",
+ "modified": "2021-09-28 17:22:27.045471",
  "modified_by": "Administrator",
  "module": "Selling",
  "modules": 0,
@@ -590,7 +590,7 @@
    "role": "Sales User"
   }
  ],
- "sequence_id": 12,
+ "sequence_id": 3,
  "shortcuts": [
   {
    "color": "Grey",
@@ -628,5 +628,5 @@
   }
  ],
  "shortcuts_label": "Quick Access",
- "title": "Selling"
+ "title": "Sales (Selling)"
 }

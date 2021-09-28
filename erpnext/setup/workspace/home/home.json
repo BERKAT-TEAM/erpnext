@@ -1,7 +1,7 @@
 {
  "category": "",
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Supplier\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leaderboard\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Accounting\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Stock\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Human Resources\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"CRM\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Data Import and Settings\",\"col\":4}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Supplier\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leaderboard\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Space Iklan\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard Sales\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Accounting\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Stock\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Human Resources\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"CRM\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Data Import and Settings\",\"col\":4}}]",
  "creation": "2020-01-23 13:46:38.833076",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -278,7 +278,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-28 15:33:08.932936",
+ "modified": "2021-09-28 17:22:26.827049",
  "modified_by": "Administrator",
  "module": "Setup",
  "modules": 0,
@@ -290,7 +290,17 @@
  "pin_to_top": 0,
  "public": 1,
  "restrict_to_domain": "",
- "roles": [],
+ "roles": [
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
  "sequence_id": 1,
  "shortcuts": [
   {
@@ -301,9 +311,11 @@
    "type": "DocType"
   },
   {
-   "label": "Item",
-   "link_to": "Item",
-   "type": "DocType"
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Dashboard Sales",
+   "link_to": "Selling",
+   "type": "Dashboard"
   },
   {
    "label": "Customer",

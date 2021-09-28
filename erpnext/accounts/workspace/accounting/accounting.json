@@ -1208,7 +1208,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-27 18:13:12.469208",
+ "modified": "2021-09-28 17:22:27.415495",
  "modified_by": "Administrator",
  "module": "Accounts",
  "modules": 0,
@@ -1221,7 +1221,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 9,
+ "sequence_id": 8,
  "shortcuts": [
   {
    "label": "Chart of Accounts",
