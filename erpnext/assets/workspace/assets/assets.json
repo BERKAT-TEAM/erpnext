@@ -10,7 +10,6 @@
  "creation": "2020-03-02 15:43:27.634865",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
- "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -180,9 +179,10 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-22 07:25:48.907009",
+ "modified": "2021-09-27 18:13:12.714202",
  "modified_by": "Administrator",
  "module": "Assets",
+ "modules": 0,
  "name": "Assets",
  "onboarding": "Assets",
  "owner": "Administrator",

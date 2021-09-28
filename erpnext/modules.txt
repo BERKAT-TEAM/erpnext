@@ -27,3 +27,5 @@ Communication
 Loan Management
 Payroll
 Telephony
+Mobile LED
+Production

@@ -11,7 +11,6 @@
  "creation": "2020-01-28 11:49:12.092882",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
- "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -571,9 +570,10 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-22 07:25:48.964732",
+ "modified": "2021-09-27 18:13:12.772073",
  "modified_by": "Administrator",
  "module": "Selling",
+ "modules": 0,
  "name": "Selling",
  "onboarding": "Selling",
  "owner": "Administrator",

@@ -1,11 +1,27 @@
 {
  "category": "",
- "charts": [],
- "content": "[{\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"CRM\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lead\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Opportunity\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Analytics\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard View\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Sales Pipeline\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Campaign\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Incoming Leads",
+   "label": "Incoming Leads"
+  },
+  {
+   "chart_name": "Opportunity Trends",
+   "label": "Opportunity Trends"
+  },
+  {
+   "chart_name": "Won Opportunities",
+   "label": "Won Opportunities"
+  },
+  {
+   "chart_name": "Territory Wise Opportunity Count",
+   "label": "Territory Wise Opportunity Count"
+  }
+ ],
+ "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Incoming Leads\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Opportunity Trends\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Won Opportunities\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Territory Wise Opportunity Count\",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lead\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Opportunity\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Analytics\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard View\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Sales Pipeline\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Campaign\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
  "creation": "2020-01-23 14:48:30.183272",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
- "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -529,9 +545,10 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-23 12:08:24.044035",
+ "modified": "2021-09-28 09:43:14.469679",
  "modified_by": "Administrator",
  "module": "CRM",
+ "modules": 0,
  "name": "CRM",
  "onboarding": "CRM",
  "owner": "Administrator",
