@@ -5,7 +5,6 @@
  "creation": "2020-03-02 15:49:28.632014",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
- "divisi_ming": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends": "",
@@ -150,9 +149,10 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-22 07:25:49.444033",
+ "modified": "2021-09-29 09:46:10.461500",
  "modified_by": "Administrator",
  "module": "Quality Management",
+ "modules": 0,
  "name": "Quality",
  "onboarding": "",
  "owner": "Administrator",
@@ -162,7 +162,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 19,
+ "sequence_id": 18,
  "shortcuts": [
   {
    "color": "Grey",
