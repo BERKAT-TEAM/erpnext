@@ -352,6 +352,7 @@ scheduler_events = {
 	"cron": {
 		"0/30 * * * *": [
 			"erpnext.utilities.doctype.video.video.update_youtube_data",
+			"frappe.email.queue.flush",
 		]
 	},
 	"all": [
