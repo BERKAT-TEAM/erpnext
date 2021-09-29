@@ -570,7 +570,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-28 17:22:27.045471",
+ "modified": "2021-09-28 18:20:31.491144",
  "modified_by": "Administrator",
  "module": "Selling",
  "modules": 0,
@@ -590,7 +590,7 @@
    "role": "Sales User"
   }
  ],
- "sequence_id": 3,
+ "sequence_id": 10,
  "shortcuts": [
   {
    "color": "Grey",
