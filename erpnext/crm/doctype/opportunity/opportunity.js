@@ -15,7 +15,7 @@ frappe.ui.form.on("Opportunity", {
 		frm.set_query("opportunity_from", function() {
 			return{
 				"filters": {
-					"name": ["in", ["Customer", "Lead", "Prospect"]],
+					"name": ["in", ["Customer", "Lead", "Prospect", "Pipeline"]],
 				}
 			}
 		});
@@ -46,7 +46,7 @@ frappe.ui.form.on("Opportunity", {
 				source_name: frm.doc.party_name,
 				frm: frm
 			});
-		}
+		} 
 	},
 
 	onload_post_render: function(frm) {

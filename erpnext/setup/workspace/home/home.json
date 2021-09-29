@@ -278,7 +278,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-29 09:46:09.047182",
+ "modified": "2021-09-29 16:04:48.866757",
  "modified_by": "Administrator",
  "module": "Setup",
  "modules": 0,
@@ -304,6 +304,12 @@
  "sequence_id": 1,
  "shortcuts": [
   {
+   "doc_view": "List",
+   "label": "Customer",
+   "link_to": "Customer",
+   "type": "DocType"
+  },
+  {
    "color": "Grey",
    "doc_view": "List",
    "label": "Space Iklan",
@@ -316,11 +322,6 @@
    "label": "Dashboard Sales",
    "link_to": "Selling",
    "type": "Dashboard"
-  },
-  {
-   "label": "Customer",
-   "link_to": "Customer",
-   "type": "DocType"
   },
   {
    "label": "Supplier",
