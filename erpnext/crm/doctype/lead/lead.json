@@ -139,7 +139,7 @@
    "no_copy": 1,
    "oldfieldname": "status",
    "oldfieldtype": "Select",
-   "options": "Lead\nContact Made\nMeeting Scheduled\nProposal Made\nProposal Sent\nQuotation Made\nNegotiation\nWin\nLose",
+   "options": "Lead\nOpen\nReplied\nOpportunity",
    "reqd": 1,
    "search_index": 1
   },
@@ -471,7 +471,7 @@
  "idx": 5,
  "image_field": "image",
  "links": [],
- "modified": "2021-09-23 10:30:57.553121",
+ "modified": "2021-09-30 09:58:24.326746",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Lead",

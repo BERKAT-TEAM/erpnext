@@ -18,7 +18,7 @@
    "label": "Territory Wise Opportunity Count"
   }
  ],
- "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Incoming Leads\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Opportunity Trends\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Won Opportunities\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Territory Wise Opportunity Count\",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CRM Dashboard\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Pipeline\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lead\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Opportunity\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"List Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Calendar\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contact\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communication\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"sales pipeline 2\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
+ "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Incoming Leads\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Opportunity Trends\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Won Opportunities\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Territory Wise Opportunity Count\",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CRM Dashboard\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"List Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Calendar\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contact\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communication\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Sales Pipeline\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lead Pipeline\",\"col\":6}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Opportunity Pipeline\",\"col\":6}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Pipeline\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"sales pipeline 2\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"XX\",\"col\":4}}]",
  "creation": "2020-01-23 14:48:30.183272",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -420,7 +420,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-29 15:58:07.340572",
+ "modified": "2021-09-30 11:40:10.113575",
  "modified_by": "Administrator",
  "module": "CRM",
  "modules": 0,
@@ -448,10 +448,17 @@
    "type": "DocType"
   },
   {
-   "color": "Blue",
-   "format": "{} Assigned",
-   "label": "Opportunity",
-   "link_to": "Opportunity",
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "XX",
+   "link_to": "CRM",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Lead Pipeline",
+   "link_to": "Lead",
    "type": "DocType"
   },
   {
@@ -496,6 +503,13 @@
    "type": "DocType"
   },
   {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Opportunity Pipeline",
+   "link_to": "Opportunity",
+   "type": "DocType"
+  },
+  {
    "color": "Cyan",
    "doc_view": "List",
    "label": "Communication",
@@ -507,14 +521,6 @@
    "doc_view": "List",
    "label": "Quotation",
    "link_to": "Quotation",
-   "type": "DocType"
-  },
-  {
-   "color": "Blue",
-   "format": "{} Open",
-   "label": "Lead",
-   "link_to": "Lead",
-   "stats_filter": "{\"status\":\"Open\"}",
    "type": "DocType"
   }
  ],
