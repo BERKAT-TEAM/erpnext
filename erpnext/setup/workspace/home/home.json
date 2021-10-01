@@ -278,7 +278,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-29 16:04:48.866757",
+ "modified": "2021-10-01 14:38:43.174165",
  "modified_by": "Administrator",
  "module": "Setup",
  "modules": 0,
@@ -291,12 +291,6 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [
-  {
-   "role": "Sales User"
-  },
-  {
-   "role": "Sales Manager"
-  },
   {
    "role": "Administrator"
   }
