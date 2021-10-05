@@ -2,12 +2,12 @@
  "category": "",
  "charts": [
   {
-   "chart_name": "Top Customers",
-   "label": "Top Customers"
-  },
-  {
    "chart_name": "Incoming Leads",
    "label": "Incoming Leads"
+  },
+  {
+   "chart_name": "Top Customers based Amount",
+   "label": "Customers' Amount"
   },
   {
    "chart_name": "Opportunity Trends",
@@ -22,7 +22,7 @@
    "label": "Territory Wise Opportunity Count"
   }
  ],
- "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Incoming Leads\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Opportunity Trends\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Won Opportunities\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Territory Wise Opportunity Count\",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contact\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"List Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Calendar\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communication\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Sales Pipeline\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lead Pipeline\",\"col\":6}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Opportunity Pipeline\",\"col\":6}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Top Customers\",\"col\":12}}]",
+ "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Incoming Leads\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Opportunity Trends\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Won Opportunities\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Territory Wise Opportunity Count\",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contact\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"List Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Calendar\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communication\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Sales Pipeline\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lead Pipeline\",\"col\":6}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Opportunity Pipeline\",\"col\":6}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Customers' Amount\",\"col\":12}}]",
  "creation": "2020-01-23 14:48:30.183272",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -424,7 +424,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-01 14:42:02.635054",
+ "modified": "2021-10-05 11:52:47.146449",
  "modified_by": "Administrator",
  "module": "CRM",
  "modules": 0,
@@ -451,13 +451,6 @@
    "doc_view": "Calendar",
    "label": "Calendar",
    "link_to": "Event",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "List Prospect",
-   "link_to": "Prospect",
    "type": "DocType"
   },
   {
