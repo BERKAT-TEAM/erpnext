@@ -149,7 +149,7 @@
    "no_copy": 1,
    "oldfieldname": "status",
    "oldfieldtype": "Select",
-   "options": "Open\nQuotation\nConverted\nLost\nReplied\nClosed",
+   "options": "Open\nQuotation\nNegotiation\nWin\nLose",
    "print_hide": 1,
    "reqd": 1
   },
@@ -491,10 +491,11 @@
  "icon": "fa fa-info-sign",
  "idx": 195,
  "links": [],
- "modified": "2021-09-06 10:02:18.609136",
+ "modified": "2021-09-30 17:43:37.980142",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Opportunity",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

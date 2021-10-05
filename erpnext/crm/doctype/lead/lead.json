@@ -312,6 +312,7 @@
   {
    "fieldname": "market_segment",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Market Segment",
    "oldfieldname": "market_segment",
    "oldfieldtype": "Select",
@@ -320,6 +321,7 @@
   {
    "fieldname": "industry",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Industry",
    "oldfieldname": "industry",
    "oldfieldtype": "Link",
@@ -365,12 +367,14 @@
    "default": "0",
    "fieldname": "unsubscribed",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Unsubscribed"
   },
   {
    "default": "0",
    "fieldname": "blog_subscriber",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Blog Subscriber"
   },
   {
@@ -403,6 +407,7 @@
   {
    "fieldname": "middle_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Middle Name"
   },
   {
@@ -414,11 +419,13 @@
    "collapsible": 1,
    "fieldname": "additional_information_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Additional Information"
   },
   {
    "fieldname": "no_of_employees",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "No. of Employees"
   },
   {
@@ -471,7 +478,7 @@
  "idx": 5,
  "image_field": "image",
  "links": [],
- "modified": "2021-09-30 09:58:24.326746",
+ "modified": "2021-10-01 11:19:59.231209",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Lead",

@@ -157,6 +157,7 @@
   {
    "fieldname": "account_manager",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Account Manager",
    "options": "User"
   },
@@ -402,6 +403,7 @@
    "collapsible": 1,
    "fieldname": "column_break_38",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Loyalty Points"
   },
   {
@@ -414,6 +416,7 @@
   {
    "fieldname": "loyalty_program_tier",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Loyalty Program Tier",
    "no_copy": 1,
    "read_only": 1
@@ -518,7 +521,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2021-09-27 16:12:34.060561",
+ "modified": "2021-10-01 11:35:19.909567",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",

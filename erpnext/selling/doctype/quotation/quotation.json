@@ -189,7 +189,6 @@
    "oldfieldname": "amended_from",
    "oldfieldtype": "Data",
    "options": "Quotation",
-   "print_hide": 1,
    "read_only": 1,
    "width": "150px"
   },
@@ -730,6 +729,7 @@
    "label": "Payment Terms"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "payment_terms_template",
    "fieldtype": "Link",
    "label": "Payment Terms Template",
@@ -953,7 +953,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-09-30 09:17:56.859154",
+ "modified": "2021-10-05 09:30:19.766830",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",
@@ -1049,5 +1049,8 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "timeline_field": "party_name",
- "title_field": "title"
+ "title_field": "title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
