@@ -521,7 +521,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2021-10-01 11:35:19.909567",
+ "modified": "2021-10-06 15:03:35.541550",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",
@@ -532,6 +532,7 @@
   {
    "create": 1,
    "email": 1,
+   "if_owner": 1,
    "print": 1,
    "read": 1,
    "report": 1,

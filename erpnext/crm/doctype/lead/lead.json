@@ -478,7 +478,7 @@
  "idx": 5,
  "image_field": "image",
  "links": [],
- "modified": "2021-10-01 11:19:59.231209",
+ "modified": "2021-10-06 14:39:17.538088",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Lead",
@@ -532,9 +532,9 @@
    "role": "Sales Manager"
   },
   {
+   "if_owner": 1,
    "permlevel": 1,
    "read": 1,
-   "report": 1,
    "role": "Sales User"
   },
   {

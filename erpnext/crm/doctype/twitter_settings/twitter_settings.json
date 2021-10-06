@@ -78,7 +78,7 @@
  "image_field": "profile_pic",
  "issingle": 1,
  "links": [],
- "modified": "2021-02-18 15:18:07.900031",
+ "modified": "2021-10-06 11:51:05.059702",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Twitter Settings",
@@ -90,7 +90,7 @@
    "email": 1,
    "print": 1,
    "read": 1,
-   "role": "System Manager",
+   "role": "Administrator",
    "share": 1,
    "write": 1
   }
