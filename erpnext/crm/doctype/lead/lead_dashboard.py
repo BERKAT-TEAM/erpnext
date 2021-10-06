@@ -14,8 +14,9 @@ def get_data():
 		'transactions': [
 			{
 				'items': ['Opportunity', 
-							# 'Quotation', 
-							'Prospect']
+						#   'Quotation', 
+						#   'Prospect'
+						  ]
 			},
 		]
 	}

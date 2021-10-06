@@ -8,7 +8,7 @@ erpnext.LeadController = class LeadController extends frappe.ui.form.Controller 
 	setup () {
 		this.frm.make_methods = {
 			'Customer': this.make_customer,
-			'Quotation': this.make_quotation,
+			// 'Quotation': this.make_quotation,
 			'Opportunity': this.make_opportunity
 		};
 
@@ -39,8 +39,13 @@ erpnext.LeadController = class LeadController extends frappe.ui.form.Controller 
 			this.frm.add_custom_button(__("Customer"), this.make_customer, __("Create"));
 			this.frm.add_custom_button(__("Opportunity"), this.make_opportunity, __("Create"));
 			// this.frm.add_custom_button(__("Quotation"), this.make_quotation, __("Create"));
+<<<<<<< HEAD
+			// this.frm.add_custom_button(__("Prospect"), this.make_prospect, __("Create"));
+			// this.frm.add_custom_button(__('Add to Prospect'), this.add_lead_to_prospect, __('Action'));
+=======
 			this.frm.add_custom_button(__("Prospect"), this.make_prospect, __("Create"));
 			this.frm.add_custom_button(__('Add to Prospect'), this.add_lead_to_prospect, __('Action'));
+>>>>>>> 2f063f4a8f1458c17604f07446b87c4bb63c8b1b
 		}
 
 		if (!this.frm.is_new()) {
