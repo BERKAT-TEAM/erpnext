@@ -10,13 +10,21 @@
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "modified": "2021-10-04 10:15:34.682481",
+ "modified": "2021-10-07 10:10:27.731234",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order Trends",
  "number_of_groups": 0,
  "owner": "Administrator",
  "report_name": "Sales Order Trends",
+ "roles": [
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Master Manager"
+  }
+ ],
  "timeseries": 0,
  "type": "Line",
  "use_report_chart": 1,
