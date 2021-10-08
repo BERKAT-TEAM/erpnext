@@ -228,6 +228,16 @@
    "reqd": 1
   },
   {
+   "default": "0",
+   "fieldname": "skip_delivery_note",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Skip Delivery Note",
+   "print_hide": 1
+  },
+  {
    "fieldname": "column_break1",
    "fieldtype": "Column Break",
    "hide_days": 1,
@@ -246,7 +256,7 @@
    "no_copy": 1,
    "oldfieldname": "amended_from",
    "oldfieldtype": "Data",
-   "options": "Sales Order",
+   "options": "Job Order",
    "print_hide": 1,
    "read_only": 1,
    "width": "150px"
@@ -373,6 +383,14 @@
    "read_only": 1
   },
   {
+   "fieldname": "contact_phone",
+   "fieldtype": "Data",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Phone",
+   "read_only": 1
+  },
+  {
    "fieldname": "contact_mobile",
    "fieldtype": "Small Text",
    "hide_days": 1,
@@ -392,20 +410,20 @@
    "read_only": 1
   },
   {
-   "fieldname": "company_address_display",
-   "fieldtype": "Small Text",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Company Address",
-   "read_only": 1
-  },
-  {
    "fieldname": "company_address",
    "fieldtype": "Link",
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Company Address Name",
    "options": "Address"
+  },
+  {
+   "fieldname": "company_address_display",
+   "fieldtype": "Small Text",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Company Address",
+   "read_only": 1
   },
   {
    "fieldname": "col_break46",
@@ -432,6 +450,22 @@
    "hide_seconds": 1,
    "label": "Shipping Address",
    "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "dispatch_address_name",
+   "fieldtype": "Link",
+   "label": "Dispatch Address Name",
+   "options": "Address",
+   "print_hide": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "dispatch_address_name",
+   "fieldname": "dispatch_address",
+   "fieldtype": "Small Text",
+   "label": "Dispatch Address",
    "read_only": 1
   },
   {
@@ -587,6 +621,29 @@
    "reqd": 1
   },
   {
+   "collapsible": 1,
+   "collapsible_depends_on": "packed_items",
+   "depends_on": "packed_items",
+   "fieldname": "packing_list",
+   "fieldtype": "Section Break",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Packing List",
+   "oldfieldtype": "Section Break",
+   "options": "fa fa-suitcase",
+   "print_hide": 1
+  },
+  {
+   "depends_on": "packed_items",
+   "fieldname": "packed_items",
+   "fieldtype": "Table",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Packed Items",
+   "options": "Packed Item",
+   "print_hide": 1
+  },
+  {
    "fieldname": "pricing_rule_details",
    "fieldtype": "Section Break",
    "hide_days": 1,
@@ -652,6 +709,15 @@
    "hide_seconds": 1
   },
   {
+   "fieldname": "total_net_weight",
+   "fieldtype": "Float",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Total Net Weight",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
    "fieldname": "total",
    "fieldtype": "Currency",
    "hide_days": 1,
@@ -667,15 +733,6 @@
    "hide_seconds": 1,
    "label": "Net Total",
    "options": "currency",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "total_net_weight",
-   "fieldtype": "Float",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Total Net Weight",
    "print_hide": 1,
    "read_only": 1
   },
@@ -1017,27 +1074,11 @@
    "read_only": 1
   },
   {
-   "collapsible": 1,
-   "collapsible_depends_on": "packed_items",
-   "depends_on": "packed_items",
-   "fieldname": "packing_list",
-   "fieldtype": "Section Break",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Packing List",
-   "oldfieldtype": "Section Break",
-   "options": "fa fa-suitcase",
-   "print_hide": 1
-  },
-  {
-   "depends_on": "packed_items",
-   "fieldname": "packed_items",
-   "fieldtype": "Table",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Packed Items",
-   "options": "Packed Item",
-   "print_hide": 1
+   "default": "0",
+   "depends_on": "grand_total",
+   "fieldname": "disable_rounded_total",
+   "fieldtype": "Check",
+   "label": "Disable Rounded Total"
   },
   {
    "fieldname": "payment_schedule_section",
@@ -1105,6 +1146,22 @@
    "oldfieldtype": "Section Break",
    "options": "fa fa-file-text",
    "print_hide": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "customer.is_internal_customer",
+   "fieldname": "is_internal_customer",
+   "fieldtype": "Check",
+   "label": "Is Internal Customer",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.represents_company",
+   "fieldname": "represents_company",
+   "fieldtype": "Link",
+   "label": "Represents Company",
+   "options": "Company",
+   "read_only": 1
   },
   {
    "fieldname": "inter_company_order_reference",
@@ -1447,73 +1504,16 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Update Auto Repeat Reference"
-  },
-  {
-   "fieldname": "contact_phone",
-   "fieldtype": "Data",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Phone",
-   "read_only": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "skip_delivery_note",
-   "fieldtype": "Check",
-   "hidden": 1,
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Skip Delivery Note",
-   "print_hide": 1
-  },
-  {
-   "default": "0",
-   "fetch_from": "customer.is_internal_customer",
-   "fieldname": "is_internal_customer",
-   "fieldtype": "Check",
-   "label": "Is Internal Customer",
-   "read_only": 1
-  },
-  {
-   "fetch_from": "customer.represents_company",
-   "fieldname": "represents_company",
-   "fieldtype": "Link",
-   "label": "Represents Company",
-   "options": "Company",
-   "read_only": 1
-  },
-  {
-   "default": "0",
-   "depends_on": "grand_total",
-   "fieldname": "disable_rounded_total",
-   "fieldtype": "Check",
-   "label": "Disable Rounded Total"
-  },
-  {
-   "allow_on_submit": 1,
-   "fieldname": "dispatch_address_name",
-   "fieldtype": "Link",
-   "label": "Dispatch Address Name",
-   "options": "Address",
-   "print_hide": 1
-  },
-  {
-   "allow_on_submit": 1,
-   "depends_on": "dispatch_address_name",
-   "fieldname": "dispatch_address",
-   "fieldtype": "Small Text",
-   "label": "Dispatch Address",
-   "read_only": 1
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-07 10:24:47.822153",
+ "modified": "2021-10-06 17:52:31.764796",
  "modified_by": "Administrator",
  "module": "Selling",
- "name": "Sales Order",
+ "name": "Job Order",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
