@@ -145,10 +145,11 @@
  "idx": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2020-03-18 18:11:13.968024",
+ "modified": "2021-10-08 10:38:06.259458",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Sales Person",
+ "naming_rule": "By fieldname",
  "nsm_parent_field": "parent_sales_person",
  "owner": "Administrator",
  "permissions": [

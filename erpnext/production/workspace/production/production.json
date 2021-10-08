@@ -1,7 +1,7 @@
 {
  "category": "Modules",
  "charts": [],
- "content": "[]",
+ "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}}]",
  "creation": "2021-09-27 18:09:46.353904",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -15,7 +15,7 @@
  "is_standard": 1,
  "label": "Production",
  "links": [],
- "modified": "2021-09-29 09:46:09.391202",
+ "modified": "2021-10-08 12:50:49.912239",
  "modified_by": "Administrator",
  "module": "Production",
  "modules": 0,
@@ -25,8 +25,22 @@
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "public": 1,
- "roles": [],
+ "roles": [
+  {
+   "role": "Sales Admin"
+  }
+ ],
  "sequence_id": 6,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "format": "{} To Work",
+   "label": "Job Order",
+   "link_to": "Sales Order",
+   "stats_filter": "{\"status\":[\"not in\",[\"On Hold\",\"Completed\",\"Cancelled\",\"Closed\",null]]}",
+   "type": "DocType"
+  }
+ ],
  "title": "Production"
 }
