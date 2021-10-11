@@ -70,7 +70,6 @@
   {
    "fieldname": "item_name",
    "fieldtype": "Data",
-   "hidden": 1,
    "in_list_view": 1,
    "label": "Item Name",
    "read_only": 1
@@ -79,6 +78,7 @@
    "fetch_from": "item_code.brand",
    "fieldname": "brand",
    "fieldtype": "Read Only",
+   "in_list_view": 1,
    "label": "Brand",
    "read_only": 1
   },
@@ -98,7 +98,6 @@
    "fieldname": "price_list",
    "fieldtype": "Link",
    "in_global_search": 1,
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Price List",
    "options": "Price List",
@@ -164,6 +163,7 @@
    "oldfieldname": "ref_rate",
    "oldfieldtype": "Currency",
    "options": "currency",
+   "precision": "0",
    "reqd": 1
   },
   {
@@ -203,6 +203,7 @@
   {
    "fieldname": "reference",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Reference"
   },
   {
@@ -216,7 +217,7 @@
  "idx": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-08 17:28:37.757141",
+ "modified": "2021-10-11 12:11:52.397411",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item Price",
