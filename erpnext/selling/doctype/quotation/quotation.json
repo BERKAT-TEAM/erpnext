@@ -21,12 +21,16 @@
   "transaction_date",
   "valid_till",
   "order_type",
+  "owner",
+  "mobile_no",
+  "email",
   "contact_section",
   "customer_address",
   "address_display",
   "contact_person",
   "contact_display",
   "contact_mobile",
+  "email_id",
   "contact_email",
   "col_break98",
   "shipping_address_name",
@@ -959,6 +963,28 @@
    "label": "Bundle Items",
    "options": "fa fa-suitcase",
    "print_hide": 1
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Eamil",
+   "read_only": 1
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Sales Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Sales Contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Sales Email"
   }
  ],
  "icon": "fa fa-shopping-cart",

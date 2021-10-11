@@ -19,6 +19,9 @@
   "item_group",
   "is_item_from_hub",
   "stock_uom",
+  "item_location",
+  "map_location",
+  "area",
   "column_break0",
   "disabled",
   "allow_alternative_item",
@@ -34,6 +37,9 @@
   "over_delivery_receipt_allowance",
   "over_billing_allowance",
   "image",
+  "slot",
+  "media_location",
+  "ads_placement",
   "section_break_11",
   "brand",
   "description",
@@ -180,14 +186,13 @@
    "set_only_once": 1
   },
   {
-   "bold": 1,
    "fieldname": "item_name",
    "fieldtype": "Data",
    "in_global_search": 1,
+   "hidden": 1,
    "label": "Item Name",
    "oldfieldname": "item_name",
-   "oldfieldtype": "Data",
-   "search_index": 1
+   "oldfieldtype": "Data"
   },
   {
    "fieldname": "item_group",
@@ -1079,6 +1084,88 @@
    "fieldname": "website_image_alt",
    "fieldtype": "Data",
    "label": "Image Description"
+  },
+  {
+   "fieldname": "item_location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "map_location",
+   "fieldtype": "Attach Image",
+   "label": "Location Map"
+  },
+  {
+   "fieldname": "panjang",
+   "fieldtype": "Data",
+   "label": "Length"
+  },
+  {
+   "fieldname": "column_break9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lebar",
+   "fieldtype": "Data",
+   "label": "Width"
+  },
+  {
+   "fieldname": "muka",
+   "fieldtype": "Data",
+   "label": "Side"
+  },
+  {
+   "fieldname": "orientation",
+   "fieldtype": "Select",
+   "label": "Orientation",
+   "options": "\nVertical\nHorizontal"
+  },
+  {
+   "fieldname": "point_of_interest",
+   "fieldtype": "Data",
+   "label": "Point of Interest"
+  },
+  {
+   "fieldname": "traffic_car",
+   "fieldtype": "Data",
+   "label": "Count Traffic Car"
+  },
+  {
+   "fieldname": "traffic_motor",
+   "fieldtype": "Data",
+   "label": "Count Traffic Motor"
+  },
+  {
+   "fieldname": "traffic_people",
+   "fieldtype": "Data",
+   "label": "Count Traffic People"
+  },
+  {
+   "fieldname": "date_of_production",
+   "fieldtype": "Date",
+   "label": "Date of production"
+  },
+  {
+   "fieldname": "slot",
+   "fieldtype": "Int",
+   "label": "Slot",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "media_location",
+   "fieldtype": "Data",
+   "label": "Media Location"
+  },
+  {
+   "fieldname": "ads_placement",
+   "fieldtype": "Select",
+   "label": "Ads Placement",
+   "options": "\nIndoor\nOutdoor"
   }
  ],
  "has_web_view": 1,
@@ -1089,6 +1176,7 @@
  "links": [],
  "max_attachments": 1,
  "modified": "2021-10-11 12:07:33.912818",
+ "modified": "2021-10-11 11:03:49.286706",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

@@ -134,7 +134,7 @@ class OpeningInvoiceCreationTool(Document):
 				frappe.throw(_("Please set the Default Cost Center in {0} company.").format(frappe.bold(self.company)))
 
 			income_expense_account_field = "income_account" if row.party_type == "Customer" else "expense_account"
-			default_uom = frappe.db.get_single_value("Stock Settings", "stock_uom") or _("Nos")
+			default_uom = frappe.db.get_single_value("Stock Settings", "stock_uom") or _("Unit")
 			rate = flt(row.outstanding_amount) / flt(row.qty)
 
 			return frappe._dict({
