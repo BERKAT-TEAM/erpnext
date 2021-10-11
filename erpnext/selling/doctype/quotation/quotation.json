@@ -47,6 +47,7 @@
   "ignore_pricing_rule",
   "items_section",
   "items",
+  "quotation_period",
   "bundle_items_section",
   "packed_items",
   "pricing_rule_details",
@@ -985,6 +986,13 @@
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Sales Email"
+  },
+  {
+   "description": "How long the customer want to rent the SI? (Berapa lama customer mau menyewa SI-nya?)",
+   "fetch_from": "selling_price_list.price_list_name",
+   "fieldname": "quotation_period",
+   "fieldtype": "Data",
+   "label": "Period"
   }
  ],
  "icon": "fa fa-shopping-cart",
