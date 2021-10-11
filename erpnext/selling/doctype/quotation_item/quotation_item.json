@@ -12,6 +12,10 @@
   "item_name",
   "section_break_5",
   "description",
+  "item_location",
+  "panjang",
+  "lebar",
+  "muka",
   "item_group",
   "brand",
   "image_section",
@@ -119,7 +123,6 @@
    "width": "150px"
   },
   {
-   "collapsible": 1,
    "fieldname": "section_break_5",
    "fieldtype": "Section Break",
    "label": "Description"
@@ -130,9 +133,9 @@
    "label": "Description",
    "oldfieldname": "description",
    "oldfieldtype": "Small Text",
-   "print_width": "300px",
+   "print_width": "50px",
    "reqd": 1,
-   "width": "300px"
+   "width": "50px"
   },
   {
    "fieldname": "image",
@@ -644,12 +647,36 @@
    "no_copy": 1,
    "options": "currency",
    "read_only": 1
+  },
+  {
+   "fieldname": "item_location",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Location"
+  },
+  {
+   "fetch_from": "item_code.panjang",
+   "fieldname": "panjang",
+   "fieldtype": "Data",
+   "label": "Length"
+  },
+  {
+   "fetch_from": "item_code.lebar",
+   "fieldname": "lebar",
+   "fieldtype": "Data",
+   "label": "WIdth"
+  },
+  {
+   "fetch_from": "item_code.muka",
+   "fieldname": "muka",
+   "fieldtype": "Data",
+   "label": "Side"
   }
  ],
  "idx": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-09-30 09:20:10.358384",
+ "modified": "2021-10-11 14:56:53.096524",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation Item",
