@@ -19,6 +19,8 @@
   "item_group",
   "is_item_from_hub",
   "stock_uom",
+  "item_location",
+  "map_location",
   "column_break0",
   "disabled",
   "allow_alternative_item",
@@ -34,13 +36,24 @@
   "over_delivery_receipt_allowance",
   "over_billing_allowance",
   "image",
+  "slot",
   "section_break_11",
   "brand",
   "description",
+  "panjang",
+  "lebar",
+  "muka",
+  "orientation",
+  "column_break9",
+  "point_of_interest",
+  "traffic_car",
+  "traffic_motor",
+  "traffic_people",
   "sb_barcodes",
   "barcodes",
   "inventory_section",
   "shelf_life_in_days",
+  "date_of_production",
   "end_of_life",
   "default_material_request_type",
   "valuation_method",
@@ -183,6 +196,7 @@
    "bold": 1,
    "fieldname": "item_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "in_global_search": 1,
    "label": "Item Name",
    "oldfieldname": "item_name",
@@ -207,6 +221,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "is_item_from_hub",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Item from Hub",
    "read_only": 1
   },
@@ -242,6 +257,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "is_stock_item",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Maintain Stock",
    "oldfieldname": "is_stock_item",
    "oldfieldtype": "Select"
@@ -251,6 +267,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "include_item_in_manufacturing",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Include Item In Manufacturing"
   },
   {
@@ -258,12 +275,14 @@
    "depends_on": "eval:(doc.__islocal&&doc.is_stock_item && !doc.has_serial_no && !doc.has_batch_no)",
    "fieldname": "opening_stock",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Opening Stock"
   },
   {
    "depends_on": "is_stock_item",
    "fieldname": "valuation_rate",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Valuation Rate"
   },
   {
@@ -271,12 +290,14 @@
    "depends_on": "eval:doc.__islocal",
    "fieldname": "standard_rate",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Standard Selling Rate"
   },
   {
    "default": "0",
    "fieldname": "is_fixed_asset",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Fixed Asset",
    "set_only_once": 1
   },
@@ -297,14 +318,12 @@
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
-   "hidden": 1,
    "in_preview": 1,
    "label": "Image",
    "options": "image",
    "print_hide": 1
   },
   {
-   "collapsible": 1,
    "fieldname": "section_break_11",
    "fieldtype": "Section Break",
    "label": "Description"
@@ -312,6 +331,7 @@
   {
    "fieldname": "brand",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Brand",
    "oldfieldname": "brand",
    "oldfieldtype": "Link",
@@ -321,6 +341,7 @@
   {
    "fieldname": "description",
    "fieldtype": "Text Editor",
+   "hidden": 1,
    "in_preview": 1,
    "label": "Description",
    "oldfieldname": "description",
@@ -350,6 +371,7 @@
   {
    "fieldname": "shelf_life_in_days",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Shelf Life In Days",
    "mandatory_depends_on": "eval:doc.has_batch_no && doc.has_expiry_date"
   },
@@ -366,6 +388,7 @@
    "default": "Purchase",
    "fieldname": "default_material_request_type",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Default Material Request Type",
    "options": "Purchase\nMaterial Transfer\nMaterial Issue\nManufacture\nCustomer Provided"
   },
@@ -373,6 +396,7 @@
    "depends_on": "is_stock_item",
    "fieldname": "valuation_method",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Valuation Method",
    "options": "\nFIFO\nMoving Average",
    "set_only_once": 1
@@ -388,6 +412,7 @@
    "depends_on": "eval:doc.is_stock_item",
    "fieldname": "warranty_period",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Warranty Period (in days)",
    "oldfieldname": "warranty_period",
    "oldfieldtype": "Data"
@@ -396,12 +421,14 @@
    "depends_on": "is_stock_item",
    "fieldname": "weight_per_unit",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Weight Per Unit"
   },
   {
    "depends_on": "eval:doc.is_stock_item",
    "fieldname": "weight_uom",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Weight UOM",
    "options": "UOM"
@@ -411,6 +438,7 @@
    "depends_on": "is_stock_item",
    "fieldname": "reorder_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Auto re-order",
    "options": "fa fa-rss"
   },
@@ -425,6 +453,7 @@
    "collapsible": 1,
    "fieldname": "unit_of_measure_conversion",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Units of Measure"
   },
   {
@@ -442,6 +471,7 @@
    "depends_on": "eval:doc.is_stock_item",
    "fieldname": "serial_nos_and_batches",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Serial Nos and Batches"
   },
   {
@@ -517,6 +547,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "variants_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Variants"
   },
   {
@@ -655,6 +686,7 @@
    "collapsible": 1,
    "fieldname": "foreign_trade_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Foreign Trade Details"
   },
   {
@@ -711,6 +743,7 @@
    "collapsible": 1,
    "fieldname": "deferred_revenue",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Deferred Revenue"
   },
   {
@@ -741,6 +774,7 @@
    "collapsible": 1,
    "fieldname": "deferred_expense_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Deferred Expense"
   },
   {
@@ -833,6 +867,7 @@
    "depends_on": "is_stock_item",
    "fieldname": "manufacturing",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Manufacturing",
    "oldfieldtype": "Section Break",
    "options": "fa fa-cogs"
@@ -874,6 +909,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "website_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Website",
    "options": "fa fa-globe"
   },
@@ -1001,6 +1037,7 @@
    "depends_on": "eval:(!doc.is_item_from_hub && !doc.is_fixed_asset)",
    "fieldname": "hub_publishing_sb",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Hub Publishing Details"
   },
   {
@@ -1069,6 +1106,72 @@
    "fieldname": "website_image_alt",
    "fieldtype": "Data",
    "label": "Image Description"
+  },
+  {
+   "fieldname": "item_location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "map_location",
+   "fieldtype": "Attach Image",
+   "label": "Location Map"
+  },
+  {
+   "fieldname": "panjang",
+   "fieldtype": "Data",
+   "label": "Panjang"
+  },
+  {
+   "fieldname": "column_break9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lebar",
+   "fieldtype": "Data",
+   "label": "Lebar"
+  },
+  {
+   "fieldname": "muka",
+   "fieldtype": "Data",
+   "label": "Muka"
+  },
+  {
+   "fieldname": "orientation",
+   "fieldtype": "Select",
+   "label": "Orientation",
+   "options": "Select...\nVertical\nHorizontal"
+  },
+  {
+   "fieldname": "point_of_interest",
+   "fieldtype": "Data",
+   "label": "Point of Interest"
+  },
+  {
+   "fieldname": "traffic_car",
+   "fieldtype": "Data",
+   "label": "Count Traffic Car"
+  },
+  {
+   "fieldname": "traffic_motor",
+   "fieldtype": "Data",
+   "label": "Count Traffic Motor"
+  },
+  {
+   "fieldname": "traffic_people",
+   "fieldtype": "Data",
+   "label": "Count Traffic People"
+  },
+  {
+   "fieldname": "date_of_production",
+   "fieldtype": "Date",
+   "label": "Date of production"
+  },
+  {
+   "fieldname": "slot",
+   "fieldtype": "Int",
+   "label": "Slot",
+   "non_negative": 1
   }
  ],
  "has_web_view": 1,
@@ -1078,10 +1181,11 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-08-26 12:23:07.277077",
+ "modified": "2021-10-08 17:45:36.632963",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
