@@ -51,9 +51,6 @@
   "column_break_26",
   "customer_primary_address",
   "primary_address",
-  "customer_linkedin",
-  "customer_facebook",
-  "customer_ig",
   "default_receivable_accounts",
   "accounts",
   "credit_limit_section",
@@ -131,7 +128,6 @@
   {
    "fieldname": "default_bank_account",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Default Company Bank Account",
    "options": "Bank Account"
   },
@@ -149,6 +145,7 @@
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Image",
    "print_hide": 1
   },
@@ -179,26 +176,25 @@
   {
    "fieldname": "territory",
    "fieldtype": "Link",
-   "hidden": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Territory",
    "oldfieldname": "territory",
    "oldfieldtype": "Link",
    "options": "Territory",
-   "print_hide": 1
+   "print_hide": 1,
+   "reqd": 1
   },
   {
    "fieldname": "tax_id",
    "fieldtype": "Data",
-   "label": "NPWP number"
+   "label": "NPWP"
   },
   {
-   "description": "PKP atau non PKP",
    "fieldname": "tax_category",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Tax Category",
-   "options": "PKP\nNon PKP"
+   "options": "Tax Category"
   },
   {
    "default": "0",
@@ -225,17 +221,14 @@
    "depends_on": "represents_company",
    "fieldname": "allowed_to_transact_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Allowed To Transact With"
   },
   {
    "depends_on": "represents_company",
    "fieldname": "companies",
    "fieldtype": "Table",
-   "hidden": 1,
    "label": "Allowed To Transact With",
-   "options": "Allowed To Transact With",
-   "print_hide": 1
+   "options": "Allowed To Transact With"
   },
   {
    "collapsible": 1,
@@ -254,7 +247,6 @@
   {
    "fieldname": "default_price_list",
    "fieldtype": "Link",
-   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Default Price List",
    "options": "Price List"
@@ -317,13 +309,13 @@
   {
    "fetch_from": "customer_primary_contact.mobile_no",
    "fieldname": "mobile_no",
-   "fieldtype": "Read Only",
-   "label": "Mobile No"
+   "fieldtype": "Data",
+   "label": "Phone Number"
   },
   {
    "fetch_from": "customer_primary_contact.email_id",
    "fieldname": "email_id",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "label": "Email Id"
   },
   {
@@ -353,7 +345,6 @@
    "description": "Mention if non-standard receivable account",
    "fieldname": "accounts",
    "fieldtype": "Table",
-   "hidden": 1,
    "label": "Accounts",
    "options": "Party Account"
   },
@@ -361,9 +352,7 @@
    "collapsible": 1,
    "fieldname": "credit_limit_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
-   "label": "Credit Limit and Payment Terms",
-   "print_hide": 1
+   "label": "Credit Limit and Payment Terms"
   },
   {
    "fieldname": "payment_terms",
@@ -408,9 +397,7 @@
    "default": "0",
    "fieldname": "is_frozen",
    "fieldtype": "Check",
-   "hidden": 1,
-   "label": "Is Frozen",
-   "print_hide": 1
+   "label": "Is Frozen"
   },
   {
    "collapsible": 1,
@@ -439,11 +426,9 @@
    "collapsible_depends_on": "default_sales_partner",
    "fieldname": "sales_team_section_break",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Sales Partner and Commission",
    "oldfieldtype": "Section Break",
-   "options": "fa fa-group",
-   "print_hide": 1
+   "options": "fa fa-group"
   },
   {
    "fieldname": "default_sales_partner",
@@ -466,9 +451,7 @@
    "collapsible_depends_on": "sales_team",
    "fieldname": "sales_team_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
-   "label": "Sales Team",
-   "print_hide": 1
+   "label": "Sales Team"
   },
   {
    "fieldname": "sales_team",
@@ -498,9 +481,7 @@
    "default": "0",
    "fieldname": "so_required",
    "fieldtype": "Check",
-   "hidden": 1,
-   "label": "Allow Sales Invoice Creation Without Sales Order",
-   "print_hide": 1
+   "label": "Allow Sales Invoice Creation Without Sales Order"
   },
   {
    "default": "0",
@@ -517,7 +498,6 @@
   {
    "fieldname": "tax_withholding_category",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Tax Withholding Category",
    "options": "Tax Withholding Category"
   },
@@ -528,23 +508,6 @@
    "no_copy": 1,
    "options": "Opportunity",
    "print_hide": 1
-  },
-  {
-   "fieldname": "customer_linkedin",
-   "fieldtype": "Data",
-   "label": "LinkedIn",
-   "print_hide": 1
-  },
-  {
-   "fieldname": "customer_facebook",
-   "fieldtype": "Data",
-   "label": "Facebook",
-   "print_hide": 1
-  },
-  {
-   "fieldname": "customer_ig",
-   "fieldtype": "Data",
-   "label": "IG"
   }
  ],
  "icon": "fa fa-user",
@@ -558,7 +521,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2021-10-08 16:09:52.343412",
+ "modified": "2021-10-10 21:06:20.496850",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",
