@@ -28,6 +28,7 @@
   "territory",
   "tax_id",
   "tax_category",
+  "designation",
   "so_required",
   "dn_required",
   "disabled",
@@ -48,6 +49,7 @@
   "customer_primary_contact",
   "mobile_no",
   "email_id",
+  "date_of_birth",
   "column_break_26",
   "customer_primary_address",
   "primary_address",
@@ -305,7 +307,7 @@
    "description": "Select, to make the customer searchable with these fields",
    "fieldname": "primary_address_and_contact_detail",
    "fieldtype": "Section Break",
-   "label": "Primary Address and Contact Detail"
+   "label": "Personal Data, Primary Address and Contact Detail"
   },
   {
    "description": "Reselect, if the chosen contact is edited after save",
@@ -545,6 +547,18 @@
    "fieldname": "customer_ig",
    "fieldtype": "Data",
    "label": "IG"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
   }
  ],
  "icon": "fa fa-user",
@@ -558,7 +572,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2021-10-08 16:09:52.343412",
+ "modified": "2021-10-11 10:26:31.421007",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",

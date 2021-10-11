@@ -21,6 +21,7 @@
   "stock_uom",
   "item_location",
   "map_location",
+  "area",
   "column_break0",
   "disabled",
   "allow_alternative_item",
@@ -37,6 +38,8 @@
   "over_billing_allowance",
   "image",
   "slot",
+  "media_location",
+  "ads_placement",
   "section_break_11",
   "brand",
   "description",
@@ -193,15 +196,12 @@
    "set_only_once": 1
   },
   {
-   "bold": 1,
    "fieldname": "item_name",
    "fieldtype": "Data",
    "hidden": 1,
-   "in_global_search": 1,
    "label": "Item Name",
    "oldfieldname": "item_name",
-   "oldfieldtype": "Data",
-   "search_index": 1
+   "oldfieldtype": "Data"
   },
   {
    "fieldname": "item_group",
@@ -1120,7 +1120,7 @@
   {
    "fieldname": "panjang",
    "fieldtype": "Data",
-   "label": "Panjang"
+   "label": "Length"
   },
   {
    "fieldname": "column_break9",
@@ -1129,18 +1129,18 @@
   {
    "fieldname": "lebar",
    "fieldtype": "Data",
-   "label": "Lebar"
+   "label": "Width"
   },
   {
    "fieldname": "muka",
    "fieldtype": "Data",
-   "label": "Muka"
+   "label": "Side"
   },
   {
    "fieldname": "orientation",
    "fieldtype": "Select",
    "label": "Orientation",
-   "options": "Select...\nVertical\nHorizontal"
+   "options": "\nVertical\nHorizontal"
   },
   {
    "fieldname": "point_of_interest",
@@ -1172,6 +1172,22 @@
    "fieldtype": "Int",
    "label": "Slot",
    "non_negative": 1
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "media_location",
+   "fieldtype": "Data",
+   "label": "Media Location"
+  },
+  {
+   "fieldname": "ads_placement",
+   "fieldtype": "Select",
+   "label": "Ads Placement",
+   "options": "\nIndoor\nOutdoor"
   }
  ],
  "has_web_view": 1,
@@ -1181,7 +1197,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-10-08 17:45:36.632963",
+ "modified": "2021-10-11 11:03:49.286706",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
