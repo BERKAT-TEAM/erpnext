@@ -15,7 +15,7 @@
  "is_standard": 1,
  "label": "Production",
  "links": [],
- "modified": "2021-10-08 12:50:49.912239",
+ "modified": "2021-10-12 08:43:51.626460",
  "modified_by": "Administrator",
  "module": "Production",
  "modules": 0,
@@ -38,7 +38,7 @@
    "format": "{} To Work",
    "label": "Job Order",
    "link_to": "Sales Order",
-   "stats_filter": "{\"status\":[\"not in\",[\"On Hold\",\"Completed\",\"Cancelled\",\"Closed\",null]]}",
+   "stats_filter": "{\"status\":[\"not in\",[\"On Hold\",\"Completed\",\"Cancelled\",\"Closed\",\"To Bill\",null]]}",
    "type": "DocType"
   }
  ],

@@ -357,7 +357,7 @@
    "label": "Exchange Rate",
    "oldfieldname": "conversion_rate",
    "oldfieldtype": "Currency",
-   "precision": "0",
+   "precision": "9",
    "print_hide": 1,
    "reqd": 1,
    "width": "100px"
@@ -392,7 +392,7 @@
    "fieldname": "plc_conversion_rate",
    "fieldtype": "Float",
    "label": "Price List Exchange Rate",
-   "precision": "0",
+   "precision": "9",
    "print_hide": 1,
    "reqd": 1
   },
@@ -442,7 +442,6 @@
    "fieldname": "total_qty",
    "fieldtype": "Float",
    "label": "Total Quantity",
-   "precision": "0",
    "read_only": 1
   },
   {
@@ -473,7 +472,6 @@
    "fieldtype": "Currency",
    "label": "Total",
    "options": "currency",
-   "precision": "0",
    "read_only": 1
   },
   {
@@ -481,7 +479,6 @@
    "fieldtype": "Currency",
    "label": "Net Total",
    "options": "currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -489,7 +486,6 @@
    "fieldname": "total_net_weight",
    "fieldtype": "Float",
    "label": "Total Net Weight",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -566,7 +562,6 @@
    "oldfieldname": "other_charges_total",
    "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -579,7 +574,6 @@
    "fieldtype": "Currency",
    "label": "Total Taxes and Charges",
    "options": "currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -615,7 +609,6 @@
    "fieldtype": "Currency",
    "label": "Additional Discount Amount (Company Currency)",
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -627,7 +620,6 @@
    "fieldname": "additional_discount_percentage",
    "fieldtype": "Float",
    "label": "Additional Discount Percentage",
-   "precision": "0",
    "print_hide": 1
   },
   {
@@ -635,7 +627,6 @@
    "fieldtype": "Currency",
    "label": "Additional Discount Amount",
    "options": "currency",
-   "precision": "0",
    "print_hide": 1
   },
   {
@@ -652,7 +643,6 @@
    "oldfieldname": "grand_total",
    "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1,
    "width": "200px"
@@ -663,7 +653,6 @@
    "label": "Rounding Adjustment (Company Currency)",
    "no_copy": 1,
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -705,7 +694,6 @@
    "oldfieldname": "grand_total_export",
    "oldfieldtype": "Currency",
    "options": "currency",
-   "precision": "0",
    "read_only": 1,
    "width": "200px"
   },
@@ -715,7 +703,6 @@
    "label": "Rounding Adjustment",
    "no_copy": 1,
    "options": "currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -727,7 +714,6 @@
    "oldfieldname": "rounded_total_export",
    "oldfieldtype": "Currency",
    "options": "currency",
-   "precision": "0",
    "read_only": 1,
    "width": "200px"
   },
@@ -968,7 +954,7 @@
   {
    "fieldname": "email_id",
    "fieldtype": "Data",
-   "label": "Eamil",
+   "label": "Email",
    "read_only": 1
   },
   {
@@ -1000,7 +986,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-10-11 10:59:47.999599",
+ "modified": "2021-10-12 09:39:54.031945",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",
