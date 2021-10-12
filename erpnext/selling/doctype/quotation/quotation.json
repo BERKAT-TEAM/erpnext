@@ -511,6 +511,7 @@
   {
    "fieldname": "shipping_rule",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Shipping Rule",
    "oldfieldtype": "Button",
    "options": "Shipping Rule",
@@ -994,7 +995,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-10-12 11:46:31.045169",
+ "modified": "2021-10-12 13:31:30.012486",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",
