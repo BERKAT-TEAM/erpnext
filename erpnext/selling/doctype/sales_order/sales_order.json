@@ -12,6 +12,7 @@
   "customer_section",
   "column_break0",
   "title",
+  "jo_type",
   "naming_series",
   "customer",
   "customer_name",
@@ -52,6 +53,8 @@
   "ignore_pricing_rule",
   "sec_warehouse",
   "set_warehouse",
+  "start_showtime",
+  "end_showtime",
   "items_section",
   "scan_barcode",
   "items",
@@ -454,7 +457,6 @@
    "print_hide": 1
   },
   {
-   "collapsible": 1,
    "fieldname": "currency_and_price_list",
    "fieldtype": "Section Break",
    "hide_days": 1,
@@ -485,7 +487,7 @@
    "label": "Exchange Rate",
    "oldfieldname": "conversion_rate",
    "oldfieldtype": "Currency",
-   "precision": "0",
+   "precision": "9",
    "print_hide": 1,
    "reqd": 1,
    "width": "100px"
@@ -528,7 +530,7 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Price List Exchange Rate",
-   "precision": "0",
+   "precision": "9",
    "print_hide": 1,
    "reqd": 1
   },
@@ -552,6 +554,7 @@
   {
    "fieldname": "set_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Set Source Warehouse",
@@ -620,7 +623,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total Quantity",
-   "precision": "0",
    "read_only": 1
   },
   {
@@ -630,7 +632,6 @@
    "hide_seconds": 1,
    "label": "Total (Company Currency)",
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -643,7 +644,6 @@
    "oldfieldname": "net_total",
    "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1,
    "width": "150px"
@@ -661,7 +661,6 @@
    "hide_seconds": 1,
    "label": "Total",
    "options": "currency",
-   "precision": "0",
    "read_only": 1
   },
   {
@@ -671,7 +670,6 @@
    "hide_seconds": 1,
    "label": "Net Total",
    "options": "currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -681,7 +679,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total Net Weight",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -797,7 +794,6 @@
    "hide_seconds": 1,
    "label": "Total Taxes and Charges",
    "options": "currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -826,7 +822,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Loyalty Amount",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -864,7 +859,6 @@
    "hide_seconds": 1,
    "label": "Additional Discount Amount (Company Currency)",
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -880,7 +874,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Additional Discount Percentage",
-   "precision": "0",
    "print_hide": 1
   },
   {
@@ -890,7 +883,6 @@
    "hide_seconds": 1,
    "label": "Additional Discount Amount",
    "options": "currency",
-   "precision": "0",
    "print_hide": 1
   },
   {
@@ -911,7 +903,6 @@
    "oldfieldname": "grand_total",
    "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1,
    "width": "150px"
@@ -925,7 +916,6 @@
    "label": "Rounding Adjustment (Company Currency)",
    "no_copy": 1,
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -939,7 +929,6 @@
    "oldfieldname": "rounded_total",
    "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1,
    "width": "150px"
@@ -977,7 +966,6 @@
    "oldfieldname": "grand_total_export",
    "oldfieldtype": "Currency",
    "options": "currency",
-   "precision": "0",
    "read_only": 1,
    "width": "150px"
   },
@@ -990,7 +978,6 @@
    "label": "Rounding Adjustment",
    "no_copy": 1,
    "options": "currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -1005,7 +992,6 @@
    "oldfieldname": "rounded_total_export",
    "oldfieldtype": "Currency",
    "options": "currency",
-   "precision": "0",
    "read_only": 1,
    "width": "150px"
   },
@@ -1030,7 +1016,6 @@
    "label": "Advance Paid",
    "no_copy": 1,
    "options": "party_account_currency",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -1522,13 +1507,33 @@
    "fieldtype": "Small Text",
    "label": "Dispatch Address",
    "read_only": 1
+  },
+  {
+   "fieldname": "jo_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nNew (SI Baru)\nExtend (SI Perpanjang)\nFree (Gratis/Invest)",
+   "reqd": 1
+  },
+  {
+   "description": "Mulai tayang",
+   "fieldname": "start_showtime",
+   "fieldtype": "Date",
+   "label": "Start Showtime"
+  },
+  {
+   "description": "Selesai Tayang",
+   "fieldname": "end_showtime",
+   "fieldtype": "Date",
+   "label": "End Showtime",
+   "reqd": 1
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-11 11:42:20.645725",
+ "modified": "2021-10-12 11:24:58.946299",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",

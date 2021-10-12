@@ -15,6 +15,11 @@
   "item_name",
   "section_break_5",
   "description",
+  "item_location",
+  "panjang",
+  "lebar",
+  "muka",
+  "item_spot",
   "item_group",
   "brand",
   "image_section",
@@ -337,6 +342,8 @@
    "oldfieldname": "export_rate",
    "oldfieldtype": "Currency",
    "options": "currency",
+   "print_hide": 1,
+   "print_hide_if_no_value": 1,
    "print_width": "100px",
    "width": "100px"
   },
@@ -789,12 +796,49 @@
    "no_copy": 1,
    "options": "currency",
    "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.item_location",
+   "fieldname": "item_location",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.panjang",
+   "fieldname": "panjang",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Length",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.lebar",
+   "fieldname": "lebar",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Width",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.muka",
+   "fieldname": "muka",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Side"
+  },
+  {
+   "fetch_from": "item_code.item_spot",
+   "fieldname": "item_spot",
+   "fieldtype": "Data",
+   "label": "Spot"
   }
  ],
  "idx": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-10-08 16:05:01.970318",
+ "modified": "2021-10-12 11:40:39.084028",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order Item",

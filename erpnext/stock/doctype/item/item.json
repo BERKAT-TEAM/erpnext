@@ -37,7 +37,6 @@
   "over_delivery_receipt_allowance",
   "over_billing_allowance",
   "image",
-  "item_slot",
   "media_location",
   "ads_placement",
   "section_break_11",
@@ -53,6 +52,8 @@
   "traffic_car",
   "traffic_motor",
   "traffic_people",
+  "item_slot",
+  "item_spot",
   "sb_barcodes",
   "barcodes",
   "inventory_section",
@@ -284,8 +285,7 @@
    "fieldname": "valuation_rate",
    "fieldtype": "Currency",
    "hidden": 1,
-   "label": "Valuation Rate",
-   "precision": "0"
+   "label": "Valuation Rate"
   },
   {
    "bold": 1,
@@ -293,8 +293,7 @@
    "fieldname": "standard_rate",
    "fieldtype": "Currency",
    "hidden": 1,
-   "label": "Standard Selling Rate",
-   "precision": "0"
+   "label": "Standard Selling Rate"
   },
   {
    "default": "0",
@@ -424,8 +423,7 @@
    "fieldname": "weight_per_unit",
    "fieldtype": "Float",
    "hidden": 1,
-   "label": "Weight Per Unit",
-   "precision": "0"
+   "label": "Weight Per Unit"
   },
   {
    "depends_on": "eval:doc.is_stock_item",
@@ -618,14 +616,12 @@
    "fieldtype": "Float",
    "label": "Minimum Order Qty",
    "oldfieldname": "min_order_qty",
-   "oldfieldtype": "Currency",
-   "precision": "0"
+   "oldfieldtype": "Currency"
   },
   {
    "fieldname": "safety_stock",
    "fieldtype": "Float",
-   "label": "Safety Stock",
-   "precision": "0"
+   "label": "Safety Stock"
   },
   {
    "fieldname": "purchase_details_cb",
@@ -646,7 +642,6 @@
    "no_copy": 1,
    "oldfieldname": "last_purchase_rate",
    "oldfieldtype": "Currency",
-   "precision": "0",
    "read_only": 1
   },
   {
@@ -743,8 +738,7 @@
    "fieldtype": "Float",
    "label": "Max Discount (%)",
    "oldfieldname": "max_discount",
-   "oldfieldtype": "Currency",
-   "precision": "0"
+   "oldfieldtype": "Currency"
   },
   {
    "collapsible": 1,
@@ -1036,7 +1030,6 @@
    "fieldtype": "Float",
    "hidden": 1,
    "label": "Total Projected Qty",
-   "precision": "0",
    "print_hide": 1,
    "read_only": 1
   },
@@ -1082,15 +1075,13 @@
    "fieldtype": "Float",
    "label": "Over Delivery/Receipt Allowance (%)",
    "oldfieldname": "tolerance",
-   "oldfieldtype": "Currency",
-   "precision": "0"
+   "oldfieldtype": "Currency"
   },
   {
    "depends_on": "eval:!doc.__islocal && !doc.is_fixed_asset",
    "fieldname": "over_billing_allowance",
    "fieldtype": "Float",
-   "label": "Over Billing Allowance (%)",
-   "precision": "0"
+   "label": "Over Billing Allowance (%)"
   },
   {
    "default": "0",
@@ -1181,8 +1172,9 @@
   },
   {
    "fieldname": "area",
-   "fieldtype": "Data",
-   "label": "Area"
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Territory"
   },
   {
    "fieldname": "media_location",
@@ -1203,6 +1195,14 @@
    "fieldname": "item_slot",
    "fieldtype": "Int",
    "label": "Slot",
+   "non_negative": 1,
+   "print_hide": 1
+  },
+  {
+   "description": "Berapa Spot per hari ?",
+   "fieldname": "item_spot",
+   "fieldtype": "Int",
+   "label": "Spot",
    "non_negative": 1
   }
  ],
@@ -1213,8 +1213,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-10-11 12:07:33.912818",
- "modified": "2021-10-11 11:03:49.286706",
+ "modified": "2021-10-12 11:33:54.869760",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

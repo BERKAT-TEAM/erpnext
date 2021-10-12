@@ -21,6 +21,7 @@
   "lft",
   "rgt",
   "old_parent",
+  "attach_ttd",
   "target_details_section_break",
   "targets"
  ],
@@ -139,13 +140,18 @@
    "oldfieldname": "target_details",
    "oldfieldtype": "Table",
    "options": "Target Detail"
+  },
+  {
+   "fieldname": "attach_ttd",
+   "fieldtype": "Attach Image",
+   "label": "Attach TTD"
   }
  ],
  "icon": "icon-user",
  "idx": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2021-10-08 10:38:06.259458",
+ "modified": "2021-10-12 11:04:01.041058",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Sales Person",

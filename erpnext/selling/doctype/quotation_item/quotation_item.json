@@ -12,11 +12,12 @@
   "item_name",
   "section_break_5",
   "description",
+  "column_break_desc",
   "item_location",
   "panjang",
   "lebar",
   "muka",
-  "item_group",
+  "item_spot",
   "brand",
   "image_section",
   "image",
@@ -160,17 +161,6 @@
    "fieldname": "muka",
    "fieldtype": "Data",
    "label": "Side"
-  },
-  {
-   "fieldname": "item_group",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Item Group",
-   "oldfieldname": "item_group",
-   "oldfieldtype": "Link",
-   "options": "Item Group",
-   "print_hide": 1,
-   "read_only": 1
   },
   {
    "fieldname": "brand",
@@ -671,12 +661,27 @@
    "oldfieldtype": "Check",
    "print_hide": 1,
    "report_hide": 1
+  },
+  {
+   "fieldname": "column_break_desc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.item_spot",
+   "fieldname": "item_spot",
+   "fieldtype": "Data",
+   "label": "Spot",
+   "oldfieldname": "item_group",
+   "oldfieldtype": "Link",
+   "options": "Item Group",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "idx": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-10-12 09:41:40.269347",
+ "modified": "2021-10-12 11:38:41.585091",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation Item",
