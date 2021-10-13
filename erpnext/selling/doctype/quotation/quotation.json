@@ -25,6 +25,7 @@
   "sales_name",
   "mobile_no",
   "email",
+  "ttd_sales",
   "contact_section",
   "customer_address",
   "address_display",
@@ -988,6 +989,12 @@
   {
    "fieldname": "sales",
    "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "sales_name.attach_ttd",
+   "fieldname": "ttd_sales",
+   "fieldtype": "Image",
+   "label": "TTD Sales"
   }
  ],
  "icon": "fa fa-shopping-cart",
@@ -995,7 +1002,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-10-12 13:31:30.012486",
+ "modified": "2021-10-13 09:11:15.682415",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",

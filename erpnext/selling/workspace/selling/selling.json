@@ -570,7 +570,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-29 09:46:09.265235",
+ "modified": "2021-10-12 14:51:41.277888",
  "modified_by": "Administrator",
  "module": "Selling",
  "modules": 0,
@@ -588,6 +588,9 @@
   },
   {
    "role": "Sales User"
+  },
+  {
+   "role": "Sales Master Manager"
   }
  ],
  "sequence_id": 3,

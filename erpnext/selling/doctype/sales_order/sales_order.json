@@ -73,9 +73,7 @@
   "net_total",
   "taxes_section",
   "tax_category",
-  "column_break_38",
   "shipping_rule",
-  "section_break_40",
   "taxes_and_charges",
   "taxes",
   "sec_tax_breakup",
@@ -701,26 +699,15 @@
    "print_hide": 1
   },
   {
-   "fieldname": "column_break_38",
-   "fieldtype": "Column Break",
-   "hide_days": 1,
-   "hide_seconds": 1
-  },
-  {
    "fieldname": "shipping_rule",
    "fieldtype": "Link",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Shipping Rule",
    "oldfieldtype": "Button",
    "options": "Shipping Rule",
    "print_hide": 1
-  },
-  {
-   "fieldname": "section_break_40",
-   "fieldtype": "Section Break",
-   "hide_days": 1,
-   "hide_seconds": 1
   },
   {
    "fieldname": "taxes_and_charges",
@@ -1533,7 +1520,7 @@
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-12 11:24:58.946299",
+ "modified": "2021-10-12 16:38:31.471515",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",

@@ -47,13 +47,14 @@
   "lebar",
   "muka",
   "orientation",
+  "item_slot",
   "column_break9",
   "point_of_interest",
   "traffic_car",
   "traffic_motor",
   "traffic_people",
-  "item_slot",
   "item_spot",
+  "pixel_pitch",
   "sb_barcodes",
   "barcodes",
   "inventory_section",
@@ -389,7 +390,6 @@
    "default": "Purchase",
    "fieldname": "default_material_request_type",
    "fieldtype": "Select",
-   "hidden": 1,
    "label": "Default Material Request Type",
    "options": "Purchase\nMaterial Transfer\nMaterial Issue\nManufacture\nCustomer Provided"
   },
@@ -580,6 +580,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "defaults",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Sales, Purchase, Accounting Defaults"
   },
   {
@@ -662,6 +663,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "supplier_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Supplier Details"
   },
   {
@@ -807,6 +809,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "customer_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Customer Details"
   },
   {
@@ -1119,7 +1122,7 @@
    "label": "Location Map"
   },
   {
-   "description": "Milimeters",
+   "description": "Meters",
    "fieldname": "panjang",
    "fieldtype": "Data",
    "label": "Length"
@@ -1129,12 +1132,13 @@
    "fieldtype": "Column Break"
   },
   {
-   "description": "Milimeters",
+   "description": "Meters",
    "fieldname": "lebar",
    "fieldtype": "Data",
    "label": "Width"
   },
   {
+   "description": "Sides (Muka)",
    "fieldname": "muka",
    "fieldtype": "Data",
    "label": "Side"
@@ -1192,18 +1196,24 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "item_slot",
-   "fieldtype": "Int",
-   "label": "Slot",
-   "non_negative": 1,
-   "print_hide": 1
-  },
-  {
    "description": "Berapa Spot per hari ?",
    "fieldname": "item_spot",
    "fieldtype": "Int",
    "label": "Spot",
    "non_negative": 1
+  },
+  {
+   "fieldname": "pixel_pitch",
+   "fieldtype": "Data",
+   "label": "Pixel Pitch"
+  },
+  {
+   "default": "0",
+   "description": "Slots",
+   "fieldname": "item_slot",
+   "fieldtype": "Select",
+   "label": "Slot",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20"
   }
  ],
  "has_web_view": 1,
@@ -1212,8 +1222,8 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "max_attachments": 1,
- "modified": "2021-10-12 11:33:54.869760",
+ "max_attachments": 2,
+ "modified": "2021-10-13 08:12:44.003460",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

@@ -17,6 +17,7 @@
   "enabled",
   "cb0",
   "employee",
+  "user_id",
   "department",
   "lft",
   "rgt",
@@ -145,13 +146,19 @@
    "fieldname": "attach_ttd",
    "fieldtype": "Attach Image",
    "label": "Attach TTD"
+  },
+  {
+   "fetch_from": "employee.user_id",
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID"
   }
  ],
  "icon": "icon-user",
  "idx": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2021-10-12 11:04:01.041058",
+ "modified": "2021-10-12 15:42:27.561843",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Sales Person",

@@ -152,7 +152,7 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "STO-ITEM-.YYYY.-",
+   "options": "STO-SI-.YYYY.-",
    "set_only_once": 1
   },
   {
@@ -1077,7 +1077,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-09-28 15:32:39.942787",
+ "modified": "2021-10-13 08:32:31.334509",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Space Iklan",
