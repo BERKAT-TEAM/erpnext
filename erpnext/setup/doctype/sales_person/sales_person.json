@@ -19,7 +19,7 @@
   "employee",
   "user_id",
   "department",
-  "contact",
+  "mobile_no",
   "email",
   "lft",
   "rgt",
@@ -152,26 +152,28 @@
   {
    "fetch_from": "employee.user_id",
    "fieldname": "user_id",
-   "fieldtype": "Data",
-   "label": "User ID"
+   "fieldtype": "Link",
+   "label": "User ID",
+   "options": "User"
   },
   {
-   "fetch_from": "employee.cell_number",
-   "fieldname": "contact",
-   "fieldtype": "Data",
-   "label": "Contact"
-  },
-  {
+   "fetch_from": "user_id.email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
+  },
+  {
+   "fetch_from": "user_id.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Contact"
   }
  ],
  "icon": "icon-user",
  "idx": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2021-10-13 15:26:06.965963",
+ "modified": "2021-10-13 16:00:04.495220",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Sales Person",

@@ -65,9 +65,9 @@
   "section_break_31",
   "column_break_33a",
   "total_qty",
-  "kickback",
   "base_total",
   "base_net_total",
+  "kickback",
   "column_break_33",
   "total_net_weight",
   "total",
@@ -152,7 +152,13 @@
   "to_date",
   "column_break_108",
   "auto_repeat",
-  "update_auto_repeat_reference"
+  "update_auto_repeat_reference",
+  "section_break_app",
+  "sales_name",
+  "approved_sales_manager",
+  "approved_production",
+  "approved_rnd",
+  "approved_finance"
  ],
  "fields": [
   {
@@ -1322,6 +1328,7 @@
    "collapsible_depends_on": "commission_rate",
    "fieldname": "sales_team_section_break",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Commission",
@@ -1376,6 +1383,7 @@
    "collapsible_depends_on": "sales_team",
    "fieldname": "section_break1",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Sales Team",
@@ -1398,6 +1406,7 @@
    "collapsible": 1,
    "fieldname": "subscription_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Auto Repeat Section",
@@ -1525,11 +1534,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "kickback",
-   "fieldtype": "Currency",
-   "label": "Kickback"
-  },
-  {
    "fieldname": "section_break_1",
    "fieldtype": "Section Break",
    "label": "Distribution Value (Distribusi Nilai Job Order)"
@@ -1568,13 +1572,51 @@
   {
    "fieldname": "column_break101",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kickback",
+   "fieldtype": "Currency",
+   "label": "Kickback",
+   "options": "Company:company:default_currency",
+   "precision": "0"
+  },
+  {
+   "fieldname": "section_break_app",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "description": "Dibuat oleh",
+   "fieldname": "sales_name",
+   "fieldtype": "Data",
+   "label": "Made by"
+  },
+  {
+   "fieldname": "approved_sales_manager",
+   "fieldtype": "Datetime",
+   "label": "Approved By Sales Manager"
+  },
+  {
+   "fieldname": "approved_production",
+   "fieldtype": "Datetime",
+   "label": "Approved By Production"
+  },
+  {
+   "fieldname": "approved_rnd",
+   "fieldtype": "Datetime",
+   "label": "Approved By RND"
+  },
+  {
+   "fieldname": "approved_finance",
+   "fieldtype": "Datetime",
+   "label": "Approved By Finance"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-13 14:07:28.665021",
+ "modified": "2021-10-13 17:32:56.901529",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",
