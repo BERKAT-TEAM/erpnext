@@ -377,7 +377,6 @@
    "oldfieldtype": "Select",
    "options": "Price List",
    "print_hide": 1,
-   "reqd": 1,
    "width": "100px"
   },
   {
@@ -1002,7 +1001,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-10-13 09:11:15.682415",
+ "modified": "2021-10-13 14:36:44.551916",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",

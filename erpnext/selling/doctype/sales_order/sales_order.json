@@ -65,6 +65,7 @@
   "section_break_31",
   "column_break_33a",
   "total_qty",
+  "kickback",
   "base_total",
   "base_net_total",
   "column_break_33",
@@ -104,6 +105,13 @@
   "in_words",
   "advance_paid",
   "disable_rounded_total",
+  "section_break_1",
+  "nilai_jual_lokasi",
+  "nilai_jual_production",
+  "nilai_jual_maintenance",
+  "column_break101",
+  "nilai_jual_pajak",
+  "total_nilai_jual",
   "payment_schedule_section",
   "payment_terms_template",
   "payment_schedule",
@@ -1506,7 +1514,8 @@
    "description": "Mulai tayang",
    "fieldname": "start_showtime",
    "fieldtype": "Date",
-   "label": "Start Showtime"
+   "label": "Start Showtime",
+   "reqd": 1
   },
   {
    "description": "Selesai Tayang",
@@ -1514,13 +1523,58 @@
    "fieldtype": "Date",
    "label": "End Showtime",
    "reqd": 1
+  },
+  {
+   "fieldname": "kickback",
+   "fieldtype": "Currency",
+   "label": "Kickback"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Distribution Value (Distribusi Nilai Job Order)"
+  },
+  {
+   "description": "Nilai Jual Lokasi",
+   "fieldname": "nilai_jual_lokasi",
+   "fieldtype": "Data",
+   "label": "Location Value"
+  },
+  {
+   "description": "Nilai Jual Production",
+   "fieldname": "nilai_jual_production",
+   "fieldtype": "Currency",
+   "label": "Production Value"
+  },
+  {
+   "description": "Nilai Jual Maintenance",
+   "fieldname": "nilai_jual_maintenance",
+   "fieldtype": "Currency",
+   "label": "Maintenance Value",
+   "precision": "0"
+  },
+  {
+   "description": "Nilai Jual Pajak",
+   "fieldname": "nilai_jual_pajak",
+   "fieldtype": "Currency",
+   "label": "Tax Value"
+  },
+  {
+   "description": "Total Nilai Jual",
+   "fieldname": "total_nilai_jual",
+   "fieldtype": "Currency",
+   "label": "Total Value"
+  },
+  {
+   "fieldname": "column_break101",
+   "fieldtype": "Column Break"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-12 16:38:31.471515",
+ "modified": "2021-10-13 14:07:28.665021",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",
