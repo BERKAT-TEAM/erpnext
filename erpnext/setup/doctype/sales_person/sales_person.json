@@ -19,6 +19,8 @@
   "employee",
   "user_id",
   "department",
+  "contact",
+  "email",
   "lft",
   "rgt",
   "old_parent",
@@ -152,13 +154,24 @@
    "fieldname": "user_id",
    "fieldtype": "Data",
    "label": "User ID"
+  },
+  {
+   "fetch_from": "employee.cell_number",
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   }
  ],
  "icon": "icon-user",
  "idx": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2021-10-12 15:42:27.561843",
+ "modified": "2021-10-13 15:26:06.965963",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Sales Person",
