@@ -276,7 +276,8 @@
    "fieldtype": "Link",
    "label": "Customer / Lead Address",
    "options": "Address",
-   "print_hide": 1
+   "print_hide": 1,
+   "reqd": 1
   },
   {
    "fieldname": "address_display",
@@ -491,7 +492,7 @@
  "icon": "fa fa-info-sign",
  "idx": 195,
  "links": [],
- "modified": "2021-09-30 17:43:37.980142",
+ "modified": "2021-10-14 14:32:23.600311",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Opportunity",

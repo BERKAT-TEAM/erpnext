@@ -979,12 +979,10 @@
    "label": "Period"
   },
   {
-   "fetch_from": "sales_name.full_name",
    "fieldname": "sales_name",
    "fieldtype": "Link",
    "label": "Account Manager (Sales)",
-   "options": "Sales Person",
-   "remember_last_selected_value": 1
+   "options": "Sales Person"
   },
   {
    "fieldname": "sales",
@@ -1003,7 +1001,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-10-13 16:32:22.693337",
+ "modified": "2021-10-14 10:49:53.669057",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",

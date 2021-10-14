@@ -152,18 +152,17 @@
   {
    "fetch_from": "employee.user_id",
    "fieldname": "user_id",
-   "fieldtype": "Link",
-   "label": "User ID",
-   "options": "User"
+   "fieldtype": "Data",
+   "label": "User ID"
   },
   {
-   "fetch_from": "user_id.email",
+   "fetch_from": "employee.email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
   },
   {
-   "fetch_from": "user_id.mobile_no",
+   "fetch_from": "employee.cell_number",
    "fieldname": "mobile_no",
    "fieldtype": "Data",
    "label": "Contact"
@@ -173,7 +172,7 @@
  "idx": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2021-10-13 16:00:04.495220",
+ "modified": "2021-10-14 10:47:56.916585",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Sales Person",

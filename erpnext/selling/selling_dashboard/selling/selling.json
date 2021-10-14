@@ -33,6 +33,10 @@
   {
    "chart": "Item Price Stock",
    "width": "Half"
+  },
+  {
+   "chart": "Sales Order Analysis-1",
+   "width": "Half"
   }
  ],
  "creation": "2020-07-20 20:17:16.688162",
@@ -42,7 +46,7 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "modified": "2021-10-12 13:41:42.010005",
+ "modified": "2021-10-14 15:25:13.043862",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Selling",

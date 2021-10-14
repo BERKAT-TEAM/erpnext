@@ -34,6 +34,7 @@
   "emergency_phone_number",
   "erpnext_user",
   "user_id",
+  "email",
   "create_user",
   "create_user_permission",
   "employment_details",
@@ -807,13 +808,19 @@
    "fieldtype": "Link",
    "label": "Shift Request Approver",
    "options": "User"
+  },
+  {
+   "fetch_from": "user_id.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   }
  ],
  "icon": "fa fa-user",
  "idx": 24,
  "image_field": "image",
  "links": [],
- "modified": "2021-09-22 10:31:00.811822",
+ "modified": "2021-10-14 10:47:39.004263",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Employee",
