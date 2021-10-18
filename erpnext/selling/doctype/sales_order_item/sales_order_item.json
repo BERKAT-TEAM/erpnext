@@ -15,6 +15,11 @@
   "item_name",
   "section_break_5",
   "description",
+  "point_of_interest",
+  "count_car",
+  "count_motor",
+  "count_people",
+  "schedule",
   "column_break_item",
   "item_location",
   "panjang",
@@ -133,6 +138,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "item_code.item_name",
    "fieldname": "item_name",
    "fieldtype": "Data",
    "in_global_search": 1,
@@ -838,12 +844,46 @@
   {
    "fieldname": "column_break_item",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.point_of_interest",
+   "fieldname": "point_of_interest",
+   "fieldtype": "Data",
+   "label": "Point of Interest",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.traffic_car",
+   "fieldname": "count_car",
+   "fieldtype": "Data",
+   "label": "Count Traffic Car"
+  },
+  {
+   "fetch_from": "item_code.traffic_motor",
+   "fieldname": "count_motor",
+   "fieldtype": "Data",
+   "label": "Count Traffic Motor",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.traffic_people",
+   "fieldname": "count_people",
+   "fieldtype": "Data",
+   "label": "Count Traffic People",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.schedule",
+   "fieldname": "schedule",
+   "fieldtype": "Data",
+   "label": "Schedule",
+   "read_only": 1
   }
  ],
  "idx": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-10-12 14:33:12.870288",
+ "modified": "2021-10-18 15:46:38.067985",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order Item",

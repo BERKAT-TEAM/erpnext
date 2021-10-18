@@ -16,12 +16,14 @@
   "count_car",
   "count_motor",
   "count_people",
+  "schedule",
   "column_break_desc",
   "item_location",
   "panjang",
   "lebar",
   "muka",
   "pixel_pitch",
+  "duration",
   "item_spot",
   "brand",
   "image_section",
@@ -730,12 +732,24 @@
    "fieldtype": "Data",
    "label": "Count Traffic People",
    "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.schedule",
+   "fieldname": "schedule",
+   "fieldtype": "Data",
+   "label": "Schedule"
+  },
+  {
+   "fetch_from": "item_code.duration",
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration"
   }
  ],
  "idx": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-10-18 08:54:15.424940",
+ "modified": "2021-10-18 14:15:29.333048",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation Item",

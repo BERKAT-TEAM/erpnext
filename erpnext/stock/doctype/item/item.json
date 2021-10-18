@@ -50,6 +50,8 @@
   "muka",
   "orientation",
   "item_slot",
+  "schedule",
+  "duration",
   "column_break9",
   "point_of_interest",
   "traffic_car",
@@ -69,6 +71,8 @@
   "warranty_period",
   "weight_per_unit",
   "weight_uom",
+  "pricing",
+  "a_day",
   "reorder_section",
   "reorder_levels",
   "unit_of_measure_conversion",
@@ -1216,7 +1220,6 @@
   },
   {
    "default": "0",
-   "description": "Slots",
    "fieldname": "item_slot",
    "fieldtype": "Select",
    "label": "Slot",
@@ -1232,6 +1235,27 @@
    "fieldname": "number_of_unit",
    "fieldtype": "Int",
    "label": "Number of Unit"
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Data",
+   "label": "Schedule"
+  },
+  {
+   "fieldname": "pricing",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "a_day",
+   "fieldtype": "Data",
+   "label": "Price for A Day"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration"
   }
  ],
  "has_web_view": 1,
@@ -1241,7 +1265,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 2,
- "modified": "2021-10-14 16:22:20.255732",
+ "modified": "2021-10-18 13:58:11.006293",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
