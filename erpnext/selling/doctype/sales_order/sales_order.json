@@ -158,7 +158,14 @@
   "sales_name",
   "approved_sales_manager",
   "approved_production",
-  "approved_rnd"
+  "approved_rnd",
+  "approved_finance",
+  "column_break_approval",
+  "sales_signature",
+  "sales_manager_signature",
+  "production_signature",
+  "rnd_signature",
+  "finance_signature"
  ],
  "fields": [
   {
@@ -1592,29 +1599,69 @@
    "label": "Made by"
   },
   {
+   "description": "Disetujui oleh Sales Manager",
    "fieldname": "approved_sales_manager",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Approved By Sales Manager"
   },
   {
+   "description": "Disetujui oleh Produksi",
    "fieldname": "approved_production",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Approved By Production"
   },
   {
+   "description": "Disetujui oleh RND",
    "fieldname": "approved_rnd",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Approved By RND"
+  },
+  {
+   "description": "Disetujui oleh Finance",
+   "fieldname": "approved_finance",
+   "fieldtype": "Data",
+   "label": "Approved By Finance"
+  },
+  {
+   "fieldname": "column_break_approval",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Tanda Tangan Sales",
+   "fieldname": "sales_signature",
+   "fieldtype": "Attach Image",
+   "label": "Sales"
+  },
+  {
+   "description": "Tanda Tangan Produksi",
+   "fieldname": "production_signature",
+   "fieldtype": "Attach Image",
+   "label": "Production"
+  },
+  {
+   "description": "Tanda Tangan RND",
+   "fieldname": "rnd_signature",
+   "fieldtype": "Attach Image",
+   "label": "RND"
+  },
+  {
+   "description": "Tanda Tangan Finance",
+   "fieldname": "finance_signature",
+   "fieldtype": "Attach Image",
+   "label": "Finance"
+  },
+  {
+   "description": "Tanda Tangan Sales Manager",
+   "fieldname": "sales_manager_signature",
+   "fieldtype": "Attach Image",
+   "label": "Sales Manager"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-14 09:52:04.325222",
+ "modified": "2021-10-18 11:14:34.559737",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",
