@@ -1,0 +1,33 @@
+{
+ "chart_name": "Sales Order Analysis-1",
+ "chart_type": "Report",
+ "creation": "2021-10-14 15:25:12.933736",
+ "custom_options": "{\"x_field\": \"customer\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"amount\", \"color\": \"#449CF0\"}], \"y_fields\": [\"amount\"], \"colors\": [\"#449CF0\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{\"company\":\"MING Promotion\",\"from_date\":\"2021-09-14\",\"to_date\":\"2021-10-14\",\"sales_order\":[],\"status\":[],\"group_by_so\":1}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2021-10-14 15:25:13.026942",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Sales Order Analysis-1",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Sales Order Analysis",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "customer",
+ "y_axis": [
+  {
+   "color": "#449CF0",
+   "y_field": "amount"
+  }
+ ]
+}

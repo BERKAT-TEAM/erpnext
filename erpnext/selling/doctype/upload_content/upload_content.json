@@ -1,21 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2021-09-22 07:37:48.036187",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "no_dokumen",
   "no_revisi",
-  "nama",
+  "owner",
   "jabatan",
-  "divisi",
   "no_service",
   "no_jo",
   "client",
   "nama_konten",
   "lokasi",
+  "column_break1",
   "tanggal_upload",
   "deadline",
   "perintah_kerja",
@@ -24,7 +26,6 @@
   "keterangan",
   "foto_sebelum",
   "foto_sesudah",
-  "data_19",
   "amended_from"
  ],
  "fields": [
@@ -41,43 +42,31 @@
    "label": "No. Revisi"
   },
   {
-   "fieldname": "nama",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Nama",
-   "reqd": 1
-  },
-  {
+   "description": "Jabatan",
+   "fetch_from": "nama.role_profile_name",
    "fieldname": "jabatan",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Jabatan",
-   "reqd": 1
-  },
-  {
-   "fieldname": "divisi",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Divisi",
-   "reqd": 1
+   "label": "Designation"
   },
   {
    "fieldname": "no_service",
    "fieldtype": "Data",
-   "label": "No. Service",
-   "reqd": 1
+   "label": "No. Service"
   },
   {
    "fieldname": "no_jo",
-   "fieldtype": "Data",
-   "label": "No. JO",
+   "fieldtype": "Link",
+   "label": "Job Order",
+   "options": "Sales Order",
    "reqd": 1
   },
   {
+   "fetch_from": "no_jo.customer_name",
    "fieldname": "client",
    "fieldtype": "Data",
-   "label": "Client",
-   "reqd": 1
+   "label": "Customer",
+   "read_only": 1
   },
   {
    "fieldname": "nama_konten",
@@ -86,33 +75,39 @@
   },
   {
    "fieldname": "lokasi",
-   "fieldtype": "Geolocation",
+   "fieldtype": "Data",
    "label": "Lokasi"
   },
   {
    "fieldname": "tanggal_upload",
-   "fieldtype": "Data",
-   "label": "Tanggal Upload"
+   "fieldtype": "Date",
+   "label": "Tanggal Upload",
+   "reqd": 1
   },
   {
    "fieldname": "deadline",
-   "fieldtype": "Data",
-   "label": "Deadline"
+   "fieldtype": "Date",
+   "label": "Deadline",
+   "reqd": 1
   },
   {
    "fieldname": "perintah_kerja",
-   "fieldtype": "Text",
-   "label": "Perintah Kerja"
+   "fieldtype": "Select",
+   "label": "Perintah Kerja",
+   "options": "\nUpload Content\nTakeout Content\nChange content"
   },
   {
+   "description": "Kepada",
    "fieldname": "kepada",
-   "fieldtype": "Data",
-   "label": "Kepada"
+   "fieldtype": "Link",
+   "label": "To",
+   "options": "User"
   },
   {
    "fieldname": "jenis_media",
-   "fieldtype": "Data",
-   "label": "Jenis Media"
+   "fieldtype": "Select",
+   "label": "Jenis Media",
+   "options": "\nLED Single\nLED Banner\nMobile LED"
   },
   {
    "fieldname": "keterangan",
@@ -120,18 +115,35 @@
    "label": "Keterangan"
   },
   {
+   "description": "Foto sebelum",
    "fieldname": "foto_sebelum",
    "fieldtype": "Attach Image",
-   "label": "Foto Sebelum"
+   "label": "Before"
   },
   {
+   "description": "Foto sesudah",
    "fieldname": "foto_sesudah",
    "fieldtype": "Attach Image",
-   "label": "Foto Sesudah"
+   "label": "After"
   },
   {
-   "fieldname": "data_19",
-   "fieldtype": "Data"
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FR-SALES-UC-01-.YYYY.-"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "Name",
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "amended_from",
@@ -144,11 +156,14 @@
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2021-09-22 07:43:11.104667",
+ "max_attachments": 12,
+ "modified": "2021-10-15 14:19:10.551389",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Upload Content",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
