@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 3,
  "is_standard": "Yes",
- "modified": "2021-10-07 10:18:17.305900",
+ "modified": "2021-10-18 11:53:38.571258",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order Trends",
@@ -33,6 +33,9 @@
   },
   {
    "role": "Stock User"
+  },
+  {
+   "role": "Sales Admin"
   }
  ]
 }
