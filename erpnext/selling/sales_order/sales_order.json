@@ -169,28 +169,11 @@
   "column_break_108",
   "auto_repeat",
   "update_auto_repeat_reference",
-  "section_break_2",
-  "deposit_value",
-  "return_date",
-  "due_date",
-  "voucher",
-  "column_break_5",
-  "kickback_payment",
-  "jo_value",
-  "kickback_value",
   "section_break_app",
   "sales_name",
   "approved_sales_manager",
   "approved_production",
-  "approved_rnd",
-  "approved_finance",
-  "column_break_approval",
-  "sales_signature",
-  "sales_manager_signature",
-  "production_signature",
-  "rnd_signature",
-  "finance_signature",
-  "link_quotation"
+  "approved_rnd"
  ],
  "fields": [
   {
@@ -225,7 +208,7 @@
    "fieldtype": "Select",
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Series",
+   "label": "No JO",
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
@@ -1546,7 +1529,7 @@
   {
    "fieldname": "jo_type",
    "fieldtype": "Select",
-   "label": "Type",
+   "label": "Jenis JO",
    "options": "\nNew (SI Baru)\nExtend (SI Perpanjang)\nFree (Gratis/Invest)",
    "reqd": 1
   },
@@ -1618,127 +1601,109 @@
   },
   {
    "description": "Dibuat oleh",
-   "fetch_from": "link_quotation.sales_name",
    "fieldname": "sales_name",
    "fieldtype": "Data",
    "label": "Made by"
   },
   {
-   "description": "Disetujui oleh Sales Manager",
    "fieldname": "approved_sales_manager",
    "fieldtype": "Data",
    "label": "Approved By Sales Manager"
   },
   {
-   "description": "Disetujui oleh Produksi",
    "fieldname": "approved_production",
    "fieldtype": "Data",
    "label": "Approved By Production"
   },
   {
-   "description": "Disetujui oleh RND",
    "fieldname": "approved_rnd",
    "fieldtype": "Data",
    "label": "Approved By RND"
   },
   {
-   "description": "Disetujui oleh Finance",
-   "fieldname": "approved_finance",
-   "fieldtype": "Data",
-   "label": "Approved By Finance"
+   "fieldname": "tgl_byr_kickback",
+   "fieldtype": "Date",
+   "label": "Tanggal Bayar Kickback"
   },
   {
-   "fieldname": "column_break_approval",
-   "fieldtype": "Column Break"
-  },
-  {
-   "description": "Tanda Tangan Sales",
-   "fetch_from": "link_quotation.ttd_sales",
-   "fieldname": "sales_signature",
-   "fieldtype": "Attach Image",
-   "label": "Sales"
-  },
-  {
-   "description": "Tanda Tangan Produksi",
-   "fieldname": "production_signature",
-   "fieldtype": "Attach Image",
-   "label": "Production"
-  },
-  {
-   "description": "Tanda Tangan RND",
-   "fieldname": "rnd_signature",
-   "fieldtype": "Attach Image",
-   "label": "RND"
-  },
-  {
-   "description": "Tanda Tangan Finance",
-   "fieldname": "finance_signature",
-   "fieldtype": "Attach Image",
-   "label": "Finance"
-  },
-  {
-   "description": "Tanda Tangan Sales Manager",
-   "fieldname": "sales_manager_signature",
-   "fieldtype": "Attach Image",
-   "label": "Sales Manager"
-  },
-  {
-   "fieldname": "link_quotation",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Get from Quotation",
-   "options": "Quotation"
-  },
-  {
-   "fieldname": "section_break_2",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "deposit_value",
-   "fieldtype": "Int",
+   "fieldname": "nilai_deposit",
+   "fieldtype": "Currency",
    "label": "Nilai Deposit",
-   "non_negative": 1
+   "precision": "0"
   },
   {
-   "fieldname": "return_date",
+   "fieldname": "tgl_jo",
    "fieldtype": "Date",
-   "label": "Tanggal Retur"
+   "label": "Tanggal JO"
   },
   {
-   "fieldname": "due_date",
-   "fieldtype": "Date",
+   "fieldname": "nm_lokasi",
+   "fieldtype": "Data",
+   "label": "Nama Lokasi"
+  },
+  {
+   "fieldname": "nm_produk",
+   "fieldtype": "Data",
+   "label": "Nama Produk"
+  },
+  {
+   "fieldname": "ukuran",
+   "fieldtype": "Data",
+   "label": "Ukuran"
+  },
+  {
+   "fieldname": "dateline",
+   "fieldtype": "Data",
+   "label": "Dateline"
+  },
+  {
+   "fieldname": "tgl_selesai",
+   "fieldtype": "Data",
+   "label": "Tanggal Selesai"
+  },
+  {
+   "fieldname": "no_kontrak",
+   "fieldtype": "Data",
+   "label": "No Kotrak"
+  },
+  {
+   "fieldname": "periode_kontrak",
+   "fieldtype": "Data",
+   "label": "Periode Kontrak"
+  },
+  {
+   "fieldname": "tgl_lunas",
+   "fieldtype": "Data",
    "label": "Tanggal Lunas"
   },
   {
-   "fieldname": "voucher",
+   "fieldname": "nilai_job_order",
    "fieldtype": "Data",
-   "label": "Voucher"
-  },
-  {
-   "fieldname": "kickback_payment",
-   "fieldtype": "Date",
-   "label": "Tanggal Bayar Kick Back"
-  },
-  {
-   "fieldname": "jo_value",
-   "fieldtype": "Int",
    "label": "Nilai Job Order"
   },
   {
-   "fieldname": "kickback_value",
-   "fieldtype": "Int",
-   "label": "Nilai Kickback"
+   "fieldname": "nilai_bersih_jo",
+   "fieldtype": "Currency",
+   "label": "Nilai Bersih JO",
+   "precision": "0"
   },
   {
-   "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
+   "fieldname": "pajak_produksi",
+   "fieldtype": "Currency",
+   "label": "Pajak produksi",
+   "precision": "0"
+  },
+  {
+   "fieldname": "nilai_sales",
+   "fieldtype": "Data",
+   "label": "Nilai Sales"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-19 10:06:07.484089",
+ "modified": "2021-10-18 15:37:43.996217",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",

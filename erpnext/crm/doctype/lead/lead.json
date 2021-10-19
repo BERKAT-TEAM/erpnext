@@ -243,18 +243,24 @@
   {
    "fieldname": "city",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "City/Town",
-   "mandatory_depends_on": "eval: doc.address_title && doc.address_type"
+   "mandatory_depends_on": "eval: doc.address_title && doc.address_type",
+   "print_hide": 1
   },
   {
    "fieldname": "county",
    "fieldtype": "Data",
-   "label": "County"
+   "hidden": 1,
+   "label": "County",
+   "print_hide": 1
   },
   {
    "fieldname": "state",
    "fieldtype": "Data",
-   "label": "State"
+   "hidden": 1,
+   "label": "State",
+   "print_hide": 1
   },
   {
    "fieldname": "country",
@@ -266,7 +272,9 @@
   {
    "fieldname": "pincode",
    "fieldtype": "Data",
-   "label": "Postal Code"
+   "hidden": 1,
+   "label": "Postal Code",
+   "print_hide": 1
   },
   {
    "fieldname": "column_break2",
@@ -478,7 +486,7 @@
  "idx": 5,
  "image_field": "image",
  "links": [],
- "modified": "2021-10-06 14:39:17.538088",
+ "modified": "2021-10-19 12:38:28.394175",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Lead",

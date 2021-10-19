@@ -836,7 +836,6 @@
    "options": "fa fa-money"
   },
   {
-   "description": "Will also apply for variants",
    "fieldname": "taxes",
    "fieldtype": "Table",
    "label": "Taxes",
@@ -1226,7 +1225,6 @@
    "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20"
   },
   {
-   "default": "&lt;iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6664270097594!2d106.82496411534527!3d-6.175392395529197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1634198009768!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"&gt;&lt;/iframe&gt;",
    "fieldname": "link_map_location",
    "fieldtype": "Attach",
    "label": "Location Map (Link)"
@@ -1265,7 +1263,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 2,
- "modified": "2021-10-18 13:58:11.006293",
+ "modified": "2021-10-19 12:08:10.483908",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
