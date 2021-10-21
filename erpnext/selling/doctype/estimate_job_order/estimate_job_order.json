@@ -1,0 +1,271 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2021-10-19 10:37:44.130144",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "column_break_1",
+  "est_beli_lokasi_1",
+  "est_tamb_lokasi_1",
+  "est_beli_listrik_1",
+  "total_est_lokasi_1",
+  "column_break_2",
+  "est_beli_lokasi_2",
+  "est_tamb_sewa_2",
+  "est_beli_listrik_2",
+  "total_est_lokasi_2",
+  "tanggal_bayar_1",
+  "tgl_bayar_lokasi",
+  "tgl_tamb_sewa",
+  "beli_listrik",
+  "section_break_2",
+  "column_break_3",
+  "est_bahan_baku_1",
+  "est_tenaga_kerja_1",
+  "est_by_lap_1",
+  "total_produksi_1",
+  "column_break_4",
+  "est_bahan_baku_2",
+  "est_tenaga_kerja_2",
+  "est_by_lap_2",
+  "total_produksi_2",
+  "section_break_3",
+  "column_break_5",
+  "est_pajak_dasar_1",
+  "est_koordinasi_1",
+  "est_by_urus_pajak_1",
+  "total_pajak_1",
+  "column_break_6",
+  "est_pajak_dasar_2",
+  "est_koordinasi_2",
+  "est_by_urus_pajak_2",
+  "total_pajak_2",
+  "column_break_7",
+  "tgl_pajak_dasar",
+  "tgl_koordinasi",
+  "tgl_urus_pajak"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break",
+   "label": "Estimasi Harga Poko JO"
+  },
+  {
+   "fieldname": "est_beli_lokasi_1",
+   "fieldtype": "Int",
+   "label": "Est. Beli Lokasi"
+  },
+  {
+   "fieldname": "est_tamb_lokasi_1",
+   "fieldtype": "Int",
+   "label": "Est. Tamb Sewa"
+  },
+  {
+   "fieldname": "est_beli_listrik_1",
+   "fieldtype": "Int",
+   "label": "Est. Beli Listrik"
+  },
+  {
+   "fieldname": "total_est_lokasi_1",
+   "fieldtype": "Data",
+   "label": "Total Est Lokasi"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break",
+   "label": "Realisasi Harga Pokok JO - Beli Lokasi"
+  },
+  {
+   "fieldname": "est_beli_lokasi_2",
+   "fieldtype": "Int",
+   "label": "Est. Beli Lokasi"
+  },
+  {
+   "fieldname": "est_tamb_sewa_2",
+   "fieldtype": "Int",
+   "label": "Est. Tamb Sewa"
+  },
+  {
+   "fieldname": "est_beli_listrik_2",
+   "fieldtype": "Int",
+   "label": "Est. Beli Listrik"
+  },
+  {
+   "fieldname": "total_est_lokasi_2",
+   "fieldtype": "Int",
+   "label": "Total Est Lokasi"
+  },
+  {
+   "fieldname": "tanggal_bayar_1",
+   "fieldtype": "Column Break",
+   "label": "Tanggal Bayar"
+  },
+  {
+   "fieldname": "tgl_bayar_lokasi",
+   "fieldtype": "Date",
+   "label": "Beli Lokasi"
+  },
+  {
+   "fieldname": "tgl_tamb_sewa",
+   "fieldtype": "Date",
+   "label": "Tamb Sewa"
+  },
+  {
+   "fieldname": "beli_listrik",
+   "fieldtype": "Date",
+   "label": "Beli Listrik"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Produksi"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break",
+   "label": "Est Produksi"
+  },
+  {
+   "fieldname": "est_bahan_baku_1",
+   "fieldtype": "Int",
+   "label": "Est Bahan Baku"
+  },
+  {
+   "fieldname": "est_tenaga_kerja_1",
+   "fieldtype": "Int",
+   "label": "Est Tenaga Kerja"
+  },
+  {
+   "fieldname": "est_by_lap_1",
+   "fieldtype": "Int",
+   "label": "Est By Lapangan"
+  },
+  {
+   "fieldname": "total_produksi_1",
+   "fieldtype": "Int",
+   "label": "Total Est Produksi"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break",
+   "label": "Realisasi produk"
+  },
+  {
+   "fieldname": "est_bahan_baku_2",
+   "fieldtype": "Int",
+   "label": "Est Bahan Baku"
+  },
+  {
+   "fieldname": "est_tenaga_kerja_2",
+   "fieldtype": "Int",
+   "label": "Est Tenaga Kerja"
+  },
+  {
+   "fieldname": "est_by_lap_2",
+   "fieldtype": "Int",
+   "label": "Est By Lapangan"
+  },
+  {
+   "fieldname": "total_produksi_2",
+   "fieldtype": "Int",
+   "label": "Total Est Produksi"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Pajak"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break",
+   "label": "Estimasi Pajak"
+  },
+  {
+   "fieldname": "est_pajak_dasar_1",
+   "fieldtype": "Int",
+   "label": "Est Pajak Dasar"
+  },
+  {
+   "fieldname": "est_koordinasi_1",
+   "fieldtype": "Int",
+   "label": "Est Koordinasi"
+  },
+  {
+   "fieldname": "est_by_urus_pajak_1",
+   "fieldtype": "Int",
+   "label": "Est By Urus Pajak"
+  },
+  {
+   "fieldname": "total_pajak_1",
+   "fieldtype": "Int",
+   "label": "Total Est Pajak"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break",
+   "label": "Realisasi Pajak"
+  },
+  {
+   "fieldname": "est_pajak_dasar_2",
+   "fieldtype": "Int",
+   "label": "Est Pajak Dasar"
+  },
+  {
+   "fieldname": "est_koordinasi_2",
+   "fieldtype": "Int",
+   "label": "Est Koordinasi"
+  },
+  {
+   "fieldname": "est_by_urus_pajak_2",
+   "fieldtype": "Int",
+   "label": "Est By Urus Pajak"
+  },
+  {
+   "fieldname": "total_pajak_2",
+   "fieldtype": "Int",
+   "label": "Total Est Pajak"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break",
+   "label": "Tanggal Bayar"
+  },
+  {
+   "fieldname": "tgl_pajak_dasar",
+   "fieldtype": "Date",
+   "label": "Pajak Dasar"
+  },
+  {
+   "fieldname": "tgl_koordinasi",
+   "fieldtype": "Date",
+   "label": "Koordinasi"
+  },
+  {
+   "fieldname": "tgl_urus_pajak",
+   "fieldtype": "Date",
+   "label": "Urus Pajak"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-10-19 10:40:30.480091",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Estimate Job Order",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

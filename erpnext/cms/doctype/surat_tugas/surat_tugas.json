@@ -11,23 +11,30 @@
   "no_dokumen",
   "no_revisi",
   "owner",
-  "jabatan",
-  "no_service",
   "no_jo",
   "client",
   "nama_konten",
   "lokasi",
-  "column_break1",
   "tanggal_upload",
+  "column_break_1",
   "deadline",
   "perintah_kerja",
-  "kepada",
   "jenis_media",
   "keterangan",
   "foto_sebelum",
   "foto_sesudah",
   "amended_from",
-  "amended_from"
+  "sction_break_1",
+  "start",
+  "end",
+  "column_break_2",
+  "procedure",
+  "sewa_alat_kerja",
+  "alat_bahan_kerja",
+  "bahan_kerja",
+  "section_break_2",
+  "pic_grup",
+  "pic_qc"
  ],
  "fields": [
   {
@@ -58,19 +65,6 @@
    "reqd": 1
   },
   {
-   "description": "Jabatan",
-   "fetch_from": "nama.role_profile_name",
-   "fieldname": "jabatan",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Designation"
-  },
-  {
-   "fieldname": "no_service",
-   "fieldtype": "Data",
-   "label": "No. Service"
-  },
-  {
    "fieldname": "no_jo",
    "fieldtype": "Link",
    "label": "Job Order",
@@ -95,10 +89,6 @@
    "label": "Lokasi"
   },
   {
-   "fieldname": "column_break1",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "tanggal_upload",
    "fieldtype": "Date",
    "label": "Tanggal Upload",
@@ -115,13 +105,6 @@
    "fieldtype": "Select",
    "label": "Perintah Kerja",
    "options": "\nUpload Content\nTakeout Content\nChange content"
-  },
-  {
-   "description": "Kepada",
-   "fieldname": "kepada",
-   "fieldtype": "Link",
-   "label": "To",
-   "options": "User"
   },
   {
    "fieldname": "jenis_media",
@@ -163,13 +146,70 @@
    "options": "Surat Tugas",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start",
+   "fieldtype": "Date",
+   "label": "Start"
+  },
+  {
+   "fieldname": "end",
+   "fieldtype": "Date",
+   "label": "End"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "procedure",
+   "fieldtype": "Select",
+   "label": "Prosedur Pelaksanaan",
+   "options": "\nSurat Ijin\nSticker Pajak\nPemasangan Dudukan\nPemasangan Barang\nLampu Nyala\nMateri / Gambar\nInstalasi Listrik\nKebersihan Barang\nKebersihan Tempat Kerja"
+  },
+  {
+   "fieldname": "sewa_alat_kerja",
+   "fieldtype": "Data",
+   "label": "Sewa Alat Kerja"
+  },
+  {
+   "fieldname": "alat_bahan_kerja",
+   "fieldtype": "Data",
+   "label": "Alat bahan Kerja"
+  },
+  {
+   "fieldname": "bahan_kerja",
+   "fieldtype": "Data",
+   "label": "Bahan Kerja"
+  },
+  {
+   "fieldname": "sction_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pic_grup",
+   "fieldtype": "Data",
+   "label": "PIC Grup Pelaksana"
+  },
+  {
+   "fieldname": "pic_qc",
+   "fieldtype": "Data",
+   "label": "PIC QC"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 12,
- "modified": "2021-10-15 16:52:48.813457",
+ "modified": "2021-10-18 16:10:56.083825",
  "modified_by": "Administrator",
  "module": "CMS",
  "name": "Surat Tugas",

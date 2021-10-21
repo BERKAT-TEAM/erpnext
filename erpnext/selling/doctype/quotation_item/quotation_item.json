@@ -12,6 +12,7 @@
   "item_name",
   "section_break_5",
   "description",
+  "period",
   "point_of_interest",
   "count_car",
   "count_motor",
@@ -23,6 +24,7 @@
   "muka",
   "pixel_pitch",
   "item_spot",
+  "schedule",
   "brand",
   "image_section",
   "image",
@@ -36,7 +38,6 @@
   "stock_qty",
   "section_break_16",
   "selling_price_list",
-  "quotation_period",
   "price_list_rate",
   "base_price_list_rate",
   "discount_and_margin",
@@ -680,7 +681,6 @@
    "label": "Spot",
    "oldfieldname": "item_group",
    "oldfieldtype": "Link",
-   "options": "Item Group",
    "print_hide": 1,
    "read_only": 1
   },
@@ -695,13 +695,6 @@
    "hidden": 1,
    "label": "Price List",
    "options": "Price List"
-  },
-  {
-   "fetch_from": "selling_price_list.price_list_name",
-   "fieldname": "quotation_period",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Period"
   },
   {
    "fetch_from": "item_code.point_of_interest",
@@ -730,12 +723,25 @@
    "fieldtype": "Data",
    "label": "Count Traffic People",
    "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.schedule",
+   "fieldname": "schedule",
+   "fieldtype": "Data",
+   "label": "Schedule"
+  },
+  {
+   "description": "Days (hari)",
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Period"
   }
  ],
  "idx": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-10-18 08:54:15.424940",
+ "modified": "2021-10-19 17:13:04.602084",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation Item",

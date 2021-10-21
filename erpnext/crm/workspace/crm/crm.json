@@ -22,7 +22,7 @@
    "label": "Won Opportunities"
   }
  ],
- "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Incoming Leads\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Opportunity Trends\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Won Opportunities\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Top Customers\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Person's Count\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contact\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"List Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Calendar\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communication\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Sales Pipeline\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lead Pipeline\",\"col\":6}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Opportunity Pipeline\",\"col\":6}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Incoming Leads\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Opportunity Trends\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Won Opportunities\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Top Customers\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Person's Count\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contact\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"List Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Calendar\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communication\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Sales Pipeline\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lead Pipeline\",\"col\":6}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Opportunity Pipeline\",\"col\":6}},{\"type\":\"header\",\"data\":{\"text\":\"Reports &amp; Masters\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2020-01-23 14:48:30.183272",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -437,7 +437,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-15 09:27:26.751942",
+ "modified": "2021-10-18 11:51:10.882577",
  "modified_by": "Administrator",
  "module": "CRM",
  "modules": 0,
@@ -450,7 +450,7 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 3,
+ "sequence_id": 2,
  "shortcuts": [
   {
    "color": "Yellow",
@@ -472,6 +472,13 @@
    "label": "Appointment",
    "link_to": "Appointment",
    "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Dashboard",
+   "link_to": "CRM",
+   "type": "Dashboard"
   },
   {
    "color": "Grey",

@@ -27,6 +27,10 @@
    "width": "Half"
   },
   {
+   "chart": "Lose Opp (This Month)",
+   "width": "Half"
+  },
+  {
    "chart": "Territory Wise Opportunity Count",
    "width": "Half"
   },
@@ -49,10 +53,6 @@
   {
    "chart": "Owner's Count",
    "width": "Half"
-  },
-  {
-   "chart": "Lose Opp (This Month)",
-   "width": "Half"
   }
  ],
  "creation": "2020-07-20 20:17:15.985657",
@@ -62,7 +62,7 @@
  "idx": 0,
  "is_default": 1,
  "is_standard": 1,
- "modified": "2021-10-07 16:33:14.582467",
+ "modified": "2021-10-19 15:22:50.002292",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "CRM",
