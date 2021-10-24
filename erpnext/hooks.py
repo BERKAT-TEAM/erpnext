@@ -351,8 +351,7 @@ after_migrate = ["erpnext.setup.install.update_select_perm_after_install"]
 scheduler_events = {
 	"cron": {
 		"0/30 * * * *": [
-			"erpnext.utilities.doctype.video.video.update_youtube_data",
-			"frappe.email.queue.flush",
+			"erpnext.utilities.doctype.video.video.update_youtube_data"
 		]
 	},
 	"all": [
