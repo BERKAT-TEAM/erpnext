@@ -705,43 +705,32 @@
             "label": "Count Traffic People",
             "read_only": 1
         },
-        { <<
-            << << < HEAD "fetch_from": "item_code.dimension",
+        {
+            "fetch_from": "item_code.dimension",
             "fieldname": "dimension",
             "fieldtype": "Data",
             "label": "Dimension / Muka"
         },
-        { ===
-            === = >>>
-            >>> > 07 afa0f25b7b350123edd99b20e17441e7a158df "fetch_from": "item_code.schedule",
+        {
+            "fetch_from": "item_code.schedule",
             "fieldname": "schedule",
             "fieldtype": "Data",
             "label": "Schedule"
         },
-        { <<
-            << << < HEAD "fieldname": "period",
-            "fieldtype": "Data",
-            ===
-            === =
+        {
             "description": "Days (hari)",
             "fieldname": "period",
             "fieldtype": "Data",
             "in_list_view": 1,
-            >>>
-            >>> > 07 afa0f25b7b350123edd99b20e17441e7a158df "label": "Period"
+            "label": "Period"
         }
     ],
     "idx": 1,
     "istable": 1,
     "links": [],
-    <<
-    << << < HEAD "max_attachments": 1000000,
-    "modified": "2021-10-22 16:14:14.614193",
-    ===
-    === =
+    "max_attachments": 1000000,
     "modified": "2021-10-19 17:13:04.602084",
-    >>>
-    >>> > 07 afa0f25b7b350123edd99b20e17441e7a158df "modified_by": "Administrator",
+    "modified_by": "Administrator",
     "module": "Selling",
     "name": "Quotation Item",
     "owner": "Administrator",
