@@ -19,13 +19,16 @@
   "customer",
   "customer_name",
   "nm_lokasi",
-  "nm_produk",
+  "nm_product",
   "ukuran",
   "dateline",
   "tgl_selesai",
   "no_kontrak",
   "periode_kontrak",
+  "nilai_deposit",
   "tgl_lunas",
+  "tgl_byr_kickback",
+  "nilai_job_order",
   "order_type",
   "skip_delivery_note",
   "column_break1",
@@ -76,14 +79,8 @@
   "column_break_33a",
   "total_qty",
   "base_total",
-  "nilai_job_order",
   "base_net_total",
   "kickback",
-  "nilai_bersih_jo",
-  "pajak_produksi",
-  "nilai_sales",
-  "tgl_byr_kickback",
-  "nilai_deposit",
   "column_break_33",
   "total_net_weight",
   "total",
@@ -225,7 +222,7 @@
    "fieldtype": "Select",
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Series",
+   "label": "No JO",
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
@@ -622,6 +619,7 @@
    "options": "Barcode"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "items",
    "fieldtype": "Table",
    "hide_days": 1,
@@ -1546,7 +1544,7 @@
   {
    "fieldname": "jo_type",
    "fieldtype": "Select",
-   "label": "Type",
+   "label": "Jenis JO",
    "options": "\nNew (SI Baru)\nExtend (SI Perpanjang)\nFree (Gratis/Invest)",
    "reqd": 1
   },
@@ -1732,13 +1730,74 @@
   {
    "fieldname": "column_break_5",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tgl_jo",
+   "fieldtype": "Date",
+   "label": "Tanggal JO"
+  },
+  {
+   "fieldname": "nm_lokasi",
+   "fieldtype": "Data",
+   "label": "Nama Lokasi"
+  },
+  {
+   "fieldname": "nm_product",
+   "fieldtype": "Data",
+   "label": "Nama Produk"
+  },
+  {
+   "fieldname": "ukuran",
+   "fieldtype": "Data",
+   "label": "Ukuran"
+  },
+  {
+   "fieldname": "dateline",
+   "fieldtype": "Date",
+   "label": "Dateline"
+  },
+  {
+   "fieldname": "tgl_selesai",
+   "fieldtype": "Date",
+   "label": "Tanggal Selesai"
+  },
+  {
+   "fieldname": "no_kontrak",
+   "fieldtype": "Data",
+   "label": "No Kontrak"
+  },
+  {
+   "fieldname": "periode_kontrak",
+   "fieldtype": "Data",
+   "label": "Periode Kontrak"
+  },
+  {
+   "fieldname": "nilai_deposit",
+   "fieldtype": "Currency",
+   "label": "Nilai Deposit",
+   "precision": "0"
+  },
+  {
+   "fieldname": "tgl_lunas",
+   "fieldtype": "Date",
+   "label": "Tanggal Lunas"
+  },
+  {
+   "fieldname": "tgl_byr_kickback",
+   "fieldtype": "Date",
+   "label": "Tanggal Bayar Kickback"
+  },
+  {
+   "fieldname": "nilai_job_order",
+   "fieldtype": "Data",
+   "label": "Nilai Job Order"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-19 10:06:07.484089",
+ "modified": "2021-10-19 16:21:28.212546",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",

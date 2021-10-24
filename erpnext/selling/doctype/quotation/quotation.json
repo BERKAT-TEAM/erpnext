@@ -50,7 +50,7 @@
   "ignore_pricing_rule",
   "items_section",
   "items",
-  "quotation_period",
+  "period",
   "bundle_items_section",
   "packed_items",
   "pricing_rule_details",
@@ -76,6 +76,7 @@
   "base_total_taxes_and_charges",
   "column_break_42",
   "total_taxes_and_charges",
+  "data_67",
   "section_break_44",
   "coupon_code",
   "referral_sales_partner",
@@ -503,7 +504,8 @@
    "fieldtype": "Link",
    "label": "Tax Category",
    "options": "Tax Category",
-   "print_hide": 1
+   "print_hide": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_34",
@@ -529,7 +531,8 @@
    "oldfieldname": "charge",
    "oldfieldtype": "Link",
    "options": "Sales Taxes and Charges Template",
-   "print_hide": 1
+   "print_hide": 1,
+   "reqd": 1
   },
   {
    "fieldname": "taxes",
@@ -543,6 +546,7 @@
    "collapsible": 1,
    "fieldname": "sec_tax_breakup",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Tax Breakup"
   },
   {
@@ -610,7 +614,7 @@
   {
    "fieldname": "base_discount_amount",
    "fieldtype": "Currency",
-   "label": "Additional Discount Amount (Company Currency)",
+   "label": "Discount ",
    "options": "Company:company:default_currency",
    "print_hide": 1,
    "read_only": 1
@@ -973,13 +977,6 @@
    "label": "Sales Email"
   },
   {
-   "description": "How long the customer want to rent the SI? (Berapa lama customer mau menyewa SI-nya?)",
-   "fetch_from": "selling_price_list.price_list_name",
-   "fieldname": "quotation_period",
-   "fieldtype": "Data",
-   "label": "Period"
-  },
-  {
    "fieldname": "sales_name",
    "fieldtype": "Link",
    "label": "Account Manager (Sales)",
@@ -995,14 +992,24 @@
    "fieldtype": "Attach Image",
    "label": "TTD Sales",
    "read_only": 1
+  },
+  {
+   "fieldname": "data_67",
+   "fieldtype": "Data"
+  },
+  {
+   "description": "How long the customer want to rent the SI? (Berapa lama customer mau menyewa SI-nya?)",
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "label": "Period"
   }
  ],
  "icon": "fa fa-shopping-cart",
  "idx": 82,
  "is_submittable": 1,
  "links": [],
- "max_attachments": 1,
- "modified": "2021-10-14 17:35:36.052724",
+ "max_attachments": 1000000,
+ "modified": "2021-10-22 16:13:59.025353",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",

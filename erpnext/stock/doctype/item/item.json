@@ -45,19 +45,17 @@
   "brand",
   "description",
   "column_break12",
-  "panjang",
-  "lebar",
-  "muka",
+  "dimension",
   "orientation",
   "item_slot",
   "schedule",
+  "item_spot",
   "duration",
   "column_break9",
   "point_of_interest",
   "traffic_car",
   "traffic_motor",
   "traffic_people",
-  "item_spot",
   "pixel_pitch",
   "sb_barcodes",
   "barcodes",
@@ -258,6 +256,7 @@
    "default": "0",
    "fieldname": "allow_alternative_item",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Allow Alternative Item"
   },
   {
@@ -269,7 +268,8 @@
    "hidden": 1,
    "label": "Maintain Stock",
    "oldfieldname": "is_stock_item",
-   "oldfieldtype": "Select"
+   "oldfieldtype": "Select",
+   "reqd": 1
   },
   {
    "default": "1",
@@ -277,7 +277,8 @@
    "fieldname": "include_item_in_manufacturing",
    "fieldtype": "Check",
    "hidden": 1,
-   "label": "Include Item In Manufacturing"
+   "label": "Include Item In Manufacturing",
+   "reqd": 1
   },
   {
    "bold": 1,
@@ -308,6 +309,7 @@
    "fieldtype": "Check",
    "hidden": 1,
    "label": "Is Fixed Asset",
+   "reqd": 1,
    "set_only_once": 1
   },
   {
@@ -330,7 +332,8 @@
    "in_preview": 1,
    "label": "Image (Mockup)",
    "options": "image",
-   "print_hide": 1
+   "print_hide": 1,
+   "reqd": 1
   },
   {
    "fieldname": "section_break_11",
@@ -353,7 +356,8 @@
    "in_preview": 1,
    "label": "Description",
    "oldfieldname": "description",
-   "oldfieldtype": "Text"
+   "oldfieldtype": "Text",
+   "reqd": 1
   },
   {
    "fieldname": "sb_barcodes",
@@ -1086,20 +1090,23 @@
    "fieldtype": "Float",
    "label": "Over Delivery/Receipt Allowance (%)",
    "oldfieldname": "tolerance",
-   "oldfieldtype": "Currency"
+   "oldfieldtype": "Currency",
+   "reqd": 1
   },
   {
    "depends_on": "eval:!doc.__islocal && !doc.is_fixed_asset",
    "fieldname": "over_billing_allowance",
    "fieldtype": "Float",
-   "label": "Over Billing Allowance (%)"
+   "label": "Over Billing Allowance (%)",
+   "reqd": 1
   },
   {
    "default": "0",
    "depends_on": "is_fixed_asset",
    "fieldname": "auto_create_assets",
    "fieldtype": "Check",
-   "label": "Auto Create Assets on Purchase"
+   "label": "Auto Create Assets on Purchase",
+   "reqd": 1
   },
   {
    "fieldname": "default_item_manufacturer",
@@ -1123,55 +1130,43 @@
    "description": "Address location (Alamat lokasi)",
    "fieldname": "item_location",
    "fieldtype": "Data",
-   "label": "Location"
+   "label": "Location",
+   "reqd": 1
   },
   {
    "fieldname": "map_location",
    "fieldtype": "Attach Image",
-   "label": "Location Map (Image)"
-  },
-  {
-   "description": "Meters",
-   "fieldname": "panjang",
-   "fieldtype": "Data",
-   "label": "Length"
+   "label": "Location Map (Image)",
+   "reqd": 1
   },
   {
    "fieldname": "column_break9",
    "fieldtype": "Column Break"
   },
   {
-   "description": "Meters",
-   "fieldname": "lebar",
-   "fieldtype": "Data",
-   "label": "Width"
-  },
-  {
-   "description": "Sides (Muka)",
-   "fieldname": "muka",
-   "fieldtype": "Data",
-   "label": "Side"
-  },
-  {
    "fieldname": "orientation",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Orientation",
    "options": "\nVertical\nHorizontal"
   },
   {
    "fieldname": "point_of_interest",
    "fieldtype": "Data",
-   "label": "Point of Interest"
+   "label": "Point of Interest",
+   "reqd": 1
   },
   {
    "fieldname": "traffic_car",
    "fieldtype": "Data",
-   "label": "Count Traffic Car"
+   "label": "Count Traffic Car",
+   "reqd": 1
   },
   {
    "fieldname": "traffic_motor",
    "fieldtype": "Data",
-   "label": "Count Traffic Motor"
+   "label": "Count Traffic Motor",
+   "reqd": 1
   },
   {
    "fieldname": "traffic_people",
@@ -1187,57 +1182,65 @@
    "fieldname": "area",
    "fieldtype": "Link",
    "label": "Area",
-   "options": "Territory"
+   "options": "Territory",
+   "reqd": 1
   },
   {
    "description": "Specific location (Lokasi spesifik)",
    "fieldname": "media_location",
    "fieldtype": "Data",
-   "label": "Media Location"
+   "label": "Media Location",
+   "reqd": 1
   },
   {
    "fieldname": "ads_placement",
    "fieldtype": "Select",
    "label": "Ads Placement",
-   "options": "\nIndoor\nOutdoor"
+   "options": "\nIndoor\nOutdoor",
+   "reqd": 1
   },
   {
    "fieldname": "column_break12",
    "fieldtype": "Column Break"
   },
   {
-   "description": "Berapa Spot per hari ?",
    "fieldname": "item_spot",
    "fieldtype": "Int",
    "label": "Spot",
-   "non_negative": 1
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "pixel_pitch",
    "fieldtype": "Data",
-   "label": "Pixel Pitch"
+   "label": "Pixel Pitch",
+   "reqd": 1
   },
   {
    "default": "0",
    "fieldname": "item_slot",
    "fieldtype": "Select",
    "label": "Slot",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20"
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20",
+   "reqd": 1
   },
   {
    "fieldname": "link_map_location",
    "fieldtype": "Attach",
-   "label": "Location Map (Link)"
+   "label": "Location Map (Link)",
+   "reqd": 1
   },
   {
    "fieldname": "number_of_unit",
    "fieldtype": "Int",
-   "label": "Number of Unit"
+   "label": "Number of Unit",
+   "reqd": 1
   },
   {
    "fieldname": "schedule",
    "fieldtype": "Data",
-   "label": "Schedule"
+   "label": "Schedule",
+   "reqd": 1
   },
   {
    "fieldname": "pricing",
@@ -1253,7 +1256,14 @@
   {
    "fieldname": "duration",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Duration"
+  },
+  {
+   "fieldname": "dimension",
+   "fieldtype": "Data",
+   "label": "Dimension / Muka",
+   "reqd": 1
   }
  ],
  "has_web_view": 1,
@@ -1262,8 +1272,8 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "max_attachments": 2,
- "modified": "2021-10-19 12:08:10.483908",
+ "max_attachments": 1000000,
+ "modified": "2021-10-22 16:37:21.073613",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
