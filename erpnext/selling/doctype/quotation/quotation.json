@@ -488,8 +488,8 @@
   {
    "fieldname": "total_net_weight",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Total Net Weight",
-   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -1001,6 +1001,7 @@
    "description": "How long the customer want to rent the SI? (Berapa lama customer mau menyewa SI-nya?)",
    "fieldname": "period",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Period"
   }
  ],
@@ -1009,7 +1010,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 1000000,
- "modified": "2021-10-22 16:13:59.025353",
+ "modified": "2021-10-25 20:38:29.291410",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",
