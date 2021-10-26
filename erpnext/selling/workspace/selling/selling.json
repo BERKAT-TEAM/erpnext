@@ -79,28 +79,6 @@
    "dependencies": "Item, Customer",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Blanket Order",
-   "link_count": 0,
-   "link_to": "Blanket Order",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Item",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sales Partner",
-   "link_count": 0,
-   "link_to": "Sales Partner",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Item, Customer",
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Sales Person",
    "link_count": 0,
    "link_to": "Sales Person",
@@ -167,50 +145,6 @@
    "label": "Product Bundle",
    "link_count": 0,
    "link_to": "Product Bundle",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Promotional Scheme",
-   "link_count": 0,
-   "link_to": "Promotional Scheme",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Item",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Pricing Rule",
-   "link_count": 0,
-   "link_to": "Pricing Rule",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Shipping Rule",
-   "link_count": 0,
-   "link_to": "Shipping Rule",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Coupon Code",
-   "link_count": 0,
-   "link_to": "Coupon Code",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -460,17 +394,6 @@
    "type": "Link"
   },
   {
-   "dependencies": "Item",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Available Stock for Packing Items",
-   "link_count": 0,
-   "link_to": "Available Stock for Packing Items",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
    "dependencies": "Sales Order",
    "hidden": 0,
    "is_query_report": 1,
@@ -507,31 +430,9 @@
    "dependencies": "Customer",
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Customer Credit Balance",
-   "link_count": 0,
-   "link_to": "Customer Credit Balance",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Customer",
-   "hidden": 0,
-   "is_query_report": 1,
    "label": "Customers Without Any Sales Transactions",
    "link_count": 0,
    "link_to": "Customers Without Any Sales Transactions",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Customer",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Sales Partners Commission",
-   "link_count": 0,
-   "link_to": "Sales Partners Commission",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -557,20 +458,9 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "dependencies": "Sales Order",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Sales Partner Target Variance Based On Item Group",
-   "link_count": 0,
-   "link_to": "Sales Partner Target Variance based on Item Group",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2021-10-15 09:27:26.877167",
+ "modified": "2021-10-26 16:21:57.990715",
  "modified_by": "Administrator",
  "module": "Selling",
  "modules": 0,
@@ -593,7 +483,7 @@
    "role": "Sales Master Manager"
   }
  ],
- "sequence_id": 4,
+ "sequence_id": 3,
  "shortcuts": [
   {
    "color": "Grey",

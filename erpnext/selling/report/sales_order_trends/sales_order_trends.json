@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 3,
  "is_standard": "Yes",
- "modified": "2021-10-18 11:53:38.571258",
+ "modified": "2021-10-26 14:46:54.192164",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order Trends",
@@ -19,9 +19,6 @@
  "report_name": "Sales Order Trends",
  "report_type": "Script Report",
  "roles": [
-  {
-   "role": "Sales User"
-  },
   {
    "role": "Sales Manager"
   },
