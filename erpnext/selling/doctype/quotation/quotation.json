@@ -30,7 +30,6 @@
   "contact_section",
   "customer_address",
   "address_display",
-  "contact_person",
   "contact_display",
   "contact_mobile",
   "email_id",
@@ -40,6 +39,7 @@
   "shipping_address",
   "customer_group",
   "territory",
+  "contact_person",
   "currency_and_price_list",
   "currency",
   "conversion_rate",
@@ -76,7 +76,6 @@
   "base_total_taxes_and_charges",
   "column_break_42",
   "total_taxes_and_charges",
-  "data_67",
   "section_break_44",
   "coupon_code",
   "referral_sales_partner",
@@ -178,10 +177,10 @@
    "bold": 1,
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "hidden": 1,
    "in_global_search": 1,
    "label": "Customer Name",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break1",
@@ -271,10 +270,7 @@
    "fieldname": "contact_person",
    "fieldtype": "Link",
    "label": "Contact Person",
-   "oldfieldname": "contact_person",
-   "oldfieldtype": "Link",
-   "options": "Contact",
-   "print_hide": 1
+   "options": "Contact"
   },
   {
    "fieldname": "contact_display",
@@ -307,6 +303,7 @@
   {
    "fieldname": "shipping_address_name",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Shipping Address",
    "options": "Address",
    "print_hide": 1
@@ -314,6 +311,7 @@
   {
    "fieldname": "shipping_address",
    "fieldtype": "Small Text",
+   "hidden": 1,
    "label": "Shipping Address",
    "print_hide": 1,
    "read_only": 1
@@ -994,10 +992,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "data_67",
-   "fieldtype": "Data"
-  },
-  {
    "description": "How long the customer want to rent the SI? (Berapa lama customer mau menyewa SI-nya?)",
    "fieldname": "period",
    "fieldtype": "Data",
@@ -1010,7 +1004,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 1000000,
- "modified": "2021-10-25 20:38:29.291410",
+ "modified": "2021-10-28 01:29:53.570341",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",

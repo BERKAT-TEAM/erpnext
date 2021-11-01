@@ -1,0 +1,41 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}}]",
+ "creation": "2021-11-01 10:26:19.322239",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "retail",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "RND (MD)",
+ "links": [],
+ "modified": "2021-11-01 10:30:04.107551",
+ "modified_by": "Administrator",
+ "module": "CMS",
+ "modules": 0,
+ "name": "RND (MD)",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "public": 1,
+ "roles": [],
+ "sequence_id": 7,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "format": "{} To Approve",
+   "label": "Job Order",
+   "link_to": "Sales Order",
+   "stats_filter": "{\"workflow_state\":[\"=\",\"Approved By Production\"]}",
+   "type": "DocType"
+  }
+ ],
+ "title": "RND (MD)"
+}
