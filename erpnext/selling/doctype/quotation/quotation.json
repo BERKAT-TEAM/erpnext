@@ -544,7 +544,6 @@
    "collapsible": 1,
    "fieldname": "sec_tax_breakup",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Tax Breakup"
   },
   {
@@ -1004,7 +1003,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 1000000,
- "modified": "2021-10-28 01:29:53.570341",
+ "modified": "2021-11-02 11:27:17.328055",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",

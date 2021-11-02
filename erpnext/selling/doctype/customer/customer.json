@@ -18,7 +18,7 @@
   "customer_type",
   "pan",
   "tax_withholding_category",
-  "market_segment",
+  "industry",
   "default_bank_account",
   "lead_name",
   "opportunity_name",
@@ -94,7 +94,7 @@
   "more_info",
   "customer_details",
   "column_break_45",
-  "industry",
+  "industry_1",
   "language",
   "is_frozen",
   "column_break_38",
@@ -160,7 +160,7 @@
    "label": "Type",
    "oldfieldname": "customer_type",
    "oldfieldtype": "Select",
-   "options": "Company\nIndividual",
+   "options": "\nCompany\nIndividual",
    "reqd": 1
   },
   {
@@ -196,7 +196,6 @@
   {
    "fieldname": "account_manager",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Account Manager",
    "options": "User"
   },
@@ -435,12 +434,6 @@
    "hidden": 1
   },
   {
-   "fieldname": "market_segment",
-   "fieldtype": "Link",
-   "label": "Market Segment",
-   "options": "Market Segment"
-  },
-  {
    "default": "0",
    "fieldname": "is_frozen",
    "fieldtype": "Check",
@@ -602,13 +595,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "industry",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Industry",
-   "options": "Industry Type"
-  },
-  {
    "fieldname": "second_primary_address_and_contact_detail",
    "fieldtype": "Section Break",
    "label": "Secondary Personal Data"
@@ -616,10 +602,11 @@
   {
    "fieldname": "second_customer_primary_contact",
    "fieldtype": "Link",
-   "label": "Customer Primary Contact",
+   "label": "Customer Secondary Contact",
    "options": "Contact"
   },
   {
+   "fetch_from": "second_customer_primary_contact.phone",
    "fieldname": "second_mobile_no",
    "fieldtype": "Data",
    "label": "Phone Number"
@@ -640,13 +627,15 @@
   },
   {
    "fieldname": "second_customer_primary_address",
-   "fieldtype": "Data",
-   "label": "Customer Primary Address"
+   "fieldtype": "Link",
+   "label": "Customer Secondary Address",
+   "options": "Address"
   },
   {
    "fieldname": "second_designation",
-   "fieldtype": "Data",
-   "label": "Designation"
+   "fieldtype": "Date",
+   "label": "Designation",
+   "options": "Designation"
   },
   {
    "fieldname": "thrid_primary_address",
@@ -660,6 +649,7 @@
    "options": "Contact"
   },
   {
+   "fetch_from": "thrid_customer_contact.phone",
    "fieldname": "thrid_mobile_no",
    "fieldtype": "Data",
    "label": "Phone Number"
@@ -685,8 +675,9 @@
   },
   {
    "fieldname": "thrid_designation",
-   "fieldtype": "Data",
-   "label": "Designation"
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
   },
   {
    "fieldname": "breakf",
@@ -695,10 +686,12 @@
   },
   {
    "fieldname": "4th_customer_contact",
-   "fieldtype": "Data",
-   "label": "Customer 4th Contact"
+   "fieldtype": "Link",
+   "label": "Customer 4th Contact",
+   "options": "Contact"
   },
   {
+   "fetch_from": "4th_customer_contact.phone",
    "fieldname": "4th_mobile_no",
    "fieldtype": "Data",
    "label": "Phone Number"
@@ -724,15 +717,18 @@
   },
   {
    "fieldname": "4th_designation",
-   "fieldtype": "Data",
-   "label": "Designation"
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
   },
   {
    "fieldname": "5th_customer_contact",
-   "fieldtype": "Data",
-   "label": "Customer 5th Contact"
+   "fieldtype": "Link",
+   "label": "Customer 5th Contact",
+   "options": "Contact"
   },
   {
+   "fetch_from": "5th_customer_contact.phone",
    "fieldname": "5th_mobile_no",
    "fieldtype": "Data",
    "label": "Phone Number"
@@ -754,8 +750,9 @@
   },
   {
    "fieldname": "5th_designation",
-   "fieldtype": "Data",
-   "label": "Designation"
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
   },
   {
    "fieldname": "5th_personal_data_section",
@@ -765,6 +762,19 @@
   {
    "fieldname": "5th_personal_data",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "industry_1",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Industry",
+   "options": "Industry Type"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Link",
+   "label": "Industry",
+   "options": "Industry Type"
   }
  ],
  "icon": "fa fa-user",
@@ -778,7 +788,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2021-11-01 11:29:01.288623",
+ "modified": "2021-11-02 09:48:37.018384",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",

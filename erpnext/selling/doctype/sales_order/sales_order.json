@@ -15,6 +15,7 @@
   "title",
   "jo_type",
   "naming_series",
+  "rejected_reason",
   "tgl_jo",
   "customer",
   "customer_name",
@@ -32,6 +33,7 @@
   "order_type",
   "skip_delivery_note",
   "column_break1",
+  "is_rejected",
   "amended_from",
   "company",
   "transaction_date",
@@ -262,6 +264,7 @@
    "default": "Sales",
    "fieldname": "order_type",
    "fieldtype": "Select",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Order Type",
@@ -1618,32 +1621,37 @@
    "description": "Dibuat oleh",
    "fetch_from": "link_quotation.sales_name",
    "fieldname": "sales_name",
-   "fieldtype": "Data",
-   "label": "Made by"
+   "fieldtype": "Link",
+   "label": "Made by",
+   "options": "User"
   },
   {
    "description": "Disetujui oleh Sales Manager",
    "fieldname": "approved_sales_manager",
-   "fieldtype": "Data",
-   "label": "Approved By Sales Manager"
+   "fieldtype": "Link",
+   "label": "Approved By Sales Manager",
+   "options": "User"
   },
   {
    "description": "Disetujui oleh Produksi",
    "fieldname": "approved_production",
-   "fieldtype": "Data",
-   "label": "Approved By Production"
+   "fieldtype": "Link",
+   "label": "Approved By Production",
+   "options": "User"
   },
   {
    "description": "Disetujui oleh RND",
    "fieldname": "approved_rnd",
-   "fieldtype": "Data",
-   "label": "Approved By RND"
+   "fieldtype": "Link",
+   "label": "Approved By RND",
+   "options": "User"
   },
   {
    "description": "Disetujui oleh Finance",
    "fieldname": "approved_finance",
-   "fieldtype": "Data",
-   "label": "Approved By Finance"
+   "fieldtype": "Link",
+   "label": "Approved By Finance",
+   "options": "User"
   },
   {
    "fieldname": "column_break_approval",
@@ -1791,13 +1799,28 @@
    "fieldname": "nilai_job_order",
    "fieldtype": "Data",
    "label": "Nilai Job Order"
+  },
+  {
+   "depends_on": "eval:doc.is_rejected==1",
+   "fieldname": "rejected_reason",
+   "fieldtype": "Table MultiSelect",
+   "label": "Rejected Reason",
+   "options": "JO Rejected Reason Detail"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_rejected",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Rejected",
+   "read_only": 1
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-25 22:25:22.343576",
+ "modified": "2021-11-02 09:22:10.367207",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",
