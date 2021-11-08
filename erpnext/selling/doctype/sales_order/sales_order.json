@@ -17,6 +17,11 @@
   "naming_series",
   "rejected_reason",
   "tgl_jo",
+  "column_break_12",
+  "transaction_date",
+  "delivery_date",
+  "po_no",
+  "sction_break_customer",
   "customer",
   "customer_name",
   "nm_lokasi",
@@ -24,6 +29,7 @@
   "ukuran",
   "dateline",
   "tgl_selesai",
+  "column_break1",
   "no_kontrak",
   "periode_kontrak",
   "nilai_deposit",
@@ -32,13 +38,9 @@
   "nilai_job_order",
   "order_type",
   "skip_delivery_note",
-  "column_break1",
   "is_rejected",
   "amended_from",
   "company",
-  "transaction_date",
-  "delivery_date",
-  "po_no",
   "po_date",
   "tax_id",
   "contact_info",
@@ -127,6 +129,23 @@
   "column_break101",
   "nilai_jual_pajak",
   "total_nilai_jual",
+  "estimasi_break",
+  "est_harga_pokok_jo",
+  "rhp_jo",
+  "est_tambah_sewa",
+  "est_beli_listrik",
+  "total_est_lokasi",
+  "rbl",
+  "realisasi_produksi",
+  "estimasi_bahan_baku",
+  "break_estimasi",
+  "est_tenaga_kerja",
+  "est_by_lapangan",
+  "total_est_produksi",
+  "estimasi_produksi",
+  "est_pajak_dasar",
+  "est_koordinasi",
+  "realisasi_pajak",
   "payment_schedule_section",
   "payment_terms_template",
   "payment_schedule",
@@ -169,13 +188,9 @@
   "auto_repeat",
   "update_auto_repeat_reference",
   "section_break_2",
-  "deposit_value",
   "return_date",
-  "due_date",
   "voucher",
   "column_break_5",
-  "kickback_payment",
-  "jo_value",
   "kickback_value",
   "section_break_app",
   "sales_name",
@@ -503,6 +518,7 @@
   {
    "fieldname": "currency_and_price_list",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Currency and Price List",
@@ -625,20 +641,23 @@
    "allow_bulk_edit": 1,
    "fieldname": "items",
    "fieldtype": "Table",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Items",
    "oldfieldname": "sales_order_details",
    "oldfieldtype": "Table",
-   "options": "Sales Order Item",
-   "reqd": 1
+   "options": "Sales Order Item"
   },
   {
    "fieldname": "pricing_rule_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Pricing Rules"
+   "label": "Pricing Rules",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "pricing_rules",
@@ -664,6 +683,7 @@
   {
    "fieldname": "total_qty",
    "fieldtype": "Float",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total Quantity",
@@ -701,6 +721,7 @@
   {
    "fieldname": "total",
    "fieldtype": "Currency",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total",
@@ -710,6 +731,7 @@
   {
    "fieldname": "net_total",
    "fieldtype": "Currency",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Net Total",
@@ -729,11 +751,14 @@
   {
    "fieldname": "taxes_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Taxes and Charges",
    "oldfieldtype": "Section Break",
-   "options": "fa fa-money"
+   "options": "fa fa-money",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "tax_category",
@@ -780,9 +805,12 @@
    "collapsible": 1,
    "fieldname": "sec_tax_breakup",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Tax Breakup"
+   "label": "Tax Breakup",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "other_charges_calculation",
@@ -804,6 +832,7 @@
   {
    "fieldname": "base_total_taxes_and_charges",
    "fieldtype": "Currency",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total Taxes and Charges (Company Currency)",
@@ -863,6 +892,7 @@
    "collapsible_depends_on": "discount_amount",
    "fieldname": "section_break_48",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Additional Discount and Coupon Code"
@@ -921,11 +951,13 @@
   {
    "fieldname": "totals",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "oldfieldtype": "Section Break",
    "options": "fa fa-money",
-   "print_hide": 1
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "base_grand_total",
@@ -1078,6 +1110,7 @@
   {
    "fieldname": "payment_schedule_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Payment Terms"
@@ -1104,6 +1137,7 @@
    "collapsible_depends_on": "terms",
    "fieldname": "terms_section_break",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Terms and Conditions",
@@ -1135,6 +1169,7 @@
    "collapsible_depends_on": "project",
    "fieldname": "more_info",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "More Information",
@@ -1206,6 +1241,7 @@
    "collapsible": 1,
    "fieldname": "printing_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Print Settings"
@@ -1268,6 +1304,7 @@
    "collapsible": 1,
    "fieldname": "section_break_78",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Billing and Delivery Status",
@@ -1312,7 +1349,6 @@
    "fieldtype": "Percent",
    "hide_days": 1,
    "hide_seconds": 1,
-   "in_list_view": 1,
    "label": "%  Delivered",
    "no_copy": 1,
    "oldfieldname": "per_delivered",
@@ -1334,7 +1370,6 @@
    "fieldtype": "Percent",
    "hide_days": 1,
    "hide_seconds": 1,
-   "in_list_view": 1,
    "label": "% Amount Billed",
    "no_copy": 1,
    "oldfieldname": "per_billed",
@@ -1545,9 +1580,10 @@
    "read_only": 1
   },
   {
+   "description": "Jenis JO",
    "fieldname": "jo_type",
    "fieldtype": "Select",
-   "label": "Jenis JO",
+   "label": "JO Type",
    "options": "\nNew (SI Baru)\nExtend (SI Perpanjang)\nFree (Gratis/Invest)",
    "reqd": 1
   },
@@ -1700,35 +1736,14 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "deposit_value",
-   "fieldtype": "Int",
-   "label": "Nilai Deposit",
-   "non_negative": 1
-  },
-  {
    "fieldname": "return_date",
    "fieldtype": "Date",
    "label": "Tanggal Retur"
   },
   {
-   "fieldname": "due_date",
-   "fieldtype": "Date",
-   "label": "Tanggal Lunas"
-  },
-  {
    "fieldname": "voucher",
    "fieldtype": "Data",
    "label": "Voucher"
-  },
-  {
-   "fieldname": "kickback_payment",
-   "fieldtype": "Date",
-   "label": "Tanggal Bayar Kick Back"
-  },
-  {
-   "fieldname": "jo_value",
-   "fieldtype": "Int",
-   "label": "Nilai Job Order"
   },
   {
    "fieldname": "kickback_value",
@@ -1740,65 +1755,71 @@
    "fieldtype": "Column Break"
   },
   {
+   "description": "Tanggal JO",
    "fieldname": "tgl_jo",
    "fieldtype": "Date",
-   "label": "Tanggal JO"
+   "label": "JO Date"
   },
   {
+   "description": "Nama Lokasi",
    "fieldname": "nm_lokasi",
    "fieldtype": "Data",
-   "label": "Nama Lokasi"
+   "label": "Location Name"
   },
   {
+   "description": "Nama Produk",
    "fieldname": "nm_product",
-   "fieldtype": "Data",
-   "label": "Nama Produk"
-  },
-  {
-   "fieldname": "ukuran",
-   "fieldtype": "Data",
-   "label": "Ukuran"
+   "fieldtype": "Link",
+   "label": "Product Name",
+   "options": "Item"
   },
   {
    "fieldname": "dateline",
    "fieldtype": "Date",
-   "label": "Dateline"
+   "label": "Deadline"
   },
   {
+   "description": "Tanggal Selesai",
    "fieldname": "tgl_selesai",
    "fieldtype": "Date",
-   "label": "Tanggal Selesai"
+   "label": "End Date"
   },
   {
+   "description": "No Kontrak",
    "fieldname": "no_kontrak",
    "fieldtype": "Data",
-   "label": "No Kontrak"
+   "label": "Contract No"
   },
   {
+   "description": "Periode Kontrak",
    "fieldname": "periode_kontrak",
    "fieldtype": "Data",
-   "label": "Periode Kontrak"
+   "label": "Contract Period"
   },
   {
+   "description": "Nilai Deposit",
    "fieldname": "nilai_deposit",
    "fieldtype": "Currency",
-   "label": "Nilai Deposit",
+   "label": "Deposit Value",
    "precision": "0"
   },
   {
+   "description": "Tanggal Lunas",
    "fieldname": "tgl_lunas",
    "fieldtype": "Date",
-   "label": "Tanggal Lunas"
+   "label": "Due Date"
   },
   {
+   "description": "Tanggal Bayar Kickback",
    "fieldname": "tgl_byr_kickback",
    "fieldtype": "Date",
-   "label": "Tanggal Bayar Kickback"
+   "label": "Kickback Paid Date"
   },
   {
+   "description": "Nilai Job Order",
    "fieldname": "nilai_job_order",
    "fieldtype": "Data",
-   "label": "Nilai Job Order"
+   "label": "Job Order Value"
   },
   {
    "depends_on": "eval:doc.is_rejected==1",
@@ -1814,13 +1835,124 @@
    "hidden": 1,
    "label": "Is Rejected",
    "read_only": 1
+  },
+  {
+   "description": "Ukuran",
+   "fetch_from": "nm_product.dimension",
+   "fieldname": "ukuran",
+   "fieldtype": "Data",
+   "label": "Dimension/Side"
+  },
+  {
+   "fieldname": "sction_break_customer",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimasi_break",
+   "fieldtype": "Section Break",
+   "label": "Estimate"
+  },
+  {
+   "description": "Est. Harga Pokok JO Estimasi Beli Lokasi",
+   "fieldname": "est_harga_pokok_jo",
+   "fieldtype": "Data",
+   "label": "Est. Harga Pokok JO Estimasi Beli Lokasi"
+  },
+  {
+   "description": "Realisasi Harga Pokok JO  - Realisasi Beli Lokasi",
+   "fieldname": "rhp_jo",
+   "fieldtype": "Data",
+   "label": "Realisasi Harga Pokok JO  - Realisasi Beli Lokasi"
+  },
+  {
+   "description": "Est. Tambah Sewa",
+   "fieldname": "est_tambah_sewa",
+   "fieldtype": "Data",
+   "label": "Est. Tambah Sewa"
+  },
+  {
+   "fieldname": "est_beli_listrik",
+   "fieldtype": "Data",
+   "label": "Est. Beli Listrik"
+  },
+  {
+   "description": "Total Est. Lokasi",
+   "fieldname": "total_est_lokasi",
+   "fieldtype": "Data",
+   "label": "Total Est. Lokasi"
+  },
+  {
+   "description": "Realisasi Beli Lokasi",
+   "fieldname": "rbl",
+   "fieldtype": "Data",
+   "label": "Realisasi Beli Lokasi"
+  },
+  {
+   "description": "Realisasi Produksi",
+   "fieldname": "realisasi_produksi",
+   "fieldtype": "Data",
+   "label": "Realisasi Produksi"
+  },
+  {
+   "description": "Est. Bahan Baku",
+   "fieldname": "estimasi_bahan_baku",
+   "fieldtype": "Data",
+   "label": "Est. Bahan Baku"
+  },
+  {
+   "fieldname": "break_estimasi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "est_tenaga_kerja",
+   "fieldtype": "Data",
+   "label": "Est. Tenaga Kerja"
+  },
+  {
+   "description": "Est. By Lapangan",
+   "fieldname": "est_by_lapangan",
+   "fieldtype": "Data",
+   "label": "Est. By Lapangan"
+  },
+  {
+   "description": "Total Est. Produksi",
+   "fieldname": "total_est_produksi",
+   "fieldtype": "Data",
+   "label": "Total Est. Produksi"
+  },
+  {
+   "description": "Estimasi Produksi",
+   "fieldname": "estimasi_produksi",
+   "fieldtype": "Data",
+   "label": "Estimasi Produksi"
+  },
+  {
+   "description": "Est. Pajak Dasar",
+   "fieldname": "est_pajak_dasar",
+   "fieldtype": "Data",
+   "label": "Est. Pajak Dasar"
+  },
+  {
+   "description": "Est. Koordinasi",
+   "fieldname": "est_koordinasi",
+   "fieldtype": "Data",
+   "label": "Est. Koordinasi"
+  },
+  {
+   "fieldname": "realisasi_pajak",
+   "fieldtype": "Data",
+   "label": "Realisasi Pajak"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-02 09:22:10.367207",
+ "modified": "2021-11-08 13:24:49.318188",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",
@@ -1887,6 +2019,46 @@
    "permlevel": 1,
    "read": 1,
    "role": "Sales Manager",
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "RND Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "RND user",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production User",
+   "share": 1,
    "write": 1
   }
  ],

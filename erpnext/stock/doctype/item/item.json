@@ -12,6 +12,18 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "section_break_0",
+  "created_date",
+  "column_break_21",
+  "rnd_date",
+  "column_break_22",
+  "pic_date",
+  "column_break_23",
+  "sales_date",
+  "column_break_24",
+  "director_date",
+  "column_break_25",
+  "rent",
   "name_and_description_section",
   "naming_series",
   "item_code",
@@ -20,12 +32,13 @@
   "item_group",
   "is_item_from_hub",
   "stock_uom",
+  "number_of_unit",
   "item_location",
-  "map_location",
-  "link_map_location",
   "area",
+  "place_code",
   "column_break0",
   "disabled",
+  "feasibility",
   "allow_alternative_item",
   "is_stock_item",
   "include_item_in_manufacturing",
@@ -41,18 +54,27 @@
   "image",
   "media_location",
   "ads_placement",
-  "number_of_unit",
+  "rnd_pic",
+  "break",
+  "map_location",
+  "column_break_maps",
+  "link_map_location",
   "section_break_11",
   "brand",
   "description",
   "column_break12",
+  "side",
+  "width",
+  "length",
+  "wide",
   "dimension",
   "orientation",
   "item_slot",
   "schedule",
+  "column_break9",
   "item_spot",
   "duration",
-  "column_break9",
+  "visual",
   "point_of_interest",
   "traffic_car",
   "traffic_motor",
@@ -176,14 +198,13 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "STO-ITEM-.YYYY.-",
+   "options": "SI-.YYYY.-\nSTO-ITEM-.YYYY.-",
    "set_only_once": 1
   },
   {
    "bold": 1,
    "fieldname": "item_code",
    "fieldtype": "Data",
-   "in_global_search": 1,
    "label": "Item Code",
    "oldfieldname": "item_code",
    "oldfieldtype": "Data",
@@ -206,7 +227,6 @@
   {
    "fieldname": "item_name",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Item Name",
    "oldfieldname": "item_name",
    "oldfieldtype": "Data"
@@ -333,8 +353,7 @@
    "in_preview": 1,
    "label": "Image (Mockup)",
    "options": "image",
-   "print_hide": 1,
-   "reqd": 1
+   "print_hide": 1
   },
   {
    "fieldname": "section_break_11",
@@ -1089,17 +1108,17 @@
    "depends_on": "eval:!doc.__islocal && !doc.is_fixed_asset",
    "fieldname": "over_delivery_receipt_allowance",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Over Delivery/Receipt Allowance (%)",
    "oldfieldname": "tolerance",
-   "oldfieldtype": "Currency",
-   "reqd": 1
+   "oldfieldtype": "Currency"
   },
   {
    "depends_on": "eval:!doc.__islocal && !doc.is_fixed_asset",
    "fieldname": "over_billing_allowance",
    "fieldtype": "Float",
-   "label": "Over Billing Allowance (%)",
-   "reqd": 1
+   "hidden": 1,
+   "label": "Over Billing Allowance (%)"
   },
   {
    "default": "0",
@@ -1131,14 +1150,16 @@
    "description": "Address location (Alamat lokasi)",
    "fieldname": "item_location",
    "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Location",
    "reqd": 1
   },
   {
    "fieldname": "map_location",
-   "fieldtype": "Attach Image",
-   "label": "Location Map (Image)",
-   "reqd": 1
+   "fieldtype": "Attach",
+   "label": "Location Map (Image)"
   },
   {
    "fieldname": "column_break9",
@@ -1154,20 +1175,17 @@
   {
    "fieldname": "point_of_interest",
    "fieldtype": "Data",
-   "label": "Point of Interest",
-   "reqd": 1
+   "label": "Point of Interest"
   },
   {
    "fieldname": "traffic_car",
    "fieldtype": "Data",
-   "label": "Count Traffic Car",
-   "reqd": 1
+   "label": "Count Traffic Car"
   },
   {
    "fieldname": "traffic_motor",
    "fieldtype": "Data",
-   "label": "Count Traffic Motor",
-   "reqd": 1
+   "label": "Count Traffic Motor"
   },
   {
    "fieldname": "traffic_people",
@@ -1181,9 +1199,8 @@
   },
   {
    "fieldname": "area",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Area",
-   "options": "Territory",
    "reqd": 1
   },
   {
@@ -1208,28 +1225,23 @@
    "fieldname": "item_spot",
    "fieldtype": "Int",
    "label": "Spot",
-   "non_negative": 1,
-   "reqd": 1
+   "non_negative": 1
   },
   {
    "fieldname": "pixel_pitch",
    "fieldtype": "Data",
-   "label": "Pixel Pitch",
-   "reqd": 1
+   "label": "Pixel Pitch"
   },
   {
    "default": "0",
    "fieldname": "item_slot",
-   "fieldtype": "Select",
-   "label": "Slot",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20",
-   "reqd": 1
+   "fieldtype": "Int",
+   "label": "Slot"
   },
   {
    "fieldname": "link_map_location",
    "fieldtype": "Attach",
-   "label": "Location Map (Link)",
-   "reqd": 1
+   "label": "Location Map (Link)"
   },
   {
    "fieldname": "number_of_unit",
@@ -1240,8 +1252,7 @@
   {
    "fieldname": "schedule",
    "fieldtype": "Data",
-   "label": "Schedule",
-   "reqd": 1
+   "label": "Schedule"
   },
   {
    "fieldname": "pricing",
@@ -1263,8 +1274,116 @@
   {
    "fieldname": "dimension",
    "fieldtype": "Data",
-   "label": "Dimension / Muka",
-   "reqd": 1
+   "label": "Dimension / Muka"
+  },
+  {
+   "fieldname": "break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_maps",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "place_code",
+   "fieldtype": "Select",
+   "label": "Code Place",
+   "options": "\nAIRPORT\nDP\nNDP\nOUT"
+  },
+  {
+   "fieldname": "feasibility",
+   "fieldtype": "Data",
+   "label": "Feasibility"
+  },
+  {
+   "description": "Lebar (dalam meter)",
+   "fieldname": "width",
+   "fieldtype": "Data",
+   "label": "Width"
+  },
+  {
+   "description": "Panjang (dalam Meter)",
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "label": "Length"
+  },
+  {
+   "description": "Luas ukuran (dalam meter persegi [m2])",
+   "fieldname": "wide",
+   "fieldtype": "Data",
+   "label": "Wide"
+  },
+  {
+   "fieldname": "visual",
+   "fieldtype": "Data",
+   "label": "Visual"
+  },
+  {
+   "fieldname": "rnd_pic",
+   "fieldtype": "Data",
+   "label": "PIC"
+  },
+  {
+   "fieldname": "section_break_0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Date",
+   "label": "Created Date"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rnd_date",
+   "fieldtype": "Date",
+   "label": "RND's Approval Date"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pic_date",
+   "fieldtype": "Date",
+   "label": "PIC's Approval Date"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_date",
+   "fieldtype": "Date",
+   "label": "Sales' Approval Date"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "director_date",
+   "fieldtype": "Date",
+   "label": "Director's Approval Date"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rent",
+   "fieldtype": "Check",
+   "label": "Rent",
+   "read_only": 1
+  },
+  {
+   "description": "Jumlah Muka",
+   "fieldname": "side",
+   "fieldtype": "Data",
+   "label": "Side"
   }
  ],
  "has_web_view": 1,
@@ -1274,7 +1393,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 1000000,
- "modified": "2021-10-25 20:06:00.289167",
+ "modified": "2021-11-08 11:27:07.249332",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
@@ -1338,7 +1457,6 @@
    "share": 1
   }
  ],
- "quick_entry": 1,
  "search_fields": "item_name,description,item_group,customer_code",
  "show_name_in_global_search": 1,
  "show_preview_popup": 1,

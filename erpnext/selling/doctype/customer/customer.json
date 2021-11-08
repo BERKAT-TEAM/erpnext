@@ -360,6 +360,7 @@
    "fieldname": "email_id",
    "fieldtype": "Data",
    "label": "Email Id",
+   "options": "Email",
    "reqd": 1
   },
   {
@@ -662,7 +663,8 @@
   {
    "fieldname": "thrid_email_pic",
    "fieldtype": "Data",
-   "label": "Email id"
+   "label": "Email id",
+   "options": "Email"
   },
   {
    "fieldname": "column_break_tpic_column",
@@ -670,8 +672,9 @@
   },
   {
    "fieldname": "thrid_customer_primary_address",
-   "fieldtype": "Data",
-   "label": "Customer Thrid Addres"
+   "fieldtype": "Link",
+   "label": "Customer Thrid Addres",
+   "options": "Address"
   },
   {
    "fieldname": "thrid_designation",
@@ -704,7 +707,8 @@
   {
    "fieldname": "4th_email_pic",
    "fieldtype": "Data",
-   "label": "Email id"
+   "label": "Email id",
+   "options": "Email"
   },
   {
    "fieldname": "column_break_4pic_column",
@@ -712,8 +716,9 @@
   },
   {
    "fieldname": "4th_customer_primary_address",
-   "fieldtype": "Data",
-   "label": "Customer 4th Addres"
+   "fieldtype": "Link",
+   "label": "Customer 4th Addres",
+   "options": "Address"
   },
   {
    "fieldname": "4th_designation",
@@ -741,12 +746,14 @@
   {
    "fieldname": "5th_email_pic",
    "fieldtype": "Data",
-   "label": "Email id"
+   "label": "Email id",
+   "options": "Email"
   },
   {
    "fieldname": "5th_customer_primary_address",
-   "fieldtype": "Data",
-   "label": "Customer 5th Addres"
+   "fieldtype": "Link",
+   "label": "Customer 5th Addres",
+   "options": "Address"
   },
   {
    "fieldname": "5th_designation",
@@ -788,7 +795,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2021-11-02 09:48:37.018384",
+ "modified": "2021-11-08 08:58:47.439550",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",

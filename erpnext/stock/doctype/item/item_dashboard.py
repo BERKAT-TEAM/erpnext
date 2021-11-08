@@ -22,7 +22,10 @@ def get_data():
 			},
 			{
 				'label': _('Pricing'),
-				'items': ['Item Price', 'Pricing Rule']
+				'items': [
+					'Item Price', 'Pricing Rule', 
+					'Item Lease'
+					]
 			},
 			{
 				'label': _('Sell'),

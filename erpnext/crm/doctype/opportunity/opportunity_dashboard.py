@@ -6,7 +6,10 @@ def get_data():
 		'fieldname': 'opportunity',
 		'transactions': [
 			{
-				'items': ['Quotation', 'Supplier Quotation']
+				'items': [
+					'Quotation', 
+					# 'Supplier Quotation'
+				]
 			},
 		]
 	}
