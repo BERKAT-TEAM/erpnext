@@ -306,7 +306,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-26 16:21:57.767525",
+ "modified": "2021-11-05 09:48:12.613204",
  "modified_by": "Administrator",
  "module": "Setup",
  "modules": 0,
@@ -329,13 +329,6 @@
    "doc_view": "List",
    "label": "Customer",
    "link_to": "Customer",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Space Iklan",
-   "link_to": "Space Iklan",
    "type": "DocType"
   },
   {

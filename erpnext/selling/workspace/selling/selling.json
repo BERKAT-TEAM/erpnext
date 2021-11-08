@@ -98,7 +98,7 @@
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Item",
+   "label": "Space Iklan",
    "link_count": 0,
    "link_to": "Item",
    "link_type": "DocType",
@@ -109,7 +109,7 @@
    "dependencies": "Item, Price List",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Item Price",
+   "label": "Space Iklan Price",
    "link_count": 0,
    "link_to": "Item Price",
    "link_type": "DocType",
@@ -131,7 +131,7 @@
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Item Group",
+   "label": "Media Group",
    "link_count": 0,
    "link_to": "Item Group",
    "link_type": "DocType",
@@ -460,7 +460,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-26 16:21:57.990715",
+ "modified": "2021-11-04 16:14:36.446925",
  "modified_by": "Administrator",
  "module": "Selling",
  "modules": 0,
@@ -488,7 +488,7 @@
   {
    "color": "Grey",
    "format": "{} Available",
-   "label": "Item",
+   "label": "Space Iklan",
    "link_to": "Item",
    "stats_filter": "{\n    \"disabled\":0\n}",
    "type": "DocType"
