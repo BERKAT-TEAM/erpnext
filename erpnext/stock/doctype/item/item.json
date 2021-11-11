@@ -1275,7 +1275,7 @@
   {
    "fieldname": "dimension",
    "fieldtype": "Data",
-   "label": "Dimension / Muka"
+   "label": "Dimension / Side"
   },
   {
    "fieldname": "break",
@@ -1394,7 +1394,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 1000000,
- "modified": "2021-11-08 14:39:00.108869",
+ "modified": "2021-11-09 13:20:23.861552",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

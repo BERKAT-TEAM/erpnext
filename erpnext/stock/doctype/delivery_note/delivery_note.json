@@ -4,10 +4,17 @@
  "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2013-05-24 19:29:09",
+ "default_print_format": "BAST",
  "doctype": "DocType",
  "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
+  "sction_approval",
+  "production_team",
+  "prod_sign",
+  "column_break_sign",
+  "sales_md",
+  "sales_rnd_sign",
   "delivery_to_section",
   "column_break0",
   "title",
@@ -23,6 +30,16 @@
   "is_return",
   "issue_credit_note",
   "return_against",
+  "section_break_jo",
+  "no_jo",
+  "finish_date",
+  "column_break_19",
+  "jo_status",
+  "location",
+  "section_break_for_work",
+  "for_work",
+  "column_break_01",
+  "condition",
   "customer_po_details",
   "po_no",
   "column_break_17",
@@ -115,10 +132,12 @@
   "driver_name",
   "lr_date",
   "more_info",
+  "picture_1",
   "project",
   "campaign",
   "source",
   "column_break5",
+  "picture_two",
   "is_internal_customer",
   "represents_company",
   "inter_company_reference",
@@ -195,9 +214,7 @@
    "oldfieldname": "customer",
    "oldfieldtype": "Link",
    "options": "Customer",
-   "print_hide": 1,
-   "reqd": 1,
-   "search_index": 1
+   "print_hide": 1
   },
   {
    "bold": 1,
@@ -278,6 +295,7 @@
    "default": "0",
    "fieldname": "is_return",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Return",
    "no_copy": 1,
    "print_hide": 1,
@@ -288,12 +306,14 @@
    "depends_on": "is_return",
    "fieldname": "issue_credit_note",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Issue Credit Note"
   },
   {
    "depends_on": "is_return",
    "fieldname": "return_against",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Return Against Delivery Note",
    "no_copy": 1,
    "options": "Delivery Note",
@@ -343,6 +363,7 @@
   {
    "fieldname": "shipping_address_name",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Shipping Address",
    "options": "Address",
    "print_hide": 1
@@ -426,6 +447,7 @@
    "collapsible": 1,
    "fieldname": "currency_and_price_list",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Currency and Price List",
    "options": "fa fa-tag"
   },
@@ -510,6 +532,7 @@
   {
    "fieldname": "items_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "oldfieldtype": "Section Break",
    "options": "fa fa-shopping-cart"
   },
@@ -532,6 +555,7 @@
   {
    "fieldname": "pricing_rule_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Pricing Rules"
   },
   {
@@ -547,6 +571,7 @@
    "depends_on": "packed_items",
    "fieldname": "packing_list",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Packing List",
    "oldfieldtype": "Section Break",
    "options": "fa fa-suitcase",
@@ -570,7 +595,8 @@
   },
   {
    "fieldname": "section_break_31",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1
   },
   {
    "fieldname": "total_qty",
@@ -627,6 +653,7 @@
   {
    "fieldname": "taxes_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Taxes and Charges",
    "oldfieldtype": "Section Break",
    "options": "fa fa-money"
@@ -652,7 +679,8 @@
   },
   {
    "fieldname": "section_break_41",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1
   },
   {
    "description": "If you have created a standard template in Sales Taxes and Charges Template, select one and click on the button below.",
@@ -676,6 +704,7 @@
    "collapsible": 1,
    "fieldname": "sec_tax_breakup",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Tax Breakup"
   },
   {
@@ -689,7 +718,8 @@
   },
   {
    "fieldname": "section_break_44",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1
   },
   {
    "fieldname": "base_total_taxes_and_charges",
@@ -720,6 +750,7 @@
    "collapsible_depends_on": "discount_amount",
    "fieldname": "section_break_49",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Additional Discount"
   },
   {
@@ -758,6 +789,7 @@
   {
    "fieldname": "totals",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "oldfieldtype": "Section Break",
    "options": "fa fa-money"
   },
@@ -867,6 +899,7 @@
    "collapsible_depends_on": "terms",
    "fieldname": "terms_section_break",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Terms and Conditions",
    "oldfieldtype": "Section Break",
    "options": "fa fa-legal"
@@ -892,6 +925,7 @@
    "collapsible_depends_on": "transporter",
    "fieldname": "transporter_info",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Transporter Info",
    "options": "fa fa-truck",
    "print_hide": 1
@@ -973,6 +1007,7 @@
    "description": "Track this Delivery Note against any Project",
    "fieldname": "project",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Project",
    "oldfieldname": "project",
    "oldfieldtype": "Link",
@@ -981,6 +1016,7 @@
   {
    "fieldname": "campaign",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Campaign",
    "oldfieldname": "campaign",
    "oldfieldtype": "Link",
@@ -990,6 +1026,7 @@
   {
    "fieldname": "source",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Source",
    "oldfieldname": "source",
    "oldfieldtype": "Select",
@@ -1007,6 +1044,7 @@
   {
    "fieldname": "per_billed",
    "fieldtype": "Percent",
+   "hidden": 1,
    "label": "% Amount Billed",
    "no_copy": 1,
    "print_hide": 1,
@@ -1023,6 +1061,7 @@
   {
    "fieldname": "territory",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Territory",
    "options": "Territory",
    "print_hide": 1
@@ -1031,6 +1070,7 @@
    "collapsible": 1,
    "fieldname": "printing_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Print Settings"
   },
   {
@@ -1088,6 +1128,7 @@
    "collapsible": 1,
    "fieldname": "section_break_83",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Status"
   },
   {
@@ -1166,6 +1207,7 @@
    "collapsible_depends_on": "total_commission",
    "fieldname": "sales_team_section_break",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Commission",
    "oldfieldtype": "Section Break",
    "options": "fa fa-group",
@@ -1213,6 +1255,7 @@
    "collapsible_depends_on": "sales_team",
    "fieldname": "section_break1",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Sales Team",
    "print_hide": 1
   },
@@ -1243,12 +1286,14 @@
    "fetch_from": "customer.is_internal_customer",
    "fieldname": "is_internal_customer",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Internal Customer",
    "read_only": 1
   },
   {
    "fieldname": "inter_company_reference",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Inter Company Reference",
    "options": "Purchase Receipt"
   },
@@ -1278,6 +1323,7 @@
    "fetch_from": "customer.represents_company",
    "fieldname": "represents_company",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Represents Company",
    "options": "Company",
    "read_only": 1
@@ -1292,6 +1338,7 @@
   {
    "fieldname": "dispatch_address_name",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Dispatch Address Name",
    "options": "Address",
    "print_hide": 1
@@ -1303,13 +1350,109 @@
    "label": "Dispatch Address",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_jo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Link",
+   "label": "JO No",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "finish_date",
+   "fieldtype": "Date",
+   "label": "Finish date"
+  },
+  {
+   "description": "Done =  Selesai, Done with Conditions = Selesai dengan Syarat, Not finished yet = Belum Selesai",
+   "fieldname": "jo_status",
+   "fieldtype": "Select",
+   "label": "JO Status",
+   "options": "Done\nDone with Conditions\nNot finished yet"
+  },
+  {
+   "description": "Untuk Pekerjaan",
+   "fieldname": "for_work",
+   "fieldtype": "Small Text",
+   "label": "For Work"
+  },
+  {
+   "fetch_from": "no_jo.nm_lokasi",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_for_work",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "picture_1",
+   "fieldtype": "Attach",
+   "label": "Picture One"
+  },
+  {
+   "fieldname": "picture_two",
+   "fieldtype": "Attach",
+   "label": "Picture Two"
+  },
+  {
+   "fieldname": "column_break_01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.jo_status=='Done with Conditions';",
+   "fieldname": "condition",
+   "fieldtype": "Small Text",
+   "label": "Condition"
+  },
+  {
+   "fieldname": "sction_approval",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "production_team",
+   "fieldtype": "Link",
+   "label": "Production Team",
+   "options": "User"
+  },
+  {
+   "fetch_from": "production_team.signature",
+   "fieldname": "prod_sign",
+   "fieldtype": "Attach",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "column_break_sign",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_md",
+   "fieldtype": "Link",
+   "label": "Sales / RND",
+   "options": "User"
+  },
+  {
+   "fetch_from": "sales_md.signature",
+   "fieldname": "sales_rnd_sign",
+   "fieldtype": "Attach",
+   "label": "Signature"
   }
  ],
  "icon": "fa fa-truck",
  "idx": 146,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-04 11:38:41.947420",
+ "modified": "2021-11-09 16:12:21.212301",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Delivery Note",

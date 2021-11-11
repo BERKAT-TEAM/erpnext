@@ -2,6 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "creation": "2013-05-02 16:29:48",
+ "default_print_format": "Item Price Format",
  "description": "Multiple Item prices.",
  "doctype": "DocType",
  "document_type": "Setup",
@@ -10,10 +11,22 @@
   "item_code",
   "uom",
   "packing_unit",
-  "column_break_17",
   "item_name",
   "brand",
   "item_description",
+  "area",
+  "item_location",
+  "media_location",
+  "image",
+  "map_location",
+  "column_break_17",
+  "dimension",
+  "orientation",
+  "visual",
+  "point_of_interest",
+  "traffic_car",
+  "traffic_motor",
+  "traffic_people",
   "price_list_details",
   "price_list",
   "customer",
@@ -53,6 +66,7 @@
   {
    "fieldname": "uom",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "UOM",
    "options": "UOM",
    "print_hide": 1
@@ -62,6 +76,7 @@
    "description": "Quantity  that must be bought or sold per UOM",
    "fieldname": "packing_unit",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Packing Unit"
   },
   {
@@ -211,13 +226,100 @@
    "fieldtype": "Link",
    "label": "Batch No",
    "options": "Batch"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_location",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "media_location",
+   "fieldtype": "Data",
+   "label": "Media Location",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "dimension",
+   "fieldtype": "Data",
+   "label": "Dimension / Side",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "orientation",
+   "fieldtype": "Select",
+   "label": "Orientation",
+   "options": "\nVertical\nHorizontal",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "visual",
+   "fieldtype": "Data",
+   "label": "Visual",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "point_of_interest",
+   "fieldtype": "Data",
+   "label": "Point of Interest",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "traffic_car",
+   "fieldtype": "Data",
+   "label": "Count Traffic Car",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "traffic_motor",
+   "fieldtype": "Data",
+   "label": "Count Traffic Motor",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "traffic_people",
+   "fieldtype": "Data",
+   "label": "Count Traffic People",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image (Mockup)",
+   "options": "image",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "map_location",
+   "fieldtype": "Attach",
+   "label": "Location Map (Image)"
   }
  ],
  "icon": "fa fa-flag",
  "idx": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-12 10:17:41.173304",
+ "modified": "2021-11-09 14:08:45.000952",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item Price",

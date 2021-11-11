@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-11 12:22:37.316001",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "playlist_section",
+  "naming_series",
+  "item_list",
+  "period",
+  "customer",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_list",
+   "fieldtype": "Data",
+   "label": "Item List"
+  },
+  {
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "label": "Period"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Playlist",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "playlist_section",
+   "fieldtype": "Section Break",
+   "options": "fa fa-user"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SAL-QTN-.YYYY.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-11 13:38:16.318394",
+ "modified_by": "Administrator",
+ "module": "CMS",
+ "name": "Playlist",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestSpaceIklan(unittest.TestCase):
+class TestPlaylist(unittest.TestCase):
 	pass
