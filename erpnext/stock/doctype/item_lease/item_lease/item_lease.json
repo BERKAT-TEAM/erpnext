@@ -1,0 +1,340 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-03 16:08:50.555524",
+ "description": "A Product or a Service that is bought, sold or kept in stock.",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_0",
+  "item_code",
+  "created_date_lease",
+  "column_break_1",
+  "item_name",
+  "naming_series",
+  "column_break_0",
+  "item_location",
+  "valid_date",
+  "section_break_1",
+  "rental_price_m",
+  "rental_value",
+  "column_break_2",
+  "additional_value",
+  "rental_deposite",
+  "section_break_2",
+  "construction_cost",
+  "production_price_m",
+  "visual_price_m",
+  "column_break_3",
+  "prod_price_sib",
+  "prod_price_sip",
+  "section_break_3",
+  "electric_load",
+  "operational_hour",
+  "electric_value",
+  "column_break_4",
+  "days",
+  "installation_cost",
+  "electric_cost",
+  "section_break_4",
+  "tax_class",
+  "rate_m",
+  "tax_rate",
+  "column_break_5",
+  "field_fee",
+  "management_fee",
+  "total_tax_fee",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "rental_price_m",
+   "fieldtype": "Currency",
+   "label": "Rental Price/M"
+  },
+  {
+   "fieldname": "rental_value",
+   "fieldtype": "Currency",
+   "label": "Rental Value"
+  },
+  {
+   "fieldname": "additional_value",
+   "fieldtype": "Currency",
+   "label": "Additional Value"
+  },
+  {
+   "fieldname": "rental_deposite",
+   "fieldtype": "Currency",
+   "label": "Rental Deposite"
+  },
+  {
+   "fieldname": "construction_cost",
+   "fieldtype": "Currency",
+   "label": "Construction cost"
+  },
+  {
+   "fieldname": "production_price_m",
+   "fieldtype": "Currency",
+   "label": "Production Price/M"
+  },
+  {
+   "fieldname": "visual_price_m",
+   "fieldtype": "Currency",
+   "label": "Visual Price/M"
+  },
+  {
+   "fieldname": "prod_price_sib",
+   "fieldtype": "Currency",
+   "label": "Production Price of SIB"
+  },
+  {
+   "fieldname": "prod_price_sip",
+   "fieldtype": "Currency",
+   "label": "Production Price of SIP"
+  },
+  {
+   "fieldname": "electric_load",
+   "fieldtype": "Int",
+   "label": "Electric Load"
+  },
+  {
+   "fieldname": "column_break_0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "operational_hour",
+   "fieldtype": "Data",
+   "label": "Operational Hour"
+  },
+  {
+   "fieldname": "electric_value",
+   "fieldtype": "Int",
+   "label": "Electric Value"
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Data",
+   "label": "Days"
+  },
+  {
+   "fieldname": "installation_cost",
+   "fieldtype": "Currency",
+   "label": "Installation Cost"
+  },
+  {
+   "fieldname": "electric_cost",
+   "fieldtype": "Currency",
+   "label": "Electric Cost"
+  },
+  {
+   "fieldname": "tax_class",
+   "fieldtype": "Select",
+   "label": "Tax Class",
+   "options": "Kelas 1\nDalam Kota\nLuar Kota\nProtokol A\nProtokol B\nProtokol C\nLED Protokol A\nNon Tarif"
+  },
+  {
+   "fieldname": "rate_m",
+   "fieldtype": "Currency",
+   "label": "Rate/M"
+  },
+  {
+   "fieldname": "tax_rate",
+   "fieldtype": "Currency",
+   "label": "Tax Rate"
+  },
+  {
+   "fieldname": "field_fee",
+   "fieldtype": "Currency",
+   "label": "Field Fee"
+  },
+  {
+   "fieldname": "management_fee",
+   "fieldtype": "Currency",
+   "label": "Management Fee"
+  },
+  {
+   "fieldname": "total_tax_fee",
+   "fieldtype": "Currency",
+   "label": "Total Tax Fee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item Lease",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "item_code.area",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Name (Area)",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "item_code.media_location",
+   "fieldname": "item_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Rental"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Construction & Production"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Electric"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "label": "Tax"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "created_date_lease",
+   "fieldtype": "Date",
+   "label": "Created Date"
+  },
+  {
+   "fieldname": "valid_date",
+   "fieldtype": "Date",
+   "label": "Valid date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "SI-LS-.YYYY.-",
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-tag",
+ "links": [],
+ "modified": "2021-11-08 11:18:53.140376",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Item Lease",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User"
+  },
+  {
+   "read": 1,
+   "role": "Sales User"
+  },
+  {
+   "read": 1,
+   "role": "Purchase User"
+  },
+  {
+   "read": 1,
+   "role": "Maintenance User"
+  },
+  {
+   "read": 1,
+   "role": "Accounts User"
+  },
+  {
+   "read": 1,
+   "role": "Manufacturing User"
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "search_fields": "item_code",
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "title_field": "item_code",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

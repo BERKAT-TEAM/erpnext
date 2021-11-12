@@ -1,0 +1,21 @@
+{
+ "creation": "2021-10-06 09:17:25.465518",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{\"company\":\"MING Promotion\",\"from_date\":\"2020-10-06\",\"to_date\":\"2021-10-06\"}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "Lead ",
+ "modified": "2021-10-06 09:17:25.553197",
+ "modified_by": "jfransiska.jl@gmail.com",
+ "module": "CRM",
+ "name": "Lead",
+ "owner": "jfransiska.jl@gmail.com",
+ "report_function": "Sum",
+ "report_name": "Lead Details",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

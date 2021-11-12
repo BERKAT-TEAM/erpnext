@@ -1,0 +1,21 @@
+{
+ "creation": "2020-07-20 20:17:15.948113",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Opportunity",
+ "dynamic_filters_json": "[[\"Opportunity\",\"status\",\"=\",\"frappe.defaults.get_user_default(\\\"Company\\\")\"]]",
+ "filters_json": "[[\"Opportunity\",\"to_discuss\",\"is\",\"set\",false]]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Open Opportunity",
+ "modified": "2021-10-06 16:53:30.529556",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Open Opportunity",
+ "owner": "Administrator",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-11 12:22:37.316001",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "playlist_section",
+  "naming_series",
+  "from_jo",
+  "customer",
+  "customer_group_name",
+  "period",
+  "slot",
+  "break1",
+  "start_showtime",
+  "end_showtime",
+  "item_name",
+  "item_group",
+  "territory",
+  "sc_break1",
+  "media_location",
+  "ads_placement",
+  "ads_media",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "from_jo.periode_kontrak",
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "label": "Period"
+  },
+  {
+   "fetch_from": "from_jo.customer_name",
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Playlist",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "playlist_section",
+   "fieldtype": "Section Break",
+   "label": "PLAYLIST",
+   "options": "fa fa-user"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SAL-PLAYLIST-.YYYY.-"
+  },
+  {
+   "fieldname": "slot",
+   "fieldtype": "Data",
+   "label": "Slot"
+  },
+  {
+   "fetch_from": "from_jo.start_showtime",
+   "fieldname": "start_showtime",
+   "fieldtype": "Date",
+   "label": "Start Showtime"
+  },
+  {
+   "fetch_from": "from_jo.end_showtime",
+   "fieldname": "end_showtime",
+   "fieldtype": "Date",
+   "label": "End Showtime"
+  },
+  {
+   "fieldname": "break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_jo",
+   "fieldtype": "Link",
+   "label": "From JO",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "customer_group_name",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fetch_from": "from_jo.nm_product",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "sc_break1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "from_jo.nm_lokasi",
+   "fieldname": "media_location",
+   "fieldtype": "Data",
+   "label": "Media Location"
+  },
+  {
+   "fieldname": "ads_placement",
+   "fieldtype": "Select",
+   "label": "Ads Placement",
+   "options": "Indoor\nOutdoor"
+  },
+  {
+   "fieldname": "ads_media",
+   "fieldtype": "Select",
+   "label": "Ads Media",
+   "options": "LED\nLED\nBanner\nMobile LED\nVideotron\nBillboard\nNeon Box"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-12 08:55:03.888706",
+ "modified_by": "Administrator",
+ "module": "CMS",
+ "name": "Playlist",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

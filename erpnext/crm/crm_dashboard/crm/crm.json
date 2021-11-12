@@ -1,0 +1,70 @@
+{
+ "cards": [
+  {
+   "card": "New Opportunity (Yesterday)"
+  },
+  {
+   "card": "New Opportunity (Last 1 Month)"
+  },
+  {
+   "card": "New Lead (Yesterday)"
+  },
+  {
+   "card": "New Lead (Last 1 Month)"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Incoming Leads",
+   "width": "Half"
+  },
+  {
+   "chart": "Opportunity Trends",
+   "width": "Half"
+  },
+  {
+   "chart": "Won Opportunities",
+   "width": "Half"
+  },
+  {
+   "chart": "Lose Opp (This Month)",
+   "width": "Half"
+  },
+  {
+   "chart": "Territory Wise Opportunity Count",
+   "width": "Half"
+  },
+  {
+   "chart": "Opportunities via Campaigns",
+   "width": "Half"
+  },
+  {
+   "chart": "Territory Wise Sales",
+   "width": "Half"
+  },
+  {
+   "chart": "Lead Source",
+   "width": "Half"
+  },
+  {
+   "chart": "Top Customers",
+   "width": "Half"
+  },
+  {
+   "chart": "Owner's Count",
+   "width": "Half"
+  }
+ ],
+ "creation": "2020-07-20 20:17:15.985657",
+ "dashboard_name": "CRM",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2021-10-19 15:22:50.002292",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "CRM",
+ "owner": "Administrator"
+}
