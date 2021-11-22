@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-18 11:04:46.210396",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec1",
+  "naming_series",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "dept",
+  "tgl_survey",
+  "lokasi_s",
+  "uk_plan",
+  "ft_jrk",
+  "col1",
+  "vid_kon",
+  "dpl",
+  "day",
+  "pml",
+  "no_tlp",
+  "dt_hrg",
+  "pj_prosedur",
+  "pj1",
+  "la",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "dept",
+   "fieldtype": "Data",
+   "label": "Department "
+  },
+  {
+   "fieldname": "sec1",
+   "fieldtype": "Section Break",
+   "label": "Survey"
+  },
+  {
+   "fieldname": "tgl_survey",
+   "fieldtype": "Date",
+   "label": "Tanggal survey"
+  },
+  {
+   "fieldname": "lokasi_s",
+   "fieldtype": "Data",
+   "label": "Lokasi survey"
+  },
+  {
+   "fieldname": "uk_plan",
+   "fieldtype": "Data",
+   "label": "Ukuran rencana space iklan "
+  },
+  {
+   "fieldname": "ft_jrk",
+   "fieldtype": "Attach Image",
+   "label": "Foto jarak 100m, 200m & 300m dari berbagai sudut"
+  },
+  {
+   "fieldname": "vid_kon",
+   "fieldtype": "Attach",
+   "label": "Video kondisi lokasi saat ramai"
+  },
+  {
+   "fieldname": "dpl",
+   "fieldtype": "Data",
+   "label": "Data pengunjung mall"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Data",
+   "label": "Data agensi yang kerja sama dengan mall "
+  },
+  {
+   "fieldname": "pml",
+   "fieldtype": "Data",
+   "label": "Peta mall / lokasi outdoor "
+  },
+  {
+   "fieldname": "no_tlp",
+   "fieldtype": "Data",
+   "label": "No tlp kontak / penanggung jawab"
+  },
+  {
+   "fieldname": "dt_hrg",
+   "fieldtype": "Data",
+   "label": "Data harga sewa"
+  },
+  {
+   "fieldname": "pj_prosedur",
+   "fieldtype": "Data",
+   "label": "Penjelasan prosedur pemasangan dari mall "
+  },
+  {
+   "fieldname": "pj1",
+   "fieldtype": "Data",
+   "label": "Penjelasan prosedur instalasi listrik dari mall"
+  },
+  {
+   "fieldname": "la",
+   "fieldtype": "Attach",
+   "label": "List attachment "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Survey Edoc",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen",
+   "options": "FR-Survey-.YYYY.-",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 1000,
+ "modified": "2021-11-19 12:43:25.593137",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Survey Edoc",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

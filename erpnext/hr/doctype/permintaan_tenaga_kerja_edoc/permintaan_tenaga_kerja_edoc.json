@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-19 10:09:50.441507",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec1",
+  "naming_series",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "posisi",
+  "bagian",
+  "status",
+  "usia_disukai",
+  "col1",
+  "pendidikan",
+  "pengalaman",
+  "tahun_pengalaman",
+  "hubungan_krj",
+  "kandidat",
+  "nm_kandidat",
+  "alamat_kandidat",
+  "telp_kandidat",
+  "verifikasi",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec1",
+   "fieldtype": "Section Break",
+   "label": "Permintaan Tenaga Kerja"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen",
+   "options": "FR.HRD-GA.006-.YYYY.-",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi "
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama "
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "posisi",
+   "fieldtype": "Data",
+   "label": "Posisi "
+  },
+  {
+   "fieldname": "bagian",
+   "fieldtype": "Data",
+   "label": "Bagian "
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Kawin\nBelum kawin"
+  },
+  {
+   "fieldname": "usia_disukai",
+   "fieldtype": "Data",
+   "label": "Usia disukai"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pendidikan",
+   "fieldtype": "Select",
+   "label": "Pendidikan",
+   "options": "Smp\nSma\nD1\nD3\nS1"
+  },
+  {
+   "fieldname": "pengalaman",
+   "fieldtype": "Select",
+   "label": "Pengalaman",
+   "options": "Tidak pengalaman\nPengalaman"
+  },
+  {
+   "fieldname": "tahun_pengalaman",
+   "fieldtype": "Data",
+   "label": "Tahun pengalaman"
+  },
+  {
+   "fieldname": "hubungan_krj",
+   "fieldtype": "Select",
+   "label": "Hubungan kerja",
+   "options": "Harian\nKontrak kerja\nPermanent/tetap"
+  },
+  {
+   "fieldname": "kandidat",
+   "fieldtype": "Select",
+   "label": "Kandidat",
+   "options": "Sudah ada\nBelum ada"
+  },
+  {
+   "fieldname": "nm_kandidat",
+   "fieldtype": "Data",
+   "label": "Nama kandidat"
+  },
+  {
+   "fieldname": "alamat_kandidat",
+   "fieldtype": "Data",
+   "label": "Alamat kandidat"
+  },
+  {
+   "fieldname": "telp_kandidat",
+   "fieldtype": "Data",
+   "label": "Telp kandidat"
+  },
+  {
+   "fieldname": "verifikasi",
+   "fieldtype": "Data",
+   "label": "Verifikasi / catatan pemohon / atasan pemohon "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Permintaan Tenaga Kerja Edoc",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 100000,
+ "modified": "2021-11-19 16:38:10.624042",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Permintaan Tenaga Kerja Edoc",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

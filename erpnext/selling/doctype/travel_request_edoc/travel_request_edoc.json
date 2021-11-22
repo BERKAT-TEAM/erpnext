@@ -1,0 +1,229 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-18 10:28:12.806303",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_b",
+  "naming_series",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "colb1",
+  "hp",
+  "kota_tujuan",
+  "tgl_berangkat",
+  "tgl_kembali",
+  "uraian_tugas",
+  "list_a",
+  "kota_berangkat",
+  "kota_7an",
+  "pesawat",
+  "harga",
+  "ket",
+  "colb2",
+  "list_b",
+  "tgl_checkin",
+  "tgl_chkout",
+  "hr",
+  "hrg",
+  "list_c",
+  "uraian",
+  "hr2",
+  "total_rp",
+  "ket1",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_b",
+   "fieldtype": "Section Break",
+   "label": "Finance Edoc"
+  },
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "colb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hp",
+   "fieldtype": "Data",
+   "label": "No handphone"
+  },
+  {
+   "fieldname": "kota_tujuan",
+   "fieldtype": "Data",
+   "label": "Kota tujuan"
+  },
+  {
+   "fieldname": "tgl_berangkat",
+   "fieldtype": "Date",
+   "label": "Tanggal berangkat "
+  },
+  {
+   "fieldname": "tgl_kembali",
+   "fieldtype": "Date",
+   "label": "Tanggal kembali "
+  },
+  {
+   "fieldname": "uraian_tugas",
+   "fieldtype": "Data",
+   "label": "Uraian tugas"
+  },
+  {
+   "fieldname": "list_a",
+   "fieldtype": "Section Break",
+   "label": "List A Tiket pesawat"
+  },
+  {
+   "fieldname": "kota_berangkat",
+   "fieldtype": "Data",
+   "label": "Kota berangkat "
+  },
+  {
+   "fieldname": "kota_7an",
+   "fieldtype": "Data",
+   "label": "Kota tujuan"
+  },
+  {
+   "fieldname": "pesawat",
+   "fieldtype": "Data",
+   "label": "Pesawat "
+  },
+  {
+   "fieldname": "harga",
+   "fieldtype": "Data",
+   "label": "Harga"
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "colb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "list_b",
+   "fieldtype": "Section Break",
+   "label": "List B. Hotel"
+  },
+  {
+   "fieldname": "tgl_checkin",
+   "fieldtype": "Date",
+   "label": "Tanggal check in"
+  },
+  {
+   "fieldname": "tgl_chkout",
+   "fieldtype": "Date",
+   "label": "Tanggal check out "
+  },
+  {
+   "fieldname": "hr",
+   "fieldtype": "Date",
+   "label": "Hari"
+  },
+  {
+   "fieldname": "hrg",
+   "fieldtype": "Data",
+   "label": "Harga"
+  },
+  {
+   "fieldname": "list_c",
+   "fieldtype": "Section Break",
+   "label": "List C. Akomodasi lain-lain"
+  },
+  {
+   "fieldname": "uraian",
+   "fieldtype": "Data",
+   "label": "Uraian"
+  },
+  {
+   "fieldname": "hr2",
+   "fieldtype": "Date",
+   "label": "Hari"
+  },
+  {
+   "fieldname": "total_rp",
+   "fieldtype": "Data",
+   "label": "Total rupiah"
+  },
+  {
+   "fieldname": "ket1",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Travel Request Edoc",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen",
+   "options": "FR-TR-.YYYY.-",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-19 12:46:58.391999",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Travel Request Edoc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-15 16:39:00.010452",
+ "default_print_format": "Print Format QC FR PROD 008",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "no_doc",
+  "no_revisi",
+  "sec_break",
+  "nm_produk",
+  "ukuran",
+  "no_jo",
+  "almt_psg",
+  "uraian",
+  "ukuran1",
+  "tgl_pemeriksaan",
+  "clb22",
+  "penilaian_pekerja",
+  "paraf_qc",
+  "ket",
+  "jenis_pekerjaan",
+  "jam",
+  "team_workshop",
+  "sec_break22",
+  "pjw",
+  "spv",
+  "asm",
+  "clb5",
+  "ttd_pjw",
+  "ttd_spv",
+  "ttd_asm",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_doc",
+   "fieldtype": "Data",
+   "label": "No Dokumen"
+  },
+  {
+   "fieldname": "no_revisi",
+   "fieldtype": "Data",
+   "label": "No Revisi"
+  },
+  {
+   "fieldname": "sec_break",
+   "fieldtype": "Section Break",
+   "label": "PEMERIKSAAN QUALITY CONTROL LAPANGAN"
+  },
+  {
+   "fieldname": "nm_produk",
+   "fieldtype": "Data",
+   "label": "NAMA PRODUK"
+  },
+  {
+   "fieldname": "ukuran",
+   "fieldtype": "Data",
+   "label": "UKURAN"
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Data",
+   "label": "NO.JOB ORDER / SS"
+  },
+  {
+   "fieldname": "almt_psg",
+   "fieldtype": "Data",
+   "label": "ALAMAT PASANG"
+  },
+  {
+   "fieldname": "uraian",
+   "fieldtype": "Data",
+   "label": "URAIAN"
+  },
+  {
+   "fieldname": "ukuran1",
+   "fieldtype": "Data",
+   "label": "UKURAN"
+  },
+  {
+   "fieldname": "tgl_pemeriksaan",
+   "fieldtype": "Data",
+   "label": "TANGGAL PEMERIKSAAN"
+  },
+  {
+   "fieldname": "clb22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "penilaian_pekerja",
+   "fieldtype": "Select",
+   "label": "PENILAIAN PEKERJAAN",
+   "options": "OK\nTiDAK"
+  },
+  {
+   "fieldname": "paraf_qc",
+   "fieldtype": "Attach Image",
+   "label": "PARAF QUALITY CONTROL"
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Data",
+   "label": "KETERANGAN"
+  },
+  {
+   "fieldname": "jenis_pekerjaan",
+   "fieldtype": "Select",
+   "label": "JENIS PEKERJAAN",
+   "options": "NEONBOX\nRAILLING BOX\nHANGING BOX\nCEILLING BOX\nSTANDING TOTEM\nTOTEM\netc."
+  },
+  {
+   "fieldname": "jam",
+   "fieldtype": "Time",
+   "label": "JAM",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "team_workshop",
+   "fieldtype": "Data",
+   "label": "TEAM WORKSHOP"
+  },
+  {
+   "fieldname": "sec_break22",
+   "fieldtype": "Section Break",
+   "label": "PARAF QUALITY CONTROL"
+  },
+  {
+   "fieldname": "pjw",
+   "fieldtype": "Data",
+   "label": "PJ.PEKERJAAN"
+  },
+  {
+   "fieldname": "spv",
+   "fieldtype": "Data",
+   "label": "Spv"
+  },
+  {
+   "fieldname": "asm",
+   "fieldtype": "Data",
+   "label": "Ass./Manager"
+  },
+  {
+   "fieldname": "clb5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ttd_pjw",
+   "fieldtype": "Attach Image",
+   "label": "TTD PJ.PEKERJAAN"
+  },
+  {
+   "fieldname": "ttd_spv",
+   "fieldtype": "Attach Image",
+   "label": "TTD Spv"
+  },
+  {
+   "fieldname": "ttd_asm",
+   "fieldtype": "Attach Image",
+   "label": "TTD Ass./Manager"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "QC Lapangan Temp",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-18 16:19:07.847512",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "QC Lapangan Temp",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

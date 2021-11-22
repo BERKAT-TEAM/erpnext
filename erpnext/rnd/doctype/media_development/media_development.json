@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-18 10:04:02.929897",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "md_section",
+  "title",
+  "naming_series",
+  "no_service",
+  "no_jo",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "pelanggan",
+  "nm_produk",
+  "colb1",
+  "alamat_service",
+  "jenis_media",
+  "kondisi",
+  "deadline",
+  "list_foto",
+  "perintah",
+  "tanggal_selesai",
+  "kepada",
+  "ket",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "md_section",
+   "fieldtype": "Section Break",
+   "label": "Media Development"
+  },
+  {
+   "fieldname": "no_service",
+   "fieldtype": "Data",
+   "label": "No service"
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Data",
+   "label": "No JO"
+  },
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "pelanggan",
+   "fieldtype": "Data",
+   "label": "Pelanggan"
+  },
+  {
+   "fieldname": "nm_produk",
+   "fieldtype": "Data",
+   "label": "Nama produk"
+  },
+  {
+   "fieldname": "colb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alamat_service",
+   "fieldtype": "Data",
+   "label": "Alamat service"
+  },
+  {
+   "fieldname": "jenis_media",
+   "fieldtype": "Data",
+   "label": "Jenis media"
+  },
+  {
+   "fieldname": "kondisi",
+   "fieldtype": "Data",
+   "label": "Kondisi"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "list_foto",
+   "fieldtype": "Data",
+   "label": "List foto "
+  },
+  {
+   "fieldname": "perintah",
+   "fieldtype": "Data",
+   "label": "Perintah"
+  },
+  {
+   "fieldname": "tanggal_selesai",
+   "fieldtype": "Date",
+   "label": "Tanggal selesai "
+  },
+  {
+   "fieldname": "kepada",
+   "fieldtype": "Data",
+   "label": "Kepada "
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Media Development",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "No dokumen",
+   "options": "FR-MDSS-001-.YYYY.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-19 14:37:21.292608",
+ "modified_by": "Administrator",
+ "module": "RND",
+ "name": "Media Development",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "title,nama",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

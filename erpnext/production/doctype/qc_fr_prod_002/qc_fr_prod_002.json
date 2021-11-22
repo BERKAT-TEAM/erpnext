@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-15 09:38:29.903180",
+ "default_print_format": "Print Format  QC FR PROD 002",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_qc",
+  "naming_series",
+  "from_jo",
+  "no_doc",
+  "no_rev",
+  "no_jo",
+  "tgl_deadline",
+  "dimensi",
+  "qc_break1",
+  "start_w",
+  "end_w",
+  "pj_w",
+  "sec_break1",
+  "item_qc",
+  "tabel_2",
+  "nm_barang3",
+  "sec_break4",
+  "uraian",
+  "type4",
+  "sec_break8",
+  "tgl",
+  "sec_breakk",
+  "kg",
+  "asm",
+  "man_produksi",
+  "colbr9",
+  "ttd_kp",
+  "ttd_asm",
+  "ttd_man_produksi",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SAL-QC-.YYYY.-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "QC FR PROD 002",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_doc",
+   "fieldtype": "Data",
+   "label": "No. Dokumen"
+  },
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No. Revisi"
+  },
+  {
+   "fetch_from": "from_jo.naming_series",
+   "fieldname": "no_jo",
+   "fieldtype": "Data",
+   "label": "No. Job Order"
+  },
+  {
+   "fieldname": "tgl_deadline",
+   "fieldtype": "Date",
+   "label": "Tgl Deadline"
+  },
+  {
+   "fetch_from": "from_jo.ukuran",
+   "fieldname": "dimensi",
+   "fieldtype": "Data",
+   "label": "Dimensi"
+  },
+  {
+   "fieldname": "start_w",
+   "fieldtype": "Date",
+   "label": "Mulai Pekerjaan"
+  },
+  {
+   "fieldname": "end_w",
+   "fieldtype": "Date",
+   "label": "Selesai Pekerjaan"
+  },
+  {
+   "fieldname": "pj_w",
+   "fieldtype": "Data",
+   "label": "PJ. Pekerjaan"
+  },
+  {
+   "fieldname": "uraian",
+   "fieldtype": "Table",
+   "label": "Table 4",
+   "options": "QC FORM 002 Materi"
+  },
+  {
+   "fieldname": "tgl",
+   "fieldtype": "Date",
+   "label": "Tanggal"
+  },
+  {
+   "fieldname": "kg",
+   "fieldtype": "Data",
+   "label": "Kepala Group"
+  },
+  {
+   "fieldname": "asm",
+   "fieldtype": "Data",
+   "label": "Ass. Manager / Supervisor"
+  },
+  {
+   "fieldname": "man_produksi",
+   "fieldtype": "Data",
+   "label": "Manager Produksi"
+  },
+  {
+   "fieldname": "section_qc",
+   "fieldtype": "Section Break",
+   "label": "QUALITY CONTROL KONSTRUKSI DI WORKSHOP"
+  },
+  {
+   "fieldname": "qc_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec_break1",
+   "fieldtype": "Section Break",
+   "label": "KONSTRUKSI"
+  },
+  {
+   "fieldname": "nm_barang3",
+   "fieldtype": "Table",
+   "label": "Tabel 3",
+   "options": "QC FR PROD 002 Item 3"
+  },
+  {
+   "fieldname": "sec_break4",
+   "fieldtype": "Section Break",
+   "label": "MATERI"
+  },
+  {
+   "fieldname": "type4",
+   "fieldtype": "Table",
+   "label": "Table 5",
+   "options": "QC Form 002 Materi 2"
+  },
+  {
+   "fieldname": "sec_break8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "colbr9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ttd_kp",
+   "fieldtype": "Attach Image",
+   "label": "Ttd Kepala Group"
+  },
+  {
+   "fieldname": "ttd_asm",
+   "fieldtype": "Attach Image",
+   "label": "Ttd Ass. Manager / Supervisor"
+  },
+  {
+   "fieldname": "ttd_man_produksi",
+   "fieldtype": "Attach Image",
+   "label": "Ttd Manager Produksi"
+  },
+  {
+   "fieldname": "sec_breakk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_jo",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "From JO",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "item_qc",
+   "fieldtype": "Table",
+   "label": "Tabel 1",
+   "options": "QC FR PROD 002 Item"
+  },
+  {
+   "fieldname": "tabel_2",
+   "fieldtype": "Table",
+   "label": "Tabel 2",
+   "options": "QC FR PROD 002 Item 2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-16 15:42:24.777904",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "QC FR PROD 002",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

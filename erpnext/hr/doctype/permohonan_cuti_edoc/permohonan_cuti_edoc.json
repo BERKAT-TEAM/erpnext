@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-18 17:30:16.874012",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec11",
+  "naming_series",
+  "no_service",
+  "no_jo",
+  "nama",
+  "jabatan",
+  "divisi",
+  "tgl_pengajuan",
+  "cuti_s",
+  "cuti_e",
+  "hr",
+  "alasan_c",
+  "dip_hrd",
+  "hak_cuti",
+  "cut_di",
+  "tgl_selesai",
+  "sisa_cuti",
+  "cuti_yg",
+  "sisa_cu"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec11",
+   "fieldtype": "Section Break",
+   "label": "Permohonan Cuti"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen",
+   "options": "FR.HRD-GA.001-.YYYY.-",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "no_service",
+   "fieldtype": "Data",
+   "label": "No service"
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Data",
+   "label": "No JO"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "tgl_pengajuan",
+   "fieldtype": "Date",
+   "label": "Tanggal pengajuan "
+  },
+  {
+   "fieldname": "cuti_s",
+   "fieldtype": "Date",
+   "label": "Cuti start "
+  },
+  {
+   "fieldname": "cuti_e",
+   "fieldtype": "Date",
+   "label": "Cuti end "
+  },
+  {
+   "fieldname": "hr",
+   "fieldtype": "Data",
+   "label": "Hari "
+  },
+  {
+   "fieldname": "alasan_c",
+   "fieldtype": "Data",
+   "label": "Alasan cuti "
+  },
+  {
+   "fieldname": "dip_hrd",
+   "fieldtype": "Data",
+   "label": "Diperiksa HRD"
+  },
+  {
+   "fieldname": "hak_cuti",
+   "fieldtype": "Data",
+   "label": "Hak cuti tahun"
+  },
+  {
+   "fieldname": "cut_di",
+   "fieldtype": "Data",
+   "label": "Cuti yang telah di ambil "
+  },
+  {
+   "fieldname": "tgl_selesai",
+   "fieldtype": "Date",
+   "label": "Tanggal selesai"
+  },
+  {
+   "fieldname": "sisa_cuti",
+   "fieldtype": "Data",
+   "label": "Sisa cuti "
+  },
+  {
+   "fieldname": "cuti_yg",
+   "fieldtype": "Data",
+   "label": "Cuti yang akan di ambil "
+  },
+  {
+   "fieldname": "sisa_cu",
+   "fieldtype": "Data",
+   "label": "Sisa cuti tahun",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 10000,
+ "modified": "2021-11-19 16:15:05.643317",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Permohonan Cuti Edoc",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

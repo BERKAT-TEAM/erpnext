@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-19 08:49:50.489894",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec11",
+  "naming_series",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "sec2",
+  "rincian",
+  "hr",
+  "total_biaya",
+  "lampiran",
+  "note",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi "
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama "
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi "
+  },
+  {
+   "fieldname": "sec2",
+   "fieldtype": "Section Break",
+   "label": "List Rincian"
+  },
+  {
+   "fieldname": "rincian",
+   "fieldtype": "Data",
+   "label": "Rincian "
+  },
+  {
+   "fieldname": "hr",
+   "fieldtype": "Data",
+   "label": "Hari"
+  },
+  {
+   "fieldname": "total_biaya",
+   "fieldtype": "Currency",
+   "label": "Total biaya"
+  },
+  {
+   "fieldname": "lampiran",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Catatan lain-lain"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Kasbon Sementara Edoc",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec11",
+   "fieldtype": "Section Break",
+   "label": "Kasbon Sementara"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen",
+   "options": "FR.FIN.008-.YYYY.-",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 100000,
+ "modified": "2021-11-19 16:33:20.891411",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Kasbon Sementara Edoc",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}

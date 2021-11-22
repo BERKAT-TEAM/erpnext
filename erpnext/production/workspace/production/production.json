@@ -1,7 +1,7 @@
 {
  "category": "Modules",
  "charts": [],
- "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}}]",
+ "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Surat Tugas\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Luar Lapangan\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Konstruksi di Workshop\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Materi Sub   Supplier\",\"col\":4}}]",
  "creation": "2021-09-27 18:09:46.353904",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -15,7 +15,7 @@
  "is_standard": 1,
  "label": "Production",
  "links": [],
- "modified": "2021-10-26 16:21:58.136670",
+ "modified": "2021-11-15 16:27:24.105225",
  "modified_by": "Administrator",
  "module": "Production",
  "modules": 0,
@@ -33,12 +33,40 @@
  "sequence_id": 6,
  "shortcuts": [
   {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Surat Tugas",
+   "link_to": "Surat Tugas",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "QC Konstruksi di Workshop",
+   "link_to": "QC FR PROD 002",
+   "type": "DocType"
+  },
+  {
    "color": "Yellow",
    "doc_view": "List",
    "format": "{} To Work",
    "label": "Job Order",
    "link_to": "Sales Order",
    "stats_filter": "{\"status\":[\"not in\",[\"On Hold\",\"Completed\",\"Cancelled\",\"Closed\",\"To Bill\",null]]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "QC Luar Lapangan",
+   "link_to": "Quality Control Outside",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "QC Materi Sub   Supplier",
+   "link_to": "QC FR PROD 006",
    "type": "DocType"
   }
  ],

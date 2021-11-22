@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-19 10:20:57.680319",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec11",
+  "naming_series",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "dsr_pengusulan",
+  "7an",
+  "colb1",
+  "nama_pelatihan",
+  "tmp",
+  "waktu",
+  "akomodasi",
+  "total_b",
+  "biaya_pelatihan",
+  "transportasi",
+  "sec2",
+  "nm_k"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec11",
+   "fieldtype": "Section Break",
+   "label": "Pengajuan Pelatihan"
+  },
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "dsr_pengusulan",
+   "fieldtype": "Data",
+   "label": "Dasar pengusulan"
+  },
+  {
+   "fieldname": "7an",
+   "fieldtype": "Data",
+   "label": "Tujuan / benefit yang akan diperoleh"
+  },
+  {
+   "fieldname": "nama_pelatihan",
+   "fieldtype": "Data",
+   "label": "Nama pelatihan "
+  },
+  {
+   "fieldname": "tmp",
+   "fieldtype": "Data",
+   "label": "Tempat"
+  },
+  {
+   "fieldname": "waktu",
+   "fieldtype": "Data",
+   "label": "Waktu"
+  },
+  {
+   "fieldname": "akomodasi",
+   "fieldtype": "Data",
+   "label": "Akomodasi "
+  },
+  {
+   "fieldname": "total_b",
+   "fieldtype": "Data",
+   "label": "Total biaya"
+  },
+  {
+   "fieldname": "biaya_pelatihan",
+   "fieldtype": "Data",
+   "label": "Biaya pelatihan"
+  },
+  {
+   "fieldname": "transportasi",
+   "fieldtype": "Data",
+   "label": "Transportasi "
+  },
+  {
+   "fieldname": "sec2",
+   "fieldtype": "Section Break",
+   "label": "List karyawan yang ikut pelatihan"
+  },
+  {
+   "fieldname": "nm_k",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "colb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "No dokumen ",
+   "options": "Training-.YYYY.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-19 12:12:56.634971",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Pengajuan Pelatihan Edoc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

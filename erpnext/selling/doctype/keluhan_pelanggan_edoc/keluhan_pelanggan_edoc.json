@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-18 11:57:26.464706",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec",
+  "naming_series",
+  "data_2",
+  "no_fod",
+  "tgl",
+  "nama",
+  "jabatan",
+  "divisi",
+  "tgl_komplain",
+  "nama_company",
+  "alamat",
+  "email",
+  "colb1",
+  "telp",
+  "output_design",
+  "jenis_kom",
+  "komp",
+  "identifikasi_mslh",
+  "tindakan_koreksi",
+  "penanggung_jwb",
+  "status_kom",
+  "deadline",
+  "file_upload"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_2",
+   "fieldtype": "Data",
+   "label": "No revisi"
+  },
+  {
+   "fieldname": "no_fod",
+   "fieldtype": "Data",
+   "label": "No fod"
+  },
+  {
+   "fieldname": "tgl",
+   "fieldtype": "Date",
+   "label": "Tanggal "
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan "
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi "
+  },
+  {
+   "fieldname": "tgl_komplain",
+   "fieldtype": "Select",
+   "label": "Tujuan komplain",
+   "options": "Media development\nProduksi\nKreatif\nFinance"
+  },
+  {
+   "fieldname": "sec",
+   "fieldtype": "Section Break",
+   "label": "Keluhan Pelanggan"
+  },
+  {
+   "fieldname": "nama_company",
+   "fieldtype": "Data",
+   "label": "Nama company "
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Data",
+   "label": "Alamat "
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email "
+  },
+  {
+   "fieldname": "telp",
+   "fieldtype": "Data",
+   "label": "Telp "
+  },
+  {
+   "fieldname": "output_design",
+   "fieldtype": "Data",
+   "label": "Output design "
+  },
+  {
+   "fieldname": "jenis_kom",
+   "fieldtype": "Select",
+   "label": "Jenis komplain",
+   "options": "Kuantitas\nUkuran\nText\nBahan\nWarna\nLain lain"
+  },
+  {
+   "fieldname": "komp",
+   "fieldtype": "Data",
+   "label": "Komplain"
+  },
+  {
+   "fieldname": "identifikasi_mslh",
+   "fieldtype": "Data",
+   "label": "Identifikasi masalah"
+  },
+  {
+   "fieldname": "tindakan_koreksi",
+   "fieldtype": "Data",
+   "label": "Tindakan koreksi "
+  },
+  {
+   "fieldname": "penanggung_jwb",
+   "fieldtype": "Data",
+   "label": "Penanggung jawab"
+  },
+  {
+   "fieldname": "status_kom",
+   "fieldtype": "Select",
+   "label": "Status komplain ",
+   "options": "Pengajuan\nOke\nIn progress"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Data",
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "file_upload",
+   "fieldtype": "Attach",
+   "label": "File upload"
+  },
+  {
+   "fieldname": "colb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen",
+   "options": "FR-MRKT-002-.YYYY.-",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 100000,
+ "modified": "2021-11-19 16:01:15.713117",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Keluhan Pelanggan Edoc",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-18 18:54:57.376837",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec11",
+  "no_doc",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "tgl_lembur",
+  "col1",
+  "vendor",
+  "jam_a",
+  "jam_ak",
+  "jam_lem",
+  "ket",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_doc",
+   "fieldtype": "Data",
+   "label": "No dokumen "
+  },
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi "
+  },
+  {
+   "fieldname": "tgl_lembur",
+   "fieldtype": "Data",
+   "label": "Tanggal lembur "
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Data",
+   "label": "Vendor/pekerjaan"
+  },
+  {
+   "fieldname": "jam_a",
+   "fieldtype": "Data",
+   "label": "Jam awal lembur"
+  },
+  {
+   "fieldname": "jam_ak",
+   "fieldtype": "Data",
+   "label": "Jam akhir lembur"
+  },
+  {
+   "fieldname": "jam_lem",
+   "fieldtype": "Select",
+   "label": "Jam lembur ",
+   "options": "Lembur jam 1\nLembur jam 2"
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Data",
+   "label": "Keterangan "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lembur Edoc",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec11",
+   "fieldtype": "Section Break",
+   "label": "Lembur"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-18 18:58:33.407583",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Lembur Edoc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

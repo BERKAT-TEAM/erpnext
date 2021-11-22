@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-18 11:18:24.465637",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec1",
+  "naming_series",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "no_kontrak",
+  "no_jo",
+  "nm_media",
+  "col1",
+  "nm_lokasi",
+  "area",
+  "pengelola",
+  "nilai_kontrak",
+  "kontrak_awal",
+  "kontrak_akhir",
+  "ket",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "no_kontrak",
+   "fieldtype": "Data",
+   "label": "Nomor kontrak"
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Data",
+   "label": "Nomor job order "
+  },
+  {
+   "fieldname": "nm_media",
+   "fieldtype": "Data",
+   "label": "Nama media"
+  },
+  {
+   "fieldname": "nm_lokasi",
+   "fieldtype": "Data",
+   "label": "Nama lokasi "
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "pengelola",
+   "fieldtype": "Data",
+   "label": "Pengelola / agency "
+  },
+  {
+   "fieldname": "nilai_kontrak",
+   "fieldtype": "Data",
+   "label": "Nilai kontrak"
+  },
+  {
+   "fieldname": "kontrak_awal",
+   "fieldtype": "Data",
+   "label": "Kontrak awal "
+  },
+  {
+   "fieldname": "kontrak_akhir",
+   "fieldtype": "Data",
+   "label": "Kontrak akhir "
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Small Text",
+   "label": "Keterangan "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Kontrak Lokasi",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec1",
+   "fieldtype": "Section Break",
+   "label": "Kontrak Lokasi"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen",
+   "options": "FR-Kontrak Lokasi-.YYYY.-",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-19 12:41:33.305414",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Kontrak Lokasi",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

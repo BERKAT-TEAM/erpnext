@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-18 11:44:00.723646",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "it_sec",
+  "naming_series",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "tgl",
+  "col1",
+  "bu",
+  "peralatan",
+  "jp",
+  "prioritas",
+  "ket",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi "
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "tgl",
+   "fieldtype": "Date",
+   "label": "Tanggal "
+  },
+  {
+   "fieldname": "bu",
+   "fieldtype": "Data",
+   "label": "BU/ Dept"
+  },
+  {
+   "fieldname": "peralatan",
+   "fieldtype": "Data",
+   "label": "Peralatan"
+  },
+  {
+   "fieldname": "jp",
+   "fieldtype": "Select",
+   "label": "Jenis pekerjaan",
+   "options": "Instalasi\nPerbaikan\nPerawatan\nModifikasi"
+  },
+  {
+   "fieldname": "prioritas",
+   "fieldtype": "Select",
+   "label": "Prioritas pekerjaan",
+   "options": "Darurat\nPekerjaan berhenti\nPekerjaan masih dapat berjalan"
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Data",
+   "label": "Keterangan "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "IT Edoc",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "it_sec",
+   "fieldtype": "Section Break",
+   "label": "IT"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen ",
+   "options": "IT-.YYYY.-",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-19 12:39:35.480895",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "IT Edoc",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

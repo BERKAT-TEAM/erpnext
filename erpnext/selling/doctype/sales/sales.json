@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-18 10:15:01.664305",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sal_sec",
+  "no_doc",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "no_service",
+  "no_jo",
+  "client",
+  "nama_konten",
+  "col1",
+  "lokasi",
+  "tgl_upload",
+  "deadline",
+  "perintah_kerja",
+  "kpd",
+  "jenis_media",
+  "ket",
+  "list_foto_prev",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_doc",
+   "fieldtype": "Data",
+   "label": "No dokumen"
+  },
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "no_service",
+   "fieldtype": "Data",
+   "label": "No service"
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Data",
+   "label": "No JO"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "nama_konten",
+   "fieldtype": "Data",
+   "label": "Nama konten"
+  },
+  {
+   "fieldname": "lokasi",
+   "fieldtype": "Data",
+   "label": "Lokasi"
+  },
+  {
+   "fieldname": "tgl_upload",
+   "fieldtype": "Date",
+   "label": "Tanggal upload"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "perintah_kerja",
+   "fieldtype": "Data",
+   "label": "Perintah kerja "
+  },
+  {
+   "fieldname": "kpd",
+   "fieldtype": "Data",
+   "label": "Kepada"
+  },
+  {
+   "fieldname": "jenis_media",
+   "fieldtype": "Data",
+   "label": "Jenis media "
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "list_foto_prev",
+   "fieldtype": "Data",
+   "label": "List foto preview content"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sales",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "sal_sec",
+   "fieldtype": "Section Break",
+   "label": "Sales"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-18 10:16:08.337552",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Sales",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

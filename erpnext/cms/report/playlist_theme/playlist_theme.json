@@ -10,15 +10,16 @@
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": "1",
- "modified": "2021-11-12 09:00:09.452620",
+ "modified": "2021-11-19 11:44:43.530388",
  "modified_by": "Administrator",
  "module": "CMS",
  "name": "Playlist Theme",
  "owner": "Administrator",
  "prepared_report": 0,
- "ref_doctype": "Playlist",
+ "query": "SELECT \n    `tabDelivery Note`.posting_date as Date, \n    `tabDelivery Note`.name as 'No BAST', \n    `tabSales Order`.name as 'No JO',\n    `tabQuotation`.name as 'No Quotation',\n    `tabUpload Content`.nama_konten as 'Content',\n    `tabItem`.area as 'Space Iklan',\n    `tabItem`.media_location as 'Specific Location',\n    `tabItem`.slot as 'Space Iklan Slot',\n    `tabQuotation Item`.qty as 'Rent Slot'\nFROM `tabDelivery Note`\nLEFT JOIN `tabSales Order` ON `tabDelivery Note`.no_jo = `tabSales Order`.name\nLEFT JOIN `tabUpload Content` ON `tabDelivery Note`.no_jo = `tabUpload Content`.no_jo\nLEFT JOIN `tabItem` ON `tabSales Order`.nm_product = `tabItem`.name\nLEFT JOIN `tabQuotation` ON `tabSales Order`.customer_name = `tabQuotation`.customer_name\nLEFT JOIN `tabQuotation Item` ON `tabQuotation`.name = `tabQuotation Item`.parent\nGROUP BY `tabItem`.media_location;",
+ "ref_doctype": "Delivery Note",
  "report_name": "Playlist Theme",
- "report_type": "Script Report",
+ "report_type": "Query Report",
  "roles": [
   {
    "role": "System Manager"

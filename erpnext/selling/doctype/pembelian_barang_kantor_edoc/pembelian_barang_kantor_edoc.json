@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-19 09:32:51.432667",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec11",
+  "naming_series",
+  "data_2",
+  "nama",
+  "jabatan",
+  "divisi",
+  "sec2",
+  "jenis",
+  "jml",
+  "hrg",
+  "ket",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_2",
+   "fieldtype": "Data",
+   "label": "No revisi "
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "sec2",
+   "fieldtype": "Section Break",
+   "label": "List Rincian"
+  },
+  {
+   "fieldname": "jenis",
+   "fieldtype": "Data",
+   "label": "Jenis & uraian barang "
+  },
+  {
+   "fieldname": "jml",
+   "fieldtype": "Data",
+   "label": "Jumlah"
+  },
+  {
+   "fieldname": "hrg",
+   "fieldtype": "Currency",
+   "label": "Harga"
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "sec11",
+   "fieldtype": "Section Break",
+   "label": "Pembelian Barang Kantor"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen",
+   "options": "FR.FIN.007-.YYYY.-",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Pembelian Barang Kantor Edoc",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-19 17:47:41.366799",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Pembelian Barang Kantor Edoc",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
