@@ -1,0 +1,432 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-16 16:32:29.133899",
+ "default_print_format": "QC Mobil WS Format",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plat_nomor",
+  "hari_tanggal",
+  "jam",
+  "petunjuk",
+  "column_break_2",
+  "km_mobil",
+  "nama_driver",
+  "kondisi_kendaraan_section",
+  "body_kendaraan_mulus",
+  "kondisi_ban",
+  "spion",
+  "surat_surat_kendaraan",
+  "keterangan_kondisi_kendaraan",
+  "column_break_12",
+  "cuci_kendaraan",
+  "kebersihan",
+  "paraf_kondisi_kendaraan",
+  "pemeriksaan_kendaraan_section",
+  "air_radiator",
+  "rem_breake",
+  "kopling",
+  "busi",
+  "accu_aki",
+  "persnelling",
+  "segitiga_pengaman",
+  "keterangan_pemeriksaan_kendaraan",
+  "column_break_22_",
+  "sabuk_pengaman",
+  "cek_oli",
+  "toolkit",
+  "dongkrak",
+  "ban_cadangan__serep",
+  "paraf_pemeriksaan_kendaraan",
+  "cek_sebelum_berangkat_section",
+  "jam_mulai_cek_sebelum_berangkat",
+  "jam_selesai_cek_sebelum_berangkat",
+  "column_break_33",
+  "keterangan_cek_sebelum_berangkat",
+  "cek_tiba_di_ws_section",
+  "jam_mulai_cek_tiba",
+  "jam_selesai_cek_tiba",
+  "column_break_38",
+  "keterangan_cek_tiba",
+  "service_section",
+  "jam_mulai_service",
+  "jam_selesai_service",
+  "column_break_43",
+  "keterangan_service",
+  "bensin_section",
+  "km_bensin",
+  "column_break_47",
+  "keterangan_bensin",
+  "amended_from",
+  "persetujuan_section",
+  "staf_gudang",
+  "column_break_56",
+  "supervisior",
+  "column_break_58",
+  "assmanager"
+ ],
+ "fields": [
+  {
+   "fieldname": "plat_nomor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plat Nomor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hari_tanggal",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Hari Tanggal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jam",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Jam",
+   "reqd": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "petunjuk",
+   "fieldtype": "Small Text",
+   "label": "Petunjuk"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "km_mobil",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KM Mobil",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nama_driver",
+   "fieldtype": "Data",
+   "label": "Nama Driver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kondisi_kendaraan_section",
+   "fieldtype": "Section Break",
+   "label": "Kondisi Kendaraan"
+  },
+  {
+   "fieldname": "body_kendaraan_mulus",
+   "fieldtype": "Select",
+   "label": "Body Kendaraan Mulus",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kondisi_ban",
+   "fieldtype": "Select",
+   "label": "Kondisi Ban",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "spion",
+   "fieldtype": "Select",
+   "label": "Spion",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "surat_surat_kendaraan",
+   "fieldtype": "Select",
+   "label": "Surat surat Kendaraan",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "keterangan_kondisi_kendaraan",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cuci_kendaraan",
+   "fieldtype": "Select",
+   "label": "Cuci Kendaraan",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kebersihan",
+   "fieldtype": "Select",
+   "label": "Kebersihan",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "paraf_kondisi_kendaraan",
+   "fieldtype": "Signature",
+   "label": "Paraf",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pemeriksaan_kendaraan_section",
+   "fieldtype": "Section Break",
+   "label": "Pemeriksaan Kendaraan"
+  },
+  {
+   "fieldname": "air_radiator",
+   "fieldtype": "Select",
+   "label": "Air Radiator",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rem_breake",
+   "fieldtype": "Select",
+   "label": "Rem (Breake)",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kopling",
+   "fieldtype": "Select",
+   "label": "Kopling",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "busi",
+   "fieldtype": "Select",
+   "label": "Busi",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accu_aki",
+   "fieldtype": "Select",
+   "label": "Accu (AKI)",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "persnelling",
+   "fieldtype": "Select",
+   "label": "Persnelling",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "segitiga_pengaman",
+   "fieldtype": "Select",
+   "label": "Segitiga Pengaman",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "keterangan_pemeriksaan_kendaraan",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_22_",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sabuk_pengaman",
+   "fieldtype": "Select",
+   "label": "Sabuk Pengaman",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cek_oli",
+   "fieldtype": "Select",
+   "label": "Cek Oli",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "toolkit",
+   "fieldtype": "Select",
+   "label": "Toolkit",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dongkrak",
+   "fieldtype": "Select",
+   "label": "Dongkrak",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ban_cadangan__serep",
+   "fieldtype": "Select",
+   "label": "Ban Cadangan / Serep",
+   "options": "Tidak\nOK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "paraf_pemeriksaan_kendaraan",
+   "fieldtype": "Signature",
+   "label": "Paraf",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cek_sebelum_berangkat_section",
+   "fieldtype": "Section Break",
+   "label": "Cek Sebelum Berangkat"
+  },
+  {
+   "fieldname": "jam_mulai_cek_sebelum_berangkat",
+   "fieldtype": "Time",
+   "label": "Jam Mulai",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jam_selesai_cek_sebelum_berangkat",
+   "fieldtype": "Time",
+   "label": "Jam Selesai",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "keterangan_cek_sebelum_berangkat",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "cek_tiba_di_ws_section",
+   "fieldtype": "Section Break",
+   "label": "Cek Tiba Di WS"
+  },
+  {
+   "fieldname": "jam_mulai_cek_tiba",
+   "fieldtype": "Time",
+   "label": "Jam Mulai",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jam_selesai_cek_tiba",
+   "fieldtype": "Time",
+   "label": "Jam Selesai",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "keterangan_cek_tiba",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "service_section",
+   "fieldtype": "Section Break",
+   "label": "Service"
+  },
+  {
+   "fieldname": "jam_mulai_service",
+   "fieldtype": "Time",
+   "label": "Jam Mulai",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jam_selesai_service",
+   "fieldtype": "Time",
+   "label": "Jam Selesai",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "keterangan_service",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "bensin_section",
+   "fieldtype": "Section Break",
+   "label": "Bensin"
+  },
+  {
+   "fieldname": "km_bensin",
+   "fieldtype": "Data",
+   "label": "KM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "keterangan_bensin",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Pemeriksaan Quality Control Mobil WS"
+  },
+  {
+   "fieldname": "persetujuan_section",
+   "fieldtype": "Section Break",
+   "label": "Persetujuan"
+  },
+  {
+   "fieldname": "staf_gudang",
+   "fieldtype": "Signature",
+   "label": "Staf Gudang"
+  },
+  {
+   "fieldname": "column_break_56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supervisior",
+   "fieldtype": "Signature",
+   "label": "supervisior"
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assmanager",
+   "fieldtype": "Signature",
+   "label": "Ass./Manager"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-11-16 16:38:43.353470",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "Pemeriksaan Quality Control Mobil WS",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

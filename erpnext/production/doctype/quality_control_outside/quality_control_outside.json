@@ -1,0 +1,610 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-15 11:55:38.073517",
+ "default_print_format": "QUALITY CONTROL DI LUAR LAPANGAN",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "amended_from",
+  "no_revisi",
+  "no_jo",
+  "location",
+  "dimension",
+  "column_break_0",
+  "deadline",
+  "qc_date",
+  "person_in_qc",
+  "qc_section_break",
+  "qc_pemasangan",
+  "other",
+  "qc_new_construction",
+  "start_construction",
+  "end_construction",
+  "lamanya_waktu_pemasangan",
+  "data_18",
+  "galian_pondasi",
+  "pembesian_pondasi",
+  "cor_pondasi",
+  "pekerjaan_tiang",
+  "prcpp",
+  "jumlah_tenaga",
+  "data_25",
+  "penilaian_kerja",
+  "pondasi_media",
+  "tiang_struktur",
+  "gelagar",
+  "rangka_cremona",
+  "braket_beton",
+  "posisi_pemasangan",
+  "arah_media",
+  "kelurusan",
+  "penutup",
+  "kebersihan_kerapihan",
+  "photo_sticker",
+  "data_38",
+  "date_of_bongkar",
+  "date_of_pasang_kembali",
+  "lama_waktu_pemasangan",
+  "pelaksanaan_kerja",
+  "bongkar_pasang_konstruksi",
+  "jumlah_tenaga_qc_lama",
+  "data_45",
+  "penilaian_kerja_46",
+  "posisi_pemasangan_sesuai_qc_lama",
+  "arah_media_qc_lama",
+  "kelurusan_qc_lama",
+  "foto_qc_lama",
+  "bersih_rapih_qc_lama",
+  "penutup_qc_lama",
+  "qc_old_new_section",
+  "date_of_bongkar_qc_old_new",
+  "date_of_pasang_qc_old_new",
+  "lamanya_qc_old_new",
+  "pelaksana_kerja_materi",
+  "bongkar_qc_materi",
+  "jumlah_tenaga_qc_materi",
+  "column_break_60",
+  "penilaian_kerja_qc_materi",
+  "posisi_pemasangan_qc_materi",
+  "arah_media_qc_materi",
+  "kelurusan_qc_materi",
+  "materi_qc_materi",
+  "bahan_materi_qc_materi",
+  "bersih_rapih_qc_materi",
+  "foto_qc_materi",
+  "qc_electric_section_break",
+  "penilaian_kerja_qc_electric",
+  "cable_qc_electric",
+  "mbc_qc_electric",
+  "column_break_73",
+  "nyala_qc_electric",
+  "color_qc_electric",
+  "data_76",
+  "pic_grup",
+  "pic_qc",
+  "data_79",
+  "date_qc",
+  "date_production",
+  "data_82",
+  "team_sign",
+  "qc_sign"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FR.PROD.003-.YYYY.-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Quality Control Outside",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_revisi",
+   "fieldtype": "Data",
+   "label": "No. Revisi"
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Lokasi",
+   "read_only": 1
+  },
+  {
+   "default": "Vertical =\nHorizontal =\nThickness =",
+   "fieldname": "dimension",
+   "fieldtype": "Small Text",
+   "label": "Dimension"
+  },
+  {
+   "fieldname": "column_break_0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "qc_date",
+   "fieldtype": "Date",
+   "label": "QC's Date"
+  },
+  {
+   "fieldname": "person_in_qc",
+   "fieldtype": "Link",
+   "label": "QC in Charge",
+   "options": "User"
+  },
+  {
+   "fieldname": "qc_section_break",
+   "fieldtype": "Section Break",
+   "label": "QC Pemasangan"
+  },
+  {
+   "fieldname": "qc_pemasangan",
+   "fieldtype": "Select",
+   "label": "QC Pemasangan",
+   "options": "LED TV\nLED Banner\nLED Standing\nTotem\nNeon Sign\nNeon Box\nHanging Box\nCeiling Box\nBillboard\nHuruf Timbul\nPengantian Materi\nUmbul-umbul"
+  },
+  {
+   "depends_on": "eval:doc.qc_pemasangan==\"Penggantian Materi\"",
+   "fieldname": "other",
+   "fieldtype": "Select",
+   "label": "Lain-lain",
+   "options": "Materi Baru\nGanti Materi\nUpload Materi"
+  },
+  {
+   "fieldname": "qc_new_construction",
+   "fieldtype": "Section Break",
+   "label": "QC Konstruksi Baru"
+  },
+  {
+   "fieldname": "start_construction",
+   "fieldtype": "Date",
+   "label": "Tanggal Mulai Pemasangan Konstruksi"
+  },
+  {
+   "fieldname": "end_construction",
+   "fieldtype": "Date",
+   "label": "Tanggal Selesai Pemasangan"
+  },
+  {
+   "default": ".............Hari\n.............Jam",
+   "fieldname": "lamanya_waktu_pemasangan",
+   "fieldtype": "Small Text",
+   "label": "Lamanya waktu Pemasangan"
+  },
+  {
+   "fieldname": "data_18",
+   "fieldtype": "Heading",
+   "label": "Pelaksanaan Kerja"
+  },
+  {
+   "fieldname": "galian_pondasi",
+   "fieldtype": "Select",
+   "label": "Galian  Pondasi",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "pembesian_pondasi",
+   "fieldtype": "Select",
+   "label": "Pembesian Pondasi",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "cor_pondasi",
+   "fieldtype": "Select",
+   "label": "Cor Pondasi",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "pekerjaan_tiang",
+   "fieldtype": "Select",
+   "label": "Pekerjaan Tiang",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "prcpp",
+   "fieldtype": "Select",
+   "label": "Pekerjaan Rangka Cremona dan Plat Penutup",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "jumlah_tenaga",
+   "fieldtype": "Select",
+   "label": "Jumlah Tenaga",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "data_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "penilaian_kerja",
+   "fieldtype": "Heading",
+   "label": "Penilaian Kerja"
+  },
+  {
+   "fieldname": "pondasi_media",
+   "fieldtype": "Select",
+   "label": "Pondasi Media",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "tiang_struktur",
+   "fieldtype": "Select",
+   "label": "Tiang Struktur",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "gelagar",
+   "fieldtype": "Select",
+   "label": "Gelagar",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "rangka_cremona",
+   "fieldtype": "Select",
+   "label": "Rangka Cremona",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "braket_beton",
+   "fieldtype": "Select",
+   "label": "Braket ke Dinding/Beton",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "posisi_pemasangan",
+   "fieldtype": "Select",
+   "label": "Posisi Pemasangan Sesuai",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "arah_media",
+   "fieldtype": "Select",
+   "label": "Arah Media untuk Dilihat",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "kelurusan",
+   "fieldtype": "Select",
+   "label": "Kelurusan/Tidak Miring",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "penutup",
+   "fieldtype": "Select",
+   "label": "Plat penutup tidak gelombang",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "kebersihan_kerapihan",
+   "fieldtype": "Select",
+   "label": "Kebersihan dan Kerapihan",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "photo_sticker",
+   "fieldtype": "Select",
+   "label": "Foto dan Sticker QC",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "data_38",
+   "fieldtype": "Section Break",
+   "label": "QC Old Construction"
+  },
+  {
+   "fieldname": "date_of_bongkar",
+   "fieldtype": "Date",
+   "label": "Tanggal Bongkar Konstruksi Lama"
+  },
+  {
+   "fieldname": "date_of_pasang_kembali",
+   "fieldtype": "Date",
+   "label": "Tanggal Pasang Kembali Konstruksi Lama"
+  },
+  {
+   "default": "............Hari\n............Jam",
+   "fieldname": "lama_waktu_pemasangan",
+   "fieldtype": "Small Text",
+   "label": "Lama waktu pemasangan"
+  },
+  {
+   "fieldname": "pelaksanaan_kerja",
+   "fieldtype": "Heading",
+   "label": "Pelaksanaan Kerja"
+  },
+  {
+   "fieldname": "bongkar_pasang_konstruksi",
+   "fieldtype": "Select",
+   "label": "Bongkar dan Pasang Konstruksi",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "jumlah_tenaga_qc_lama",
+   "fieldtype": "Select",
+   "label": "Jumlah Tenaga",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "data_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "penilaian_kerja_46",
+   "fieldtype": "Heading",
+   "label": "Penilaian Kerja"
+  },
+  {
+   "fieldname": "posisi_pemasangan_sesuai_qc_lama",
+   "fieldtype": "Select",
+   "label": "Posisi Pemasangan Sesuai",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "arah_media_qc_lama",
+   "fieldtype": "Select",
+   "label": "Arah Media untuk Dilihat",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "kelurusan_qc_lama",
+   "fieldtype": "Select",
+   "label": "Kelurusan/Tidak Miring",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "foto_qc_lama",
+   "fieldtype": "Select",
+   "label": "Foto",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "bersih_rapih_qc_lama",
+   "fieldtype": "Select",
+   "label": "Kebersihan dan Kerapihan",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "penutup_qc_lama",
+   "fieldtype": "Select",
+   "label": "Plat Penutup Tidak Gelombang",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "qc_old_new_section",
+   "fieldtype": "Section Break",
+   "label": "QC Materi Baru/Lama"
+  },
+  {
+   "fieldname": "date_of_bongkar_qc_old_new",
+   "fieldtype": "Date",
+   "label": "Tanggal Bongkar Materi Lama"
+  },
+  {
+   "fieldname": "date_of_pasang_qc_old_new",
+   "fieldtype": "Date",
+   "label": "Tanggal Pasang Materi Baru"
+  },
+  {
+   "fieldname": "lamanya_qc_old_new",
+   "fieldtype": "Small Text",
+   "label": "Lamanya Waktu Pemasangan"
+  },
+  {
+   "fieldname": "pelaksana_kerja_materi",
+   "fieldtype": "Heading",
+   "label": "Pelaksaan Kerja"
+  },
+  {
+   "fieldname": "bongkar_qc_materi",
+   "fieldtype": "Select",
+   "label": "Bongkar dan pasang Materi",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "jumlah_tenaga_qc_materi",
+   "fieldtype": "Select",
+   "label": "Jumlah Tenaga",
+   "options": "Sendiri\nSubkon"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "penilaian_kerja_qc_materi",
+   "fieldtype": "Heading",
+   "label": "Penilaian Kerja"
+  },
+  {
+   "fieldname": "posisi_pemasangan_qc_materi",
+   "fieldtype": "Select",
+   "label": "Posisi Pemasangan Sesuai",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "arah_media_qc_materi",
+   "fieldtype": "Select",
+   "label": "Arah Media untuk Dilihat",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "kelurusan_qc_materi",
+   "fieldtype": "Select",
+   "label": "Kelurusan/Tidak miring",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "materi_qc_materi",
+   "fieldtype": "Select",
+   "label": "Materi tidak belang/rusak",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "bahan_materi_qc_materi",
+   "fieldtype": "Select",
+   "label": "Bahan Materi Sesuai",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "bersih_rapih_qc_materi",
+   "fieldtype": "Select",
+   "label": "Kebersihan dan Kerapihan",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "foto_qc_materi",
+   "fieldtype": "Select",
+   "label": "Foto",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "qc_electric_section_break",
+   "fieldtype": "Section Break",
+   "label": "QC Electric"
+  },
+  {
+   "fieldname": "penilaian_kerja_qc_electric",
+   "fieldtype": "Heading",
+   "label": "Penilaian Kerja"
+  },
+  {
+   "description": "Terlindung conduit/fleksibel",
+   "fieldname": "cable_qc_electric",
+   "fieldtype": "Select",
+   "label": "Kabel Luar terpasang rapi",
+   "options": "OK\nNo"
+  },
+  {
+   "description": "Terlindung conduit/fleksibel",
+   "fieldname": "mbc_qc_electric",
+   "fieldtype": "Select",
+   "label": "MCB Terpasang rapih dan tempat berlindung",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "column_break_73",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nyala_qc_electric",
+   "fieldtype": "Select",
+   "label": "Nyala Terang Merata",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "color_qc_electric",
+   "fieldtype": "Select",
+   "label": "Warna Tidak Belang",
+   "options": "OK\nNo"
+  },
+  {
+   "fieldname": "data_76",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pic_grup",
+   "fieldtype": "Link",
+   "label": "PIC Team",
+   "options": "User"
+  },
+  {
+   "fieldname": "pic_qc",
+   "fieldtype": "Link",
+   "label": "PIC QC",
+   "options": "User"
+  },
+  {
+   "fieldname": "data_79",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "date_qc",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "default": "Now",
+   "fieldname": "date_production",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "pic_grup.signature",
+   "fieldname": "team_sign",
+   "fieldtype": "Attach",
+   "label": "PIC Team's Signature"
+  },
+  {
+   "fieldname": "qc_sign",
+   "fieldtype": "Attach",
+   "label": "PIC qc's Signature"
+  },
+  {
+   "fieldname": "data_82",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "max_attachments": 12,
+ "modified": "2021-11-16 10:59:28.334690",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "Quality Control Outside",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

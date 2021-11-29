@@ -1,0 +1,387 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Lap-H-Proj-.DD.-.MM.-.YYYY.-.###",
+ "creation": "2021-11-24 10:49:57.379291",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "no_jo",
+  "tanggal_deadline",
+  "lokasi",
+  "alamat",
+  "absensi_kontraktor_section",
+  "pelaksana",
+  "jumlah_pelaksana",
+  "mandor",
+  "jumlah_mandor",
+  "tukang",
+  "jumlah_tukang",
+  "pekerja",
+  "jumlah_pekerja",
+  "column_break_14",
+  "heading_15",
+  "jam_mulai_pelaksana",
+  "heading_17",
+  "jam_mulai_mandor",
+  "heading_19",
+  "jam_mulai_tukang",
+  "heading_21",
+  "jam_mulai_pekerja",
+  "column_break_23",
+  "heading_24",
+  "jam_selesai_pelaksana",
+  "heading_26",
+  "jam_selesai_mandor",
+  "heading_28",
+  "jam_selesai_tukang",
+  "heading_30",
+  "jam_selesai_pekerja",
+  "cuaca_section",
+  "data_33",
+  "mulai_cerah",
+  "mendung",
+  "mulai_mendung",
+  "gerimis",
+  "mulai_gerimis",
+  "hujan_lebat",
+  "mulai_hujan_lebat",
+  "column_break_41",
+  "heading_42",
+  "selesai_cerah",
+  "heading_44",
+  "selesai_mendung",
+  "heading_46",
+  "selesai_gerimis",
+  "heading_48",
+  "selesai_hujan_lebat",
+  "barangmaterial__masuk_dan_keluar_section",
+  "barang_material",
+  "alat_yang_dipakai_column",
+  "alat_yang_dipakai",
+  "uraian_kegiatan_pekerjaan_section",
+  "kegiatan_pekerjaan",
+  "catatan_lain",
+  "tanda_tangan_section",
+  "upload_tanda_tangan"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Link",
+   "label": "No. Job Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "tanggal_deadline",
+   "fieldtype": "Date",
+   "label": "Tanggal Deadline"
+  },
+  {
+   "fieldname": "lokasi",
+   "fieldtype": "Data",
+   "label": "Lokasi"
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Small Text",
+   "label": "Alamat"
+  },
+  {
+   "fieldname": "absensi_kontraktor_section",
+   "fieldtype": "Section Break",
+   "label": "ABSENSI KONTRAKTOR"
+  },
+  {
+   "fieldname": "pelaksana",
+   "fieldtype": "Heading",
+   "label": "Pelaksana"
+  },
+  {
+   "fieldname": "jumlah_pelaksana",
+   "fieldtype": "Int",
+   "label": "Jumlah Orang"
+  },
+  {
+   "fieldname": "mandor",
+   "fieldtype": "Heading",
+   "label": "Mandor"
+  },
+  {
+   "fieldname": "jumlah_mandor",
+   "fieldtype": "Int",
+   "label": "Jumlah Orang"
+  },
+  {
+   "fieldname": "tukang",
+   "fieldtype": "Heading",
+   "label": "Tukang"
+  },
+  {
+   "fieldname": "jumlah_tukang",
+   "fieldtype": "Int",
+   "label": "Jumlah Orang"
+  },
+  {
+   "fieldname": "pekerja",
+   "fieldtype": "Heading",
+   "label": "Pekerja"
+  },
+  {
+   "fieldname": "jumlah_pekerja",
+   "fieldtype": "Int",
+   "label": "Jumlah Orang"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heading_15",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "jam_mulai_pelaksana",
+   "fieldtype": "Time",
+   "label": "Jam Mulai"
+  },
+  {
+   "fieldname": "heading_17",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "jam_mulai_mandor",
+   "fieldtype": "Time",
+   "label": "Jam Mulai"
+  },
+  {
+   "fieldname": "heading_19",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "jam_mulai_tukang",
+   "fieldtype": "Time",
+   "label": "Jam Mulai"
+  },
+  {
+   "fieldname": "heading_21",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "jam_mulai_pekerja",
+   "fieldtype": "Time",
+   "label": "Jam Mulai"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heading_24",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "jam_selesai_pelaksana",
+   "fieldtype": "Time",
+   "label": "Jam Selesai"
+  },
+  {
+   "fieldname": "heading_26",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "jam_selesai_mandor",
+   "fieldtype": "Time",
+   "label": "Jam Selesai"
+  },
+  {
+   "fieldname": "heading_28",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "jam_selesai_tukang",
+   "fieldtype": "Time",
+   "label": "Jam Selesai"
+  },
+  {
+   "fieldname": "heading_30",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "jam_selesai_pekerja",
+   "fieldtype": "Time",
+   "label": "Jam Selesai"
+  },
+  {
+   "fieldname": "cuaca_section",
+   "fieldtype": "Section Break",
+   "label": "CUACA"
+  },
+  {
+   "fieldname": "data_33",
+   "fieldtype": "Heading",
+   "label": "Cerah"
+  },
+  {
+   "fieldname": "mulai_cerah",
+   "fieldtype": "Time",
+   "label": "Mulai"
+  },
+  {
+   "fieldname": "mendung",
+   "fieldtype": "Heading",
+   "label": "Mendung"
+  },
+  {
+   "fieldname": "mulai_mendung",
+   "fieldtype": "Time",
+   "label": "Mulai"
+  },
+  {
+   "fieldname": "gerimis",
+   "fieldtype": "Heading",
+   "label": "Gerimis"
+  },
+  {
+   "fieldname": "mulai_gerimis",
+   "fieldtype": "Time",
+   "label": "Mulai"
+  },
+  {
+   "fieldname": "hujan_lebat",
+   "fieldtype": "Heading",
+   "label": "Hujan Lebat"
+  },
+  {
+   "fieldname": "mulai_hujan_lebat",
+   "fieldtype": "Time",
+   "label": "Mulai"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heading_42",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "selesai_cerah",
+   "fieldtype": "Time",
+   "label": "Selesai"
+  },
+  {
+   "fieldname": "heading_44",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "selesai_mendung",
+   "fieldtype": "Time",
+   "label": "Selesai"
+  },
+  {
+   "fieldname": "heading_46",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "selesai_gerimis",
+   "fieldtype": "Time",
+   "label": "Selesai"
+  },
+  {
+   "fieldname": "heading_48",
+   "fieldtype": "Heading",
+   "label": "\u200e"
+  },
+  {
+   "fieldname": "selesai_hujan_lebat",
+   "fieldtype": "Time",
+   "label": "Selesai"
+  },
+  {
+   "fieldname": "barangmaterial__masuk_dan_keluar_section",
+   "fieldtype": "Section Break",
+   "label": "BARANG/MATERIAL  MASUK DAN KELUAR"
+  },
+  {
+   "fieldname": "barang_material",
+   "fieldtype": "Table",
+   "label": "Barang Material",
+   "options": "BARANG MATERIAL Item"
+  },
+  {
+   "fieldname": "alat_yang_dipakai_column",
+   "fieldtype": "Section Break",
+   "label": "ALAT YANG DIPAKAI"
+  },
+  {
+   "fieldname": "alat_yang_dipakai",
+   "fieldtype": "Table",
+   "label": "Alat yang dipakai",
+   "options": "ALAT PAKAI LAPORAN HARIAN PROJECT"
+  },
+  {
+   "fieldname": "uraian_kegiatan_pekerjaan_section",
+   "fieldtype": "Section Break",
+   "label": "URAIAN KEGIATAN PEKERJAAN"
+  },
+  {
+   "fieldname": "kegiatan_pekerjaan",
+   "fieldtype": "Table",
+   "label": "KEGIATAN PEKERJAAN",
+   "options": "KEGIATAN PEKERJAAN LAPORAN HARIAN PROJECT"
+  },
+  {
+   "fieldname": "catatan_lain",
+   "fieldtype": "Text",
+   "label": "CATATAN LAIN"
+  },
+  {
+   "fieldname": "tanda_tangan_section",
+   "fieldtype": "Section Break",
+   "label": "Tanda Tangan"
+  },
+  {
+   "fieldname": "upload_tanda_tangan",
+   "fieldtype": "Attach Image",
+   "label": "Upload tanda tangan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-24 15:38:33.095966",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "Laporan Harian Project",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

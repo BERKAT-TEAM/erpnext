@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-16 15:16:02.236773",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nm_brg1",
+  "type1",
+  "kualitas_pengecatan",
+  "ket2",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "nm_brg1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Barang",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "type1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "kualitas_pengecatan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kualitas Pengecatan",
+   "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "ket2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "QC FR PROD 002 Item 2",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-16 15:27:13.549874",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "QC FR PROD 002 Item 2",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

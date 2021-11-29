@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-24 11:44:07.434281",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_barang",
+  "column_break_2",
+  "satuan",
+  "column_break_4",
+  "volume",
+  "column_break_6",
+  "nopol_kend",
+  "column_break_8",
+  "masuk",
+  "column_break_10",
+  "keluar"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_barang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Barang",
+   "print_width": "100px",
+   "reqd": 1,
+   "width": "100px"
+  },
+  {
+   "fieldname": "satuan",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Satuan",
+   "print_width": "50px",
+   "reqd": 1,
+   "width": "50px"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Volume",
+   "print_width": "50px",
+   "reqd": 1,
+   "width": "50px"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nopol_kend",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nopol Kend.",
+   "print_width": "50px",
+   "reqd": 1,
+   "width": "50px"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "masuk",
+   "fieldtype": "Time",
+   "label": "Masuk",
+   "print_width": "50px",
+   "reqd": 1,
+   "width": "50px"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "keluar",
+   "fieldtype": "Time",
+   "label": "Keluar",
+   "print_width": "50px",
+   "reqd": 1,
+   "width": "50px"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-24 12:03:19.212471",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "BARANG MATERIAL Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

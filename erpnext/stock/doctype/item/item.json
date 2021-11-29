@@ -3,7 +3,7 @@
  "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:item_code",
+ "autoname": "####.-.field:ads_placement.-field:place_code-.field:area.",
  "creation": "2013-05-03 10:45:46",
  "default_print_format": "Item Format",
  "description": "A Product or a Service that is bought, sold or kept in stock.",
@@ -198,7 +198,7 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "SI-.YYYY.-\nSTO-ITEM-.YYYY.-",
+   "options": "####.-.SI-.YYYY.-\nSTO-ITEM-.YYYY.-.-field:place_code-.field:area.",
    "set_only_once": 1
   },
   {
@@ -1393,11 +1393,11 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 1000000,
- "modified": "2021-11-08 11:27:07.249332",
+ "modified": "2021-11-24 17:12:29.320018",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
