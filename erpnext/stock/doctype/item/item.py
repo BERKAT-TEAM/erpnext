@@ -75,6 +75,10 @@ class Item(WebsiteGenerator):
 		self.set_onload('asset_naming_series', self._asset_naming_series)
 
 	def autoname(self):
+		self.item_code = ""
+		slice_three = slice(3)
+		slice_six = slice(6)
+		current = frappe.db.sql("SELECT COUNT(*) FROM `tabItem`")
 		if frappe.db.get_default("item_naming_by") == "Naming Series":
 			if self.variant_of:
 				if not self.item_code:
@@ -83,14 +87,22 @@ class Item(WebsiteGenerator):
 			else:
 				from frappe.model.naming import set_name_by_naming_series
 				set_name_by_naming_series(self)
-				self.item_code = self.name
+				print(self)
+				self.item_code = self.name + self.ads_placement[slice_three] + self.place_code[slice_three] + self.area[slice_six]
 
-		self.item_code = strip(self.item_code)
+		self.item_code = str(current[0][0]) + '-' + self.ads_placement[slice_three] + '-' + self.place_code[slice_three] + '-' + (self.area[slice_six]).upper()
 		self.name = self.item_code
+		print(self.name, self.item_code, "====ini item code====")
 
 	def before_insert(self):
+		if not self.item_name:
+			self.item_name = self.area
 		if not self.description:
 			self.description = self.item_name
+		if not self.wide:
+			self.wide = float(self.length) * float(self.width)
+		if not self.dimension:
+			self.dimension = self.length + ' X ' + self.width + ' / ' + self.side
 
 
 	def after_insert(self):
@@ -1050,6 +1062,7 @@ class Item(WebsiteGenerator):
 						'doctype': self.doctype,
 						'item_code': item,
 						'item_name': item,
+						'item_location': item,
 						'description': item,
 						'show_in_website': 1,
 						'is_sales_item': 1,
