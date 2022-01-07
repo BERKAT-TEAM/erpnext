@@ -9,13 +9,24 @@
  "idx": 0,
  "is_public": 1,
  "is_standard": 1,
- "modified": "2020-07-22 12:28:42.743551",
+ "modified": "2021-11-16 14:25:15.225009",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Accounts Receivable Ageing",
  "number_of_groups": 0,
  "owner": "Administrator",
  "report_name": "Accounts Receivable",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ],
  "timeseries": 0,
  "type": "Donut",
  "use_report_chart": 1,

@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 10:04:02.929897",
+ "creation": "2021-11-19 18:26:24.436312",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -27,8 +27,7 @@
   "perintah",
   "tanggal_selesai",
   "kepada",
-  "ket",
-  "amended_from"
+  "ket"
  ],
  "fields": [
   {
@@ -124,7 +123,7 @@
   {
    "fieldname": "list_foto",
    "fieldtype": "Data",
-   "label": "List foto "
+   "label": "List foto"
   },
   {
    "fieldname": "perintah",
@@ -134,32 +133,23 @@
   {
    "fieldname": "tanggal_selesai",
    "fieldtype": "Date",
-   "label": "Tanggal selesai "
+   "label": "Tanggal selesai"
   },
   {
    "fieldname": "kepada",
    "fieldtype": "Data",
-   "label": "Kepada "
+   "label": "Kepada"
   },
   {
    "fieldname": "ket",
    "fieldtype": "Data",
    "label": "Keterangan"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Media Development Edoc",
-   "print_hide": 1,
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 14:36:31.725499",
+ "modified": "2021-11-19 18:27:05.432977",
  "modified_by": "Administrator",
  "module": "RND",
  "name": "Media Development Edoc",
@@ -185,6 +175,5 @@
  "sort_order": "DESC",
  "title_field": "title",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

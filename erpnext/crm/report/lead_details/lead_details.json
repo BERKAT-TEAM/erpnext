@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 3,
  "is_standard": "Yes",
- "modified": "2021-10-25 10:02:22.737691",
+ "modified": "2021-12-07 16:27:02.546235",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Lead Details",
@@ -20,16 +20,16 @@
  "report_type": "Script Report",
  "roles": [
   {
-   "role": "Sales User"
-  },
-  {
    "role": "Sales Manager"
   },
   {
-   "role": "System Manager"
+   "role": "Sales Master Manager"
   },
   {
-   "role": "Sales Master Manager"
+   "role": "Sales Admin"
+  },
+  {
+   "role": "Administrator"
   }
  ]
 }

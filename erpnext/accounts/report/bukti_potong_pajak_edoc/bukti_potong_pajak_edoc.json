@@ -1,0 +1,37 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-11-23 11:31:56.839589",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Bukti Potong Pajak Edoc\"],[\"docstatus\",\"Bukti Potong Pajak Edoc\"],[\"naming_series\",\"Bukti Potong Pajak Edoc\"],[\"nama_perusahaan\",\"Bukti Potong Pajak Edoc\"],[\"nama\",\"Bukti Potong Pajak Edoc\"],[\"divisi\",\"Bukti Potong Pajak Edoc\"],[\"jns\",\"Bukti Potong Pajak Edoc\"],[\"ket\",\"Bukti Potong Pajak Edoc\"]],\"order_by\":\"`tabBukti Potong Pajak Edoc`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"docstatus\":120,\"naming_series\":120,\"nama_perusahaan\":120,\"nama\":120,\"divisi\":120,\"jns\":120,\"ket\":120},\"group_by\":null}",
+ "letter_head": "1",
+ "modified": "2021-11-23 15:25:59.718007",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Bukti Potong Pajak Edoc",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Bukti Potong Pajak Edoc",
+ "report_name": "Bukti Potong Pajak Edoc",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ]
+}

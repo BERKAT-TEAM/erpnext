@@ -319,7 +319,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-26 16:21:58.804964",
+ "modified": "2021-12-03 16:13:26.870527",
  "modified_by": "Administrator",
  "module": "Payroll",
  "modules": 0,
@@ -331,8 +331,12 @@
  "pin_to_top": 0,
  "public": 1,
  "restrict_to_domain": "",
- "roles": [],
- "sequence_id": 13,
+ "roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
+ "sequence_id": 17,
  "shortcuts": [
   {
    "label": "Salary Structure",

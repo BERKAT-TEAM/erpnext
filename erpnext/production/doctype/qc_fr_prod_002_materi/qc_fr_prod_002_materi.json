@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-12-06 15:10:07.688626",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nm_brg",
+  "type",
+  "kualitas_pengecatan",
+  "ket",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "kualitas_pengecatan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kualitas Pengecatan",
+   "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "nm_brg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Barang",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "QC FR PROD 002 Materi",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Keterangan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-12-22 20:56:48.903340",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "QC FR PROD 002 Materi",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

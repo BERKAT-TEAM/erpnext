@@ -9,19 +9,17 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2021-10-18 11:53:51.132216",
+ "modified": "2022-01-06 10:47:17.747282",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order Analysis",
  "owner": "Administrator",
  "prepared_report": 0,
+ "query": "",
  "ref_doctype": "Sales Order",
  "report_name": "Sales Order Analysis",
  "report_type": "Script Report",
  "roles": [
-  {
-   "role": "Sales User"
-  },
   {
    "role": "Sales Manager"
   },
@@ -35,7 +33,7 @@
    "role": "Stock User"
   },
   {
-   "role": "Sales Admin"
+   "role": "Sales Master Manager"
   }
  ]
 }

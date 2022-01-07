@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 10:55:09.035582",
+ "creation": "2021-11-19 08:04:49.579139",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -21,14 +21,19 @@
   "lokasi_e",
   "penjelasan_e",
   "anggaran_persetujuan",
-  "foto_bon",
-  "amended_from"
+  "foto_bon"
  ],
  "fields": [
   {
    "fieldname": "sec1",
    "fieldtype": "Section Break",
-   "label": "Entertain Client "
+   "label": "Entertain Client"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
   },
   {
    "fieldname": "naming_series",
@@ -65,17 +70,17 @@
   {
    "fieldname": "rencana_awal",
    "fieldtype": "Date",
-   "label": "Rencana jam awal "
+   "label": "Rencana jam awal"
   },
   {
    "fieldname": "pencana_akhir",
    "fieldtype": "Date",
-   "label": "Rencana jam akhir "
+   "label": "Rencana jam akhir"
   },
   {
    "fieldname": "tgl_e",
    "fieldtype": "Currency",
-   "label": "Tanggal entertain "
+   "label": "Tanggal entertain"
   },
   {
    "fieldname": "nama_klien",
@@ -85,7 +90,7 @@
   {
    "fieldname": "lokasi_e",
    "fieldtype": "Data",
-   "label": "Lokasi entertain "
+   "label": "Lokasi entertain"
   },
   {
    "fieldname": "penjelasan_e",
@@ -101,27 +106,12 @@
    "fieldname": "foto_bon",
    "fieldtype": "Data",
    "label": "Foto bon entertain"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Entertain Client Edoc",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title",
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 14:29:26.100003",
+ "modified": "2021-11-19 18:48:01.382403",
  "modified_by": "Administrator",
  "module": "RND",
  "name": "Entertain Client Edoc",
@@ -147,6 +137,5 @@
  "sort_order": "DESC",
  "title_field": "title",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

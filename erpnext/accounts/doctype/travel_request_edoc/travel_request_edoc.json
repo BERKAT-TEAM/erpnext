@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 10:28:12.806303",
+ "creation": "2021-11-19 08:04:49.853053",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -44,6 +44,12 @@
    "fieldname": "sec_b",
    "fieldtype": "Section Break",
    "label": "Finance Edoc"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
   },
   {
    "fieldname": "naming_series",
@@ -94,12 +100,12 @@
   {
    "fieldname": "tgl_berangkat",
    "fieldtype": "Date",
-   "label": "Tanggal berangkat "
+   "label": "Tanggal berangkat"
   },
   {
    "fieldname": "tgl_kembali",
    "fieldtype": "Date",
-   "label": "Tanggal kembali "
+   "label": "Tanggal kembali"
   },
   {
    "fieldname": "uraian_tugas",
@@ -114,7 +120,7 @@
   {
    "fieldname": "kota_berangkat",
    "fieldtype": "Data",
-   "label": "Kota berangkat "
+   "label": "Kota berangkat"
   },
   {
    "fieldname": "kota_7an",
@@ -124,7 +130,7 @@
   {
    "fieldname": "pesawat",
    "fieldtype": "Data",
-   "label": "Pesawat "
+   "label": "Pesawat"
   },
   {
    "fieldname": "harga",
@@ -153,7 +159,7 @@
   {
    "fieldname": "tgl_chkout",
    "fieldtype": "Date",
-   "label": "Tanggal check out "
+   "label": "Tanggal check out"
   },
   {
    "fieldname": "hr",
@@ -198,18 +204,12 @@
    "options": "Travel Request Edoc",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title",
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 14:31:34.002761",
+ "modified": "2021-11-25 18:11:47.256338",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Travel Request Edoc",
@@ -228,6 +228,32 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
   }
  ],
  "search_fields": "title,nama",
@@ -235,6 +261,5 @@
  "sort_order": "DESC",
  "title_field": "title",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

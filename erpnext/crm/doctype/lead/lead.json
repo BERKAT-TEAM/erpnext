@@ -88,6 +88,7 @@
   {
    "fieldname": "lead_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "in_global_search": 1,
    "label": "Full Name",
    "oldfieldname": "lead_name",
@@ -112,7 +113,6 @@
    "oldfieldname": "email_id",
    "oldfieldtype": "Data",
    "options": "Email",
-   "reqd": 1,
    "search_index": 1
   },
   {
@@ -292,16 +292,14 @@
    "fieldtype": "Data",
    "label": "Phone",
    "oldfieldname": "contact_no",
-   "oldfieldtype": "Data",
-   "options": "Phone"
+   "oldfieldtype": "Data"
   },
   {
    "fieldname": "mobile_no",
    "fieldtype": "Data",
    "label": "Mobile No.",
    "oldfieldname": "mobile_no",
-   "oldfieldtype": "Data",
-   "options": "Phone"
+   "oldfieldtype": "Data"
   },
   {
    "fieldname": "fax",
@@ -404,8 +402,11 @@
   {
    "fieldname": "language",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Print Language",
-   "options": "Language"
+   "options": "Language",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "first_name",
@@ -444,6 +445,7 @@
   {
    "fieldname": "whatsapp_no",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "WhatsApp No.",
    "options": "Phone"
   },
@@ -480,6 +482,7 @@
   {
    "fieldname": "phone_ext",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Phone Ext."
   }
  ],
@@ -487,7 +490,7 @@
  "idx": 5,
  "image_field": "image",
  "links": [],
- "modified": "2021-10-25 13:10:21.716006",
+ "modified": "2021-12-08 13:38:48.898214",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Lead",

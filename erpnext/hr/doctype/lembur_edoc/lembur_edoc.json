@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 18:54:57.376837",
+ "creation": "2021-11-19 08:04:46.668566",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -36,7 +36,7 @@
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "No dokumen ",
+   "label": "No dokumen",
    "options": "FR-HRD-GA.003-.YYYY.-",
    "print_hide": 1
   },
@@ -58,12 +58,12 @@
   {
    "fieldname": "divisi",
    "fieldtype": "Data",
-   "label": "Divisi "
+   "label": "Divisi"
   },
   {
    "fieldname": "tgl_lembur",
    "fieldtype": "Date",
-   "label": "Tanggal lembur "
+   "label": "Tanggal lembur"
   },
   {
    "fieldname": "col1",
@@ -87,13 +87,13 @@
   {
    "fieldname": "jam_lem",
    "fieldtype": "Select",
-   "label": "Jam lembur ",
+   "label": "Jam lembur",
    "options": "Lembur jam 1\nLembur jam 2"
   },
   {
    "fieldname": "ket",
    "fieldtype": "Data",
-   "label": "Keterangan "
+   "label": "Keterangan"
   },
   {
    "fieldname": "amended_from",
@@ -109,7 +109,7 @@
  "is_submittable": 1,
  "links": [],
  "max_attachments": 100000,
- "modified": "2021-11-19 16:19:38.631682",
+ "modified": "2021-12-08 16:45:05.241643",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Lembur Edoc",
@@ -127,11 +127,59 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

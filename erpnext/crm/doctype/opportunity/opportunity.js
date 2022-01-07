@@ -15,7 +15,12 @@ frappe.ui.form.on("Opportunity", {
 		frm.set_query("opportunity_from", function() {
 			return{
 				"filters": {
-					"name": ["in", ["Customer", "Lead", "Prospect", "Pipeline"]],
+					"name": ["in", [
+						"Customer", 
+						"Lead", 
+						// "Prospect", 
+						// "Pipeline"
+					]],
 				}
 			}
 		});

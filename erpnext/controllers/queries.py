@@ -215,12 +215,12 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	columns = ''
 	extra_searchfields = [field for field in searchfields
-		if not field in ["name", "item_group", "description"]]
+		if not field in ["name", "item_group", "description", "media_location"]]
 
 	if extra_searchfields:
 		columns = ", " + ", ".join(extra_searchfields)
 
-	searchfields = searchfields + [field for field in[searchfield or "name", "item_code", "item_group", "item_name"]
+	searchfields = searchfields + [field for field in[searchfield or "name", "item_code", "item_group", "item_name", "media_location"]
 		if not field in searchfields]
 	searchfields = " or ".join([field + " like %(txt)s" for field in searchfields])
 
@@ -252,7 +252,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	if frappe.db.count('Item', cache=True) < 50000:
 		# scan description only if items are less than 50000
 		description_cond = 'or tabItem.description LIKE %(txt)s'
-	return frappe.db.sql("""select tabItem.name,
+	return frappe.db.sql("""select tabItem.name, tabItem.media_location,
 		if(length(tabItem.item_name) > 40,
 			concat(substr(tabItem.item_name, 1, 40), "..."), item_name) as item_name,
 		tabItem.item_group,

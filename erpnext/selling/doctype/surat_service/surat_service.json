@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 17:30:16.874012",
+ "creation": "2021-11-19 18:26:21.932797",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -23,14 +23,25 @@
   "perintah",
   "tgl_selesai",
   "kpd",
-  "ket1",
-  "amended_from"
+  "ket1"
  ],
  "fields": [
   {
    "fieldname": "no_doc",
    "fieldtype": "Data",
    "label": "No dokumen"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No service",
+   "options": "FR.MDSS.001-.YYYY.-",
+   "print_hide": 1
   },
   {
    "fieldname": "no_jo",
@@ -65,17 +76,17 @@
   {
    "fieldname": "alamat_service",
    "fieldtype": "Data",
-   "label": "Alamat service "
+   "label": "Alamat service"
   },
   {
    "fieldname": "jns_media",
    "fieldtype": "Data",
-   "label": "Jenis media "
+   "label": "Jenis media"
   },
   {
    "fieldname": "kondisi",
    "fieldtype": "Data",
-   "label": "Kondisi "
+   "label": "Kondisi"
   },
   {
    "fieldname": "deadline",
@@ -106,34 +117,13 @@
    "fieldname": "ket1",
    "fieldtype": "Data",
    "label": "Keterangan"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Surat Service",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "in_filter": 1,
-   "in_global_search": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "No service",
-   "options": "FR.MDSS.001-.YYYY.-",
-   "print_hide": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 10000000,
- "modified": "2021-11-19 16:27:21.974718",
+ "modified": "2021-11-19 18:48:16.673382",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Surat Service",
@@ -156,6 +146,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

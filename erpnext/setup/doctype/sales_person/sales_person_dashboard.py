@@ -7,11 +7,17 @@ def get_data():
 	return {
 		'heatmap': True,
 		'heatmap_message': _('This is based on transactions against this Sales Person. See timeline below for details'),
-		'fieldname': 'sales_person',
+		# 'fieldname': 'sales_person',
+		'fieldname': 'owner',
 		'transactions': [
 			{
 				'label': _('Sales'),
-				'items': ['Sales Order', 'Delivery Note', 'Sales Invoice']
+				'items': [
+					'Quotation',
+					# 'Sales Order', 
+					# 'Delivery Note', 
+					# 'Sales Invoice'
+				]
 			},
 		]
 	}

@@ -167,7 +167,6 @@
    "label": "Expected Closing Date"
   },
   {
-   "collapsible": 1,
    "collapsible_depends_on": "contact_by",
    "fieldname": "next_contact",
    "fieldtype": "Section Break",
@@ -235,6 +234,7 @@
    "default": "Prospecting",
    "fieldname": "sales_stage",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Sales Stage",
    "options": "Sales Stage"
   },
@@ -432,8 +432,11 @@
   {
    "fieldname": "language",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Print Language",
-   "options": "Language"
+   "options": "Language",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "base_opportunity_amount",
@@ -492,7 +495,7 @@
  "icon": "fa fa-info-sign",
  "idx": 195,
  "links": [],
- "modified": "2021-10-14 14:32:23.600311",
+ "modified": "2021-11-12 09:08:43.849599",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Opportunity",

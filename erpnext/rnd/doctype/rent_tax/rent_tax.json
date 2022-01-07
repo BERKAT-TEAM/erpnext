@@ -1,0 +1,254 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-12-16 15:44:58.498360",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_3",
+  "post_time",
+  "section_1",
+  "image",
+  "item",
+  "area",
+  "column_1",
+  "media_type",
+  "location",
+  "length",
+  "width",
+  "column_2",
+  "side",
+  "luas",
+  "unit",
+  "placement",
+  "section_2",
+  "rent_value",
+  "deposite_value",
+  "cb_6",
+  "start_rent",
+  "end_rent",
+  "cb_7",
+  "tax_value",
+  "start_tax",
+  "end_tax"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "RND-RENT-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "post_time",
+   "fieldtype": "Datetime",
+   "label": "Posting Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "item.image",
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.area",
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "column_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item.item_group",
+   "fieldname": "media_type",
+   "fieldtype": "Data",
+   "label": "Media"
+  },
+  {
+   "fetch_from": "item.item_location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Lokasi"
+  },
+  {
+   "fetch_from": "item.length",
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "label": "P"
+  },
+  {
+   "fetch_from": "item.width",
+   "fieldname": "width",
+   "fieldtype": "Data",
+   "label": "L"
+  },
+  {
+   "fieldname": "column_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item.side",
+   "fieldname": "side",
+   "fieldtype": "Data",
+   "label": "Side"
+  },
+  {
+   "fetch_from": "item.wide",
+   "fieldname": "luas",
+   "fieldtype": "Data",
+   "label": "Large"
+  },
+  {
+   "fetch_from": "item.number_of_unit",
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fetch_from": "item.ads_placement",
+   "fieldname": "placement",
+   "fieldtype": "Data",
+   "label": "Placement"
+  },
+  {
+   "fieldname": "section_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "rent_value",
+   "fieldtype": "Currency",
+   "label": "Rent Value"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "deposite_value",
+   "fieldtype": "Currency",
+   "label": "Deposit Value"
+  },
+  {
+   "fieldname": "cb_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "start_rent",
+   "fieldtype": "Date",
+   "label": "Start Rent"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "end_rent",
+   "fieldtype": "Date",
+   "label": "End Rent"
+  },
+  {
+   "fieldname": "cb_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "tax_value",
+   "fieldtype": "Currency",
+   "label": "Tax Value"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "start_tax",
+   "fieldtype": "Date",
+   "label": "Start Tax"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "end_tax",
+   "fieldtype": "Date",
+   "label": "End Tax"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-16 17:41:19.525840",
+ "modified_by": "Administrator",
+ "module": "RND",
+ "name": "Rent Tax",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "RND Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "RND user",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

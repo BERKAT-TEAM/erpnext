@@ -1,0 +1,22 @@
+{
+ "creation": "2022-01-05 06:54:16.110950",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{\"company\":\"Ming Media Promotion\",\"from_date\":\"2021-12-05\",\"to_date\":\"2022-01-05\",\"sales_order\":[],\"status\":[]}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "Annual Sales",
+ "modified": "2022-01-05 06:54:16.195662",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Annual Sales-2",
+ "owner": "Administrator",
+ "report_field": "amount",
+ "report_function": "Sum",
+ "report_name": "Sales Order Analysis",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

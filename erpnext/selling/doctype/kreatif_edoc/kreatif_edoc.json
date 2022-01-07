@@ -1,8 +1,7 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "creation": "2021-11-18 11:49:29.267339",
+ "creation": "2021-11-19 08:04:48.070525",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -22,9 +21,14 @@
   "ukuran",
   "lokasi",
   "file",
-  "ket1"
+  "ket"
  ],
  "fields": [
+  {
+   "fieldname": "sec1",
+   "fieldtype": "Section Break",
+   "label": "Kreatif"
+  },
   {
    "fieldname": "no_doc",
    "fieldtype": "Data",
@@ -33,26 +37,22 @@
   {
    "fieldname": "no_rev",
    "fieldtype": "Data",
-   "label": "No revisi "
+   "label": "No revisi"
   },
   {
    "fieldname": "nama",
    "fieldtype": "Data",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "Nama"
   },
   {
    "fieldname": "jabatan",
    "fieldtype": "Data",
-   "label": "Jabatan "
+   "label": "Jabatan"
   },
   {
    "fieldname": "divisi",
    "fieldtype": "Data",
-   "label": "Divisi "
+   "label": "Divisi"
   },
   {
    "fieldname": "no_order",
@@ -62,28 +62,25 @@
   {
    "fieldname": "pelanggan",
    "fieldtype": "Data",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "Pelanggan"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "tgl_permohonan",
    "fieldtype": "Date",
-   "in_list_view": 1,
    "label": "Tanggal permohonan"
   },
   {
    "fieldname": "tgl_deadline",
    "fieldtype": "Date",
-   "in_list_view": 1,
    "label": "Tanggal deadline"
   },
   {
    "fieldname": "nm_produk",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Nama produk"
   },
   {
@@ -102,23 +99,14 @@
    "label": "File"
   },
   {
-   "fieldname": "sec1",
-   "fieldtype": "Section Break",
-   "label": "Kreatif"
-  },
-  {
-   "fieldname": "col1",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "ket1",
+   "fieldname": "ket",
    "fieldtype": "Data",
    "label": "Keterangan"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-11-19 11:33:36.145485",
+ "modified": "2021-11-19 08:11:00.843439",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Kreatif Edoc",

@@ -4,76 +4,110 @@
  "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2013-06-18 12:39:59",
- "default_print_format": "Job Order Format",
+ "default_print_format": "JO Format MING",
  "doctype": "DocType",
  "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "customer_section",
-  "column_break0",
+  "naming_series",
   "title",
   "jo_type",
-  "naming_series",
-  "tgl_jo",
-  "rejected_reason",
-  "column_break_12",
-  "transaction_date",
+  "column_break0",
   "delivery_date",
-  "po_no",
-  "sction_break_customer",
+  "terima_design",
+  "column_break_010",
+  "transaction_date",
   "customer",
   "customer_name",
-  "nm_lokasi",
+  "link_quotation",
+  "currency_and_price_list",
+  "currency",
+  "conversion_rate",
+  "selling_price_list",
+  "price_list_currency",
+  "plc_conversion_rate",
+  "ignore_pricing_rule",
   "nm_product",
-  "ukuran",
+  "nm_lokasi",
+  "nm_area",
+  "column_break2",
+  "jenis_produk",
+  "bhn_print",
+  "placement",
   "dateline",
   "tgl_selesai",
+  "on_time",
+  "nilai_deposit_0",
+  "tgl_retur",
   "column_break1",
   "no_kontrak",
   "periode_kontrak",
-  "nilai_deposit",
-  "tgl_byr",
   "tgl_lunas",
-  "tgl_byr_kickback",
+  "no_voucher",
+  "ukuran",
+  "qty",
+  "data_25",
   "nilai_job_order",
+  "diskon_kc",
+  "ppn_currency",
+  "urus_pajak",
+  "data_29",
+  "nilai_bersih_jo",
+  "bottom_price",
+  "pajak_produksi",
+  "pajak_reklame",
+  "data_40",
+  "nilai_sales",
+  "tgl_byr_kickback",
+  "kickback",
+  "data_44",
   "order_type",
   "skip_delivery_note",
-  "is_rejected",
   "amended_from",
   "company",
+  "po_no",
   "po_date",
   "tax_id",
+  "data_54",
+  "jo_invoice",
+  "data_58",
+  "os",
+  "data_66",
+  "ag",
+  "data_67",
+  "no_invoice",
+  "data_68",
+  "tgl_invoice",
+  "lunas",
   "contact_info",
   "customer_address",
   "address_display",
-  "contact_person",
+  "territory",
+  "col_break46",
   "contact_display",
   "contact_phone",
   "contact_mobile",
   "contact_email",
-  "company_address",
-  "company_address_display",
-  "col_break46",
   "shipping_address_name",
   "shipping_address",
   "dispatch_address_name",
   "dispatch_address",
   "customer_group",
-  "territory",
-  "currency_and_price_list",
-  "currency",
-  "conversion_rate",
-  "column_break2",
-  "selling_price_list",
-  "price_list_currency",
-  "plc_conversion_rate",
-  "ignore_pricing_rule",
   "sec_warehouse",
   "set_warehouse",
-  "start_showtime",
-  "end_showtime",
+  "data_74",
+  "masa_kontrak",
+  "masa_sewa_lokasi",
+  "data_78",
+  "kontrak_lokasi",
+  "jdl_bayar_lokasi",
+  "data_96",
+  "tgl_req_byr_lks",
+  "tgl_srh_doc_pajak",
   "items_section",
+  "keterangan",
   "scan_barcode",
   "items",
   "packing_list",
@@ -81,11 +115,9 @@
   "pricing_rule_details",
   "pricing_rules",
   "section_break_31",
-  "column_break_33a",
   "total_qty",
   "base_total",
   "base_net_total",
-  "kickback",
   "column_break_33",
   "total_net_weight",
   "total",
@@ -123,31 +155,47 @@
   "in_words",
   "advance_paid",
   "disable_rounded_total",
-  "section_break_1",
-  "nilai_jual_lokasi",
-  "nilai_jual_production",
-  "nilai_jual_maintenance",
-  "column_break101",
-  "nilai_jual_pajak",
-  "total_nilai_jual",
-  "estimasi_break",
-  "est_harga_pokok_jo",
-  "rhp_jo",
-  "est_tambah_sewa",
-  "est_beli_listrik",
+  "data_149",
   "total_est_lokasi",
+  "est_beli_listrik",
+  "est_tambah_sewa",
+  "rhp_jo",
+  "est_harga_pokok_jo",
   "rbl",
+  "data_156",
   "realisasi_produksi",
   "estimasi_bahan_baku",
-  "break_estimasi",
   "est_tenaga_kerja",
   "est_by_lapangan",
   "total_est_produksi",
   "estimasi_produksi",
+  "data_163",
   "est_pajak_dasar",
   "est_koordinasi",
   "total_est_pajak",
   "realisasi_pajak",
+  "section_break_1",
+  "nilai_jual_lokasi",
+  "nilai_jual_production",
+  "column_break101",
+  "nilai_jual_maintenance",
+  "nilai_jual_pajak",
+  "data_144",
+  "total_nilai_jual",
+  "data_139",
+  "tgl_design_siap",
+  "tgl_terima_dsgn",
+  "tgl_acc_dsgn",
+  "data_146",
+  "tgl_proof",
+  "tgl_cetak",
+  "tgl_kirim",
+  "data_153",
+  "sup_dgtl_print",
+  "nilai_dgtl_print",
+  "no_po",
+  "data_157",
+  "ket_pasang",
   "payment_schedule_section",
   "payment_terms_template",
   "payment_schedule",
@@ -184,29 +232,32 @@
   "section_break1",
   "sales_team",
   "subscription_section",
-  "from_date",
-  "to_date",
   "column_break_108",
   "auto_repeat",
-  "update_auto_repeat_reference",
-  "section_break_2",
-  "return_date",
-  "voucher",
-  "column_break_5",
-  "kickback_value",
   "section_break_app",
-  "sales_name",
-  "approved_sales_manager",
-  "approved_production",
-  "approved_rnd",
-  "approved_finance",
-  "column_break_approval",
+  "owner",
+  "admin_fullname",
   "sales_signature",
+  "data_231",
+  "sales_name",
+  "sales_fullname",
+  "sales_sign",
+  "column_break_approval",
+  "approved_sales_manager",
+  "sm_fullname",
   "sales_manager_signature",
+  "data_237",
+  "approved_production",
+  "prod_fullname",
   "production_signature",
+  "data_238",
+  "approved_rnd",
+  "rnd_fullname",
   "rnd_signature",
-  "finance_signature",
-  "link_quotation"
+  "data_239",
+  "approved_finance",
+  "finan_fullname",
+  "finance_signature"
  ],
  "fields": [
   {
@@ -217,18 +268,10 @@
    "options": "fa fa-user"
   },
   {
-   "fieldname": "column_break0",
-   "fieldtype": "Column Break",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "oldfieldtype": "Column Break",
-   "width": "50%"
-  },
-  {
    "allow_on_submit": 1,
    "default": "{customer_name}",
    "fieldname": "title",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
@@ -241,11 +284,9 @@
    "fieldtype": "Select",
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "No JO",
+   "label": "Series",
    "no_copy": 1,
-   "oldfieldname": "naming_series",
-   "oldfieldtype": "Select",
-   "options": "JOB-ORD-.YYYY.-",
+   "options": "JO -",
    "print_hide": 1,
    "reqd": 1,
    "set_only_once": 1
@@ -259,8 +300,6 @@
    "in_global_search": 1,
    "in_standard_filter": 1,
    "label": "Customer",
-   "oldfieldname": "customer",
-   "oldfieldtype": "Link",
    "options": "Customer",
    "print_hide": 1,
    "reqd": 1,
@@ -270,7 +309,7 @@
    "bold": 1,
    "fetch_from": "customer.customer_name",
    "fieldname": "customer_name",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "hide_days": 1,
    "hide_seconds": 1,
    "in_global_search": 1,
@@ -281,13 +320,10 @@
    "default": "Sales",
    "fieldname": "order_type",
    "fieldtype": "Select",
-   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Order Type",
-   "oldfieldname": "order_type",
-   "oldfieldtype": "Select",
-   "options": "\nSales\nMaintenance\nShopping Cart",
+   "options": "Sales",
    "print_hide": 1,
    "reqd": 1
   },
@@ -296,7 +332,6 @@
    "fieldtype": "Column Break",
    "hide_days": 1,
    "hide_seconds": 1,
-   "oldfieldtype": "Column Break",
    "width": "50%"
   },
   {
@@ -308,8 +343,6 @@
    "ignore_user_permissions": 1,
    "label": "Amended From",
    "no_copy": 1,
-   "oldfieldname": "amended_from",
-   "oldfieldtype": "Data",
    "options": "Sales Order",
    "print_hide": 1,
    "read_only": 1,
@@ -322,8 +355,6 @@
    "hide_seconds": 1,
    "in_standard_filter": 1,
    "label": "Company",
-   "oldfieldname": "company",
-   "oldfieldtype": "Link",
    "options": "Company",
    "print_hide": 1,
    "remember_last_selected_value": 1,
@@ -339,8 +370,6 @@
    "in_standard_filter": 1,
    "label": "Date",
    "no_copy": 1,
-   "oldfieldname": "transaction_date",
-   "oldfieldtype": "Date",
    "reqd": 1,
    "search_index": 1,
    "width": "160px"
@@ -354,7 +383,8 @@
    "hide_seconds": 1,
    "in_list_view": 1,
    "label": "Delivery Date",
-   "no_copy": 1
+   "no_copy": 1,
+   "reqd": 1
   },
   {
    "allow_on_submit": 1,
@@ -363,8 +393,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Customer's Purchase Order",
-   "oldfieldname": "po_no",
-   "oldfieldtype": "Data",
    "width": "100px"
   },
   {
@@ -375,22 +403,9 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Customer's Purchase Order Date",
-   "oldfieldname": "po_date",
-   "oldfieldtype": "Date",
    "width": "100px"
   },
   {
-   "fetch_from": "customer.tax_id",
-   "fieldname": "tax_id",
-   "fieldtype": "Data",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Tax Id",
-   "read_only": 1,
-   "width": "100px"
-  },
-  {
-   "collapsible": 1,
    "depends_on": "customer",
    "fieldname": "contact_info",
    "fieldtype": "Section Break",
@@ -402,43 +417,32 @@
   {
    "allow_on_submit": 1,
    "fieldname": "customer_address",
-   "fieldtype": "Link",
+   "fieldtype": "Small Text",
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Customer Address",
-   "options": "Address",
    "print_hide": 1
   },
   {
    "allow_on_submit": 1,
    "fieldname": "address_display",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text",
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Address",
    "read_only": 1
   },
   {
-   "fieldname": "contact_person",
-   "fieldtype": "Link",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Contact Person",
-   "options": "Contact",
-   "print_hide": 1
-  },
-  {
    "fieldname": "contact_display",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text",
    "hide_days": 1,
    "hide_seconds": 1,
    "in_global_search": 1,
-   "label": "Contact",
-   "read_only": 1
+   "label": "Contact"
   },
   {
    "fieldname": "contact_mobile",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text",
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Mobile No",
@@ -446,7 +450,7 @@
   },
   {
    "fieldname": "contact_email",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
@@ -454,22 +458,6 @@
    "options": "Email",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "company_address_display",
-   "fieldtype": "Small Text",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Company Address",
-   "read_only": 1
-  },
-  {
-   "fieldname": "company_address",
-   "fieldtype": "Link",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Company Address Name",
-   "options": "Address"
   },
   {
    "fieldname": "col_break46",
@@ -483,8 +471,6 @@
    "fieldname": "shipping_address_name",
    "fieldtype": "Link",
    "hidden": 1,
-   "hide_days": 1,
-   "hide_seconds": 1,
    "label": "Shipping Address Name",
    "options": "Address",
    "print_hide": 1
@@ -493,8 +479,7 @@
    "allow_on_submit": 1,
    "fieldname": "shipping_address",
    "fieldtype": "Small Text",
-   "hide_days": 1,
-   "hide_seconds": 1,
+   "hidden": 1,
    "label": "Shipping Address",
    "print_hide": 1,
    "read_only": 1
@@ -523,7 +508,7 @@
    "fieldtype": "Section Break",
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Currency and Price List",
+   "label": "Product, Currency and Price List",
    "options": "fa fa-tag",
    "print_hide": 1
   },
@@ -533,8 +518,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Currency",
-   "oldfieldname": "currency",
-   "oldfieldtype": "Select",
    "options": "Currency",
    "print_hide": 1,
    "reqd": 1,
@@ -547,8 +530,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Exchange Rate",
-   "oldfieldname": "conversion_rate",
-   "oldfieldtype": "Currency",
    "precision": "9",
    "print_hide": 1,
    "reqd": 1,
@@ -567,8 +548,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Price List",
-   "oldfieldname": "price_list_name",
-   "oldfieldtype": "Select",
    "options": "Price List",
    "print_hide": 1,
    "reqd": 1,
@@ -597,7 +576,7 @@
    "reqd": 1
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "ignore_pricing_rule",
    "fieldtype": "Check",
    "hide_days": 1,
@@ -628,33 +607,35 @@
    "fieldtype": "Section Break",
    "hide_days": 1,
    "hide_seconds": 1,
-   "oldfieldtype": "Section Break",
    "options": "fa fa-shopping-cart"
   },
   {
    "fieldname": "scan_barcode",
    "fieldtype": "Data",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Scan Barcode",
    "options": "Barcode"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "items",
    "fieldtype": "Table",
+   "hidden": 1,
+   "hide_days": 1,
+   "hide_seconds": 1,
    "label": "Items",
    "options": "Sales Order Item",
-   "reqd": 1
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "pricing_rule_details",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Pricing Rules",
-   "print_hide": 1,
-   "report_hide": 1
+   "label": "Pricing Rules"
   },
   {
    "fieldname": "pricing_rules",
@@ -668,12 +649,7 @@
   {
    "fieldname": "section_break_31",
    "fieldtype": "Section Break",
-   "hide_days": 1,
-   "hide_seconds": 1
-  },
-  {
-   "fieldname": "column_break_33a",
-   "fieldtype": "Column Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1
   },
@@ -684,29 +660,35 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total Quantity",
+   "print_hide": 1,
+   "print_hide_if_no_value": 1,
    "read_only": 1
   },
   {
    "fieldname": "base_total",
    "fieldtype": "Currency",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total (Company Currency)",
    "options": "Company:company:default_currency",
    "print_hide": 1,
-   "read_only": 1
+   "print_hide_if_no_value": 1,
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "base_net_total",
    "fieldtype": "Currency",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Net Total (Company Currency)",
-   "oldfieldname": "net_total",
-   "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
    "print_hide": 1,
+   "print_hide_if_no_value": 1,
    "read_only": 1,
+   "report_hide": 1,
    "width": "150px"
   },
   {
@@ -723,7 +705,10 @@
    "hide_seconds": 1,
    "label": "Total",
    "options": "currency",
-   "read_only": 1
+   "print_hide": 1,
+   "print_hide_if_no_value": 1,
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "net_total",
@@ -734,16 +719,21 @@
    "label": "Net Total",
    "options": "currency",
    "print_hide": 1,
-   "read_only": 1
+   "print_hide_if_no_value": 1,
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "total_net_weight",
    "fieldtype": "Float",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total Net Weight",
    "print_hide": 1,
-   "read_only": 1
+   "print_hide_if_no_value": 1,
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "taxes_section",
@@ -752,10 +742,7 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Taxes and Charges",
-   "oldfieldtype": "Section Break",
-   "options": "fa fa-money",
-   "print_hide": 1,
-   "report_hide": 1
+   "options": "fa fa-money"
   },
   {
    "fieldname": "tax_category",
@@ -773,7 +760,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Shipping Rule",
-   "oldfieldtype": "Button",
    "options": "Shipping Rule",
    "print_hide": 1
   },
@@ -783,8 +769,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Sales Taxes and Charges Template",
-   "oldfieldname": "charge",
-   "oldfieldtype": "Link",
    "options": "Sales Taxes and Charges Template",
    "print_hide": 1
   },
@@ -794,8 +778,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Sales Taxes and Charges",
-   "oldfieldname": "other_charges",
-   "oldfieldtype": "Table",
    "options": "Sales Taxes and Charges"
   },
   {
@@ -816,25 +798,24 @@
    "hide_seconds": 1,
    "label": "Taxes and Charges Calculation",
    "no_copy": 1,
-   "oldfieldtype": "HTML",
    "print_hide": 1,
    "read_only": 1
   },
   {
    "fieldname": "section_break_43",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
-   "hide_seconds": 1
+   "hide_seconds": 1,
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "base_total_taxes_and_charges",
    "fieldtype": "Currency",
-   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total Taxes and Charges (Company Currency)",
-   "oldfieldname": "other_charges_total",
-   "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
    "print_hide": 1,
    "read_only": 1,
@@ -892,7 +873,9 @@
    "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Additional Discount and Coupon Code"
+   "label": "Additional Discount and Coupon Code",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "coupon_code",
@@ -909,7 +892,7 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Apply Additional Discount On",
-   "options": "\nGrand Total\nNet Total",
+   "options": "Grand Total\nNet Total",
    "print_hide": 1
   },
   {
@@ -951,10 +934,8 @@
    "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
-   "oldfieldtype": "Section Break",
    "options": "fa fa-money",
-   "print_hide": 1,
-   "report_hide": 1
+   "print_hide": 1
   },
   {
    "fieldname": "base_grand_total",
@@ -962,8 +943,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Grand Total (Company Currency)",
-   "oldfieldname": "grand_total",
-   "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
    "print_hide": 1,
    "read_only": 1,
@@ -988,8 +967,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Rounded Total (Company Currency)",
-   "oldfieldname": "rounded_total",
-   "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
    "print_hide": 1,
    "read_only": 1,
@@ -1003,8 +980,6 @@
    "hide_seconds": 1,
    "label": "In Words (Company Currency)",
    "length": 240,
-   "oldfieldname": "in_words",
-   "oldfieldtype": "Data",
    "print_hide": 1,
    "read_only": 1,
    "width": "200px"
@@ -1014,7 +989,6 @@
    "fieldtype": "Column Break",
    "hide_days": 1,
    "hide_seconds": 1,
-   "oldfieldtype": "Column Break",
    "print_hide": 1,
    "width": "50%"
   },
@@ -1025,8 +999,6 @@
    "hide_seconds": 1,
    "in_list_view": 1,
    "label": "Grand Total",
-   "oldfieldname": "grand_total_export",
-   "oldfieldtype": "Currency",
    "options": "currency",
    "read_only": 1,
    "width": "150px"
@@ -1051,8 +1023,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Rounded Total",
-   "oldfieldname": "rounded_total_export",
-   "oldfieldtype": "Currency",
    "options": "currency",
    "read_only": 1,
    "width": "150px"
@@ -1064,8 +1034,6 @@
    "hide_seconds": 1,
    "label": "In Words",
    "length": 240,
-   "oldfieldname": "in_words_export",
-   "oldfieldtype": "Data",
    "print_hide": 1,
    "read_only": 1,
    "width": "200px"
@@ -1090,7 +1058,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Packing List",
-   "oldfieldtype": "Section Break",
    "options": "fa fa-suitcase",
    "print_hide": 1
   },
@@ -1110,7 +1077,9 @@
    "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Payment Terms"
+   "label": "Payment Terms",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "payment_terms_template",
@@ -1138,8 +1107,9 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Terms and Conditions",
-   "oldfieldtype": "Section Break",
-   "options": "fa fa-legal"
+   "options": "fa fa-legal",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "tc_name",
@@ -1147,8 +1117,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Terms",
-   "oldfieldname": "tc_name",
-   "oldfieldtype": "Link",
    "options": "Terms and Conditions",
    "print_hide": 1
   },
@@ -1157,9 +1125,7 @@
    "fieldtype": "Text Editor",
    "hide_days": 1,
    "hide_seconds": 1,
-   "label": "Terms and Conditions Details",
-   "oldfieldname": "terms",
-   "oldfieldtype": "Text Editor"
+   "label": "Terms and Conditions Details"
   },
   {
    "collapsible": 1,
@@ -1170,9 +1136,9 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "More Information",
-   "oldfieldtype": "Section Break",
    "options": "fa fa-file-text",
-   "print_hide": 1
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "inter_company_order_reference",
@@ -1190,8 +1156,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Project",
-   "oldfieldname": "project",
-   "oldfieldtype": "Link",
    "options": "Project"
   },
   {
@@ -1218,8 +1182,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Source",
-   "oldfieldname": "source",
-   "oldfieldtype": "Select",
    "options": "Lead Source",
    "print_hide": 1
   },
@@ -1229,8 +1191,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Campaign",
-   "oldfieldname": "campaign",
-   "oldfieldtype": "Link",
    "options": "Campaign",
    "print_hide": 1
   },
@@ -1259,8 +1219,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Letter Head",
-   "oldfieldname": "letter_head",
-   "oldfieldtype": "Select",
    "options": "Letter Head",
    "print_hide": 1
   },
@@ -1269,7 +1227,6 @@
    "fieldtype": "Column Break",
    "hide_days": 1,
    "hide_seconds": 1,
-   "oldfieldtype": "Column Break",
    "print_hide": 1,
    "width": "50%"
   },
@@ -1281,8 +1238,6 @@
    "hide_seconds": 1,
    "label": "Print Heading",
    "no_copy": 1,
-   "oldfieldname": "select_print_heading",
-   "oldfieldtype": "Link",
    "options": "Print Heading",
    "print_hide": 1,
    "report_hide": 1
@@ -1305,7 +1260,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Billing and Delivery Status",
-   "oldfieldtype": "Column Break",
    "print_hide": 1,
    "width": "50%"
   },
@@ -1318,9 +1272,7 @@
    "in_list_view": 1,
    "label": "Status",
    "no_copy": 1,
-   "oldfieldname": "status",
-   "oldfieldtype": "Select",
-   "options": "\nDraft\nOn Hold\nTo Deliver and Bill\nTo Bill\nTo Deliver\nCompleted\nCancelled\nClosed",
+   "options": "Draft\nOn Hold\nTo Deliver and Bill\nTo Bill\nTo Deliver\nCompleted\nCancelled\nClosed",
    "print_hide": 1,
    "read_only": 1,
    "reqd": 1,
@@ -1346,10 +1298,9 @@
    "fieldtype": "Percent",
    "hide_days": 1,
    "hide_seconds": 1,
+   "in_list_view": 1,
    "label": "%  Delivered",
    "no_copy": 1,
-   "oldfieldname": "per_delivered",
-   "oldfieldtype": "Currency",
    "print_hide": 1,
    "read_only": 1,
    "width": "100px"
@@ -1367,10 +1318,9 @@
    "fieldtype": "Percent",
    "hide_days": 1,
    "hide_seconds": 1,
+   "in_list_view": 1,
    "label": "% Amount Billed",
    "no_copy": 1,
-   "oldfieldname": "per_billed",
-   "oldfieldtype": "Currency",
    "print_hide": 1,
    "read_only": 1,
    "width": "100px"
@@ -1396,7 +1346,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Commission",
-   "oldfieldtype": "Section Break",
    "options": "fa fa-group",
    "print_hide": 1
   },
@@ -1406,8 +1355,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Sales Partner",
-   "oldfieldname": "sales_partner",
-   "oldfieldtype": "Link",
    "options": "Sales Partner",
    "print_hide": 1,
    "width": "150px"
@@ -1426,8 +1373,6 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Commission Rate",
-   "oldfieldname": "commission_rate",
-   "oldfieldtype": "Currency",
    "print_hide": 1,
    "width": "100px"
   },
@@ -1437,17 +1382,13 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Total Commission",
-   "oldfieldname": "total_commission",
-   "oldfieldtype": "Currency",
    "options": "Company:company:default_currency",
    "print_hide": 1
   },
   {
-   "collapsible": 1,
    "collapsible_depends_on": "sales_team",
    "fieldname": "section_break1",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Sales Team",
@@ -1460,10 +1401,9 @@
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Sales Team",
-   "oldfieldname": "sales_team",
-   "oldfieldtype": "Table",
    "options": "Sales Team",
-   "print_hide": 1
+   "print_hide": 1,
+   "reqd": 1
   },
   {
    "allow_on_submit": 1,
@@ -1477,24 +1417,6 @@
    "no_copy": 1,
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "allow_on_submit": 1,
-   "fieldname": "from_date",
-   "fieldtype": "Date",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "From Date",
-   "no_copy": 1
-  },
-  {
-   "allow_on_submit": 1,
-   "fieldname": "to_date",
-   "fieldtype": "Date",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "To Date",
-   "no_copy": 1
   },
   {
    "fieldname": "column_break_108",
@@ -1511,17 +1433,8 @@
    "options": "Auto Repeat"
   },
   {
-   "allow_on_submit": 1,
-   "depends_on": "eval: doc.auto_repeat",
-   "fieldname": "update_auto_repeat_reference",
-   "fieldtype": "Button",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Update Auto Repeat Reference"
-  },
-  {
    "fieldname": "contact_phone",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Phone",
@@ -1571,43 +1484,576 @@
   },
   {
    "allow_on_submit": 1,
-   "depends_on": "dispatch_address_name",
    "fieldname": "dispatch_address",
    "fieldtype": "Small Text",
-   "label": "Dispatch Address",
+   "hidden": 1,
+   "label": "Dispatch Address Name",
+   "print_hide": 1,
    "read_only": 1
   },
   {
-   "description": "Jenis JO",
    "fieldname": "jo_type",
    "fieldtype": "Select",
-   "label": "JO Type",
-   "options": "\nNew (SI Baru)\nExtend (SI Perpanjang)\nFree (Gratis/Invest)",
+   "label": "Jenis JO",
+   "options": "New (SI Baru)\nExtend (SI Perpanjang)\nFree (Gratis/Invest)\nCollaboration (Kerjasama)\nProduction (Produksi)\nChange Content(Ganti Materi)",
    "reqd": 1
   },
   {
-   "description": "Mulai tayang",
-   "fieldname": "start_showtime",
-   "fieldtype": "Date",
-   "label": "Start Showtime",
-   "reqd": 1
-  },
-  {
-   "description": "Selesai Tayang",
-   "fieldname": "end_showtime",
-   "fieldtype": "Date",
-   "label": "End Showtime",
-   "reqd": 1
-  },
-  {
+   "depends_on": "eval:doc.workflow_state == \"Approved By Production\"",
    "fieldname": "section_break_1",
    "fieldtype": "Section Break",
-   "label": "Distribution Value (Distribusi Nilai Job Order)"
+   "label": "Distribution Value (Distribusi Nilai Job Order)",
+   "read_only_depends_on": "eval:doc.workflow_state != \"Approved By Production\""
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Approved by Production\";",
+   "fieldname": "kickback",
+   "fieldtype": "Currency",
+   "label": "Kickback",
+   "options": "Company:company:default_currency",
+   "precision": "0"
+  },
+  {
+   "fieldname": "section_break_app",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fetch_from": "link_quotation.sales_account",
+   "fieldname": "sales_name",
+   "fieldtype": "Link",
+   "label": "Sales",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "description": "Disetujui oleh Sales Manager",
+   "fieldname": "approved_sales_manager",
+   "fieldtype": "Link",
+   "label": "Approved By Sales Manager",
+   "mandatory_depends_on": "doc.workflow_state=='Approved By Sales Manager';",
+   "options": "User"
+  },
+  {
+   "description": "Disetujui oleh Produksi",
+   "fieldname": "approved_production",
+   "fieldtype": "Link",
+   "label": "Approved By Production",
+   "mandatory_depends_on": "eval:(doc.workflow_state=='Approved By Production');",
+   "options": "User"
+  },
+  {
+   "description": "Disetujui oleh RND",
+   "fieldname": "approved_rnd",
+   "fieldtype": "Link",
+   "label": "Approved By RND",
+   "mandatory_depends_on": "(doc.workflow_state=='Approved By RND');",
+   "options": "User"
+  },
+  {
+   "description": "Disetujui oleh Finance",
+   "fieldname": "approved_finance",
+   "fieldtype": "Link",
+   "label": "Approved By Finance",
+   "mandatory_depends_on": "doc.workflow_state=='Approved By Finance';",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_approval",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Tanda Tangan Sales",
+   "fieldname": "sales_signature",
+   "fieldtype": "Attach Image",
+   "label": "Sales Admin"
+  },
+  {
+   "description": "Tanda Tangan Produksi",
+   "fetch_from": "approved_production.sales_signature",
+   "fieldname": "production_signature",
+   "fieldtype": "Attach Image",
+   "label": "Production",
+   "read_only": 1
+  },
+  {
+   "description": "Tanda Tangan RND",
+   "fetch_from": "approved_rnd.sales_signature",
+   "fieldname": "rnd_signature",
+   "fieldtype": "Attach Image",
+   "label": "RND",
+   "read_only": 1
+  },
+  {
+   "description": "Tanda Tangan Finance",
+   "fetch_from": "approved_finance.sales_signature",
+   "fieldname": "finance_signature",
+   "fieldtype": "Attach Image",
+   "label": "Finance",
+   "read_only": 1
+  },
+  {
+   "description": "Tanda Tangan Sales Manager",
+   "fetch_from": "approved_sales_manager.sales_signature",
+   "fieldname": "sales_manager_signature",
+   "fieldtype": "Attach Image",
+   "label": "Sales Manager",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "nm_product.item_location",
+   "fieldname": "nm_lokasi",
+   "fieldtype": "Data",
+   "label": "Nama Lokasi"
+  },
+  {
+   "fieldname": "nm_product",
+   "fieldtype": "Link",
+   "label": "Nama Produk",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "nm_product.dimension",
+   "fieldname": "ukuran",
+   "fieldtype": "Data",
+   "label": "Ukuran"
+  },
+  {
+   "fieldname": "dateline",
+   "fieldtype": "Date",
+   "label": "Deadline"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == \"Approved By Sales Manager\" || \"Approved\"",
+   "fieldname": "tgl_selesai",
+   "fieldtype": "Date",
+   "label": "Tanggal Selesai",
+   "read_only_depends_on": "eval:doc.workflow_state != \"Approved By Sales Manager\""
+  },
+  {
+   "fieldname": "no_kontrak",
+   "fieldtype": "Data",
+   "label": "No Kontrak"
+  },
+  {
+   "fieldname": "periode_kontrak",
+   "fieldtype": "Data",
+   "label": "Periode Kontrak"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == \"Approved By RND\" || \"Approved\"",
+   "fieldname": "tgl_lunas",
+   "fieldtype": "Date",
+   "label": "Tanggal Lunas"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Approved by Production\";",
+   "fieldname": "tgl_byr_kickback",
+   "fieldtype": "Date",
+   "label": "Tanggal Bayar Kickback"
+  },
+  {
+   "fieldname": "nilai_job_order",
+   "fieldtype": "Currency",
+   "label": "Nilai Job Order",
+   "non_negative": 1,
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "est_harga_pokok_jo",
+   "fieldtype": "Text",
+   "label": "JO Cost Estimation -Estimated Purchase Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "rhp_jo",
+   "fieldtype": "Text",
+   "label": "JO Cost Realization - Location Purchase Realization"
+  },
+  {
+   "default": "0",
+   "fieldname": "est_tambah_sewa",
+   "fieldtype": "Text",
+   "label": "Estimated Increase in Rent"
+  },
+  {
+   "default": "0",
+   "fieldname": "est_beli_listrik",
+   "fieldtype": "Text",
+   "label": "Estimated Purchase of Electricity"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_est_lokasi",
+   "fieldtype": "Text",
+   "label": "Total Estimated Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "rbl",
+   "fieldtype": "Text",
+   "label": "Actual Purchase Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "realisasi_produksi",
+   "fieldtype": "Text",
+   "label": "Production Realization"
+  },
+  {
+   "default": "0",
+   "fieldname": "estimasi_bahan_baku",
+   "fieldtype": "Text",
+   "label": "Raw Material Estimation"
+  },
+  {
+   "default": "0",
+   "fieldname": "est_tenaga_kerja",
+   "fieldtype": "Text",
+   "label": "Labor Estimation"
+  },
+  {
+   "default": "0",
+   "fieldname": "est_by_lapangan",
+   "fieldtype": "Text",
+   "label": "Field Cost Estimation"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_est_produksi",
+   "fieldtype": "Text",
+   "label": "Total Estimated Production"
+  },
+  {
+   "default": "0",
+   "fieldname": "estimasi_produksi",
+   "fieldtype": "Text",
+   "label": "Production Estimate"
+  },
+  {
+   "default": "0",
+   "fieldname": "est_pajak_dasar",
+   "fieldtype": "Text",
+   "label": "Basic Tax Estimation"
+  },
+  {
+   "default": "0",
+   "fieldname": "est_koordinasi",
+   "fieldtype": "Text",
+   "label": "Coordination Estimation"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_est_pajak",
+   "fieldtype": "Text",
+   "label": "Total Estimated Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "realisasi_pajak",
+   "fieldtype": "Text",
+   "label": "Tax Realization"
+  },
+  {
+   "fieldname": "bottom_price",
+   "fieldtype": "Currency",
+   "label": "Bottom Price",
+   "non_negative": 1,
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break0",
+   "fieldtype": "Column Break",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "width": "50%"
+  },
+  {
+   "fieldname": "terima_design",
+   "fieldtype": "Date",
+   "label": "Tgl Terima Design"
+  },
+  {
+   "fieldname": "column_break_010",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "link_quotation",
+   "fieldtype": "Link",
+   "label": "Get from Quotation",
+   "options": "Quotation"
+  },
+  {
+   "fetch_from": "nm_product.item_group",
+   "fieldname": "jenis_produk",
+   "fieldtype": "Data",
+   "label": "Jenis Produk"
+  },
+  {
+   "fetch_from": "nm_product.visual",
+   "fieldname": "bhn_print",
+   "fieldtype": "Data",
+   "label": "Bahan Print"
+  },
+  {
+   "fetch_from": "nm_product.ads_placement",
+   "fieldname": "placement",
+   "fieldtype": "Data",
+   "label": "Placement"
+  },
+  {
+   "default": "On Process",
+   "depends_on": "eval:(doc.workflow_state == \"Approved By Sales Manager\" || \"Approved\");",
+   "fieldname": "on_time",
+   "fieldtype": "Data",
+   "label": "On Time (Status Pengerjaan)",
+   "mandatory_depends_on": "eval:(doc.workflow_state == \"Approved By Sales Manager\");",
+   "read_only_depends_on": "eval:(doc.workflow_state != \"Approved By Sales Manager\");"
+  },
+  {
+   "default": "0",
+   "fieldname": "nilai_deposit_0",
+   "fieldtype": "Currency",
+   "label": "Nilai Deposit",
+   "options": "Company:company:default_currency",
+   "precision": "0"
+  },
+  {
+   "fieldname": "tgl_retur",
+   "fieldtype": "Date",
+   "label": "Tanggal Retur"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == \"Approved By RND\" || \"Approved\"",
+   "fieldname": "no_voucher",
+   "fieldtype": "Data",
+   "label": "No Voucher",
+   "print_hide": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "data_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "diskon_kc",
+   "fieldtype": "Currency",
+   "label": "Diskon",
+   "non_negative": 1,
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ppn_currency",
+   "fieldtype": "Currency",
+   "label": "PPN",
+   "non_negative": 1,
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "urus_pajak",
+   "fieldtype": "Check",
+   "label": "Urus Pajak"
+  },
+  {
+   "fieldname": "data_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nilai_bersih_jo",
+   "fieldtype": "Currency",
+   "label": "Nilai Bersih JO",
+   "non_negative": 1,
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pajak_produksi",
+   "fieldtype": "Currency",
+   "label": "Pajak Produksi",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "default": "0",
+   "fieldname": "pajak_reklame",
+   "fieldtype": "Currency",
+   "label": "Pajak Reklame",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "data_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nilai_sales",
+   "fieldtype": "Currency",
+   "label": "Nilai Sales",
+   "non_negative": 1,
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.tax_id",
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Tax Id",
+   "read_only": 1,
+   "width": "100px"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == (\"Approved By RND\" || \"Approved\")",
+   "fieldname": "data_54",
+   "fieldtype": "Section Break",
+   "label": "Invoice Information",
+   "mandatory_depends_on": "eval:doc.workflow_state == \"Approved By RND\"",
+   "read_only_depends_on": "eval:doc.workflow_state != \"Approved By RND\""
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.workflow_state==\"Approved by Production\";",
+   "fieldname": "jo_invoice",
+   "fieldtype": "Data",
+   "label": "JO"
+  },
+  {
+   "fieldname": "data_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.workflow_state==\"Approved by Production\";",
+   "fieldname": "os",
+   "fieldtype": "Data",
+   "label": "OS"
+  },
+  {
+   "fieldname": "data_66",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.workflow_state==\"Approved by Production\";",
+   "fieldname": "ag",
+   "fieldtype": "Data",
+   "label": "AG"
+  },
+  {
+   "fieldname": "data_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.workflow_state==\"Approved by Production\";",
+   "fieldname": "no_invoice",
+   "fieldtype": "Data",
+   "label": "No Invoice"
+  },
+  {
+   "fieldname": "data_68",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Approved by Production\";",
+   "fieldname": "tgl_invoice",
+   "fieldtype": "Date",
+   "label": "Tanggal Invoice"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.workflow_state==\"Approved by Production\";",
+   "fieldname": "lunas",
+   "fieldtype": "Check",
+   "label": "Lunas"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == \"Approved By Production\" || \"Approved\"",
+   "fieldname": "data_74",
+   "fieldtype": "Section Break",
+   "label": "Contract, Rent, and Deposit",
+   "read_only_depends_on": "eval:doc.workflow_state != \"Approved By Production\" || \"Approved\""
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Submitted\";",
+   "fieldname": "masa_kontrak",
+   "fieldtype": "Data",
+   "label": "Masa Kontrak Pel"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Submitted\";",
+   "fieldname": "masa_sewa_lokasi",
+   "fieldtype": "Data",
+   "label": "Masa Sewa Lokasi"
+  },
+  {
+   "fieldname": "data_78",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Submitted\";",
+   "fieldname": "kontrak_lokasi",
+   "fieldtype": "Data",
+   "label": "No Kontrak Lokasi"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Submitted\";",
+   "fieldname": "jdl_bayar_lokasi",
+   "fieldtype": "Date",
+   "label": "Jadwal Bayar Lokasi"
+  },
+  {
+   "fieldname": "data_96",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Submitted\";",
+   "fieldname": "tgl_req_byr_lks",
+   "fieldtype": "Date",
+   "label": "Tanggal Req Bayar Lokasi"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Submitted\";",
+   "fieldname": "tgl_srh_doc_pajak",
+   "fieldtype": "Date",
+   "label": "Tanggal Serah Dokumen Pajak"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval:doc.workflow_state != \"Approved By Finance\"",
+   "depends_on": "eval:doc.workflow_state == (\"Approved By Finance\" || \"Approved\")",
+   "fieldname": "data_149",
+   "fieldtype": "Section Break",
+   "label": "Additional Info",
+   "read_only_depends_on": "eval:doc.workflow_state != \"Approved By Finance\""
+  },
+  {
+   "fieldname": "data_156",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_163",
+   "fieldtype": "Column Break"
   },
   {
    "description": "Nilai Jual Lokasi",
    "fieldname": "nilai_jual_lokasi",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Location Value"
   },
   {
@@ -1615,6 +2061,10 @@
    "fieldname": "nilai_jual_production",
    "fieldtype": "Currency",
    "label": "Production Value"
+  },
+  {
+   "fieldname": "column_break101",
+   "fieldtype": "Column Break"
   },
   {
    "description": "Nilai Jual Maintenance",
@@ -1630,337 +2080,179 @@
    "label": "Tax Value"
   },
   {
+   "fieldname": "data_144",
+   "fieldtype": "Column Break"
+  },
+  {
    "description": "Total Nilai Jual",
    "fieldname": "total_nilai_jual",
    "fieldtype": "Currency",
    "label": "Total Value"
   },
   {
-   "fieldname": "column_break101",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "kickback",
-   "fieldtype": "Currency",
-   "label": "Kickback",
-   "options": "Company:company:default_currency",
-   "precision": "0"
-  },
-  {
-   "fieldname": "section_break_app",
+   "depends_on": "eval:doc.workflow_state == \"Approved By Sales Manager\"",
+   "fieldname": "data_139",
    "fieldtype": "Section Break",
-   "label": "Approval"
+   "read_only_depends_on": "eval:doc.workflow_state != \"Approved By Sales Manager\""
   },
   {
-   "description": "Dibuat oleh",
-   "fetch_from": "link_quotation.sales_name",
-   "fieldname": "sales_name",
-   "fieldtype": "Link",
-   "label": "Made by",
-   "options": "User"
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "tgl_design_siap",
+   "fieldtype": "Date",
+   "label": "Tanggal Design Siap"
   },
   {
-   "description": "Disetujui oleh Sales Manager",
-   "fieldname": "approved_sales_manager",
-   "fieldtype": "Link",
-   "label": "Approved By Sales Manager",
-   "options": "User"
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "tgl_terima_dsgn",
+   "fieldtype": "Date",
+   "label": "Tanggal Terima Design"
   },
   {
-   "description": "Disetujui oleh Produksi",
-   "fieldname": "approved_production",
-   "fieldtype": "Link",
-   "label": "Approved By Production",
-   "options": "User"
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "tgl_acc_dsgn",
+   "fieldtype": "Date",
+   "label": "Tanggal Acc Design"
   },
   {
-   "description": "Disetujui oleh RND",
-   "fieldname": "approved_rnd",
-   "fieldtype": "Link",
-   "label": "Approved By RND",
-   "options": "User"
-  },
-  {
-   "description": "Disetujui oleh Finance",
-   "fieldname": "approved_finance",
-   "fieldtype": "Link",
-   "label": "Approved By Finance",
-   "options": "User"
-  },
-  {
-   "fieldname": "column_break_approval",
+   "fieldname": "data_146",
    "fieldtype": "Column Break"
   },
   {
-   "description": "Tanda Tangan Sales",
-   "fetch_from": "link_quotation.ttd_sales",
-   "fieldname": "sales_signature",
-   "fieldtype": "Attach Image",
-   "label": "Sales"
-  },
-  {
-   "description": "Tanda Tangan Produksi",
-   "fieldname": "production_signature",
-   "fieldtype": "Attach Image",
-   "label": "Production"
-  },
-  {
-   "description": "Tanda Tangan RND",
-   "fieldname": "rnd_signature",
-   "fieldtype": "Attach Image",
-   "label": "RND"
-  },
-  {
-   "description": "Tanda Tangan Finance",
-   "fieldname": "finance_signature",
-   "fieldtype": "Attach Image",
-   "label": "Finance"
-  },
-  {
-   "description": "Tanda Tangan Sales Manager",
-   "fieldname": "sales_manager_signature",
-   "fieldtype": "Attach Image",
-   "label": "Sales Manager"
-  },
-  {
-   "fieldname": "link_quotation",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Get from Quotation",
-   "options": "Quotation"
-  },
-  {
-   "fieldname": "section_break_2",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "return_date",
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "tgl_proof",
    "fieldtype": "Date",
-   "label": "Tanggal Retur"
+   "label": "Tanggal Proof"
   },
   {
-   "fieldname": "voucher",
-   "fieldtype": "Data",
-   "label": "Voucher"
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "tgl_cetak",
+   "fieldtype": "Date",
+   "label": "Tanggal Cetak"
   },
   {
-   "fieldname": "kickback_value",
-   "fieldtype": "Int",
-   "label": "Nilai Kickback"
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "tgl_kirim",
+   "fieldtype": "Date",
+   "label": "Tanggal Kirim"
   },
   {
-   "fieldname": "column_break_5",
+   "fieldname": "data_153",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "tgl_jo",
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "sup_dgtl_print",
    "fieldtype": "Data",
-   "label": "JO Date"
+   "label": "Supplier Digital Print"
   },
   {
-   "description": "Nama Lokasi",
-   "fieldname": "nm_lokasi",
-   "fieldtype": "Data",
-   "label": "Location Name"
-  },
-  {
-   "description": "Nama Produk",
-   "fieldname": "nm_product",
-   "fieldtype": "Link",
-   "label": "Product Name",
-   "options": "Item"
-  },
-  {
-   "fieldname": "dateline",
-   "fieldtype": "Date",
-   "label": "Deadline"
-  },
-  {
-   "description": "Tanggal Selesai",
-   "fieldname": "tgl_selesai",
-   "fieldtype": "Date",
-   "label": "End Date"
-  },
-  {
-   "description": "No Kontrak",
-   "fieldname": "no_kontrak",
-   "fieldtype": "Data",
-   "label": "Contract No"
-  },
-  {
-   "description": "Periode Kontrak",
-   "fieldname": "periode_kontrak",
-   "fieldtype": "Data",
-   "label": "Contract Period"
-  },
-  {
-   "description": "Nilai Deposit",
-   "fieldname": "nilai_deposit",
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "nilai_dgtl_print",
    "fieldtype": "Currency",
-   "label": "Deposit Value",
+   "label": "Nilai Digital Print",
    "precision": "0"
   },
   {
-   "description": "Tanggal Lunas",
-   "fieldname": "tgl_lunas",
-   "fieldtype": "Date",
-   "label": "Due Date"
-  },
-  {
-   "description": "Tanggal Bayar Kickback",
-   "fieldname": "tgl_byr_kickback",
-   "fieldtype": "Date",
-   "label": "Kickback Paid Date"
-  },
-  {
-   "description": "Nilai Job Order",
-   "fieldname": "nilai_job_order",
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "no_po",
    "fieldtype": "Data",
-   "label": "Job Order Value"
+   "label": "No PO"
   },
   {
-   "depends_on": "eval:doc.is_rejected==1",
-   "fieldname": "rejected_reason",
-   "fieldtype": "Table MultiSelect",
-   "label": "Rejected Reason",
-   "options": "JO Rejected Reason Detail"
+   "fieldname": "data_157",
+   "fieldtype": "Column Break"
   },
   {
-   "default": "0",
-   "fieldname": "is_rejected",
-   "fieldtype": "Check",
-   "hidden": 1,
-   "label": "Is Rejected",
+   "depends_on": "eval:doc.workflow_state==\"Approved by RND\";",
+   "fieldname": "ket_pasang",
+   "fieldtype": "Small Text",
+   "label": "Keterangan Pasang",
+   "precision": "0"
+  },
+  {
+   "fieldname": "data_237",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_238",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_239",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Text Editor",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "data_231",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "approved_sales_manager.full_name",
+   "fieldname": "sm_fullname",
+   "fieldtype": "Data",
    "read_only": 1
   },
   {
-   "description": "Ukuran",
-   "fetch_from": "nm_product.dimension",
-   "fieldname": "ukuran",
+   "fetch_from": "approved_production.full_name",
+   "fieldname": "prod_fullname",
    "fieldtype": "Data",
-   "label": "Dimension/Side"
+   "read_only": 1
   },
   {
-   "fieldname": "sction_break_customer",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_12",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "estimasi_break",
-   "fieldtype": "Section Break",
-   "label": "Estimate"
-  },
-  {
-   "description": "Est. Harga Pokok JO Estimasi Beli Lokasi",
-   "fieldname": "est_harga_pokok_jo",
+   "fetch_from": "approved_rnd.full_name",
+   "fieldname": "rnd_fullname",
    "fieldtype": "Data",
-   "label": "Est. Harga Pokok JO Estimasi Beli Lokasi"
+   "read_only": 1
   },
   {
-   "description": "Realisasi Harga Pokok JO  - Realisasi Beli Lokasi",
-   "fieldname": "rhp_jo",
+   "fetch_from": "approved_finance.full_name",
+   "fieldname": "finan_fullname",
    "fieldtype": "Data",
-   "label": "Realisasi Harga Pokok JO  - Realisasi Beli Lokasi"
+   "read_only": 1
   },
   {
-   "description": "Est. Tambah Sewa",
-   "fieldname": "est_tambah_sewa",
+   "fetch_from": "nm_product.area",
+   "fieldname": "nm_area",
    "fieldtype": "Data",
-   "label": "Est. Tambah Sewa"
+   "label": "Area",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Submitted\";"
   },
   {
-   "fieldname": "est_beli_listrik",
+   "description": "Dibuat oleh",
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "Made by",
+   "mandatory_depends_on": "eval:doc.workflow_state=='Not Saved';",
+   "options": "User"
+  },
+  {
+   "fetch_from": "sales_name.sales_signature",
+   "fieldname": "sales_sign",
+   "fieldtype": "Attach Image",
+   "label": "Sales' Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admin_fullname",
    "fieldtype": "Data",
-   "label": "Est. Beli Listrik"
+   "read_only": 1
   },
   {
-   "description": "Total Est. Lokasi",
-   "fieldname": "total_est_lokasi",
+   "fetch_from": "sales_name.full_name",
+   "fieldname": "sales_fullname",
    "fieldtype": "Data",
-   "label": "Total Est. Lokasi"
-  },
-  {
-   "description": "Realisasi Beli Lokasi",
-   "fieldname": "rbl",
-   "fieldtype": "Data",
-   "label": "Realisasi Beli Lokasi"
-  },
-  {
-   "description": "Realisasi Produksi",
-   "fieldname": "realisasi_produksi",
-   "fieldtype": "Data",
-   "label": "Realisasi Produksi"
-  },
-  {
-   "description": "Est. Bahan Baku",
-   "fieldname": "estimasi_bahan_baku",
-   "fieldtype": "Data",
-   "label": "Est. Bahan Baku"
-  },
-  {
-   "fieldname": "break_estimasi",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "est_tenaga_kerja",
-   "fieldtype": "Data",
-   "label": "Est. Tenaga Kerja"
-  },
-  {
-   "description": "Est. By Lapangan",
-   "fieldname": "est_by_lapangan",
-   "fieldtype": "Data",
-   "label": "Est. By Lapangan"
-  },
-  {
-   "description": "Total Est. Produksi",
-   "fieldname": "total_est_produksi",
-   "fieldtype": "Data",
-   "label": "Total Est. Produksi"
-  },
-  {
-   "description": "Estimasi Produksi",
-   "fieldname": "estimasi_produksi",
-   "fieldtype": "Data",
-   "label": "Estimasi Produksi"
-  },
-  {
-   "description": "Est. Pajak Dasar",
-   "fieldname": "est_pajak_dasar",
-   "fieldtype": "Data",
-   "label": "Est. Pajak Dasar"
-  },
-  {
-   "description": "Est. Koordinasi",
-   "fieldname": "est_koordinasi",
-   "fieldtype": "Data",
-   "label": "Est. Koordinasi"
-  },
-  {
-   "fieldname": "realisasi_pajak",
-   "fieldtype": "Data",
-   "label": "Realisasi Pajak"
-  },
-  {
-   "fieldname": "total_est_pajak",
-   "fieldtype": "Data",
-   "label": "Total Est. Pajak"
-  },
-  {
-   "description": "Tanggal Bayar",
-   "fieldname": "tgl_byr",
-   "fieldtype": "Data",
-   "label": "Paid Date"
+   "read_only": 1
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-08 14:50:59.737984",
+ "modified": "2022-01-07 08:56:49.780860",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",
@@ -1968,17 +2260,51 @@
  "owner": "Administrator",
  "permissions": [
   {
-   "amend": 1,
-   "cancel": 1,
-   "create": 1,
-   "delete": 1,
    "email": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Sales User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "set_user_permissions": 1,
    "share": 1,
-   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Maintenance User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Stock User"
+  },
+  {
+   "read": 1,
+   "role": "Sales Master Manager",
+   "set_user_permissions": 1,
    "write": 1
   },
   {
@@ -1992,41 +2318,10 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Sales Manager",
+   "role": "Sales Admin",
    "set_user_permissions": 1,
    "share": 1,
    "submit": 1,
-   "write": 1
-  },
-  {
-   "amend": 1,
-   "cancel": 1,
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Maintenance User",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  },
-  {
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "role": "Accounts User"
-  },
-  {
-   "read": 1,
-   "report": 1,
-   "role": "Stock User"
-  },
-  {
-   "permlevel": 1,
-   "read": 1,
-   "role": "Sales Manager",
    "write": 1
   },
   {
@@ -2035,7 +2330,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "RND Manager",
+   "role": "Item Manager",
    "share": 1,
    "write": 1
   },
@@ -2046,26 +2341,6 @@
    "read": 1,
    "report": 1,
    "role": "Production Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "RND user",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Production User",
    "share": 1,
    "write": 1
   }

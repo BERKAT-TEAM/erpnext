@@ -1,0 +1,206 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-12-20 16:05:09.218208",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec",
+  "naming_series",
+  "nama",
+  "doh",
+  "colb",
+  "divisi",
+  "jabatan",
+  "sec1",
+  "tgl_masuk1",
+  "tgl_berhenti1",
+  "sec2",
+  "tgl_masuk2",
+  "tgl_berhenti2",
+  "sec3",
+  "tgl_masuk3",
+  "tgl_berhenti3",
+  "sec4",
+  "tgl_masuk4",
+  "tgl_berhenti4",
+  "sec5",
+  "tgl_masuk5",
+  "tgl_berhenti5"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "doh",
+   "fieldtype": "Date",
+   "label": "Date of Hired"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "sec1",
+   "fieldtype": "Section Break",
+   "label": "Kontrak 1"
+  },
+  {
+   "fieldname": "tgl_masuk1",
+   "fieldtype": "Date",
+   "label": "Tanggal Masuk"
+  },
+  {
+   "fieldname": "tgl_berhenti1",
+   "fieldtype": "Date",
+   "label": "Tanggal Berhenti"
+  },
+  {
+   "fieldname": "sec2",
+   "fieldtype": "Section Break",
+   "label": "Kontrak 2"
+  },
+  {
+   "fieldname": "tgl_masuk2",
+   "fieldtype": "Date",
+   "label": "Tanggal Masuk"
+  },
+  {
+   "fieldname": "tgl_berhenti2",
+   "fieldtype": "Date",
+   "label": "Tanggal Berhenti"
+  },
+  {
+   "fieldname": "sec",
+   "fieldtype": "Section Break",
+   "label": "Kontrak Karyawan"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "KONTRAK-.YYYY.-"
+  },
+  {
+   "fieldname": "colb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec3",
+   "fieldtype": "Section Break",
+   "label": "Kontrak 3"
+  },
+  {
+   "fieldname": "tgl_masuk3",
+   "fieldtype": "Date",
+   "label": "Tanggal Masuk"
+  },
+  {
+   "fieldname": "tgl_berhenti3",
+   "fieldtype": "Date",
+   "label": "Tanggal Berhenti"
+  },
+  {
+   "fieldname": "sec4",
+   "fieldtype": "Section Break",
+   "label": "Kontrak 4"
+  },
+  {
+   "fieldname": "tgl_masuk4",
+   "fieldtype": "Date",
+   "label": "Tanggal Masuk"
+  },
+  {
+   "fieldname": "tgl_berhenti4",
+   "fieldtype": "Date",
+   "label": "Tanggal Berhenti"
+  },
+  {
+   "fieldname": "sec5",
+   "fieldtype": "Section Break",
+   "label": "Kontrak 5"
+  },
+  {
+   "fieldname": "tgl_masuk5",
+   "fieldtype": "Date",
+   "label": "Tanggal Masuk"
+  },
+  {
+   "fieldname": "tgl_berhenti5",
+   "fieldtype": "Date",
+   "label": "Tanggal Berhenti"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-21 17:09:08.761186",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Kontrak Karyawan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Assistant HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

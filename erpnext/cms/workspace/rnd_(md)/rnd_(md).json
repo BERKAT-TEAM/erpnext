@@ -1,34 +1,93 @@
 {
  "category": "Modules",
- "charts": [],
- "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SI Request\",\"col\":4}}]",
- "creation": "2021-11-01 10:26:19.322239",
+ "charts": [
+  {
+   "chart_name": "Visit Client Edoc",
+   "label": "Visit Client "
+  },
+  {
+   "chart_name": "Entertain Client Edoc",
+   "label": "Entertain Client "
+  },
+  {
+   "chart_name": "Surat Service Edoc",
+   "label": "Surat Service "
+  },
+  {
+   "chart_name": "Survey Edoc",
+   "label": "Survey "
+  },
+  {
+   "chart_name": "Tidak Kembali Kantor",
+   "label": "Tidak Kembali Kantor"
+  },
+  {
+   "chart_name": "Kontrak Lokasi Edoc",
+   "label": "Kontrak Lokasi "
+  }
+ ],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcut\\n\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SI Request\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Space Iklan\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rent Tax\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rnd Activity\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Form&nbsp; E-Doc\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visit Client \",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Entertain Client \",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Surat Service\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Survey\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tidak Kembali Kantor \",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kontrak Lokasi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Visit Client \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Entertain Client \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Surat Service \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Survey \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Tidak Kembali Kantor\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Kontrak Lokasi \",\"col\":6}}]",
+ "creation": "2021-11-01 10:07:17.640922",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends_another_page": 0,
  "hide_custom": 0,
- "icon": "retail",
+ "icon": "view",
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
  "label": "RND (MD)",
  "links": [],
- "modified": "2021-11-04 16:12:06.872542",
+ "modified": "2021-12-16 16:11:28.299465",
  "modified_by": "Administrator",
  "module": "CMS",
  "modules": 0,
  "name": "RND (MD)",
  "owner": "Administrator",
+ "parent_page": "",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "public": 1,
- "roles": [],
- "sequence_id": 7,
+ "roles": [
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Sales Admin"
+  },
+  {
+   "role": "RND Manager"
+  },
+  {
+   "role": "RND user"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Master Manager"
+  }
+ ],
+ "sequence_id": 10,
  "shortcuts": [
   {
-   "color": "Red",
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Space Iklan",
+   "link_to": "Item",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tidak Kembali Kantor ",
+   "link_to": "Tidak Kembali Kantor Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
    "doc_view": "List",
    "format": "{} To Approve",
    "label": "Job Order",
@@ -37,12 +96,59 @@
    "type": "DocType"
   },
   {
-   "color": "Pink",
+   "color": "Grey",
    "doc_view": "List",
-   "format": "{} Need to Approve",
    "label": "SI Request",
    "link_to": "SI Request",
-   "stats_filter": "{\"workflow_state\":[\"=\",\"Approved By Sales Manager\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Entertain Client ",
+   "link_to": "Entertain Client Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rent Tax",
+   "link_to": "Rent Tax",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Visit Client ",
+   "link_to": "Visit Client Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Survey",
+   "link_to": "Survey Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Surat Service",
+   "link_to": "Surat Service Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rnd Activity",
+   "link_to": "RND Activity",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kontrak Lokasi",
+   "link_to": "Kontrak Lokasi Edoc",
    "type": "DocType"
   }
  ],

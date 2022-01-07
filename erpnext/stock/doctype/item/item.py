@@ -78,7 +78,7 @@ class Item(WebsiteGenerator):
 		self.item_code = ""
 		slice_three = slice(3)
 		slice_six = slice(6)
-		current = frappe.db.sql("SELECT COUNT(*) FROM `tabItem`")
+		current = frappe.db.sql("SELECT inc FROM `tabItem` ORDER BY inc DESC LIMIT 1;")
 		if frappe.db.get_default("item_naming_by") == "Naming Series":
 			if self.variant_of:
 				if not self.item_code:
@@ -87,12 +87,12 @@ class Item(WebsiteGenerator):
 			else:
 				from frappe.model.naming import set_name_by_naming_series
 				set_name_by_naming_series(self)
-				print(self)
-				self.item_code = self.name + self.ads_placement[slice_three] + self.place_code[slice_three] + self.area[slice_six]
+				self.item_code = self.name
 
-		self.item_code = str(current[0][0]) + '-' + self.ads_placement[slice_three] + '-' + self.place_code[slice_three] + '-' + (self.area[slice_six]).upper()
+		# self.item_code = strip(self.item_code)
+		self.item_code = str((current[0][0]) + 1) + '-' + self.ads_placement[slice_three] + '-' + self.place_code[slice_three] + '-' + (self.area[slice_six]).upper()
+		# self.name = self.item_code
 		self.name = self.item_code
-		print(self.name, self.item_code, "====ini item code====")
 
 	def before_insert(self):
 		if not self.item_name:
@@ -1062,7 +1062,6 @@ class Item(WebsiteGenerator):
 						'doctype': self.doctype,
 						'item_code': item,
 						'item_name': item,
-						'item_location': item,
 						'description': item,
 						'show_in_website': 1,
 						'is_sales_item': 1,

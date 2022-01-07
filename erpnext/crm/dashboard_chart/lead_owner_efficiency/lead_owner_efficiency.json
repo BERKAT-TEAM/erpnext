@@ -10,13 +10,21 @@
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "modified": "2021-10-06 12:16:41.500931",
+ "modified": "2021-11-11 09:08:20.981676",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Lead Owner Efficiency",
  "number_of_groups": 0,
  "owner": "Administrator",
  "report_name": "Lead Owner Efficiency",
+ "roles": [
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Master Manager"
+  }
+ ],
  "time_interval": "Yearly",
  "timeseries": 0,
  "timespan": "Last Year",

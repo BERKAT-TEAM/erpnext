@@ -2,11 +2,39 @@
  "category": "",
  "charts": [
   {
-   "chart_name": "Outgoing Salary",
-   "label": "Outgoing Salary"
+   "chart_name": "Permohonan Cuti Edoc",
+   "label": "Permohonan "
+  },
+  {
+   "chart_name": "Reimburse Operasional",
+   "label": "Reimburse Operasional "
+  },
+  {
+   "chart_name": "Kendaraan Operasional",
+   "label": "Kendaraan Operasional "
+  },
+  {
+   "chart_name": "Reimburse Medical Edoc",
+   "label": "Reimburse Medical "
+  },
+  {
+   "chart_name": "Izin Edoc",
+   "label": "Izin "
+  },
+  {
+   "chart_name": "Lembur Edoc",
+   "label": "Lembur "
+  },
+  {
+   "chart_name": "Pengajuan Pelatihan Edoc",
+   "label": "Pengajuan Pelatihan "
+  },
+  {
+   "chart_name": "Permintaan Tenaga Kerja Edoc Chart",
+   "label": "Permintaan Tenaga Kerja"
   }
  ],
- "content": "[{\"type\": \"onboarding\", \"data\": {\"onboarding_name\":\"Human Resource\", \"col\": 12}}, {\"type\": \"chart\", \"data\": {\"chart_name\": \"Outgoing Salary\", \"col\": 12}}, {\"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"type\": \"header\", \"data\": {\"text\": \"Your Shortcuts\", \"level\": 4, \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Employee\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Leave Application\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Attendance\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Job Applicant\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Monthly Attendance Sheet\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Dashboard\", \"col\": 4}}, {\"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"type\": \"header\", \"data\": {\"text\": \"Reports & Masters\", \"level\": 4, \"col\": 12}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Employee\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Employee Lifecycle\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Shift Management\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Leaves\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Attendance\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Expense Claims\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Settings\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Fleet Management\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Recruitment\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Loans\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Training\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Performance\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Key Reports\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Other Reports\", \"col\": 4}}]",
+ "content": "[{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Permohonan \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Izin \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Lembur \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Pengajuan Pelatihan \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Permintaan Tenaga Kerja\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Reimburse Medical \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Kendaraan Operasional \",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Reimburse Operasional \",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"HR\",\"level\":2,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Applicant\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Application\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kontrak Karyawan\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daftar Asuransi Direksi\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daftar Service Kendaraan Operasional MING\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daftar Service Kendaraan Operasional MING\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Maintenance AC\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kendaraan Operasional Office\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kendaraan Mobile LED\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asuransi Gedung dan Property\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Form&nbsp; E-Doc\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Permohonan Cuti\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lembur \",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Izin\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pengajuan Pelatihan\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Permintaan Tenaga Kerja\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kendaraan Operasional\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Reimburse Operasional\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Reimburse Medical\",\"col\":4}}]",
  "creation": "2020-03-02 15:48:58.322521",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -22,14 +50,6 @@
  "is_standard": 0,
  "label": "HR",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Employee",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
-  },
   {
    "dependencies": "",
    "hidden": 0,
@@ -117,14 +137,6 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Employee Lifecycle",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
   },
   {
    "dependencies": "Job Applicant",
@@ -235,14 +247,6 @@
    "type": "Link"
   },
   {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Shift Management",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
@@ -274,14 +278,6 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Leaves",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
   },
   {
    "dependencies": "",
@@ -394,14 +390,6 @@
    "type": "Link"
   },
   {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Attendance",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
    "dependencies": "Employee",
    "hidden": 0,
    "is_query_report": 0,
@@ -457,14 +445,6 @@
    "type": "Link"
   },
   {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Expense Claims",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
    "dependencies": "Employee",
    "hidden": 0,
    "is_query_report": 0,
@@ -495,14 +475,6 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Settings",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
   },
   {
    "dependencies": "",
@@ -536,14 +508,6 @@
    "link_type": "Page",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Fleet Management",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
   },
   {
    "hidden": 0,
@@ -587,14 +551,6 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Recruitment",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
   },
   {
    "dependencies": "",
@@ -671,14 +627,6 @@
    "type": "Link"
   },
   {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Loans",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
    "dependencies": "Employee",
    "hidden": 0,
    "is_query_report": 0,
@@ -710,14 +658,6 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Training",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
   },
   {
    "dependencies": "",
@@ -764,14 +704,6 @@
    "type": "Link"
   },
   {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Performance",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
@@ -814,14 +746,6 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Key Reports",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
   },
   {
    "dependencies": "Attendance",
@@ -890,14 +814,6 @@
    "type": "Link"
   },
   {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Other Reports",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
    "dependencies": "Employee",
    "hidden": 0,
    "is_query_report": 0,
@@ -942,7 +858,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-26 16:21:58.189389",
+ "modified": "2021-12-21 11:09:09.977390",
  "modified_by": "Administrator",
  "module": "HR",
  "modules": 0,
@@ -955,8 +871,85 @@
  "public": 1,
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 7,
+ "sequence_id": 8,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Lembur ",
+   "link_to": "Lembur Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Reimburse Medical",
+   "link_to": "Reimburse Medical Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kendaraan Operasional",
+   "link_to": "Kendaraan Operasional EDoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Pengajuan Pelatihan",
+   "link_to": "Pengajuan Pelatihan Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Reimburse Operasional",
+   "link_to": "Reimburse Operasional Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Daftar Service Kendaraan Operasional MING",
+   "link_to": "Daftar Service Kendaraan Operasional MING",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Daftar Asuransi Direksi",
+   "link_to": "Daftar Asuransi Direksi",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Izin",
+   "link_to": "Izin Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Permohonan Cuti",
+   "link_to": "Permohonan Cuti Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kontrak Karyawan",
+   "link_to": "Kontrak Karyawan",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Permintaan Tenaga Kerja",
+   "link_to": "Permintaan Tenaga Kerja Edoc",
+   "type": "DocType"
+  },
   {
    "color": "Green",
    "format": "{} Active",
@@ -974,9 +967,24 @@
    "type": "DocType"
   },
   {
-   "label": "Attendance",
-   "link_to": "Attendance",
-   "stats_filter": "",
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Maintenance AC",
+   "link_to": "Maintenance AC",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kendaraan Operasional Office",
+   "link_to": "Kendaraan Operasional Office",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kendaraan Mobile LED",
+   "link_to": "Kendaraan Mobile LED",
    "type": "DocType"
   },
   {
@@ -985,16 +993,11 @@
    "type": "DocType"
   },
   {
-   "label": "Monthly Attendance Sheet",
-   "link_to": "Monthly Attendance Sheet",
-   "type": "Report"
-  },
-  {
-   "format": "{} Open",
-   "label": "Dashboard",
-   "link_to": "Human Resource",
-   "stats_filter": "{\n    \"status\": \"Open\"\n}",
-   "type": "Dashboard"
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Asuransi Gedung dan Property",
+   "link_to": "Asuransi Gedung dan Property",
+   "type": "DocType"
   }
  ],
  "title": "HR"

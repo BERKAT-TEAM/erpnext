@@ -2,8 +2,8 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-15 11:55:38.073517",
- "default_print_format": "QUALITY CONTROL DI LUAR LAPANGAN",
+ "creation": "2021-12-16 10:46:30.698774",
+ "default_print_format": "QC Outside Format",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -13,18 +13,24 @@
   "no_revisi",
   "no_jo",
   "location",
-  "dimension",
   "column_break_0",
   "deadline",
   "qc_date",
   "person_in_qc",
+  "dimension_section",
+  "vertical",
+  "column_break_12",
+  "horizontal",
+  "column_break_14",
+  "thickness",
   "qc_section_break",
   "qc_pemasangan",
   "other",
   "qc_new_construction",
   "start_construction",
   "end_construction",
-  "lamanya_waktu_pemasangan",
+  "hari_waktu_pemasangan_qc_new",
+  "jam_waktu_pemasangan_qc_new",
   "data_18",
   "galian_pondasi",
   "pembesian_pondasi",
@@ -48,7 +54,8 @@
   "data_38",
   "date_of_bongkar",
   "date_of_pasang_kembali",
-  "lama_waktu_pemasangan",
+  "hari_waktu_pemasangan_qc_old",
+  "jam_waktu_pemasangan_qc_old",
   "pelaksanaan_kerja",
   "bongkar_pasang_konstruksi",
   "jumlah_tenaga_qc_lama",
@@ -63,7 +70,8 @@
   "qc_old_new_section",
   "date_of_bongkar_qc_old_new",
   "date_of_pasang_qc_old_new",
-  "lamanya_qc_old_new",
+  "hari_waktu_qc_old_new",
+  "jam_waktu_qc_old_new",
   "pelaksana_kerja_materi",
   "bongkar_qc_materi",
   "jumlah_tenaga_qc_materi",
@@ -98,15 +106,13 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "FR.PROD.003-.YYYY.-"
+   "options": "FR.PROD.003.-.YY.-"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
-   "no_copy": 1,
    "options": "Quality Control Outside",
-   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -127,12 +133,6 @@
    "fieldtype": "Data",
    "label": "Lokasi",
    "read_only": 1
-  },
-  {
-   "default": "Vertical =\nHorizontal =\nThickness =",
-   "fieldname": "dimension",
-   "fieldtype": "Small Text",
-   "label": "Dimension"
   },
   {
    "fieldname": "column_break_0",
@@ -163,10 +163,9 @@
    "fieldname": "qc_pemasangan",
    "fieldtype": "Select",
    "label": "QC Pemasangan",
-   "options": "LED TV\nLED Banner\nLED Standing\nTotem\nNeon Sign\nNeon Box\nHanging Box\nCeiling Box\nBillboard\nHuruf Timbul\nPengantian Materi\nUmbul-umbul"
+   "options": "LED TV\nLED Banner\nLED Standing\nTotem\nNeon Sign\nNeon Box\nHanging Box\nRailing Box\nCeiling Box\nBillboard\nHuruf Timbul\nPenggantian Materi\nUmbul-umbul"
   },
   {
-   "depends_on": "eval:doc.qc_pemasangan==\"Penggantian Materi\"",
    "fieldname": "other",
    "fieldtype": "Select",
    "label": "Lain-lain",
@@ -186,12 +185,6 @@
    "fieldname": "end_construction",
    "fieldtype": "Date",
    "label": "Tanggal Selesai Pemasangan"
-  },
-  {
-   "default": ".............Hari\n.............Jam",
-   "fieldname": "lamanya_waktu_pemasangan",
-   "fieldtype": "Small Text",
-   "label": "Lamanya waktu Pemasangan"
   },
   {
    "fieldname": "data_18",
@@ -325,12 +318,6 @@
    "label": "Tanggal Pasang Kembali Konstruksi Lama"
   },
   {
-   "default": "............Hari\n............Jam",
-   "fieldname": "lama_waktu_pemasangan",
-   "fieldtype": "Small Text",
-   "label": "Lama waktu pemasangan"
-  },
-  {
    "fieldname": "pelaksanaan_kerja",
    "fieldtype": "Heading",
    "label": "Pelaksanaan Kerja"
@@ -406,11 +393,6 @@
    "fieldname": "date_of_pasang_qc_old_new",
    "fieldtype": "Date",
    "label": "Tanggal Pasang Materi Baru"
-  },
-  {
-   "fieldname": "lamanya_qc_old_new",
-   "fieldtype": "Small Text",
-   "label": "Lamanya Waktu Pemasangan"
   },
   {
    "fieldname": "pelaksana_kerja_materi",
@@ -491,14 +473,12 @@
    "label": "Penilaian Kerja"
   },
   {
-   "description": "Terlindung conduit/fleksibel",
    "fieldname": "cable_qc_electric",
    "fieldtype": "Select",
    "label": "Kabel Luar terpasang rapi",
    "options": "OK\nNo"
   },
   {
-   "description": "Terlindung conduit/fleksibel",
    "fieldname": "mbc_qc_electric",
    "fieldtype": "Select",
    "label": "MCB Terpasang rapih dan tempat berlindung",
@@ -521,10 +501,6 @@
    "options": "OK\nNo"
   },
   {
-   "fieldname": "data_76",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "pic_grup",
    "fieldtype": "Link",
    "label": "PIC Team",
@@ -541,6 +517,17 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "pic_grup.signature",
+   "fieldname": "team_sign",
+   "fieldtype": "Attach",
+   "label": "PIC Team's Signature"
+  },
+  {
+   "fieldname": "qc_sign",
+   "fieldtype": "Attach",
+   "label": "PIC qc's Signature"
+  },
+  {
    "default": "Now",
    "fieldname": "date_qc",
    "fieldtype": "Datetime",
@@ -553,15 +540,66 @@
    "label": "Date"
   },
   {
-   "fetch_from": "pic_grup.signature",
-   "fieldname": "team_sign",
-   "fieldtype": "Attach",
-   "label": "PIC Team's Signature"
+   "fieldname": "dimension_section",
+   "fieldtype": "Section Break",
+   "label": "Dimension"
   },
   {
-   "fieldname": "qc_sign",
-   "fieldtype": "Attach",
-   "label": "PIC qc's Signature"
+   "fieldname": "vertical",
+   "fieldtype": "Data",
+   "label": "Vertikal"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "horizontal",
+   "fieldtype": "Data",
+   "label": "Horizontal"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "thickness",
+   "fieldtype": "Data",
+   "label": "Thickness"
+  },
+  {
+   "fieldname": "hari_waktu_pemasangan_qc_new",
+   "fieldtype": "Int",
+   "label": "Lama Waktu Pemasangan (Hari)"
+  },
+  {
+   "fieldname": "jam_waktu_pemasangan_qc_new",
+   "fieldtype": "Int",
+   "label": "Lama Waktu Pemasangan (Jam)"
+  },
+  {
+   "fieldname": "hari_waktu_pemasangan_qc_old",
+   "fieldtype": "Int",
+   "label": "Lama waktu pemasangan (Hari)"
+  },
+  {
+   "fieldname": "jam_waktu_pemasangan_qc_old",
+   "fieldtype": "Int",
+   "label": "Lama waktu pemasangan (Jam)"
+  },
+  {
+   "fieldname": "hari_waktu_qc_old_new",
+   "fieldtype": "Int",
+   "label": "Lamanya Waktu Pemasangan (Hari)"
+  },
+  {
+   "fieldname": "jam_waktu_qc_old_new",
+   "fieldtype": "Int",
+   "label": "Lamanya Waktu Pemasangan (Hari)"
+  },
+  {
+   "fieldname": "data_76",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "data_82",
@@ -570,8 +608,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "max_attachments": 12,
- "modified": "2021-11-16 10:59:28.334690",
+ "modified": "2021-12-20 10:23:04.033354",
  "modified_by": "Administrator",
  "module": "Production",
  "name": "Quality Control Outside",
@@ -601,10 +638,34 @@
    "role": "Administrator",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production User",
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
+ "track_seen": 1,
  "track_views": 1
 }

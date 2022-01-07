@@ -41,6 +41,38 @@
   {
    "chart": "Bank Balance",
    "width": "Full"
+  },
+  {
+   "chart": "Travel Request",
+   "width": "Half"
+  },
+  {
+   "chart": "Kasbon Sementara",
+   "width": "Half"
+  },
+  {
+   "chart": "Permintaan Bank",
+   "width": "Half"
+  },
+  {
+   "chart": "Permintaan Kas",
+   "width": "Half"
+  },
+  {
+   "chart": "Monitoring Invoice",
+   "width": "Half"
+  },
+  {
+   "chart": "Permintaan Ambil Barang",
+   "width": "Half"
+  },
+  {
+   "chart": "Bukti Potong Pajak",
+   "width": "Half"
+  },
+  {
+   "chart": "Pembelian Barang Kantor",
+   "width": "Half"
   }
  ],
  "creation": "2020-07-17 11:25:34.796608",
@@ -50,7 +82,7 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "modified": "2020-07-22 13:07:34.540574",
+ "modified": "2021-12-06 10:17:47.441358",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Accounts",

@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 11:18:24.465637",
+ "creation": "2021-11-19 08:04:48.597400",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -24,14 +24,19 @@
   "nilai_kontrak",
   "kontrak_awal",
   "kontrak_akhir",
-  "ket",
-  "amended_from"
+  "ket"
  ],
  "fields": [
   {
    "fieldname": "sec1",
    "fieldtype": "Section Break",
    "label": "Kontrak Lokasi"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
   },
   {
    "fieldname": "naming_series",
@@ -73,7 +78,7 @@
   {
    "fieldname": "no_jo",
    "fieldtype": "Data",
-   "label": "Nomor job order "
+   "label": "Nomor job order"
   },
   {
    "fieldname": "nm_media",
@@ -87,7 +92,7 @@
   {
    "fieldname": "nm_lokasi",
    "fieldtype": "Data",
-   "label": "Nama lokasi "
+   "label": "Nama lokasi"
   },
   {
    "fieldname": "area",
@@ -97,7 +102,7 @@
   {
    "fieldname": "pengelola",
    "fieldtype": "Data",
-   "label": "Pengelola / agency "
+   "label": "Pengelola / agency"
   },
   {
    "fieldname": "nilai_kontrak",
@@ -107,38 +112,23 @@
   {
    "fieldname": "kontrak_awal",
    "fieldtype": "Data",
-   "label": "Kontrak awal "
+   "label": "Kontrak awal"
   },
   {
    "fieldname": "kontrak_akhir",
    "fieldtype": "Data",
-   "label": "Kontrak akhir "
+   "label": "Kontrak akhir"
   },
   {
    "fieldname": "ket",
    "fieldtype": "Small Text",
-   "label": "Keterangan "
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Kontrak Lokasi Edoc",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title",
-   "read_only": 1
+   "label": "Keterangan"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 14:20:15.528773",
+ "modified": "2021-11-19 18:50:23.022400",
  "modified_by": "Administrator",
  "module": "RND",
  "name": "Kontrak Lokasi Edoc",
@@ -164,6 +154,5 @@
  "sort_order": "DESC",
  "title_field": "title",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

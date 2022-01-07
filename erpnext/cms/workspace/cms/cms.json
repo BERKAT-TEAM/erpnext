@@ -1,7 +1,16 @@
 {
  "category": "Modules",
- "charts": [],
- "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Content\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Order Design\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivery Note\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Form\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Request\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Job Order",
+   "label": "Job Order"
+  },
+  {
+   "chart_name": "BAST",
+   "label": "BAST"
+  }
+ ],
+ "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Job Order\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"BAST\",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcut\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Content\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"BAST\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Order Design\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Request\",\"col\":4}}]",
  "creation": "2021-10-15 09:09:05.018766",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -15,54 +24,6 @@
  "is_standard": 1,
  "label": "CMS",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Form",
-   "link_count": 4,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "SPB",
-   "link_count": 0,
-   "link_to": "Surat Permintaan Bahan",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Surat Produksi",
-   "link_count": 0,
-   "link_to": "Surat Produksi",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Surat Tugas",
-   "link_count": 0,
-   "link_to": "Surat Tugas",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "SPPB",
-   "link_count": 0,
-   "link_to": "Access Log",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -92,7 +53,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-11-05 10:00:23.434339",
+ "modified": "2022-01-06 15:40:05.288969",
  "modified_by": "Administrator",
  "module": "CMS",
  "modules": 0,
@@ -117,16 +78,46 @@
   },
   {
    "role": "RND user"
+  },
+  {
+   "role": "Sales Admin"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "RND Manager"
+  },
+  {
+   "role": "Production Manager"
+  },
+  {
+   "role": "All"
   }
  ],
  "sequence_id": 4,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "Calendar",
+   "label": "Order Design",
+   "link_to": "Order Design",
+   "type": "DocType"
+  },
   {
    "color": "Yellow",
    "doc_view": "List",
    "format": "{} Need to GET DONE",
    "label": "Job Content",
    "link_to": "Upload Content",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "format": "{} Completed",
+   "label": "BAST",
+   "link_to": "BAST",
    "type": "DocType"
   },
   {
@@ -143,31 +134,6 @@
    "label": "Job Order",
    "link_to": "Sales Order",
    "stats_filter": "{\"status\":[\"in\",[\"To Deliver and Bill\",\"To Deliver\",null]],\"workflow_state\":[\"=\",\"Approved\"]}",
-   "type": "DocType"
-  },
-  {
-   "color": "Yellow",
-   "doc_view": "List",
-   "format": "{} Completed",
-   "label": "Delivery Note",
-   "link_to": "Delivery Note",
-   "stats_filter": "{\"status\":[\"in\",[\"Completed\",null]]}",
-   "type": "DocType"
-  },
-  {
-   "color": "Green",
-   "doc_view": "List",
-   "format": "{} Available",
-   "label": "Item",
-   "link_to": "Item",
-   "stats_filter": "{\"disabled\":[\"=\",0]}",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Order Design",
-   "link_to": "Order Design",
    "type": "DocType"
   },
   {

@@ -1,0 +1,174 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-19 10:56:53.374808",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec11",
+  "naming_series",
+  "no_rev",
+  "nama",
+  "jabatan",
+  "divisi",
+  "tgl",
+  "jml",
+  "terbilang",
+  "no_jo",
+  "tol",
+  "bensin",
+  "parkir",
+  "ket",
+  "lampiran",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec11",
+   "fieldtype": "Section Break",
+   "label": "Permintaan Kas"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "No dokumen",
+   "options": "FR.FIN.003-.YYYY.-",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "no_rev",
+   "fieldtype": "Data",
+   "label": "No revisi"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Data",
+   "label": "Jabatan"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "tgl",
+   "fieldtype": "Date",
+   "label": "Tanggal"
+  },
+  {
+   "fieldname": "jml",
+   "fieldtype": "Data",
+   "label": "Jumlah"
+  },
+  {
+   "fieldname": "terbilang",
+   "fieldtype": "Data",
+   "label": "Terbilang"
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Data",
+   "label": "No. JO"
+  },
+  {
+   "fieldname": "tol",
+   "fieldtype": "Data",
+   "label": "Tol"
+  },
+  {
+   "fieldname": "bensin",
+   "fieldtype": "Data",
+   "label": "Bensin"
+  },
+  {
+   "fieldname": "parkir",
+   "fieldtype": "Data",
+   "label": "Parkir"
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "lampiran",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Permintaan Kas Edoc",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 100000,
+ "modified": "2021-11-25 18:02:41.133295",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Permintaan Kas Edoc",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

@@ -1208,7 +1208,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-26 16:21:58.400825",
+ "modified": "2021-12-03 16:13:25.896372",
  "modified_by": "Administrator",
  "module": "Accounts",
  "modules": 0,
@@ -1220,8 +1220,18 @@
  "pin_to_top": 0,
  "public": 1,
  "restrict_to_domain": "",
- "roles": [],
- "sequence_id": 9,
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ],
+ "sequence_id": 12,
  "shortcuts": [
   {
    "label": "Chart of Accounts",
@@ -1267,6 +1277,12 @@
    "label": "Dashboard",
    "link_to": "Accounts",
    "type": "Dashboard"
+  },
+  {
+   "doc_view": "List",
+   "label": "Keluhan Pelanggan ",
+   "link_to": "Keluhan Pelanggan Edoc",
+   "type": "DocType"
   }
  ],
  "title": "Finance(Accounting)"

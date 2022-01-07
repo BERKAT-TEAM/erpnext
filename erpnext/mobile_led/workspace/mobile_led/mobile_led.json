@@ -1,7 +1,12 @@
 {
  "category": "Modules",
- "charts": [],
- "content": "[]",
+ "charts": [
+  {
+   "chart_name": "Cek Mobile LED Edoc",
+   "label": "Cek Mobile LED"
+  }
+ ],
+ "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Cek Mobile LED\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Your Shortcut\\n\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Form&nbsp; E-Doc\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cek Mobile LED\",\"col\":4}}]",
  "creation": "2021-09-27 18:08:47.402362",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -12,10 +17,10 @@
  "icon": "lock",
  "idx": 0,
  "is_default": 0,
- "is_standard": 1,
+ "is_standard": 0,
  "label": "Mobile LED",
  "links": [],
- "modified": "2021-10-26 16:21:58.116256",
+ "modified": "2021-12-17 17:02:45.575084",
  "modified_by": "Administrator",
  "module": "Mobile LED",
  "modules": 0,
@@ -25,8 +30,41 @@
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "public": 1,
- "roles": [],
- "sequence_id": 5,
- "shortcuts": [],
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Sales Admin"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Master Manager"
+  },
+  {
+   "role": "Sales User"
+  }
+ ],
+ "sequence_id": 6,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cek Mobile LED",
+   "link_to": "Cek Mobile LED Edoc",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} To Work",
+   "label": "Job Order",
+   "link_to": "Sales Order",
+   "stats_filter": "{\"workflow_state\":[\"=\",\"Approved\"],\"jenis_produk\":[\"=\",\"Mobile LED\"]}",
+   "type": "DocType"
+  }
+ ],
  "title": "Mobile LED"
 }

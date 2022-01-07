@@ -1,13 +1,15 @@
 {
  "add_total_row": 0,
+ "columns": [],
  "creation": "2019-05-01 12:59:52.018850",
  "disable_prepared_report": 0,
  "disabled": 0,
  "docstatus": 0,
  "doctype": "Report",
+ "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2019-05-01 13:00:26.545278",
+ "modified": "2021-11-11 09:35:31.174178",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Inactive Sales Items",
@@ -25,6 +27,12 @@
   },
   {
    "role": "Auditor"
+  },
+  {
+   "role": "RND Manager"
+  },
+  {
+   "role": "RND user"
   }
  ]
 }

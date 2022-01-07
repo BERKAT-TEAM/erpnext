@@ -16,17 +16,13 @@ def get_data():
 			'Batch': 'item'
 		},
 		'transactions': [
-			# {
-			# 	'label': _('Groups'),
-			# 	'items': ['BOM', 'Product Bundle', 'Item Alternative']
-			# },
+			{
+				'label': _('Groups'),
+				'items': ['BOM', 'Product Bundle', 'Item Alternative']
+			},
 			{
 				'label': _('Pricing'),
-				'items': [
-					'Item Price', 
-					'Pricing Rule', 
-					'Item Lease'
-				]
+				'items': ['Item Price', 'Pricing Rule', 'Item Rent Info']
 			},
 			{
 				'label': _('Sell'),

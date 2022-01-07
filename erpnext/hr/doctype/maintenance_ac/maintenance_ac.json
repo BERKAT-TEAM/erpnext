@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-12-21 09:45:26.003504",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec",
+  "naming_series",
+  "lantai",
+  "lokasi",
+  "merk_ac",
+  "colb2",
+  "kapasitas_ac",
+  "jlm",
+  "tgl_service"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec",
+   "fieldtype": "Section Break",
+   "label": "Maintenance AC"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "MAINTENANCE-AC-.YYYY.-"
+  },
+  {
+   "fieldname": "lantai",
+   "fieldtype": "Data",
+   "label": "Lantai"
+  },
+  {
+   "fieldname": "lokasi",
+   "fieldtype": "Data",
+   "label": "Nama Asuransi"
+  },
+  {
+   "fieldname": "merk_ac",
+   "fieldtype": "Data",
+   "label": "Merk AC"
+  },
+  {
+   "fieldname": "colb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kapasitas_ac",
+   "fieldtype": "Data",
+   "label": "Kapasitas Ac"
+  },
+  {
+   "fieldname": "jlm",
+   "fieldtype": "Data",
+   "label": "Jumlah"
+  },
+  {
+   "fieldname": "tgl_service",
+   "fieldtype": "Date",
+   "label": "Tanggal Service"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-21 16:40:29.116499",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Maintenance AC",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Assistant HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

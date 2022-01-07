@@ -340,7 +340,7 @@ erpnext.TransactionController = class TransactionController extends erpnext.taxe
 		erpnext.toggle_naming_series();
 		erpnext.hide_company();
 		this.set_dynamic_labels();
-		//this.setup_sms();		//comment this to hide and disable Sent SMS button
+		//this.setup_sms(); 	//comment this for hide and disable Send SMS button
 		this.setup_quality_inspection();
 	}
 

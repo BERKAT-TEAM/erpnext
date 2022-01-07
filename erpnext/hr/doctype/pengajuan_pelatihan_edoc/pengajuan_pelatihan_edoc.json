@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-19 10:20:57.680319",
+ "creation": "2021-11-19 10:56:51.854192",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -41,7 +41,7 @@
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "No dokumen ",
+   "label": "No dokumen",
    "options": "FR-HRD-GA.007-.YYYY.-",
    "print_hide": 1
   },
@@ -82,7 +82,7 @@
   {
    "fieldname": "nama_pelatihan",
    "fieldtype": "Data",
-   "label": "Nama pelatihan "
+   "label": "Nama pelatihan"
   },
   {
    "fieldname": "tmp",
@@ -97,7 +97,7 @@
   {
    "fieldname": "akomodasi",
    "fieldtype": "Data",
-   "label": "Akomodasi "
+   "label": "Akomodasi"
   },
   {
    "fieldname": "total_b",
@@ -112,7 +112,7 @@
   {
    "fieldname": "transportasi",
    "fieldtype": "Data",
-   "label": "Transportasi "
+   "label": "Transportasi"
   },
   {
    "fieldname": "sec2",
@@ -137,7 +137,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 16:36:54.924093",
+ "modified": "2021-12-08 16:46:13.305637",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Pengajuan Pelatihan Edoc",
@@ -155,11 +155,60 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

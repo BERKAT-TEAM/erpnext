@@ -1,0 +1,37 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-11-23 11:27:01.415340",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Monitoring Invoice Edoc\"],[\"docstatus\",\"Monitoring Invoice Edoc\"],[\"naming_series\",\"Monitoring Invoice Edoc\"],[\"divisi\",\"Monitoring Invoice Edoc\"],[\"name_sales\",\"Monitoring Invoice Edoc\"],[\"customer\",\"Monitoring Invoice Edoc\"],[\"nilai\",\"Monitoring Invoice Edoc\"],[\"no_jo\",\"Monitoring Invoice Edoc\"]],\"order_by\":\"`tabMonitoring Invoice Edoc`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"docstatus\":120,\"naming_series\":120,\"divisi\":120,\"name_sales\":120,\"customer\":120,\"nilai\":120,\"no_jo\":120},\"group_by\":null}",
+ "letter_head": "1",
+ "modified": "2021-11-23 15:26:21.898222",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Monitoring Invoice Edoc",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Monitoring Invoice Edoc",
+ "report_name": "Monitoring Invoice Edoc",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Administrator"
+  }
+ ]
+}

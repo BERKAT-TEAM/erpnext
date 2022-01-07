@@ -179,7 +179,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-26 16:21:58.691611",
+ "modified": "2021-12-03 16:13:26.608666",
  "modified_by": "Administrator",
  "module": "Assets",
  "modules": 0,
@@ -191,8 +191,18 @@
  "pin_to_top": 0,
  "public": 1,
  "restrict_to_domain": "",
- "roles": [],
- "sequence_id": 11,
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
+ "sequence_id": 15,
  "shortcuts": [
   {
    "label": "Asset",

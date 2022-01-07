@@ -281,6 +281,7 @@
    "default": "0",
    "fieldname": "is_pos",
    "fieldtype": "Check",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Include Payment (POS)",
@@ -302,6 +303,7 @@
    "default": "0",
    "fieldname": "is_return",
    "fieldtype": "Check",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Is Return (Credit Note)",
@@ -414,6 +416,7 @@
    "depends_on": "eval: doc.is_return && doc.return_against",
    "fieldname": "update_billed_amount_in_sales_order",
    "fieldtype": "Check",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Update Billed Amount in Sales Order"
@@ -759,6 +762,7 @@
    "depends_on": "eval: !doc.is_return",
    "fieldname": "time_sheet_list",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Time Sheet List"
@@ -971,6 +975,7 @@
    "collapsible": 1,
    "fieldname": "loyalty_points_redemption",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Loyalty Points Redemption"
@@ -1529,6 +1534,7 @@
    "collapsible": 1,
    "fieldname": "edit_printing_settings",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Printing Settings"
@@ -1918,6 +1924,7 @@
    "depends_on": "eval:(doc.is_pos && doc.is_consolidated)",
    "fieldname": "is_consolidated",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Consolidated",
    "read_only": 1
   },
@@ -1973,6 +1980,7 @@
    "default": "0",
    "fieldname": "is_debit_note",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Debit Note"
   },
   {
@@ -2022,11 +2030,12 @@
    "link_fieldname": "consolidated_invoice"
   }
  ],
- "modified": "2021-09-08 15:24:25.486499",
+ "modified": "2021-11-11 15:11:04.467555",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Sales Invoice",
  "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

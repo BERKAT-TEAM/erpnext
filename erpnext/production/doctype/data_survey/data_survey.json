@@ -1,0 +1,1070 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FR-SUR-.#####",
+ "creation": "2021-12-15 13:16:55.652071",
+ "default_print_format": "Data Survey Format",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "type",
+  "section_break_2",
+  "no_jo",
+  "lampiran",
+  "tanggal_deadline",
+  "tanggal_survey",
+  "column_break_7",
+  "pelanggan",
+  "nama_lengkap_pelanggan",
+  "alamat",
+  "personil_survey",
+  "personil_1",
+  "personil_2",
+  "personil_3",
+  "column_break_12",
+  "personil_4",
+  "personil_5",
+  "personil_6",
+  "alat_survey",
+  "alat",
+  "meteran_saku_8m",
+  "meteran_roll_50100m",
+  "meteran_digital",
+  "kamera",
+  "col_break_alat_survey",
+  "alat_survey_tambahan",
+  "opsi1_alat_survey",
+  "opsi2_alat_survey",
+  "opsi3_alat_survey",
+  "opsi4_alat_survey",
+  "jenis_product_section",
+  "led_tv",
+  "led_banner",
+  "led_standing",
+  "totem",
+  "neon_sign",
+  "column_break_16",
+  "neon_box",
+  "hanging_box",
+  "railing_box",
+  "celling_box",
+  "column_break_21",
+  "billboard",
+  "huruf_timbul",
+  "penggantian_materi",
+  "umbul_umbul",
+  "data_konstruksi_section",
+  "lokasi",
+  "column_break_28",
+  "kons_p_media",
+  "column_break_30",
+  "konst_led",
+  "column_break_32",
+  "materi",
+  "column_break_34",
+  "pondasi",
+  "column_break_36",
+  "tiang_struktur_utama",
+  "section_break_38",
+  "keterangan_data_konstruksi",
+  "column_break_40",
+  "diatas_permukaan_tanahlantai",
+  "tinggi_diatas_tanah_lantai",
+  "dari_diatas_tanah_lantai",
+  "diatas_permukaan_gedungatap",
+  "tinggi_diatas_gedung_atap",
+  "dari_diatas_gedung_atap",
+  "column_break_48",
+  "dinding_gedung_luar",
+  "tinggi_dinding_gedung_luar",
+  "dari_dinding_gedung_luar",
+  "pintu_masuk_tokorukogedung",
+  "tinggi_pintu_masuk",
+  "dari_pintu_masuk",
+  "column_break_65",
+  "dalam_gedung",
+  "tinggi_dalam_gedung",
+  "dari_dalam_gedung",
+  "lain_lain",
+  "lainnya_faktor_pengganggu",
+  "tinggi_lainnya",
+  "dari_lainnya",
+  "dimensi_struktur_papan_media_promotion_section",
+  "dimensi_struktur_papan_media_promotion",
+  "struktur_vertikal",
+  "struktur_horizontal",
+  "struktur_thickness",
+  "struktur_quantity",
+  "column_break_70",
+  "jarak_power_suplay_ke_media",
+  "jarak_ps_vertikal",
+  "jarak_ps_horizontal",
+  "jarak_ps_total",
+  "dimensi_materi_m_section",
+  "datar",
+  "horizontal_datar",
+  "vertikal_datar",
+  "bahan_datar",
+  "quantity_datar",
+  "column_break_76",
+  "lengkung",
+  "horizontal_lengkung",
+  "vertikal_lengkung",
+  "bahan_lengkung",
+  "quantity_lengkung",
+  "column_break_82",
+  "2_sisi",
+  "horizontal_2sisi",
+  "vertikal_2sisi",
+  "bahan_2sisi",
+  "quantity_2sisi",
+  "column_break_88",
+  "3_sisi",
+  "horizontal_3sisi",
+  "vertikal_3sisi",
+  "bahan_3sisi",
+  "quantity_3sisi",
+  "column_break_94",
+  "4_sisi",
+  "horizontal_4sisi",
+  "vertikal_4sisi",
+  "bahan_4sisi",
+  "quantity_4sisi",
+  "column_break_100",
+  "lainnya",
+  "horizontal_lainnya",
+  "vertikal_lainnya",
+  "bahan_lainnya",
+  "quanity_lainnya",
+  "faktor_pengganggu_dilapangan_section",
+  "existing",
+  "kabel_pln_telkom",
+  "jalur_pipa_gas",
+  "tiang_tower",
+  "saluran_air",
+  "jl_kelokasi",
+  "faktor_pengganggu_lainnya",
+  "column_break_113",
+  "keterangan",
+  "keterangan_kabel_pln_telkom",
+  "keterangan_jalur_pipa_gas",
+  "keterangan_tiang_tower",
+  "keterangan_saluran_air",
+  "keterangan_jl_kelokasi",
+  "keterangan_faktor_pengganggu_lainnya",
+  "prediksi_alat_kerja_pemasangan_section",
+  "sewa_alat_kerja",
+  "column_break_123",
+  "alat_kerja",
+  "column_break_125",
+  "bahan_kerja",
+  "sketsa_product_section",
+  "upload_sketsa_product",
+  "penanggung_jawab_section",
+  "pj",
+  "spv",
+  "manager_prod",
+  "column_break_155",
+  "kepala_group",
+  "ass_manager",
+  "manager_produksi"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "No. Jo",
+   "mandatory_depends_on": "eval:doc.type=='Job Order';",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "lampiran",
+   "fieldtype": "Select",
+   "label": "Lampiran",
+   "options": "Denah existing\nFoto\nLainnya"
+  },
+  {
+   "fieldname": "tanggal_deadline",
+   "fieldtype": "Date",
+   "label": "Tanggal Deadline"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pelanggan",
+   "fieldtype": "Link",
+   "label": "Pelanggan",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Small Text",
+   "label": "Alamat"
+  },
+  {
+   "fieldname": "tanggal_survey",
+   "fieldtype": "Date",
+   "label": "Tanggal Survey"
+  },
+  {
+   "fieldname": "personil_survey",
+   "fieldtype": "Section Break",
+   "label": "Personil Survey"
+  },
+  {
+   "fieldname": "personil_1",
+   "fieldtype": "Data",
+   "label": "Personil 1"
+  },
+  {
+   "fieldname": "personil_2",
+   "fieldtype": "Data",
+   "label": "Personil 2"
+  },
+  {
+   "fieldname": "personil_3",
+   "fieldtype": "Data",
+   "label": "Personil 3"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "personil_4",
+   "fieldtype": "Data",
+   "label": "Personil 4"
+  },
+  {
+   "fieldname": "personil_5",
+   "fieldtype": "Data",
+   "label": "Personil 5"
+  },
+  {
+   "fieldname": "personil_6",
+   "fieldtype": "Data",
+   "label": "Personil 6"
+  },
+  {
+   "fieldname": "alat_survey",
+   "fieldtype": "Section Break",
+   "label": "Alat Survey"
+  },
+  {
+   "fieldname": "alat",
+   "fieldtype": "Heading",
+   "label": "Alat"
+  },
+  {
+   "default": "0",
+   "fieldname": "meteran_saku_8m",
+   "fieldtype": "Check",
+   "label": "Meteran saku (8m)"
+  },
+  {
+   "default": "0",
+   "fieldname": "meteran_roll_50100m",
+   "fieldtype": "Check",
+   "label": "Meteran roll (50/100m)"
+  },
+  {
+   "default": "0",
+   "fieldname": "meteran_digital",
+   "fieldtype": "Check",
+   "label": "Meteran digital"
+  },
+  {
+   "fieldname": "col_break_alat_survey",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alat_survey_tambahan",
+   "fieldtype": "Heading",
+   "label": "Alat Survey Tambahan"
+  },
+  {
+   "fieldname": "opsi1_alat_survey",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "opsi2_alat_survey",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "opsi3_alat_survey",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "opsi4_alat_survey",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "jenis_product_section",
+   "fieldtype": "Section Break",
+   "label": "JENIS PRODUCT"
+  },
+  {
+   "default": "0",
+   "fieldname": "led_tv",
+   "fieldtype": "Check",
+   "label": "LED TV"
+  },
+  {
+   "default": "0",
+   "fieldname": "led_banner",
+   "fieldtype": "Check",
+   "label": "LED Banner"
+  },
+  {
+   "default": "0",
+   "fieldname": "led_standing",
+   "fieldtype": "Check",
+   "label": "LED Standing"
+  },
+  {
+   "default": "0",
+   "fieldname": "totem",
+   "fieldtype": "Check",
+   "label": "Totem"
+  },
+  {
+   "default": "0",
+   "fieldname": "neon_sign",
+   "fieldtype": "Check",
+   "label": "Neon Sign"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "neon_box",
+   "fieldtype": "Check",
+   "label": "Neon Box"
+  },
+  {
+   "default": "0",
+   "fieldname": "hanging_box",
+   "fieldtype": "Check",
+   "label": "Hanging Box"
+  },
+  {
+   "default": "0",
+   "fieldname": "railing_box",
+   "fieldtype": "Check",
+   "label": "Railing Box"
+  },
+  {
+   "default": "0",
+   "fieldname": "celling_box",
+   "fieldtype": "Check",
+   "label": "Celling Box"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "billboard",
+   "fieldtype": "Check",
+   "label": "Billboard"
+  },
+  {
+   "default": "0",
+   "fieldname": "huruf_timbul",
+   "fieldtype": "Check",
+   "label": "Huruf Timbul"
+  },
+  {
+   "default": "0",
+   "fieldname": "penggantian_materi",
+   "fieldtype": "Check",
+   "label": "Penggantian Materi"
+  },
+  {
+   "default": "0",
+   "fieldname": "umbul_umbul",
+   "fieldtype": "Check",
+   "label": "Umbul-umbul"
+  },
+  {
+   "fieldname": "data_konstruksi_section",
+   "fieldtype": "Section Break",
+   "label": "DATA KONSTRUKSI"
+  },
+  {
+   "fieldname": "lokasi",
+   "fieldtype": "Select",
+   "label": "Lokasi",
+   "options": "Baru\nLama"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kons_p_media",
+   "fieldtype": "Select",
+   "label": "Kons. P. Media",
+   "options": "Baru\nLama"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "konst_led",
+   "fieldtype": "Select",
+   "label": "Konst. LED",
+   "options": "Baru\nLama"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "materi",
+   "fieldtype": "Select",
+   "label": "Materi",
+   "options": "Baru\nLama"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pondasi",
+   "fieldtype": "Select",
+   "label": "Pondasi",
+   "options": "Ada\nTidak"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tiang_struktur_utama",
+   "fieldtype": "Select",
+   "label": "Tiang Struktur Utama",
+   "options": "Ada\nTidak"
+  },
+  {
+   "fieldname": "section_break_38",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "keterangan_data_konstruksi",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "diatas_permukaan_tanahlantai",
+   "fieldtype": "Heading",
+   "label": "Diatas permukaan tanah/lantai"
+  },
+  {
+   "fieldname": "tinggi_diatas_tanah_lantai",
+   "fieldtype": "Int",
+   "label": "Tinggi"
+  },
+  {
+   "fieldname": "dari_diatas_tanah_lantai",
+   "fieldtype": "Small Text",
+   "label": "Dari"
+  },
+  {
+   "fieldname": "diatas_permukaan_gedungatap",
+   "fieldtype": "Heading",
+   "label": "Diatas permukaan gedung/atap"
+  },
+  {
+   "fieldname": "tinggi_diatas_gedung_atap",
+   "fieldtype": "Int",
+   "label": "Tinggi"
+  },
+  {
+   "fieldname": "dari_diatas_gedung_atap",
+   "fieldtype": "Small Text",
+   "label": "Dari"
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dinding_gedung_luar",
+   "fieldtype": "Heading",
+   "label": "Dinding gedung luar"
+  },
+  {
+   "fieldname": "tinggi_dinding_gedung_luar",
+   "fieldtype": "Int",
+   "label": "Tinggi"
+  },
+  {
+   "fieldname": "dari_dinding_gedung_luar",
+   "fieldtype": "Small Text",
+   "label": "Dari"
+  },
+  {
+   "fieldname": "pintu_masuk_tokorukogedung",
+   "fieldtype": "Heading",
+   "label": "Pintu Masuk Toko/Ruko/Gedung"
+  },
+  {
+   "fieldname": "tinggi_pintu_masuk",
+   "fieldtype": "Int",
+   "label": "Tinggi"
+  },
+  {
+   "fieldname": "dari_pintu_masuk",
+   "fieldtype": "Small Text",
+   "label": "Dari"
+  },
+  {
+   "fieldname": "column_break_65",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dalam_gedung",
+   "fieldtype": "Heading",
+   "label": "Dalam gedung"
+  },
+  {
+   "fieldname": "tinggi_dalam_gedung",
+   "fieldtype": "Int",
+   "label": "Tinggi"
+  },
+  {
+   "fieldname": "dari_dalam_gedung",
+   "fieldtype": "Small Text",
+   "label": "Dari"
+  },
+  {
+   "fieldname": "lain_lain",
+   "fieldtype": "Heading",
+   "label": "Lain-lain"
+  },
+  {
+   "fieldname": "lainnya_faktor_pengganggu",
+   "fieldtype": "Data",
+   "label": "Lainnya"
+  },
+  {
+   "fieldname": "tinggi_lainnya",
+   "fieldtype": "Int",
+   "label": "Tinggi"
+  },
+  {
+   "fieldname": "dari_lainnya",
+   "fieldtype": "Small Text",
+   "label": "Dari"
+  },
+  {
+   "fieldname": "dimensi_struktur_papan_media_promotion_section",
+   "fieldtype": "Section Break",
+   "label": "Dimensi Struktur Papan Media Promotion"
+  },
+  {
+   "fieldname": "dimensi_struktur_papan_media_promotion",
+   "fieldtype": "Heading",
+   "label": "Dimensi Struktur Papan Media Promotion"
+  },
+  {
+   "fieldname": "struktur_vertikal",
+   "fieldtype": "Int",
+   "label": "Vertikal (cm)"
+  },
+  {
+   "fieldname": "struktur_horizontal",
+   "fieldtype": "Int",
+   "label": "Horizontal (cm)"
+  },
+  {
+   "fieldname": "struktur_thickness",
+   "fieldtype": "Int",
+   "label": "Thiknes (cm)"
+  },
+  {
+   "fieldname": "struktur_quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_70",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jarak_power_suplay_ke_media",
+   "fieldtype": "Heading",
+   "label": "Jarak Power Suplay ke Media"
+  },
+  {
+   "fieldname": "jarak_ps_vertikal",
+   "fieldtype": "Int",
+   "label": "Vertikal (cm)"
+  },
+  {
+   "fieldname": "jarak_ps_horizontal",
+   "fieldtype": "Int",
+   "label": "Horizontal (cm)"
+  },
+  {
+   "fieldname": "jarak_ps_total",
+   "fieldtype": "Int",
+   "label": "Total (cm)"
+  },
+  {
+   "fieldname": "dimensi_materi_m_section",
+   "fieldtype": "Section Break",
+   "label": "Dimensi Materi (m)"
+  },
+  {
+   "fieldname": "datar",
+   "fieldtype": "Heading",
+   "label": "Datar"
+  },
+  {
+   "fieldname": "horizontal_datar",
+   "fieldtype": "Int",
+   "label": "Horizontal"
+  },
+  {
+   "fieldname": "vertikal_datar",
+   "fieldtype": "Int",
+   "label": "Vertikal"
+  },
+  {
+   "fieldname": "bahan_datar",
+   "fieldtype": "Int",
+   "label": "Bahan"
+  },
+  {
+   "fieldname": "quantity_datar",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_76",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lengkung",
+   "fieldtype": "Heading",
+   "label": "Lengkung"
+  },
+  {
+   "fieldname": "horizontal_lengkung",
+   "fieldtype": "Int",
+   "label": "Horizontal"
+  },
+  {
+   "fieldname": "vertikal_lengkung",
+   "fieldtype": "Int",
+   "label": "Vertikal"
+  },
+  {
+   "fieldname": "bahan_lengkung",
+   "fieldtype": "Int",
+   "label": "Bahan"
+  },
+  {
+   "fieldname": "quantity_lengkung",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_82",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "2_sisi",
+   "fieldtype": "Heading",
+   "label": "2 Sisi"
+  },
+  {
+   "fieldname": "horizontal_2sisi",
+   "fieldtype": "Int",
+   "label": "Horizontal"
+  },
+  {
+   "fieldname": "vertikal_2sisi",
+   "fieldtype": "Int",
+   "label": "Vertikal"
+  },
+  {
+   "fieldname": "bahan_2sisi",
+   "fieldtype": "Int",
+   "label": "Bahan"
+  },
+  {
+   "fieldname": "quantity_2sisi",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_88",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "3_sisi",
+   "fieldtype": "Heading",
+   "label": "3 Sisi"
+  },
+  {
+   "fieldname": "horizontal_3sisi",
+   "fieldtype": "Int",
+   "label": "Horizontal"
+  },
+  {
+   "fieldname": "vertikal_3sisi",
+   "fieldtype": "Int",
+   "label": "Vertikal"
+  },
+  {
+   "fieldname": "bahan_3sisi",
+   "fieldtype": "Int",
+   "label": "Bahan"
+  },
+  {
+   "fieldname": "quantity_3sisi",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_94",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "4_sisi",
+   "fieldtype": "Heading",
+   "label": "4 Sisi"
+  },
+  {
+   "fieldname": "horizontal_4sisi",
+   "fieldtype": "Int",
+   "label": "Horizontal"
+  },
+  {
+   "fieldname": "vertikal_4sisi",
+   "fieldtype": "Int",
+   "label": "Vertikal"
+  },
+  {
+   "fieldname": "bahan_4sisi",
+   "fieldtype": "Int",
+   "label": "Bahan"
+  },
+  {
+   "fieldname": "quantity_4sisi",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_100",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lainnya",
+   "fieldtype": "Heading",
+   "label": "Lainnya"
+  },
+  {
+   "fieldname": "horizontal_lainnya",
+   "fieldtype": "Int",
+   "label": "Horizontal"
+  },
+  {
+   "fieldname": "vertikal_lainnya",
+   "fieldtype": "Int",
+   "label": "Vertikal"
+  },
+  {
+   "fieldname": "bahan_lainnya",
+   "fieldtype": "Int",
+   "label": "Bahan"
+  },
+  {
+   "fieldname": "quanity_lainnya",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "faktor_pengganggu_dilapangan_section",
+   "fieldtype": "Section Break",
+   "label": "FAKTOR PENGGANGGU DILAPANGAN"
+  },
+  {
+   "fieldname": "existing",
+   "fieldtype": "Heading",
+   "label": "Existing"
+  },
+  {
+   "fieldname": "kabel_pln_telkom",
+   "fieldtype": "Select",
+   "label": "Kabel PLN/Telkom",
+   "options": "ada\ntidak"
+  },
+  {
+   "fieldname": "jalur_pipa_gas",
+   "fieldtype": "Select",
+   "label": "Jalur pipa gas",
+   "options": "ada\ntidak"
+  },
+  {
+   "fieldname": "tiang_tower",
+   "fieldtype": "Select",
+   "label": "Tiang / tower",
+   "options": "ada\ntidak"
+  },
+  {
+   "fieldname": "saluran_air",
+   "fieldtype": "Select",
+   "label": "Saluran Air",
+   "options": "ada\ntidak"
+  },
+  {
+   "fieldname": "jl_kelokasi",
+   "fieldtype": "Select",
+   "label": "Jl. Ke lokasi",
+   "options": "ada\ntidak"
+  },
+  {
+   "fieldname": "faktor_pengganggu_lainnya",
+   "fieldtype": "Small Text",
+   "label": "Lainnya",
+   "options": "ada\ntidak"
+  },
+  {
+   "fieldname": "column_break_113",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Heading",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "keterangan_kabel_pln_telkom",
+   "fieldtype": "Data",
+   "label": "Ket. Kabel PLN/Telkom"
+  },
+  {
+   "fieldname": "keterangan_jalur_pipa_gas",
+   "fieldtype": "Data",
+   "label": "Ket. Jalur pipa gas"
+  },
+  {
+   "fieldname": "keterangan_tiang_tower",
+   "fieldtype": "Data",
+   "label": "Ket. Tiang / tower"
+  },
+  {
+   "fieldname": "keterangan_saluran_air",
+   "fieldtype": "Data",
+   "label": "Ket. Saluran Air"
+  },
+  {
+   "fieldname": "keterangan_jl_kelokasi",
+   "fieldtype": "Data",
+   "label": "Ket. Jl. Ke lokasi"
+  },
+  {
+   "fieldname": "keterangan_faktor_pengganggu_lainnya",
+   "fieldtype": "Data",
+   "label": "Ket. Lainnya"
+  },
+  {
+   "fieldname": "prediksi_alat_kerja_pemasangan_section",
+   "fieldtype": "Section Break",
+   "label": "PREDIKSI ALAT KERJA PEMASANGAN"
+  },
+  {
+   "fieldname": "sewa_alat_kerja",
+   "fieldtype": "Small Text",
+   "label": "Sewa Alat Kerja"
+  },
+  {
+   "fieldname": "column_break_123",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alat_kerja",
+   "fieldtype": "Small Text",
+   "label": "Alat Kerja"
+  },
+  {
+   "fieldname": "column_break_125",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bahan_kerja",
+   "fieldtype": "Small Text",
+   "label": "Bahan Kerja"
+  },
+  {
+   "fieldname": "sketsa_product_section",
+   "fieldtype": "Section Break",
+   "label": "SKETSA PRODUCT"
+  },
+  {
+   "fieldname": "upload_sketsa_product",
+   "fieldtype": "Attach",
+   "label": "UPLOAD SKETSA PRODUCT"
+  },
+  {
+   "fieldname": "penanggung_jawab_section",
+   "fieldtype": "Section Break",
+   "label": "Penanggung Jawab"
+  },
+  {
+   "fieldname": "pj",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "PJ. Pekerjaan",
+   "options": "User"
+  },
+  {
+   "fieldname": "spv",
+   "fieldtype": "Link",
+   "label": "Team Quality Control",
+   "options": "User"
+  },
+  {
+   "fieldname": "manager_prod",
+   "fieldtype": "Link",
+   "label": "Manager Produksi",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_155",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kepala_group",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Kepala Group"
+  },
+  {
+   "fieldname": "ass_manager",
+   "fieldtype": "Data",
+   "label": "Ass. Manager"
+  },
+  {
+   "fieldname": "manager_produksi",
+   "fieldtype": "Data",
+   "label": "Manager Produksi"
+  },
+  {
+   "default": "0",
+   "fieldname": "kamera",
+   "fieldtype": "Check",
+   "label": "Kamera"
+  },
+  {
+   "fetch_from": "pelanggan.full_name",
+   "fieldname": "nama_lengkap_pelanggan",
+   "fieldtype": "Data",
+   "label": "Nama Lengkap Pelanggan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Tipe Permintaan",
+   "options": "Job Order\nSurat Service\nMemo"
+  }
+ ],
+ "links": [],
+ "max_attachments": 2,
+ "modified": "2021-12-27 13:29:44.983579",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "Data Survey",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

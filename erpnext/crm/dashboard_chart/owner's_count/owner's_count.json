@@ -5,12 +5,13 @@
  "custom_options": "{\"x_field\": \"lead_owner\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"opp_count\", \"color\": \"#449CF0\"}, {\"idx\": 2, \"__islocal\": true, \"name\": \"row 2\", \"y_field\": \"quot_count\", \"color\": \"#944a4a\"}, {\"idx\": 3, \"__islocal\": true, \"name\": \"row 3\", \"y_field\": \"order_count\", \"color\": \"#B4CD29\"}, {\"idx\": 4, \"__islocal\": true, \"name\": \"row 4\", \"y_field\": \"lead_count\", \"color\": \"#29CD42\"}], \"y_fields\": [\"opp_count\", \"quot_count\", \"order_count\", \"lead_count\"], \"colors\": [\"#449CF0\", \"#944a4a\", \"#B4CD29\", \"#29CD42\"]}",
  "docstatus": 0,
  "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "",
  "filters_json": "{\"from_date\":\"2021-01-01\",\"to_date\":\"2021-12-31\"}",
  "group_by_type": "Count",
  "idx": 0,
- "is_public": 0,
+ "is_public": 1,
  "is_standard": 1,
- "modified": "2021-10-07 16:37:34.013978",
+ "modified": "2021-12-16 08:30:33.773802",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Owner's Count",
@@ -23,6 +24,15 @@
   },
   {
    "role": "Sales Manager"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "All"
+  },
+  {
+   "role": "Sales Admin"
   }
  ],
  "time_interval": "Yearly",
@@ -33,20 +43,16 @@
  "x_field": "lead_owner",
  "y_axis": [
   {
+   "color": "#29CD42",
+   "y_field": "lead_count"
+  },
+  {
    "color": "#449CF0",
    "y_field": "opp_count"
   },
   {
    "color": "#944a4a",
    "y_field": "quot_count"
-  },
-  {
-   "color": "#B4CD29",
-   "y_field": "order_count"
-  },
-  {
-   "color": "#29CD42",
-   "y_field": "lead_count"
   }
  ]
 }

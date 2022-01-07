@@ -166,10 +166,11 @@
  "idx": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-24 15:51:11.117517",
+ "modified": "2021-11-25 10:32:40.428492",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Job Applicant",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-19 09:21:12.956784",
+ "creation": "2021-11-19 10:56:53.609833",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -23,9 +23,14 @@
  ],
  "fields": [
   {
+   "fieldname": "sec11",
+   "fieldtype": "Section Break",
+   "label": "Permintaan Bank"
+  },
+  {
    "fieldname": "data_2",
    "fieldtype": "Data",
-   "label": "No revisi "
+   "label": "No revisi"
   },
   {
    "fieldname": "nama",
@@ -45,12 +50,12 @@
   {
    "fieldname": "tgl",
    "fieldtype": "Date",
-   "label": "Tanggal "
+   "label": "Tanggal"
   },
   {
    "fieldname": "jml",
    "fieldtype": "Data",
-   "label": "Jumlah "
+   "label": "Jumlah"
   },
   {
    "fieldname": "terbilang",
@@ -73,20 +78,6 @@
    "label": "Attachment"
   },
   {
-   "fieldname": "sec11",
-   "fieldtype": "Section Break",
-   "label": "Permintaan Bank"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Permintaan Bank Edoc",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "in_filter": 1,
@@ -97,13 +88,22 @@
    "label": "No dokumen",
    "options": "FR.FIN.013-.YYYY.-",
    "print_hide": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Permintaan Bank Edoc",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 10000,
- "modified": "2021-11-19 16:30:18.466142",
+ "modified": "2021-12-08 17:02:19.325713",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Permintaan Bank Edoc",
@@ -121,11 +121,46 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

@@ -1,0 +1,22 @@
+{
+ "creation": "2022-01-06 16:52:42.287448",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{\"company\":\"Ming Media Promotion\",\"fiscal_year\":\"2022\",\"doctype\":\"Sales Order\",\"period\":\"Monthly\",\"target_on\":\"Amount\"}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": " Sales Person Target Variance Based On Item Group",
+ "modified": "2022-01-06 16:52:42.390522",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Sales Person Target Variance Based On Item Group",
+ "owner": "Administrator",
+ "report_field": "target_jan_2022",
+ "report_function": "Sum",
+ "report_name": "Sales Person Target Variance Based On Item Group",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

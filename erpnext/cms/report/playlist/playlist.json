@@ -10,13 +10,13 @@
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": "1",
- "modified": "2021-10-18 15:32:25.712793",
+ "modified": "2021-12-27 17:07:48.489264",
  "modified_by": "Administrator",
  "module": "CMS",
  "name": "Playlist",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "SELECT foto_sebelum FROM `tabUpload Content`;",
+ "query": "SELECT\n    `tabBAST`.no_jo as 'No JO', \n    `tabBAST`.customer_name as 'Customer', \n    `tabItem`.area as 'Area', \n    `tabItem`.item_location as 'Lokasi Media', \n    `tabItem`.item_group as 'Tipe Media', \n    `tabItem`.place_code as 'Kode Tempat',\n    `tabItem`.ads_placement as 'Penempatan Media',\n    `tabSales Order`.qty as 'Slot',\n    `tabUpload Content`.perintah_kerja as 'Perintah Kerja',\n    `tabUpload Content`.start_showtime as 'Mulai Tayang',\n    `tabUpload Content`.end_showtime as 'Selesai Tayang',\n    `tabUpload Content`.period as 'Periode Penayangan',\n    `tabUpload Content`.foto_sebelum as 'Foto/Media Sebelum-1',\n    `tabUpload Content`.foto_2_before as 'Foto/Media Sebelum-2',\n    `tabUpload Content`.foto_3_before as 'Foto/Media Sebelum-3',\n    `tabUpload Content`.foto_sesudah as 'Foto/Media Sesudah-1',\n    `tabUpload Content`.foto_2_after as 'Foto/Media Sesudah-2',\n    `tabUpload Content`.foto_3_after as 'Foto/Media Sesudah-3'\nFROM `tabBAST`\nLEFT JOIN `tabSales Order` on `tabBAST`.no_jo = `tabSales Order`.name\nLEFT JOIN `tabItem` on `tabSales Order`.nm_product = `tabItem`.name\nLEFT JOIN `tabUpload Content` on `tabBAST`.no_jo = `tabUpload Content`.no_jo\nWHERE `tabItem`.item_group = 'LED Banner' OR `tabItem`.item_group = 'LED Single' OR `tabItem`.item_group = 'Mobile LED'; ",
  "ref_doctype": "Upload Content",
  "report_name": "Playlist",
  "report_type": "Query Report",
@@ -26,6 +26,18 @@
   },
   {
    "role": "Administrator"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Admin"
+  },
+  {
+   "role": "Production Manager"
+  },
+  {
+   "role": "Production User"
   }
  ]
 }

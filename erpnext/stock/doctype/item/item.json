@@ -28,18 +28,15 @@
   "naming_series",
   "item_code",
   "variant_of",
-  "area",
+  "item_name",
   "item_group",
+  "is_item_from_hub",
   "stock_uom",
   "number_of_unit",
-  "column_break0",
-  "item_name",
-  "disabled",
-  "is_item_from_hub",
   "item_location",
-  "media_location",
-  "image",
-  "data_21",
+  "area",
+  "column_break0",
+  "disabled",
   "feasibility",
   "place_code",
   "allow_alternative_item",
@@ -54,6 +51,8 @@
   "asset_naming_series",
   "over_delivery_receipt_allowance",
   "over_billing_allowance",
+  "image",
+  "media_location",
   "ads_placement",
   "rbd_pic",
   "section_break_27",
@@ -67,23 +66,30 @@
   "side",
   "width",
   "length",
-  "column_break9",
   "wide",
   "dimension",
   "orientation",
-  "data_59",
   "item_slot",
   "schedule",
+  "column_break9",
   "item_spot",
-  "data_58",
   "duration",
   "visual",
   "point_of_interest",
-  "data_64",
   "traffic_car",
   "traffic_motor",
   "traffic_people",
   "pixel_pitch",
+  "cb_mar_arc",
+  "talent",
+  "wardrobe",
+  "makeup",
+  "perizinan",
+  "spanduk",
+  "filler",
+  "kol",
+  "paid_ig_buzz",
+  "paid_ig_ming",
   "sb_barcodes",
   "barcodes",
   "inventory_section",
@@ -154,6 +160,34 @@
   "customer_details",
   "customer_items",
   "item_tax_section_break",
+  "header1",
+  "rental_price_m",
+  "rent_value",
+  "additional_value",
+  "rental_deposite",
+  "cb_constru",
+  "heading_2",
+  "contruction_cost",
+  "production_price_m",
+  "visual_price_m",
+  "prod_price_sib",
+  "prod_price_sip",
+  "cb_electric",
+  "heading_3",
+  "electric_load",
+  "operational_hour",
+  "electric_value",
+  "days",
+  "installation_cost",
+  "electric_cost",
+  "cb_tax",
+  "heading_4",
+  "tax_class",
+  "rate_m",
+  "tax_rate",
+  "field_fee",
+  "management_fee",
+  "total_tax_fee",
   "taxes",
   "inspection_criteria",
   "quality_inspection_template",
@@ -202,7 +236,8 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": ".####-"
+   "options": "SI-.YYYY.-\nSTO-ITEM-.YYYY.-",
+   "set_only_once": 1
   },
   {
    "bold": 1,
@@ -212,7 +247,6 @@
    "label": "Item Code",
    "oldfieldname": "item_code",
    "oldfieldtype": "Data",
-   "read_only": 1,
    "unique": 1
   },
   {
@@ -229,7 +263,6 @@
   {
    "fieldname": "item_name",
    "fieldtype": "Data",
-   "in_global_search": 1,
    "label": "Item Name",
    "oldfieldname": "item_name",
    "oldfieldtype": "Data",
@@ -269,12 +302,6 @@
   {
    "fieldname": "column_break0",
    "fieldtype": "Column Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "disabled",
-   "fieldtype": "Check",
-   "label": "Disabled"
   },
   {
    "default": "0",
@@ -375,7 +402,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text",
+   "fieldtype": "Text Editor",
    "in_preview": 1,
    "label": "Description",
    "oldfieldname": "description",
@@ -863,6 +890,7 @@
   {
    "fieldname": "taxes",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Taxes",
    "oldfieldname": "item_tax",
    "oldfieldtype": "Table",
@@ -1157,7 +1185,7 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Location",
-   "reqd": 1
+   "mandatory_depends_on": "eval:doc.area!=\"Marcom Activity\";"
   },
   {
    "fieldname": "map_location",
@@ -1172,8 +1200,7 @@
    "fieldname": "orientation",
    "fieldtype": "Select",
    "label": "Orientation",
-   "options": "\nVertical\nHorizontal",
-   "reqd": 1
+   "options": "\nVertical\nHorizontal"
   },
   {
    "fieldname": "point_of_interest",
@@ -1221,14 +1248,13 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Media Location",
-   "reqd": 1
+   "mandatory_depends_on": "eval:doc.area!=\"Marcom Activity\";"
   },
   {
-   "description": "IND = Indoor;\nOUT = Outdoor",
    "fieldname": "ads_placement",
    "fieldtype": "Select",
    "label": "Ads Placement",
-   "options": "\nIND\nOUT",
+   "options": "\nINDOOR\nOUTDOOR",
    "reqd": 1
   },
   {
@@ -1249,8 +1275,10 @@
   {
    "default": "0",
    "fieldname": "item_slot",
-   "fieldtype": "Int",
-   "label": "Slot"
+   "fieldtype": "Select",
+   "label": "Slot",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20",
+   "reqd": 1
   },
   {
    "fieldname": "link_map_location",
@@ -1282,51 +1310,13 @@
   {
    "fieldname": "duration",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Duration"
   },
   {
    "fieldname": "dimension",
    "fieldtype": "Data",
-   "label": "Dimension / Muka",
-   "read_only": 1
-  },
-  {
-   "description": "Kode Tempat => \n1. MAL = Mall;\n2. BUI = Building;\n3. MOB = Mobile;\n4. STA = Statis",
-   "fieldname": "place_code",
-   "fieldtype": "Select",
-   "label": "Code Place",
-   "options": "\nMAL\nBUI\nMOB\nSTA",
-   "reqd": 1
-  },
-  {
-   "fieldname": "feasibility",
-   "fieldtype": "Data",
-   "label": "Feasibility"
-  },
-  {
-   "description": "Lebar (dalam meter)",
-   "fieldname": "width",
-   "fieldtype": "Data",
-   "label": "Width",
-   "reqd": 1
-  },
-  {
-   "description": "Panjang (dalam meter)",
-   "fieldname": "length",
-   "fieldtype": "Data",
-   "label": "Length",
-   "reqd": 1
-  },
-  {
-   "description": "Luas ukuran",
-   "fieldname": "wide",
-   "fieldtype": "Data",
-   "label": "Large"
-  },
-  {
-   "fieldname": "visual",
-   "fieldtype": "Data",
-   "label": "Visual"
+   "label": "Dimension / Muka"
   },
   {
    "fieldname": "section_break_0",
@@ -1378,17 +1368,17 @@
    "fieldtype": "Column Break"
   },
   {
-   "description": "Jumlah Muka",
-   "fieldname": "side",
-   "fieldtype": "Data",
-   "label": "Side",
+   "description": "Kode Tempat",
+   "fieldname": "place_code",
+   "fieldtype": "Select",
+   "label": "Code Place",
+   "options": "\nMALL\nBUILDING\nMOBILE\nSTATIC",
    "reqd": 1
   },
   {
-   "default": "0",
-   "fieldname": "is_rent",
-   "fieldtype": "Check",
-   "label": "Rent"
+   "fieldname": "feasibility",
+   "fieldtype": "Data",
+   "label": "Feasibility"
   },
   {
    "fieldname": "rbd_pic",
@@ -1404,20 +1394,250 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "data_58",
+   "description": "Jumlah Muka",
+   "fieldname": "side",
+   "fieldtype": "Data",
+   "label": "Side"
+  },
+  {
+   "description": "Lebar (dalam meter)",
+   "fieldname": "width",
+   "fieldtype": "Data",
+   "label": "Width"
+  },
+  {
+   "description": "Panjang (dalam meter)",
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "label": "Length"
+  },
+  {
+   "description": "Luas ukuran (dalam meter persegi [m2])",
+   "fieldname": "wide",
+   "fieldtype": "Data",
+   "label": "Wide"
+  },
+  {
+   "fieldname": "visual",
+   "fieldtype": "Data",
+   "label": "Visual"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "default": "NEW",
+   "fieldname": "is_rent",
+   "fieldtype": "Data",
+   "label": "Rent"
+  },
+  {
+   "fieldname": "header1",
+   "fieldtype": "Heading",
+   "label": "Rent"
+  },
+  {
+   "fieldname": "heading_2",
+   "fieldtype": "Heading",
+   "label": "Construction & Production"
+  },
+  {
+   "fieldname": "heading_3",
+   "fieldtype": "Heading",
+   "label": "Electric"
+  },
+  {
+   "fieldname": "heading_4",
+   "fieldtype": "Heading",
+   "label": "Tax"
+  },
+  {
+   "fieldname": "tax_class",
+   "fieldtype": "Link",
+   "label": "Tax Class",
+   "options": "Tax Class"
+  },
+  {
+   "fieldname": "rate_m",
+   "fieldtype": "Currency",
+   "label": "Rate/M"
+  },
+  {
+   "fieldname": "tax_rate",
+   "fieldtype": "Currency",
+   "label": "Tax Rate"
+  },
+  {
+   "fieldname": "field_fee",
+   "fieldtype": "Currency",
+   "label": "Field Fee"
+  },
+  {
+   "fieldname": "management_fee",
+   "fieldtype": "Currency",
+   "label": "Management Fee"
+  },
+  {
+   "fieldname": "total_tax_fee",
+   "fieldtype": "Currency",
+   "label": "Total Tax Fee"
+  },
+  {
+   "fieldname": "cb_tax",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "data_59",
+   "fieldname": "rental_price_m",
+   "fieldtype": "Currency",
+   "label": "Rent Price/M"
+  },
+  {
+   "fieldname": "rent_value",
+   "fieldtype": "Currency",
+   "label": "Rent Value"
+  },
+  {
+   "fieldname": "additional_value",
+   "fieldtype": "Currency",
+   "label": "Additional Value"
+  },
+  {
+   "fieldname": "rental_deposite",
+   "fieldtype": "Currency",
+   "label": "Rent Deposite"
+  },
+  {
+   "fieldname": "cb_constru",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "data_64",
+   "fieldname": "contruction_cost",
+   "fieldtype": "Currency",
+   "label": "Construction cost"
+  },
+  {
+   "fieldname": "production_price_m",
+   "fieldtype": "Currency",
+   "label": "Production Price/M"
+  },
+  {
+   "fieldname": "visual_price_m",
+   "fieldtype": "Currency",
+   "label": "Visual Price/M"
+  },
+  {
+   "fieldname": "prod_price_sib",
+   "fieldtype": "Currency",
+   "label": "Production Price SIB"
+  },
+  {
+   "fieldname": "prod_price_sip",
+   "fieldtype": "Currency",
+   "label": "Production Price SIP"
+  },
+  {
+   "fieldname": "cb_electric",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "data_21",
+   "fieldname": "electric_load",
+   "fieldtype": "Int",
+   "label": "Electric Load"
+  },
+  {
+   "fieldname": "operational_hour",
+   "fieldtype": "Data",
+   "label": "Operational Hour"
+  },
+  {
+   "fieldname": "electric_value",
+   "fieldtype": "Int",
+   "label": "Electric Value"
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Data",
+   "label": "Days"
+  },
+  {
+   "fieldname": "installation_cost",
+   "fieldtype": "Currency",
+   "label": "Installation Cost"
+  },
+  {
+   "fieldname": "electric_cost",
+   "fieldtype": "Currency",
+   "label": "Electric Cost"
+  },
+  {
+   "fieldname": "cb_mar_arc",
    "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.item_group==\"Marcom Activity\"",
+   "fieldname": "talent",
+   "fieldtype": "Currency",
+   "label": "Talent",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.item_group==\"Marcom Activity\"",
+   "fieldname": "wardrobe",
+   "fieldtype": "Currency",
+   "label": "Wardrobe",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.item_group==\"Marcom Activity\"",
+   "fieldname": "makeup",
+   "fieldtype": "Currency",
+   "label": "Makeup",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.item_group==\"Marcom Activity\"",
+   "fieldname": "perizinan",
+   "fieldtype": "Currency",
+   "label": "Perizinan",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.item_group==\"Marcom Activity\"",
+   "fieldname": "spanduk",
+   "fieldtype": "Currency",
+   "label": "Spanduk",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.item_group==\"Marcom Activity\"",
+   "fieldname": "filler",
+   "fieldtype": "Currency",
+   "label": "Filler",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.item_group==\"Marcom Activity\"",
+   "fieldname": "kol",
+   "fieldtype": "Currency",
+   "label": "KOL",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.item_group==\"Marcom Activity\"",
+   "fieldname": "paid_ig_buzz",
+   "fieldtype": "Currency",
+   "label": "Paid Promote Buzzer IG",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.item_group==\"Marcom Activity\"",
+   "fieldname": "paid_ig_ming",
+   "fieldtype": "Currency",
+   "label": "Paid Promote IG MING",
+   "non_negative": 1
   }
  ],
  "has_web_view": 1,
@@ -1427,7 +1647,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 1000000,
- "modified": "2021-11-29 15:47:25.342828",
+ "modified": "2021-12-15 11:05:28.100908",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

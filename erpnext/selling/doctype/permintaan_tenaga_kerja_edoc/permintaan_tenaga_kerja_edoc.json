@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2021-11-19 10:09:50.441507",
+ "creation": "2021-11-19 10:56:52.145205",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -25,8 +25,7 @@
   "nm_kandidat",
   "alamat_kandidat",
   "telp_kandidat",
-  "verifikasi",
-  "amended_from"
+  "verifikasi"
  ],
  "fields": [
   {
@@ -42,12 +41,12 @@
   {
    "fieldname": "no_rev",
    "fieldtype": "Data",
-   "label": "No revisi "
+   "label": "No revisi"
   },
   {
    "fieldname": "nama",
    "fieldtype": "Data",
-   "label": "Nama "
+   "label": "Nama"
   },
   {
    "fieldname": "jabatan",
@@ -62,12 +61,12 @@
   {
    "fieldname": "posisi",
    "fieldtype": "Data",
-   "label": "Posisi "
+   "label": "Posisi"
   },
   {
    "fieldname": "bagian",
    "fieldtype": "Data",
-   "label": "Bagian "
+   "label": "Bagian"
   },
   {
    "fieldname": "status",
@@ -79,6 +78,10 @@
    "fieldname": "usia_disukai",
    "fieldtype": "Data",
    "label": "Usia disukai"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "pendidikan",
@@ -127,26 +130,13 @@
   {
    "fieldname": "verifikasi",
    "fieldtype": "Data",
-   "label": "Verifikasi / catatan pemohon / atasan pemohon "
-  },
-  {
-   "fieldname": "col1",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Permintaan Tenaga Kerja Edoc",
-   "print_hide": 1,
-   "read_only": 1
+   "label": "Verifikasi / catatan pemohon / atasan pemohon"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 10:19:25.503901",
+ "modified": "2021-11-19 10:59:40.658441",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Permintaan Tenaga Kerja Edoc",
@@ -168,6 +158,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

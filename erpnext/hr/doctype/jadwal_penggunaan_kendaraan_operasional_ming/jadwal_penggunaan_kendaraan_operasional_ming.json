@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-12-21 10:10:32.953940",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec",
+  "naming_series",
+  "tgl",
+  "pengguna",
+  "divisi",
+  "tujuan",
+  "colb2",
+  "driver",
+  "tgl_service",
+  "jam_pakai",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec",
+   "fieldtype": "Section Break",
+   "label": "Jadwal Penggunaan Kendaraan Operasional MING"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "JADWAL-.YYYY.-"
+  },
+  {
+   "fieldname": "tgl",
+   "fieldtype": "Date",
+   "label": "Tanggal"
+  },
+  {
+   "fieldname": "pengguna",
+   "fieldtype": "Data",
+   "label": "Pengguna"
+  },
+  {
+   "fieldname": "divisi",
+   "fieldtype": "Data",
+   "label": "Divisi"
+  },
+  {
+   "fieldname": "colb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tujuan",
+   "fieldtype": "Data",
+   "label": "Tujuan"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Data",
+   "label": "Driver"
+  },
+  {
+   "fieldname": "tgl_service",
+   "fieldtype": "Data",
+   "label": "Mobil"
+  },
+  {
+   "fieldname": "jam_pakai",
+   "fieldtype": "Data",
+   "label": "Jam Pakai"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-21 11:34:21.666602",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Jadwal Penggunaan Kendaraan Operasional MING",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Assistant HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

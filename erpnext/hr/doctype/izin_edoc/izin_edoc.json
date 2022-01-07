@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 18:38:58.954683",
+ "creation": "2021-11-19 08:04:46.931209",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -19,7 +19,8 @@
   "mengajukan",
   "keperluan",
   "alasan_izin",
-  "penjelasan_izin"
+  "penjelasan_izin",
+  "amended_from"
  ],
  "fields": [
   {
@@ -42,7 +43,7 @@
   {
    "fieldname": "no_rev",
    "fieldtype": "Data",
-   "label": "No revisi "
+   "label": "No revisi"
   },
   {
    "fieldname": "nama",
@@ -62,7 +63,7 @@
   {
    "fieldname": "tgl_msk",
    "fieldtype": "Date",
-   "label": "Tanggal awal masuk kerja "
+   "label": "Tanggal awal masuk kerja"
   },
   {
    "fieldname": "col1",
@@ -87,20 +88,29 @@
   {
    "fieldname": "alasan_izin",
    "fieldtype": "Select",
-   "label": "  Alasan izin",
+   "label": "Alasan izin",
    "options": "Meninggalkan pekerjaan\nPulang cepat\nDatang terlambat\nSakit\nLain lain"
   },
   {
    "fieldname": "penjelasan_izin",
    "fieldtype": "Data",
    "label": "Penjelasan izin"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Izin Edoc",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 10000,
- "modified": "2021-11-19 16:17:54.574443",
+ "modified": "2021-12-08 16:48:06.759301",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Izin Edoc",
@@ -118,11 +128,60 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HRD Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

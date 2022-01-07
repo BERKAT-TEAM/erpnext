@@ -1,0 +1,427 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:FR-PROD-5-.YY.-##",
+ "creation": "2021-12-15 19:03:13.842063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "amended_from",
+  "owner",
+  "no_jo",
+  "client",
+  "address",
+  "phone",
+  "person_in_charge",
+  "column_break_1",
+  "no_revisi",
+  "tanggal_upload",
+  "deadline",
+  "lampiran_section",
+  "form02",
+  "form03",
+  "column_break_18",
+  "form_lain1",
+  "form_lain2",
+  "form_lain3",
+  "jenis_pekerjaan_section",
+  "perintah_kerja",
+  "column_break_24",
+  "jenis_media",
+  "personil_section_break",
+  "personil1",
+  "personil2",
+  "personil3",
+  "column_break_29",
+  "personil4",
+  "personil5",
+  "personil6",
+  "more_info_break",
+  "keterangan",
+  "column_break",
+  "catatan",
+  "sction_break_1",
+  "start",
+  "sewa_alat_kerja",
+  "column_break_2",
+  "end",
+  "alat_bahan_kerja",
+  "column_break_8",
+  "procedure",
+  "bahan_kerja",
+  "section_break_2",
+  "kepala_group",
+  "supervisor",
+  "pelanggan",
+  "data_34",
+  "team_date",
+  "qc_date",
+  "s_c_date",
+  "data_38",
+  "pj",
+  "spv",
+  "nama_pelanggan"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FR-PROD-5-.YY.-##"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Surat Tugas1"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_jo",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "no_jo.customer_name",
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fetch_from": "no_jo.customer_address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Alamat"
+  },
+  {
+   "fetch_from": "no_jo.contact_phone",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Telepon"
+  },
+  {
+   "fieldname": "person_in_charge",
+   "fieldtype": "Link",
+   "label": "Penanggungjawab",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_revisi",
+   "fieldtype": "Data",
+   "label": "No. Revisi"
+  },
+  {
+   "fieldname": "tanggal_upload",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Deadline",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lampiran_section",
+   "fieldtype": "Section Break",
+   "label": "Lampiran"
+  },
+  {
+   "default": "0",
+   "fieldname": "form02",
+   "fieldtype": "Check",
+   "label": "FORM. PROD. 02"
+  },
+  {
+   "default": "0",
+   "fieldname": "form03",
+   "fieldtype": "Check",
+   "label": "FORM. PROD. 03"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "form_lain1",
+   "fieldtype": "Data",
+   "label": "Form Lain"
+  },
+  {
+   "fieldname": "form_lain2",
+   "fieldtype": "Data",
+   "label": "Form Lain"
+  },
+  {
+   "fieldname": "form_lain3",
+   "fieldtype": "Data",
+   "label": "Form Lain"
+  },
+  {
+   "fieldname": "jenis_pekerjaan_section",
+   "fieldtype": "Section Break",
+   "label": "Jenis Pekerjaan"
+  },
+  {
+   "fieldname": "perintah_kerja",
+   "fieldtype": "Select",
+   "label": "Jenis Pekerjaan",
+   "options": "Pemasangan\nPembongkaran\nService"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jenis_media",
+   "fieldtype": "Select",
+   "label": "Jenis Media",
+   "options": "LED TV\nLED Banner\nLED Standing\nTotem\nNeon Sign\nNeon Box\nHanging Box\nRailing Box\nCeiling Box\nBillboard\nHuruf Timbul\nPenggantian Materi\nUmbul-umbul"
+  },
+  {
+   "fieldname": "personil_section_break",
+   "fieldtype": "Section Break",
+   "label": "Personil"
+  },
+  {
+   "fieldname": "personil1",
+   "fieldtype": "Data",
+   "label": "Personil 1"
+  },
+  {
+   "fieldname": "personil2",
+   "fieldtype": "Data",
+   "label": "Personil 2"
+  },
+  {
+   "fieldname": "personil3",
+   "fieldtype": "Data",
+   "label": "Personil 3"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "personil4",
+   "fieldtype": "Data",
+   "label": "Personil 4"
+  },
+  {
+   "fieldname": "personil5",
+   "fieldtype": "Data",
+   "label": "Personil 5"
+  },
+  {
+   "fieldname": "personil6",
+   "fieldtype": "Data",
+   "label": "Personil 6"
+  },
+  {
+   "fieldname": "more_info_break",
+   "fieldtype": "Section Break",
+   "label": "More Info"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Text Editor",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "catatan",
+   "fieldtype": "Text Editor",
+   "label": "Catatan Pelanggan / Lapangan"
+  },
+  {
+   "fieldname": "sction_break_1",
+   "fieldtype": "Section Break",
+   "label": "Pelaksanaan"
+  },
+  {
+   "fieldname": "start",
+   "fieldtype": "Date",
+   "label": "Start"
+  },
+  {
+   "fieldname": "sewa_alat_kerja",
+   "fieldtype": "Small Text",
+   "label": "Sewa Alat Kerja"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end",
+   "fieldtype": "Date",
+   "label": "End"
+  },
+  {
+   "fieldname": "alat_bahan_kerja",
+   "fieldtype": "Small Text",
+   "label": "Alat bahan Kerja"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "procedure",
+   "fieldtype": "Select",
+   "label": "Prosedur Pelaksanaan",
+   "options": "Surat Ijin\nSticker Pajak\nPemasangan Dudukan\nPemasangan Barang\nLampu Nyala\nMateri / Gambar\nInstalasi Listrik\nKebersihan Barang\nKebersihan Tempat Kerja"
+  },
+  {
+   "fieldname": "bahan_kerja",
+   "fieldtype": "Small Text",
+   "label": "Bahan Kerja"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "kepala_group",
+   "fieldtype": "Link",
+   "label": "Kepala Group",
+   "options": "User"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Ass. Manager / Supervisor",
+   "options": "User"
+  },
+  {
+   "fieldname": "pelanggan",
+   "fieldtype": "Link",
+   "label": "Pelanggan",
+   "options": "User"
+  },
+  {
+   "fieldname": "data_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "team_date",
+   "fieldtype": "Datetime",
+   "label": "Team Date"
+  },
+  {
+   "default": "Now",
+   "fieldname": "qc_date",
+   "fieldtype": "Datetime",
+   "label": "QC Date"
+  },
+  {
+   "default": "Now",
+   "fieldname": "s_c_date",
+   "fieldtype": "Datetime",
+   "label": "Sales/Customer Date"
+  },
+  {
+   "fieldname": "data_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "kepala_group.full_name",
+   "fieldname": "pj",
+   "fieldtype": "Data"
+  },
+  {
+   "fetch_from": "supervisor.full_name",
+   "fieldname": "spv",
+   "fieldtype": "Data"
+  },
+  {
+   "fetch_from": "pelanggan.full_name",
+   "fieldname": "nama_pelanggan",
+   "fieldtype": "Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-18 15:10:12.491326",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "Surat Tugas1",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

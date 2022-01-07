@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 17:30:16.874012",
+ "creation": "2021-11-19 08:04:47.182851",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -12,20 +12,24 @@
   "no_service",
   "no_jo",
   "nama",
+  "data_6",
   "jabatan",
   "divisi",
   "tgl_pengajuan",
   "cuti_s",
   "cuti_e",
+  "data_12",
   "hr",
   "alasan_c",
   "dip_hrd",
   "hak_cuti",
   "cut_di",
+  "data_18",
   "tgl_selesai",
   "sisa_cuti",
   "cuti_yg",
-  "sisa_cu"
+  "sisa_cu",
+  "amended_from"
  ],
  "fields": [
   {
@@ -73,27 +77,27 @@
   {
    "fieldname": "tgl_pengajuan",
    "fieldtype": "Date",
-   "label": "Tanggal pengajuan "
+   "label": "Tanggal pengajuan"
   },
   {
    "fieldname": "cuti_s",
    "fieldtype": "Date",
-   "label": "Cuti start "
+   "label": "Cuti start"
   },
   {
    "fieldname": "cuti_e",
    "fieldtype": "Date",
-   "label": "Cuti end "
+   "label": "Cuti end"
   },
   {
    "fieldname": "hr",
    "fieldtype": "Data",
-   "label": "Hari "
+   "label": "Hari"
   },
   {
    "fieldname": "alasan_c",
    "fieldtype": "Data",
-   "label": "Alasan cuti "
+   "label": "Alasan cuti"
   },
   {
    "fieldname": "dip_hrd",
@@ -108,7 +112,7 @@
   {
    "fieldname": "cut_di",
    "fieldtype": "Data",
-   "label": "Cuti yang telah di ambil "
+   "label": "Cuti yang telah di ambil"
   },
   {
    "fieldname": "tgl_selesai",
@@ -118,12 +122,12 @@
   {
    "fieldname": "sisa_cuti",
    "fieldtype": "Data",
-   "label": "Sisa cuti "
+   "label": "Sisa cuti"
   },
   {
    "fieldname": "cuti_yg",
    "fieldtype": "Data",
-   "label": "Cuti yang akan di ambil "
+   "label": "Cuti yang akan di ambil"
   },
   {
    "fieldname": "sisa_cu",
@@ -132,16 +136,38 @@
    "no_copy": 1,
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "data_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Permohonan Cuti Edoc",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 10000,
- "modified": "2021-11-19 16:15:05.643317",
+ "modified": "2021-11-26 14:42:41.438031",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Permohonan Cuti Edoc",
+ "name_case": "UPPER CASE",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
@@ -156,11 +182,48 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

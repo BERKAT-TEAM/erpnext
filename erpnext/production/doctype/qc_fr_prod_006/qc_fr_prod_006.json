@@ -1,67 +1,84 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
- "creation": "2021-11-15 16:39:00.523827",
- "default_print_format": "Print Format  QC FR PROD 006",
+ "autoname": "FR-PROD-006-.YY.-.##",
+ "creation": "2021-12-27 21:30:50.188156",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "section_qc",
   "naming_series",
-  "no_doc",
-  "no_rev",
-  "colb1",
   "no_jo",
   "suplier",
+  "colb1",
+  "no_rev",
   "tgl_pesan",
   "tgl_jadidatang",
   "sec_bahan",
   "vinil",
+  "ket_vinil",
   "colbbb",
   "sticker",
+  "ket_stiker",
   "sec_ukuran",
   "gbr",
+  "ket_gambar",
   "colbcc",
   "bhn",
+  "ket_bahan",
   "seq_break2",
   "sesuai_proofsampel_jika_ada",
   "gambar_jelasterang",
-  "colb3",
   "kondisi_bersih_tidak_kotor",
   "kondisi_tidak_tekuk",
+  "colb3",
+  "ket_sample",
+  "ket_jelas_terang",
+  "ket_bersih",
+  "ket_tidak_tekuk",
   "sec_break22",
   "catatan",
-  "colbxx",
-  "tgl",
   "sec_break33",
-  "nm_suplier",
   "nm_qcp",
+  "nm_suplier",
+  "tgl_ttd",
   "colb55",
+  "nama_qc_prod",
+  "designation_supplier",
   "ttd_suplier",
-  "ttd_qcp",
   "amended_from"
  ],
  "fields": [
   {
    "fieldname": "section_qc",
    "fieldtype": "Section Break",
-   "label": "QUALITY CONTROL MATERI SUB   SUPPLIER"
+   "label": "QUALITY CONTROL MATERI SUB  SUPPLIER"
   },
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Series",
-   "no_copy": 1,
-   "options": "FR-PROD-006-.YYYY.-",
+   "label": "No Dokumen",
+   "options": "FR-PROD-006-.YY.-.##",
    "print_hide": 1,
    "read_only": 1
   },
   {
-   "fieldname": "no_doc",
+   "fieldname": "no_jo",
+   "fieldtype": "Link",
+   "label": "No. Job Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "suplier",
    "fieldtype": "Data",
-   "label": "No. Dokumen"
+   "label": "Suplier",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "colb1",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "no_rev",
@@ -69,30 +86,13 @@
    "label": "No. Revisi"
   },
   {
-   "fieldname": "colb1",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "no_jo",
-   "fieldtype": "Data",
-   "label": "No. Job Order"
-  },
-  {
-   "fieldname": "suplier",
-   "fieldtype": "Data",
-   "label": "Suplier",
-   "no_copy": 1,
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
    "fieldname": "tgl_pesan",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Tgl Pesan"
   },
   {
    "fieldname": "tgl_jadidatang",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Tgl Jadi/datang"
   },
   {
@@ -107,6 +107,11 @@
    "options": "OK\nTIDAK"
   },
   {
+   "fieldname": "ket_vinil",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
    "fieldname": "colbbb",
    "fieldtype": "Column Break"
   },
@@ -117,10 +122,14 @@
    "options": "OK\nTIDAK"
   },
   {
+   "fieldname": "ket_stiker",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
    "fieldname": "sec_ukuran",
    "fieldtype": "Section Break",
    "label": "Ukuran",
-   "no_copy": 1,
    "print_hide": 1,
    "read_only": 1
   },
@@ -129,6 +138,11 @@
    "fieldtype": "Select",
    "label": "Gambar",
    "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "ket_gambar",
+   "fieldtype": "Data",
+   "label": "Keterangan"
   },
   {
    "fieldname": "colbcc",
@@ -141,8 +155,14 @@
    "options": "OK\nTIDAK"
   },
   {
+   "fieldname": "ket_bahan",
+   "fieldtype": "Data",
+   "label": "Keterangan"
+  },
+  {
    "fieldname": "seq_break2",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Keterangan Lain"
   },
   {
    "fieldname": "sesuai_proofsampel_jika_ada",
@@ -157,10 +177,6 @@
    "options": "OK\nTIDAK"
   },
   {
-   "fieldname": "colb3",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "kondisi_bersih_tidak_kotor",
    "fieldtype": "Select",
    "label": "Kondisi Bersih /tidak kotor",
@@ -173,27 +189,48 @@
    "options": "OK\nTIDAK"
   },
   {
+   "fieldname": "colb3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_sample",
+   "fieldtype": "Data",
+   "label": "Keterangan proof/sampel"
+  },
+  {
+   "fieldname": "ket_jelas_terang",
+   "fieldtype": "Data",
+   "label": "Keterangan Jelas/Terang"
+  },
+  {
+   "fieldname": "ket_bersih",
+   "fieldtype": "Data",
+   "label": "Keterangan Bersih /tidak kotor"
+  },
+  {
+   "fieldname": "ket_tidak_tekuk",
+   "fieldtype": "Data",
+   "label": "Keterangan tidak tekuk"
+  },
+  {
    "fieldname": "sec_break22",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "catatan",
-   "fieldtype": "Data",
-   "label": "Catatan",
-   "no_copy": 1
-  },
-  {
-   "fieldname": "colbxx",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "tgl",
-   "fieldtype": "Date",
-   "label": "Tanggal"
+   "fieldtype": "Text",
+   "label": "Catatan"
   },
   {
    "fieldname": "sec_break33",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Penanggung Jawab"
+  },
+  {
+   "fieldname": "nm_qcp",
+   "fieldtype": "Link",
+   "label": "QC - Produksi",
+   "options": "User"
   },
   {
    "fieldname": "nm_suplier",
@@ -201,13 +238,26 @@
    "label": "Suplier"
   },
   {
-   "fieldname": "nm_qcp",
-   "fieldtype": "Data",
-   "label": "QC - Produksi"
+   "fieldname": "tgl_ttd",
+   "fieldtype": "Datetime",
+   "label": "Tanggal Tanda Tangan"
   },
   {
    "fieldname": "colb55",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "nm_qcp.full_name",
+   "fieldname": "nama_qc_prod",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "nm_qcp.full_name",
+   "fieldname": "designation_supplier",
+   "fieldtype": "Data",
+   "label": "Jabatan Supplier",
+   "print_hide": 1
   },
   {
    "fieldname": "ttd_suplier",
@@ -215,45 +265,24 @@
    "label": "TTD  Suplier"
   },
   {
-   "fieldname": "ttd_qcp",
-   "fieldtype": "Attach Image",
-   "label": "TTD QC - Produksi"
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
-   "no_copy": 1,
    "options": "QC FR PROD 006",
    "print_hide": 1,
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2021-11-16 10:58:07.141924",
+ "modified": "2021-12-27 21:31:59.830300",
  "modified_by": "Administrator",
  "module": "Production",
  "name": "QC FR PROD 006",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
- "track_changes": 1,
- "track_views": 1
+ "track_changes": 1
 }

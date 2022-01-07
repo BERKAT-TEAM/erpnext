@@ -9,8 +9,8 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "letter_head": "Letter Head 1",
- "modified": "2021-09-29 13:48:18.428039",
+ "letter_head": "1",
+ "modified": "2021-11-11 08:50:26.001173",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Lead Details 2",
@@ -28,6 +28,12 @@
   },
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Sales Admin"
+  },
+  {
+   "role": "Sales Master Manager"
   }
  ]
 }

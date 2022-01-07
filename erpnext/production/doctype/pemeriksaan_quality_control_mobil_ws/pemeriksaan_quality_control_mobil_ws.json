@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2021-11-16 16:32:29.133899",
+ "creation": "2021-11-16 16:39:51.424078",
  "default_print_format": "QC Mobil WS Format",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -420,7 +420,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-16 16:38:43.353470",
+ "modified": "2021-11-16 16:42:47.866633",
  "modified_by": "Administrator",
  "module": "Production",
  "name": "Pemeriksaan Quality Control Mobil WS",

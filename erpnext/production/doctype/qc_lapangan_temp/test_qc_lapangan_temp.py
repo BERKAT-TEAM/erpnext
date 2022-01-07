@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestQCLapanganTemp(unittest.TestCase):
+class TestQCLapangantemp(unittest.TestCase):
 	pass

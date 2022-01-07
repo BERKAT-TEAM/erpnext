@@ -2,8 +2,8 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-15 09:38:29.903180",
- "default_print_format": "Print Format  QC FR PROD 002",
+ "creation": "2021-12-06 15:10:08.055659",
+ "default_print_format": "Print Format  FR PROD 002",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -11,54 +11,65 @@
   "section_qc",
   "naming_series",
   "from_jo",
-  "no_doc",
-  "no_rev",
-  "no_jo",
   "tgl_deadline",
-  "dimensi",
+  "pj_w",
+  "pj_pekerjaan",
   "qc_break1",
+  "no_rev",
   "start_w",
   "end_w",
-  "pj_w",
+  "dimensi",
   "sec_break1",
-  "item_qc",
-  "tabel_2",
-  "nm_barang3",
-  "sec_break4",
-  "uraian",
-  "type4",
+  "barang_konstruksi",
+  "section_break_15",
+  "type_meny",
+  "type_cat_besi",
+  "type_dempul",
+  "column_break_19",
+  "kualitas_meny",
+  "kualitas_cat_besi",
+  "kualitas_dempul",
+  "column_break_23",
+  "keterangan_meny",
+  "keterangan_cat_besi",
+  "keterangan_dempul",
+  "konstruksi_posisi_section",
+  "kualitas_vertikal",
+  "kualitas_horizontal",
+  "kualitas_thiknes",
+  "column_break_31",
+  "keterangan_vertikal",
+  "keterangan_horizontal",
+  "keterangan_thiknes",
+  "materi_section",
+  "tabel_materi",
+  "instalasi_kelistrikan_section",
+  "tabel_instalasi_kelistrikan",
   "sec_break8",
   "tgl",
   "sec_breakk",
-  "kg",
-  "asm",
-  "man_produksi",
+  "kepala_grup",
+  "supervisor",
+  "manager_produksi",
   "colbr9",
-  "ttd_kp",
-  "ttd_asm",
-  "ttd_man_produksi",
+  "pj",
+  "spv",
+  "manager_prod",
   "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "Series",
-   "options": "SAL-QC-.YYYY.-"
+   "fieldname": "section_qc",
+   "fieldtype": "Section Break",
+   "label": "QUALITY CONTROL KONSTRUKSI DI WORKSHOP"
   },
   {
-   "fieldname": "amended_from",
+   "fieldname": "from_jo",
    "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "QC FR PROD 002",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "no_doc",
-   "fieldtype": "Data",
-   "label": "No. Dokumen"
+   "in_list_view": 1,
+   "label": "No JO",
+   "options": "Sales Order",
+   "reqd": 1
   },
   {
    "fieldname": "no_rev",
@@ -66,21 +77,20 @@
    "label": "No. Revisi"
   },
   {
-   "fetch_from": "from_jo.naming_series",
-   "fieldname": "no_jo",
-   "fieldtype": "Data",
-   "label": "No. Job Order"
-  },
-  {
    "fieldname": "tgl_deadline",
    "fieldtype": "Date",
    "label": "Tgl Deadline"
   },
   {
+   "default": "Vertikal = \nHorizontal = \nThickness = ",
    "fetch_from": "from_jo.ukuran",
    "fieldname": "dimensi",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Dimensi"
+  },
+  {
+   "fieldname": "qc_break1",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "start_w",
@@ -94,43 +104,9 @@
   },
   {
    "fieldname": "pj_w",
-   "fieldtype": "Data",
-   "label": "PJ. Pekerjaan"
-  },
-  {
-   "fieldname": "uraian",
-   "fieldtype": "Table",
-   "label": "Table 4",
-   "options": "QC FORM 002 Materi"
-  },
-  {
-   "fieldname": "tgl",
-   "fieldtype": "Date",
-   "label": "Tanggal"
-  },
-  {
-   "fieldname": "kg",
-   "fieldtype": "Data",
-   "label": "Kepala Group"
-  },
-  {
-   "fieldname": "asm",
-   "fieldtype": "Data",
-   "label": "Ass. Manager / Supervisor"
-  },
-  {
-   "fieldname": "man_produksi",
-   "fieldtype": "Data",
-   "label": "Manager Produksi"
-  },
-  {
-   "fieldname": "section_qc",
-   "fieldtype": "Section Break",
-   "label": "QUALITY CONTROL KONSTRUKSI DI WORKSHOP"
-  },
-  {
-   "fieldname": "qc_break1",
-   "fieldtype": "Column Break"
+   "fieldtype": "Link",
+   "label": "PJ. Pekerjaan",
+   "options": "User"
   },
   {
    "fieldname": "sec_break1",
@@ -138,73 +114,215 @@
    "label": "KONSTRUKSI"
   },
   {
-   "fieldname": "nm_barang3",
-   "fieldtype": "Table",
-   "label": "Tabel 3",
-   "options": "QC FR PROD 002 Item 3"
-  },
-  {
-   "fieldname": "sec_break4",
-   "fieldtype": "Section Break",
-   "label": "MATERI"
-  },
-  {
-   "fieldname": "type4",
-   "fieldtype": "Table",
-   "label": "Table 5",
-   "options": "QC Form 002 Materi 2"
-  },
-  {
    "fieldname": "sec_break8",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tgl",
+   "fieldtype": "Date",
+   "label": "Tanggal"
+  },
+  {
+   "fieldname": "sec_breakk",
+   "fieldtype": "Section Break",
+   "label": "Penanggung Jawab"
   },
   {
    "fieldname": "colbr9",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "ttd_kp",
-   "fieldtype": "Attach Image",
-   "label": "Ttd Kepala Group"
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "QC FR PROD 002",
+   "print_hide": 1,
+   "read_only": 1
   },
   {
-   "fieldname": "ttd_asm",
-   "fieldtype": "Attach Image",
-   "label": "Ttd Ass. Manager / Supervisor"
-  },
-  {
-   "fieldname": "ttd_man_produksi",
-   "fieldtype": "Attach Image",
-   "label": "Ttd Manager Produksi"
-  },
-  {
-   "fieldname": "sec_breakk",
+   "fieldname": "section_break_15",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "from_jo",
+   "fieldname": "type_meny",
+   "fieldtype": "Data",
+   "label": "Type Meny"
+  },
+  {
+   "fieldname": "type_cat_besi",
+   "fieldtype": "Data",
+   "label": "Type Cat Besi"
+  },
+  {
+   "fieldname": "type_dempul",
+   "fieldtype": "Data",
+   "label": "Type Dempul"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kualitas_meny",
+   "fieldtype": "Select",
+   "label": "Kualitas Meny",
+   "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "kualitas_cat_besi",
+   "fieldtype": "Select",
+   "label": "Kualitas Cat Besi",
+   "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "kualitas_dempul",
+   "fieldtype": "Select",
+   "label": "Kualitas Dempul",
+   "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "keterangan_meny",
+   "fieldtype": "Data",
+   "label": "Keterangan Meny"
+  },
+  {
+   "fieldname": "keterangan_cat_besi",
+   "fieldtype": "Data",
+   "label": "Keterangan Cat Besi"
+  },
+  {
+   "fieldname": "keterangan_dempul",
+   "fieldtype": "Data",
+   "label": "Keterangan Dempul"
+  },
+  {
+   "fieldname": "konstruksi_posisi_section",
+   "fieldtype": "Section Break",
+   "label": "Konstruksi Posisi"
+  },
+  {
+   "fieldname": "kualitas_vertikal",
+   "fieldtype": "Select",
+   "label": "Kualitas Vertikal",
+   "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "kualitas_horizontal",
+   "fieldtype": "Select",
+   "label": "Kualitas Horizontal",
+   "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "kualitas_thiknes",
+   "fieldtype": "Select",
+   "label": "Kualitas Thiknes",
+   "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "keterangan_vertikal",
+   "fieldtype": "Data",
+   "label": "Keterangan Vertikal"
+  },
+  {
+   "fieldname": "keterangan_horizontal",
+   "fieldtype": "Data",
+   "label": "Keterangan Horizontal"
+  },
+  {
+   "fieldname": "keterangan_thiknes",
+   "fieldtype": "Data",
+   "label": "Keterangan Thiknes"
+  },
+  {
+   "fieldname": "materi_section",
+   "fieldtype": "Section Break",
+   "label": "Materi"
+  },
+  {
+   "fieldname": "tabel_materi",
+   "fieldtype": "Table",
+   "label": "materi",
+   "options": "QC FR PROD 002 Materi"
+  },
+  {
+   "fieldname": "instalasi_kelistrikan_section",
+   "fieldtype": "Section Break",
+   "label": "Instalasi Kelistrikan"
+  },
+  {
+   "fieldname": "tabel_instalasi_kelistrikan",
+   "fieldtype": "Table",
+   "label": "instalasi Kelistrikan",
+   "options": "QC FR PROD 002 Instalasi Kelistrikan"
+  },
+  {
+   "fieldname": "kepala_grup",
    "fieldtype": "Link",
-   "hidden": 1,
-   "label": "From JO",
-   "options": "Sales Order"
+   "label": "Kepala Group",
+   "options": "User"
   },
   {
-   "fieldname": "item_qc",
-   "fieldtype": "Table",
-   "label": "Tabel 1",
-   "options": "QC FR PROD 002 Item"
+   "fetch_from": "supervisor.full_name",
+   "fieldname": "spv",
+   "fieldtype": "Data",
+   "read_only": 1
   },
   {
-   "fieldname": "tabel_2",
+   "fieldname": "manager_produksi",
+   "fieldtype": "Link",
+   "label": "Manager Produksi",
+   "options": "User"
+  },
+  {
+   "fetch_from": "kepala_grup.full_name",
+   "fieldname": "pj",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Ass. Manager / Supervisor",
+   "options": "User"
+  },
+  {
+   "fetch_from": "manager_produksi.full_name",
+   "fieldname": "manager_prod",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pj_w.full_name",
+   "fieldname": "pj_pekerjaan",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "barang_konstruksi",
    "fieldtype": "Table",
-   "label": "Tabel 2",
-   "options": "QC FR PROD 002 Item 2"
+   "label": "Tabel Barang",
+   "options": "QC FR PROD 002 Konstruksi"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "No Dokumen",
+   "options": "FR-PROD-002-"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-16 15:42:24.777904",
+ "modified": "2021-12-27 13:39:30.619502",
  "modified_by": "Administrator",
  "module": "Production",
  "name": "QC FR PROD 002",
@@ -222,11 +340,34 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production User",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

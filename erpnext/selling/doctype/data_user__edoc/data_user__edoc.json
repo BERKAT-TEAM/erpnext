@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2021-11-18 10:24:10.941590",
+ "creation": "2021-11-19 08:04:50.188615",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -13,8 +13,7 @@
   "pass",
   "email",
   "fullname",
-  "hp",
-  "amended_from"
+  "hp"
  ],
  "fields": [
   {
@@ -30,7 +29,7 @@
   {
    "fieldname": "jabatan",
    "fieldtype": "Data",
-   "label": "Jabatan "
+   "label": "Jabatan"
   },
   {
    "fieldname": "uname",
@@ -40,7 +39,7 @@
   {
    "fieldname": "pass",
    "fieldtype": "Data",
-   "label": "Password "
+   "label": "Password"
   },
   {
    "fieldname": "email",
@@ -55,22 +54,13 @@
   {
    "fieldname": "hp",
    "fieldtype": "Data",
-   "label": "Handphone "
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Data User  Edoc",
-   "print_hide": 1,
-   "read_only": 1
+   "label": "Handphone"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-18 10:53:23.452092",
+ "modified": "2021-11-19 18:53:28.719133",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Data User  Edoc",
@@ -92,6 +82,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

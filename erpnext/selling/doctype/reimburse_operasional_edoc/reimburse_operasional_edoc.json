@@ -1,14 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
- "creation": "2021-11-19 10:43:51.719927",
+ "creation": "2021-11-19 10:56:51.562029",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "sec11",
-  "naming_series",
+  "no_doc",
   "no_rev",
   "nama",
   "jabatan",
@@ -19,8 +18,7 @@
   "rincian",
   "debet",
   "kredit",
-  "lamp",
-  "amended_from"
+  "lamp"
  ],
  "fields": [
   {
@@ -29,10 +27,14 @@
    "label": "Reimburse Operasional"
   },
   {
+   "fieldname": "no_doc",
+   "fieldtype": "Data",
+   "label": "No dokumen"
+  },
+  {
    "fieldname": "no_rev",
-   "fieldtype": "Select",
-   "label": "No revisi",
-   "options": "Rev-.YYYY.-"
+   "fieldtype": "Data",
+   "label": "No revisi"
   },
   {
    "fieldname": "nama",
@@ -51,12 +53,12 @@
   },
   {
    "fieldname": "tgl_peng",
-   "fieldtype": "Date",
-   "label": "Tanggal pengajuan "
+   "fieldtype": "Data",
+   "label": "Tanggal pengajuan"
   },
   {
    "fieldname": "tgl_diserahkan",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Tanggal diserahkan"
   },
   {
@@ -72,7 +74,7 @@
   {
    "fieldname": "debet",
    "fieldtype": "Data",
-   "label": "Debet "
+   "label": "Debet"
   },
   {
    "fieldname": "kredit",
@@ -81,40 +83,17 @@
   },
   {
    "fieldname": "lamp",
-   "fieldtype": "Attach",
+   "fieldtype": "Data",
    "label": "Lampiran biaya"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Reimburse Operasional Edoc",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "in_filter": 1,
-   "in_global_search": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "No dokumen",
-   "options": "RO-.YYYY.-",
-   "print_hide": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "max_attachments": 100000,
- "modified": "2021-11-19 12:07:14.745448",
+ "modified": "2021-11-19 11:00:24.452025",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Reimburse Operasional Edoc",
- "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -133,6 +112,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

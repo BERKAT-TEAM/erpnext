@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2021-11-18 10:28:12.806303",
+ "creation": "2021-11-19 18:26:23.320683",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -34,8 +34,7 @@
   "uraian",
   "hr2",
   "total_rp",
-  "ket1",
-  "amended_from"
+  "ket1"
  ],
  "fields": [
   {
@@ -85,12 +84,12 @@
   {
    "fieldname": "tgl_berangkat",
    "fieldtype": "Date",
-   "label": "Tanggal berangkat "
+   "label": "Tanggal berangkat"
   },
   {
    "fieldname": "tgl_kembali",
    "fieldtype": "Date",
-   "label": "Tanggal kembali "
+   "label": "Tanggal kembali"
   },
   {
    "fieldname": "uraian_tugas",
@@ -105,7 +104,7 @@
   {
    "fieldname": "kota_berangkat",
    "fieldtype": "Data",
-   "label": "Kota berangkat "
+   "label": "Kota berangkat"
   },
   {
    "fieldname": "kota_7an",
@@ -115,7 +114,7 @@
   {
    "fieldname": "pesawat",
    "fieldtype": "Data",
-   "label": "Pesawat "
+   "label": "Pesawat"
   },
   {
    "fieldname": "harga",
@@ -144,7 +143,7 @@
   {
    "fieldname": "tgl_chkout",
    "fieldtype": "Date",
-   "label": "Tanggal check out "
+   "label": "Tanggal check out"
   },
   {
    "fieldname": "hr",
@@ -180,21 +179,12 @@
    "fieldname": "ket1",
    "fieldtype": "Data",
    "label": "Keterangan"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Finance Edoc",
-   "print_hide": 1,
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-18 10:48:12.915746",
+ "modified": "2021-11-19 18:47:06.969995",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Finance Edoc",
@@ -216,6 +206,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

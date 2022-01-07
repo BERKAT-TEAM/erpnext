@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-11-23 09:37:40.583583",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Permohonan Cuti Edoc\"],[\"docstatus\",\"Permohonan Cuti Edoc\"],[\"naming_series\",\"Permohonan Cuti Edoc\"],[\"nama\",\"Permohonan Cuti Edoc\"],[\"divisi\",\"Permohonan Cuti Edoc\"],[\"cuti_s\",\"Permohonan Cuti Edoc\"],[\"cuti_e\",\"Permohonan Cuti Edoc\"]],\"order_by\":\"`tabPermohonan Cuti Edoc`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"docstatus\":120,\"naming_series\":120,\"nama\":120,\"divisi\":120,\"cuti_s\":120,\"cuti_e\":120},\"group_by\":null}",
+ "letter_head": "1",
+ "modified": "2021-11-23 09:39:16.117238",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Permohonan Cuti Edoc",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Permohonan Cuti Edoc",
+ "report_name": "Permohonan Cuti Edoc",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

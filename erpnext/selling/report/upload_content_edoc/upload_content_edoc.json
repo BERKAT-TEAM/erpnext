@@ -1,0 +1,31 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-11-23 10:45:59.025745",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Upload Content EDoc\"],[\"docstatus\",\"Upload Content EDoc\"],[\"title\",\"Upload Content EDoc\"],[\"naming_series\",\"Upload Content EDoc\"],[\"nama\",\"Upload Content EDoc\"],[\"deadline\",\"Upload Content EDoc\"]],\"order_by\":\"`tabUpload Content EDoc`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"docstatus\":120,\"title\":120,\"naming_series\":120,\"nama\":120,\"deadline\":120},\"group_by\":null}",
+ "letter_head": "1",
+ "modified": "2021-11-23 15:17:31.796724",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Upload Content EDoc",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Upload Content EDoc",
+ "report_name": "Upload Content EDoc",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-01-05 10:39:08.034465",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "javascript": "// Copyright (c) 2016, Ming Promotion and contributors\n// For license information, please see license.txt\n/* eslint-disable */\n\nfrappe.query_reports[\"Target Sales\"] = {\n\t\"filters\": [\n\t\t{\n\t\t\t\"fieldname\":\"fiscal_year\",\n\t\t\t\"label\": __(\"Fiscal Year\"),\n\t\t\t\"fieldtype\": \"Link\",\n\t\t\t\"options\":'Fiscal Year',\n\t\t\t\"default\": frappe.sys_defaults.fiscal_year\n\t\t},\n\t]\n};\n",
+ "letter_head": "1",
+ "modified": "2022-01-06 13:39:53.709240",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Target Sales",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "Quotation",
+ "report_name": "Target Sales",
+ "report_script": "# Copyright (c) 2013, Ming Promotion and contributors\n# License: MIT. See LICENSE\n\nfrom __future__ import unicode_literals\nimport frappe\nfrom frappe import _\nfrom frappe.utils import flt, getdate, today\nfrom frappe.utils.nestedset import get_descendants_of\nfrom dateutil.relativedelta import relativedelta\n\ndef execute(filters=None):\n\tcolumns, data = [], []\n#\tfilters = frappe._dict(filters or  {})\n\n\tcolumns = get_columns(filters)\n\tdata = get_data(filters)\n\n\tchart_data = get_chart_data(data)\n\n\treturn columns, data, None, chart_data\n\ndef get_columns(filters):\n\t\treturn [\n\t\t\t{\n\t\t\t\t\"label\": _(\"Month\"),\n\t\t\t\t\"fieldtype\": \"Data\",\n\t\t\t\t\"fieldname\": \"month\",\n\t\t\t\t\"width\": 200\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"label\": _(\"Year\"),\n\t\t\t\t\"fieldtype\": \"Data\",\n\t\t\t\t\"fieldname\": \"year\",\n\t\t\t\t\"width\": 100\n\t\t\t},\n\t\t\t{ \n\t\t\t\t\"label\": _(\"Achievement\"), \n\t\t\t\t\"fieldtype\": \"Currency\", \n\t\t\t\t\"fieldname\": \"achievement\", \n\t\t\t\t\"width\": 250 \n\t\t\t}, { \n\t\t\t\t\"label\": _(\"Percentage\"), \n\t\t\t\t\"fieldtype\": \"Float\", \n\t\t\t\t\"fieldname\": \"percent\", \n\t\t\t\t\"width\": 50 \n\t\t\t},\n\t\t\t{ \n\t\t\t\t\"label\": _(\"Target\"), \n\t\t\t\t\"fieldtype\": \"Currency\", \n\t\t\t\t\"fieldname\": \"target\", \n\t\t\t\t\"width\": 250 \n\t\t\t}\n\t\t]\n\ndef get_data(filters):\n\tdata, temp, join = [], [], []\n\t\n\trecords = get_target(filters)\n\tjo_records = get_daily_report(filters)\n\t\n\tprint(records, jo_records)\n\n\tfor record in records:\n\t\trow = {\n\t\t\t\"year\": record[0],\n\t\t\t\"target\": record[1],\n\t\t}\n\t\tdata.append(row)\n\t\n\tfor record in jo_records:\n\t\trow = {\n\t\t\t\"month\": record[0],\n\t\t\t\"achievement\": record[1],\n\t\t}\n\t\ttemp.append(row)\n\n\tjoin = data + temp\n\treturn join\n\t\n\ndef get_target(filters):\n\tquery = frappe.db.sql(\"\"\" SELECT  year, target FROM `tabSales Target` WHERE year = %(s)s \"\"\", { \"s\": filters.fiscal_year })\n\n\treturn query\n\n\ndef get_daily_report(filters):\n\tquery = frappe.db.sql(\"\"\"\n\t\tSELECT month(qo_item.creation), SUM(qo.grand_total)\n\t\tFROM `tabQuotation` qo, `tabQuotation Item` qo_item, `tabTarget Detail` tgt, `tabUser` u\n\t\tWHERE qo.docstatus = 1 AND year(qo_item.creation) = %(t)s\n\t\tGROUP BY month(qo_item.creation)\n\t\"\"\", {\n\t\t\"t\": int(filters.fiscal_year)\n\t})\n\n\treturn query\n\ndef get_chart_data(filters):\n\treturn filters",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Maintenance Manager"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Maintenance User"
+  },
+  {
+   "role": "Sales Admin"
+  }
+ ]
+}

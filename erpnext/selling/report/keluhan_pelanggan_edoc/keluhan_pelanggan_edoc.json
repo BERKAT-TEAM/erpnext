@@ -1,0 +1,43 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-11-23 12:12:48.902048",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Keluhan Pelanggan Edoc\"],[\"docstatus\",\"Keluhan Pelanggan Edoc\"],[\"naming_series\",\"Keluhan Pelanggan Edoc\"],[\"nama_company\",\"Keluhan Pelanggan Edoc\"],[\"output_design\",\"Keluhan Pelanggan Edoc\"],[\"komp\",\"Keluhan Pelanggan Edoc\"],[\"tindakan_koreksi\",\"Keluhan Pelanggan Edoc\"],[\"status_kom\",\"Keluhan Pelanggan Edoc\"]],\"order_by\":\"`tabKeluhan Pelanggan Edoc`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"docstatus\":120,\"naming_series\":120,\"nama_company\":120,\"output_design\":120,\"komp\":120,\"tindakan_koreksi\":120,\"status_kom\":120},\"group_by\":null}",
+ "letter_head": "1",
+ "modified": "2021-11-23 15:19:30.761198",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Keluhan Pelanggan Edoc",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Keluhan Pelanggan Edoc",
+ "report_name": "Keluhan Pelanggan Edoc",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Sales Admin"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Master Manager"
+  },
+  {
+   "role": "Sales User"
+  }
+ ]
+}

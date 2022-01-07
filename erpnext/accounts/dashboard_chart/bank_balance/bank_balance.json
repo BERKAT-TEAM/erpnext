@@ -10,12 +10,23 @@
  "is_public": 1,
  "is_standard": 1,
  "last_synced_on": "2020-07-22 12:19:59.879476",
- "modified": "2020-07-22 12:21:48.780513",
+ "modified": "2021-11-16 14:27:39.636819",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Bank Balance",
  "number_of_groups": 0,
  "owner": "Administrator",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ],
  "source": "Account Balance Timeline",
  "time_interval": "Quarterly",
  "timeseries": 0,

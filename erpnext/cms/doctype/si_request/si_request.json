@@ -1,70 +1,34 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-03 15:25:14.051219",
+ "creation": "2021-11-02 23:03:47.216981",
  "default_print_format": "Space Iklan Request",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "workflow_state",
-  "is_rejected",
-  "reject_reason",
-  "section_break_0",
   "naming_series",
+  "title",
   "client_name",
   "location",
+  "other_location",
   "area",
   "media_location",
   "ads_placement",
+  "data_6",
   "ads_media",
   "size",
   "sales_note",
-  "column_break_0",
   "suporting_data",
   "ads_duration",
   "side",
-  "content_orientation",
   "deadline",
-  "deadline_awal",
-  "deadline_rev",
-  "finish_date",
-  "feedback",
-  "approval",
-  "sales_man",
-  "rnd_man",
-  "pic",
-  "colb5",
-  "ttd_sm",
-  "ttd_rnd_man",
-  "ttd_pic"
+  "content_orientation",
+  "data_7",
+  "support_notes",
+  "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "workflow_state",
-   "fieldtype": "Data",
-   "hidden": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "is_rejected",
-   "fieldtype": "Check",
-   "hidden": 1,
-   "label": "Rejection",
-   "read_only": 1
-  },
-  {
-   "depends_on": "eval:doc.is_rejected==1",
-   "fieldname": "reject_reason",
-   "fieldtype": "Data",
-   "label": "Rejection Reason",
-   "no_copy": 1
-  },
-  {
-   "fieldname": "section_break_0",
-   "fieldtype": "Section Break"
-  },
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
@@ -80,10 +44,10 @@
   },
   {
    "fieldname": "location",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Location",
    "no_copy": 1,
-   "print_hide": 1
+   "options": "Kuningann\nMonas\nOther"
   },
   {
    "fieldname": "area",
@@ -108,21 +72,16 @@
    "options": "LED\nLED\nBanner\nMobile LED\nVideotron\nBillboard\nNeon Box"
   },
   {
-   "fieldname": "column_break_0",
-   "fieldtype": "Column Break"
-  },
-  {
    "description": "H x W Meter",
    "fieldname": "size",
    "fieldtype": "Data",
    "label": "Size",
    "no_copy": 1,
-   "print_hide": 1,
-   "read_only": 1
+   "print_hide": 1
   },
   {
    "fieldname": "sales_note",
-   "fieldtype": "Small Text",
+   "fieldtype": "Data",
    "label": "Sales Note"
   },
   {
@@ -130,14 +89,13 @@
    "fieldtype": "Select",
    "label": "Suporting Data",
    "no_copy": 1,
-   "options": "Demografic\nTraffic\nPoint of interest",
-   "print_hide": 1
+   "options": "-\nDemografic\nTraffic\nPoint of interest"
   },
   {
    "fieldname": "ads_duration",
    "fieldtype": "Select",
    "label": "Ads Duration",
-   "options": "1 hari\n1 bulan\n3 bulan\n6 bulan\n9 bulan\n1 tahun"
+   "options": "1 hari\n1 minggu\n1 bulan\n3 bulan\n6 bulan\n9 bulan\n1 tahun"
   },
   {
    "fieldname": "side",
@@ -162,69 +120,46 @@
    "read_only": 1
   },
   {
-   "fieldname": "deadline_awal",
-   "fieldtype": "Date",
-   "label": "Deadline Awal"
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SI Request",
+   "print_hide": 1,
+   "read_only": 1
   },
   {
-   "fieldname": "deadline_rev",
-   "fieldtype": "Date",
-   "label": "Deadline Revisi"
-  },
-  {
-   "fieldname": "finish_date",
-   "fieldtype": "Date",
-   "label": "Finish Date"
-  },
-  {
-   "fieldname": "feedback",
-   "fieldtype": "Small Text",
-   "label": "Feedback "
-  },
-  {
-   "fieldname": "approval",
-   "fieldtype": "Section Break",
-   "label": "Approval"
-  },
-  {
-   "fieldname": "sales_man",
+   "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Sales Manager"
+   "label": "Title",
+   "read_only": 1
   },
   {
-   "fieldname": "rnd_man",
+   "depends_on": "eval:doc.location=='Other'",
+   "fieldname": "other_location",
    "fieldtype": "Data",
-   "label": "RnD Manager"
+   "label": "Other location"
   },
   {
-   "fieldname": "pic",
-   "fieldtype": "Data",
-   "label": "PIC RND"
-  },
-  {
-   "fieldname": "ttd_sm",
-   "fieldtype": "Attach Image",
-   "label": "TTD Sales Manager"
-  },
-  {
-   "fieldname": "ttd_rnd_man",
-   "fieldtype": "Attach Image",
-   "label": "TTD RnD Manager"
-  },
-  {
-   "fieldname": "ttd_pic",
-   "fieldtype": "Attach Image",
-   "label": "TTD  PIC  RND"
-  },
-  {
-   "fieldname": "colb5",
+   "fieldname": "data_6",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.supporting_data != \"-\"",
+   "fieldname": "support_notes",
+   "fieldtype": "Text Editor",
+   "label": "Supporting Data notes"
   }
  ],
+ "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "max_attachments": 1000000,
- "modified": "2021-11-17 14:55:47.018032",
+ "max_attachments": 10,
+ "modified": "2021-11-23 11:04:41.836430",
  "modified_by": "Administrator",
  "module": "CMS",
  "name": "SI Request",
@@ -242,6 +177,7 @@
    "report": 1,
    "role": "Administrator",
    "select": 1,
+   "set_user_permissions": 1,
    "share": 1,
    "submit": 1,
    "write": 1
@@ -261,8 +197,11 @@
    "write": 1
   }
  ],
+ "restrict_to_domain": "Services",
+ "search_fields": "title,location",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "title",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1

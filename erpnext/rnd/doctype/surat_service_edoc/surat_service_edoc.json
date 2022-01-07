@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 10:04:02.929897",
+ "creation": "2021-11-19 08:04:50.716002",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -23,12 +23,19 @@
   "jenis_media",
   "kondisi",
   "deadline",
-  "list_foto",
   "perintah",
   "tanggal_selesai",
   "kepada",
   "ket",
-  "amended_from"
+  "amended_from",
+  "list_foto",
+  "before",
+  "photo_1",
+  "photo_2",
+  "cb",
+  "after",
+  "photo_3",
+  "photo_4"
  ],
  "fields": [
   {
@@ -120,8 +127,8 @@
   },
   {
    "fieldname": "list_foto",
-   "fieldtype": "Data",
-   "label": "List foto "
+   "fieldtype": "Section Break",
+   "label": "List foto"
   },
   {
    "fieldname": "perintah",
@@ -131,12 +138,12 @@
   {
    "fieldname": "tanggal_selesai",
    "fieldtype": "Date",
-   "label": "Tanggal selesai "
+   "label": "Tanggal selesai"
   },
   {
    "fieldname": "kepada",
    "fieldtype": "Data",
-   "label": "Kepada "
+   "label": "Kepada"
   },
   {
    "fieldname": "ket",
@@ -151,12 +158,49 @@
    "options": "Surat Service Edoc",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "before",
+   "fieldtype": "Heading",
+   "label": "Before"
+  },
+  {
+   "fieldname": "photo_1",
+   "fieldtype": "Attach",
+   "label": "Photo 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo_2",
+   "fieldtype": "Attach",
+   "label": "Photo 2"
+  },
+  {
+   "fieldname": "cb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "after",
+   "fieldtype": "Heading",
+   "label": "After"
+  },
+  {
+   "fieldname": "photo_3",
+   "fieldtype": "Attach",
+   "label": "Photo 3",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo_4",
+   "fieldtype": "Attach",
+   "label": "Photo "
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 14:30:33.156799",
+ "max_attachments": 10000,
+ "modified": "2021-12-16 14:48:58.607937",
  "modified_by": "Administrator",
  "module": "RND",
  "name": "Surat Service Edoc",
@@ -182,6 +226,5 @@
  "sort_order": "DESC",
  "title_field": "title",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

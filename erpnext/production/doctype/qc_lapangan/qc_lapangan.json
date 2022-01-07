@@ -1,12 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "QC-Lap-.#####",
- "creation": "2021-11-16 17:37:57.898583",
+ "autoname": "FR-PROD-008-.###",
+ "creation": "2021-12-16 11:38:49.858788",
  "default_print_format": "QC Lapangan Format",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "nm_produk",
   "ukuran",
   "column_break_3",
@@ -39,7 +41,6 @@
   "ukuran_lapor_bm_maintenance",
   "tanggal_lapor_bm_maintenance",
   "penilaian_lapor_bm_maintenance",
-  "paraf_qc_sebelum",
   "setelah_ganti_materi_section",
   "posisi_materi",
   "ukuran_posisi_materi",
@@ -76,7 +77,6 @@
   "tanggal_kebersihan_lokasi",
   "penilaian_kebersihan_lokasi",
   "amended_from",
-  "paraf_qc_setelah",
   "jenis_pekerjaan_section",
   "neon_box",
   "railling_box",
@@ -96,7 +96,15 @@
   "selesai_pekerjaan",
   "tiba_diworkshop",
   "kirim_foto",
-  "peraturan_produksi"
+  "peraturan_produksi",
+  "penanggung_jawab_section",
+  "pj",
+  "supervisor",
+  "manager_produksi",
+  "column_break_95",
+  "nama_pj",
+  "nama_spv",
+  "nama_manager"
  ],
  "fields": [
   {
@@ -112,6 +120,10 @@
    "in_list_view": 1,
    "label": "UKURAN",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "no_jo",
@@ -147,7 +159,12 @@
    "fieldname": "penilaian_tes_nyala",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "denah",
+   "fieldtype": "Heading",
+   "label": "Denah"
   },
   {
    "fieldname": "ukuran_denah",
@@ -163,7 +180,12 @@
    "fieldname": "penilaian_denah",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "materi",
+   "fieldtype": "Heading",
+   "label": "Materi"
   },
   {
    "fieldname": "ukuran_materi",
@@ -179,7 +201,21 @@
    "fieldname": "penilaian_materi",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "keterangan_sebelum",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surat_izin_kerja",
+   "fieldtype": "Heading",
+   "label": "Surat Izin Kerja"
   },
   {
    "fieldname": "ukuran_izin_kerja",
@@ -195,7 +231,12 @@
    "fieldname": "penilaian_izin_kerja",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "lapor_security",
+   "fieldtype": "Heading",
+   "label": "Lapor Security"
   },
   {
    "fieldname": "ukuran_lapor_security",
@@ -211,7 +252,12 @@
    "fieldname": "penilaian_lapor_security",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "lapor_bm_maintenance",
+   "fieldtype": "Heading",
+   "label": "Lapor BM/Maintenance"
   },
   {
    "fieldname": "ukuran_lapor_bm_maintenance",
@@ -227,12 +273,17 @@
    "fieldname": "penilaian_lapor_bm_maintenance",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
   },
   {
    "fieldname": "setelah_ganti_materi_section",
    "fieldtype": "Section Break",
    "label": "Setelah Ganti Materi"
+  },
+  {
+   "fieldname": "posisi_materi",
+   "fieldtype": "Heading",
+   "label": "Posisi Materi"
   },
   {
    "fieldname": "ukuran_posisi_materi",
@@ -248,7 +299,12 @@
    "fieldname": "penilaian_posisi_materi",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "posisi_pasang",
+   "fieldtype": "Heading",
+   "label": "Posisi Pasang"
   },
   {
    "fieldname": "ukuran_posisi_pasang",
@@ -264,7 +320,12 @@
    "fieldname": "penilaian_posisi_pasang",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "list__frame",
+   "fieldtype": "Heading",
+   "label": "List / Frame"
   },
   {
    "fieldname": "ukuran_list_frame",
@@ -280,7 +341,12 @@
    "fieldname": "penilaian_list_frame",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "sambungan_kabel",
+   "fieldtype": "Heading",
+   "label": "Sambungan Kabel"
   },
   {
    "fieldname": "ukuran_sambungan_kabel",
@@ -296,7 +362,21 @@
    "fieldname": "penilaian_sambungan_kabel",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "keterangan_setelah",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_nyala",
+   "fieldtype": "Heading",
+   "label": "Test Nyala"
   },
   {
    "fieldname": "ukuran_tes_nyala_setelah",
@@ -312,7 +392,12 @@
    "fieldname": "penilaian_tes_nyala_setelah",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "foto",
+   "fieldtype": "Heading",
+   "label": "Foto"
   },
   {
    "fieldname": "ukuran_foto",
@@ -328,7 +413,12 @@
    "fieldname": "penilaian_foto",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "kebersihan_box",
+   "fieldtype": "Heading",
+   "label": "Kebersihan Box"
   },
   {
    "fieldname": "ukuran_kebersihan_box",
@@ -344,7 +434,12 @@
    "fieldname": "penilaian_kebersihan_box",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
+  },
+  {
+   "fieldname": "kebersihan_lokasi",
+   "fieldtype": "Heading",
+   "label": "Kebersihan Lokasi"
   },
   {
    "fieldname": "ukuran_kebersihan_lokasi",
@@ -360,157 +455,15 @@
    "fieldname": "penilaian_kebersihan_lokasi",
    "fieldtype": "Select",
    "label": "Penilaian Pekerjaan",
-   "options": "\nTIDAK\nOK"
+   "options": "TIDAK\nOK"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
-   "no_copy": 1,
    "options": "QC Lapangan",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "tes_nyala",
-   "fieldtype": "Heading",
-   "label": "Tes Nyala"
-  },
-  {
-   "fieldname": "column_break_11",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "denah",
-   "fieldtype": "Heading",
-   "label": "Denah"
-  },
-  {
-   "fieldname": "materi",
-   "fieldtype": "Heading",
-   "label": "Materi"
-  },
-  {
-   "fieldname": "surat_izin_kerja",
-   "fieldtype": "Heading",
-   "label": "Surat Izin Kerja"
-  },
-  {
-   "fieldname": "lapor_security",
-   "fieldtype": "Heading",
-   "label": "Lapor Security"
-  },
-  {
-   "fieldname": "column_break_3",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "lapor_bm_maintenance",
-   "fieldtype": "Heading",
-   "label": "Lapor BM/Maintenance"
-  },
-  {
-   "fieldname": "posisi_materi",
-   "fieldtype": "Heading",
-   "label": "Posisi Materi"
-  },
-  {
-   "fieldname": "posisi_pasang",
-   "fieldtype": "Heading",
-   "label": "Posisi Pasang"
-  },
-  {
-   "fieldname": "list__frame",
-   "fieldtype": "Heading",
-   "label": "List / Frame"
-  },
-  {
-   "fieldname": "sambungan_kabel",
-   "fieldtype": "Heading",
-   "label": "Sambungan Kabel"
-  },
-  {
-   "fieldname": "column_break_50",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "test_nyala",
-   "fieldtype": "Heading",
-   "label": "Test Nyala"
-  },
-  {
-   "fieldname": "foto",
-   "fieldtype": "Heading",
-   "label": "Foto"
-  },
-  {
-   "fieldname": "kebersihan_box",
-   "fieldtype": "Heading",
-   "label": "Kebersihan Box"
-  },
-  {
-   "fieldname": "kebersihan_lokasi",
-   "fieldtype": "Heading",
-   "label": "Kebersihan Lokasi"
-  },
-  {
-   "fieldname": "uraian_section",
-   "fieldtype": "Section Break",
-   "label": "Uraian"
-  },
-  {
-   "fieldname": "mulai_pekerjaan",
-   "fieldtype": "Time",
-   "label": "Mulai Pekerjaan"
-  },
-  {
-   "fieldname": "column_break_72",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "selesai_pekerjaan",
-   "fieldtype": "Time",
-   "label": "Selesai Pekerjaan"
-  },
-  {
-   "fieldname": "berangkat",
-   "fieldtype": "Time",
-   "label": "Berangkat Dari Workshop / Kantor"
-  },
-  {
-   "fieldname": "tiba_dilokasi",
-   "fieldtype": "Time",
-   "label": "Tiba Di Lokasi"
-  },
-  {
-   "fieldname": "tiba_diworkshop",
-   "fieldtype": "Time",
-   "label": "Tiba Di Workshop"
-  },
-  {
-   "fieldname": "kirim_foto",
-   "fieldtype": "Time",
-   "label": "Kirim Foto By WA"
-  },
-  {
-   "fieldname": "keterangan_sebelum",
-   "fieldtype": "Small Text",
-   "label": "Keterangan"
-  },
-  {
-   "fieldname": "paraf_qc_sebelum",
-   "fieldtype": "Signature",
-   "label": "Paraf QC"
-  },
-  {
-   "fieldname": "keterangan_setelah",
-   "fieldtype": "Small Text",
-   "label": "Keterangan"
-  },
-  {
-   "fieldname": "paraf_qc_setelah",
-   "fieldtype": "Signature",
-   "label": "Paraf QC"
   },
   {
    "fieldname": "jenis_pekerjaan_section",
@@ -567,21 +520,115 @@
    "label": "Lainnya"
   },
   {
+   "fieldname": "uraian_section",
+   "fieldtype": "Section Break",
+   "label": "Uraian"
+  },
+  {
+   "fieldname": "berangkat",
+   "fieldtype": "Time",
+   "label": "Berangkat Dari Workshop / Kantor"
+  },
+  {
+   "fieldname": "tiba_dilokasi",
+   "fieldtype": "Time",
+   "label": "Tiba Di Lokasi"
+  },
+  {
+   "fieldname": "mulai_pekerjaan",
+   "fieldtype": "Time",
+   "label": "Mulai Pekerjaan"
+  },
+  {
    "fieldname": "team_workshop",
    "fieldtype": "Small Text",
    "label": "Team Workshop"
   },
   {
-   "default": "1. Setiap pemasangan Ganti materi harus di test nyala terlebih dahulu boxnya \n2. Setelah penggantian materi selesai penanggung jawab team harus cek kembali pemasangannnya apakah sudah benar, \n3. Setiap team pemasangan ganti materi / surat service harus memberi keterangan bila belum selesai\n4. Setiap team yang melakukan pekerjaan surat service harus info apa penyebabnya\n5. Semua PJ.team pemasangan harus memberi informasi: Tiba Dilokasi,Mulai & Selesai kerja,sampai tiba diworkshop via WA\n6. Bila Team pemasangan yang lembur & tidak melakukan point No.5 Maka lemburannya akan dipotong 2 Jam ",
+   "fieldname": "column_break_72",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "selesai_pekerjaan",
+   "fieldtype": "Time",
+   "label": "Selesai Pekerjaan"
+  },
+  {
+   "fieldname": "tiba_diworkshop",
+   "fieldtype": "Time",
+   "label": "Tiba Di Workshop"
+  },
+  {
+   "fieldname": "kirim_foto",
+   "fieldtype": "Time",
+   "label": "Kirim Foto By WA"
+  },
+  {
+   "default": "1. Setiap pemasangan Ganti materi harus di test nyala terlebih dahulu boxnya \n2. Setelah penggantian materi selesai penanggung jawab team harus cek kembali pemasangannnya apakah sudah benar, \n3. Setiap team pemasangan ganti materi / surat service harus memberi keterangan bila belum selesai\n4. Setiap team yang melakukan pekerjaan surat service harus info apa penyebabnya\n5. Semua PJ.team pemasangan harus memberi informasi: Tiba Dilokasi,Mulai & Selesai kerja,sampai tiba diworkshop via WA\n6. Bila Team pemasangan yang lembur & tidak melakukan point No.5 Maka lemburannya akan dipotong 2 Jam",
    "fieldname": "peraturan_produksi",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text",
    "label": "Peraturan Div. Produksi"
+  },
+  {
+   "fieldname": "penanggung_jawab_section",
+   "fieldtype": "Section Break",
+   "label": "Penanggung Jawab"
+  },
+  {
+   "fieldname": "pj",
+   "fieldtype": "Link",
+   "label": "PJ.PEKERJAAN",
+   "options": "User"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Spv",
+   "options": "User"
+  },
+  {
+   "fieldname": "manager_produksi",
+   "fieldtype": "Link",
+   "label": "Ass./Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_95",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "pj.full_name",
+   "fieldname": "nama_pj",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supervisor.full_name",
+   "fieldname": "nama_spv",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "manager_produksi.full_name",
+   "fieldname": "nama_manager",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tes_nyala",
+   "fieldtype": "Heading",
+   "label": "Tes Nyala"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "No Dokumen",
+   "options": "FR-PROD-008-"
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 13:58:48.209788",
+ "modified": "2021-12-27 22:06:53.983168",
  "modified_by": "Administrator",
  "module": "Production",
  "name": "QC Lapangan",
@@ -599,10 +646,33 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production User",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "track_changes": 1,
- "track_views": 1
+ "track_changes": 1
 }

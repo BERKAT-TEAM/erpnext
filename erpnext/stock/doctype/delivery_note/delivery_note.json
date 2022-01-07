@@ -4,16 +4,18 @@
  "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2013-05-24 19:29:09",
- "default_print_format": "BAST",
+ "default_print_format": "BAST 2",
  "doctype": "DocType",
  "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
-  "sction_approval",
+  "section_break_approval",
   "production_team",
+  "prod_name",
   "prod_sign",
   "column_break_sign",
-  "sales_md",
+  "sales_rnd",
+  "sales_name",
   "sales_rnd_sign",
   "delivery_to_section",
   "column_break0",
@@ -33,12 +35,12 @@
   "section_break_jo",
   "no_jo",
   "finish_date",
-  "column_break_19",
+  "column_break_25",
   "jo_status",
   "location",
-  "section_break_for_work",
+  "section_break_28",
   "for_work",
-  "column_break_01",
+  "column_break_30",
   "condition",
   "customer_po_details",
   "po_no",
@@ -132,12 +134,12 @@
   "driver_name",
   "lr_date",
   "more_info",
-  "picture_1",
   "project",
   "campaign",
   "source",
+  "picture_1",
   "column_break5",
-  "picture_two",
+  "picture_2",
   "is_internal_customer",
   "represents_company",
   "inter_company_reference",
@@ -200,12 +202,13 @@
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "FR. PROD. 007-.YYYY.-\nMAT-DN-.YYYY.-\nMAT-DN-RET-.YYYY.-",
+   "options": "MAT-DN-.YYYY.-\nMAT-DN-RET-.YYYY.-",
    "print_hide": 1,
    "reqd": 1,
    "set_only_once": 1
   },
   {
+   "fetch_from": "no_jo.customer",
    "fieldname": "customer",
    "fieldtype": "Link",
    "in_global_search": 1,
@@ -214,10 +217,11 @@
    "oldfieldname": "customer",
    "oldfieldtype": "Link",
    "options": "Customer",
-   "print_hide": 1
+   "print_hide": 1,
+   "reqd": 1,
+   "search_index": 1
   },
   {
-   "bold": 1,
    "depends_on": "customer",
    "fetch_from": "customer.customer_name",
    "fieldname": "customer_name",
@@ -515,7 +519,8 @@
   },
   {
    "fieldname": "sec_warehouse",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1
   },
   {
    "fieldname": "set_warehouse",
@@ -549,8 +554,7 @@
    "label": "Items",
    "oldfieldname": "delivery_note_details",
    "oldfieldtype": "Table",
-   "options": "Delivery Note Item",
-   "reqd": 1
+   "options": "Delivery Note Item"
   },
   {
    "fieldname": "pricing_rule_details",
@@ -571,7 +575,6 @@
    "depends_on": "packed_items",
    "fieldname": "packing_list",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Packing List",
    "oldfieldtype": "Section Break",
    "options": "fa fa-suitcase",
@@ -724,6 +727,7 @@
   {
    "fieldname": "base_total_taxes_and_charges",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Total Taxes and Charges (Company Currency)",
    "oldfieldname": "other_charges_total",
    "oldfieldtype": "Currency",
@@ -1279,7 +1283,8 @@
   },
   {
    "fieldname": "section_break_18",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1
   },
   {
    "default": "0",
@@ -1352,6 +1357,41 @@
    "read_only": 1
   },
   {
+   "fieldname": "section_break_approval",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "production_team",
+   "fieldtype": "Link",
+   "label": "Production Team",
+   "options": "User"
+  },
+  {
+   "fetch_from": "production_team.sales_signature",
+   "fieldname": "prod_sign",
+   "fieldtype": "Attach",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_sign",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_rnd",
+   "fieldtype": "Link",
+   "label": "Sales / RND",
+   "options": "User"
+  },
+  {
+   "fetch_from": "sales_rnd.sales_signature",
+   "fieldname": "sales_rnd_sign",
+   "fieldtype": "Attach",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
    "fieldname": "section_break_jo",
    "fieldtype": "Section Break"
   },
@@ -1362,37 +1402,46 @@
    "options": "Sales Order"
   },
   {
+   "description": "Tanggal Selesai",
    "fieldname": "finish_date",
    "fieldtype": "Date",
-   "label": "Finish date"
+   "label": "Finished Date"
   },
   {
-   "description": "Done =  Selesai, Done with Conditions = Selesai dengan Syarat, Not finished yet = Belum Selesai",
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Done = Selesai, Done with Conditions = Selesai dengan Syarat, Not Finished yet = Belum Selesai",
    "fieldname": "jo_status",
    "fieldtype": "Select",
    "label": "JO Status",
-   "options": "Done\nDone with Conditions\nNot finished yet"
-  },
-  {
-   "description": "Untuk Pekerjaan",
-   "fieldname": "for_work",
-   "fieldtype": "Small Text",
-   "label": "For Work"
+   "options": "Done\nDone with Conditions\nNot Finished yet"
   },
   {
    "fetch_from": "no_jo.nm_lokasi",
    "fieldname": "location",
    "fieldtype": "Data",
-   "label": "Location",
-   "read_only": 1
+   "label": "Location"
   },
   {
-   "fieldname": "column_break_19",
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "for_work",
+   "fieldtype": "Small Text",
+   "label": "For Work"
+  },
+  {
+   "fieldname": "column_break_30",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_for_work",
-   "fieldtype": "Section Break"
+   "depends_on": "eval:doc.jo_status==\"Done with Conditions\";",
+   "fieldname": "condition",
+   "fieldtype": "Small Text",
+   "label": "Condition"
   },
   {
    "fieldname": "picture_1",
@@ -1400,63 +1449,30 @@
    "label": "Picture One"
   },
   {
-   "fieldname": "picture_two",
+   "fieldname": "picture_2",
    "fieldtype": "Attach",
    "label": "Picture Two"
   },
   {
-   "fieldname": "column_break_01",
-   "fieldtype": "Column Break"
+   "fetch_from": "production_team.full_name",
+   "fieldname": "prod_name",
+   "fieldtype": "Data",
+   "label": "Production Name",
+   "read_only": 1
   },
   {
-   "depends_on": "eval:doc.jo_status=='Done with Conditions';",
-   "fieldname": "condition",
-   "fieldtype": "Small Text",
-   "label": "Condition"
-  },
-  {
-   "fieldname": "sction_approval",
-   "fieldtype": "Section Break",
-   "label": "Approval"
-  },
-  {
-   "depends_on": "customer",
-   "fieldname": "production_team",
-   "fieldtype": "Link",
-   "label": "Production Team",
-   "options": "User"
-  },
-  {
-   "depends_on": "customer_name",
-   "fetch_from": "production_team.signature",
-   "fieldname": "prod_sign",
-   "fieldtype": "Attach",
-   "label": "Signature"
-  },
-  {
-   "fieldname": "column_break_sign",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "production_team",
-   "fieldname": "sales_md",
-   "fieldtype": "Link",
-   "label": "Sales / RND",
-   "options": "User"
-  },
-  {
-   "depends_on": "prod_sign",
-   "fetch_from": "sales_md.signature",
-   "fieldname": "sales_rnd_sign",
-   "fieldtype": "Attach",
-   "label": "Signature"
+   "fetch_from": "sales_rnd.full_name",
+   "fieldname": "sales_name",
+   "fieldtype": "Data",
+   "label": "Sales/RND Name",
+   "read_only": 1
   }
  ],
  "icon": "fa fa-truck",
  "idx": 146,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-12 08:48:38.677912",
+ "modified": "2021-12-01 13:38:20.574666",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Delivery Note",

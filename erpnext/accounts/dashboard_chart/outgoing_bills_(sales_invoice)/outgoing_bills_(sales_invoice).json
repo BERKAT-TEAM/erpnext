@@ -12,12 +12,23 @@
  "is_public": 1,
  "is_standard": 1,
  "last_synced_on": "2020-07-21 17:37:31.574666",
- "modified": "2020-07-21 17:52:03.970530",
+ "modified": "2021-11-16 14:24:29.361017",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Outgoing Bills (Sales Invoice)",
  "number_of_groups": 0,
  "owner": "Administrator",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ],
  "time_interval": "Monthly",
  "timeseries": 1,
  "timespan": "Last Year",

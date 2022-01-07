@@ -94,7 +94,7 @@
   "more_info",
   "customer_details",
   "column_break_45",
-  "industry_1",
+  "market_segment",
   "language",
   "is_frozen",
   "column_break_38",
@@ -115,7 +115,6 @@
    "fieldname": "basic_info",
    "fieldtype": "Section Break",
    "label": "Name and Type",
-   "oldfieldtype": "Section Break",
    "options": "fa fa-user"
   },
   {
@@ -140,8 +139,6 @@
    "in_global_search": 1,
    "label": "Full Name",
    "no_copy": 1,
-   "oldfieldname": "customer_name",
-   "oldfieldtype": "Data",
    "reqd": 1,
    "search_index": 1
   },
@@ -158,10 +155,7 @@
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Type",
-   "oldfieldname": "customer_type",
-   "oldfieldtype": "Select",
-   "options": "\nCompany\nIndividual",
-   "reqd": 1
+   "options": "\nCompany\nIndividual"
   },
   {
    "fieldname": "default_bank_account",
@@ -175,8 +169,6 @@
    "fieldtype": "Link",
    "label": "From Lead",
    "no_copy": 1,
-   "oldfieldname": "lead_name",
-   "oldfieldtype": "Link",
    "options": "Lead",
    "print_hide": 1,
    "report_hide": 1
@@ -196,6 +188,7 @@
   {
    "fieldname": "account_manager",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Account Manager",
    "options": "User"
   },
@@ -205,8 +198,6 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Customer Group",
-   "oldfieldname": "customer_group",
-   "oldfieldtype": "Link",
    "options": "Customer Group",
    "reqd": 1,
    "search_index": 1
@@ -217,8 +208,6 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Territory",
-   "oldfieldname": "territory",
-   "oldfieldtype": "Link",
    "options": "Territory",
    "print_hide": 1,
    "reqd": 1
@@ -274,7 +263,7 @@
    "collapsible": 1,
    "fieldname": "currency_and_price_list",
    "fieldtype": "Section Break",
-   "label": "Currency "
+   "label": "Currency"
   },
   {
    "fieldname": "default_currency",
@@ -332,7 +321,6 @@
    "fieldname": "contact_html",
    "fieldtype": "HTML",
    "label": "Contact HTML",
-   "oldfieldtype": "HTML",
    "read_only": 1
   },
   {
@@ -346,22 +334,18 @@
    "fieldname": "customer_primary_contact",
    "fieldtype": "Link",
    "label": "Customer Primary Contact",
-   "options": "Contact",
-   "reqd": 1
+   "options": "Contact"
   },
   {
    "fetch_from": "customer_primary_contact.mobile_no",
    "fieldname": "mobile_no",
    "fieldtype": "Data",
-   "label": "Phone Number",
-   "reqd": 1
+   "label": "Phone Number"
   },
   {
    "fieldname": "email_id",
    "fieldtype": "Data",
-   "label": "Email Id",
-   "options": "Email",
-   "reqd": 1
+   "label": "Email Id"
   },
   {
    "fieldname": "column_break_26",
@@ -372,8 +356,7 @@
    "fieldname": "customer_primary_address",
    "fieldtype": "Link",
    "label": "Customer Primary Address",
-   "options": "Address",
-   "reqd": 1
+   "options": "Address"
   },
   {
    "fieldname": "primary_address",
@@ -417,7 +400,6 @@
    "fieldtype": "Section Break",
    "hidden": 1,
    "label": "More Information",
-   "oldfieldtype": "Section Break",
    "options": "fa fa-file-text"
   },
   {
@@ -425,14 +407,19 @@
    "fieldname": "customer_details",
    "fieldtype": "Text",
    "hidden": 1,
-   "label": "Customer Details",
-   "oldfieldname": "customer_details",
-   "oldfieldtype": "Code"
+   "label": "Customer Details"
   },
   {
    "fieldname": "column_break_45",
    "fieldtype": "Column Break",
    "hidden": 1
+  },
+  {
+   "fieldname": "market_segment",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Market Segment",
+   "options": "Market Segment"
   },
   {
    "default": "0",
@@ -470,7 +457,6 @@
    "fieldtype": "Section Break",
    "hidden": 1,
    "label": "Sales Partner and Commission",
-   "oldfieldtype": "Section Break",
    "options": "fa fa-group"
   },
   {
@@ -479,17 +465,13 @@
    "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Sales Partner",
-   "oldfieldname": "default_sales_partner",
-   "oldfieldtype": "Link",
    "options": "Sales Partner"
   },
   {
    "fieldname": "default_commission_rate",
    "fieldtype": "Float",
    "hidden": 1,
-   "label": "Commission Rate",
-   "oldfieldname": "default_commission_rate",
-   "oldfieldtype": "Currency"
+   "label": "Commission Rate"
   },
   {
    "collapsible": 1,
@@ -504,8 +486,6 @@
    "fieldtype": "Table",
    "hidden": 1,
    "label": "Sales Team Details",
-   "oldfieldname": "sales_team",
-   "oldfieldtype": "Table",
    "options": "Sales Team"
   },
   {
@@ -585,15 +565,13 @@
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
    "label": "Date of Birth",
-   "print_hide": 1,
-   "reqd": 1
+   "print_hide": 1
   },
   {
-   "fieldname": "designation",
+   "fieldname": "industry",
    "fieldtype": "Link",
-   "label": "Designation",
-   "options": "Designation",
-   "reqd": 1
+   "label": "Industry",
+   "options": "Industry Type"
   },
   {
    "fieldname": "second_primary_address_and_contact_detail",
@@ -603,7 +581,7 @@
   {
    "fieldname": "second_customer_primary_contact",
    "fieldtype": "Link",
-   "label": "Customer Secondary Contact",
+   "label": "Customer Primary Contact",
    "options": "Contact"
   },
   {
@@ -611,6 +589,12 @@
    "fieldname": "second_mobile_no",
    "fieldtype": "Data",
    "label": "Phone Number"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
   },
   {
    "fieldname": "date_of_birth_second_pic",
@@ -629,12 +613,12 @@
   {
    "fieldname": "second_customer_primary_address",
    "fieldtype": "Link",
-   "label": "Customer Secondary Address",
+   "label": "Customer Primary Address",
    "options": "Address"
   },
   {
    "fieldname": "second_designation",
-   "fieldtype": "Date",
+   "fieldtype": "Link",
    "label": "Designation",
    "options": "Designation"
   },
@@ -661,14 +645,13 @@
    "label": "Date of Birth"
   },
   {
-   "fieldname": "thrid_email_pic",
-   "fieldtype": "Data",
-   "label": "Email id",
-   "options": "Email"
-  },
-  {
    "fieldname": "column_break_tpic_column",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "thrid_email_pic",
+   "fieldtype": "Data",
+   "label": "Email id"
   },
   {
    "fieldname": "thrid_customer_primary_address",
@@ -705,14 +688,13 @@
    "label": "Date of Birth"
   },
   {
-   "fieldname": "4th_email_pic",
-   "fieldtype": "Data",
-   "label": "Email id",
-   "options": "Email"
-  },
-  {
    "fieldname": "column_break_4pic_column",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "4th_email_pic",
+   "fieldtype": "Data",
+   "label": "Email id"
   },
   {
    "fieldname": "4th_customer_primary_address",
@@ -725,6 +707,11 @@
    "fieldtype": "Link",
    "label": "Designation",
    "options": "Designation"
+  },
+  {
+   "fieldname": "5th_personal_data_section",
+   "fieldtype": "Section Break",
+   "label": "5th Personal Data"
   },
   {
    "fieldname": "5th_customer_contact",
@@ -744,10 +731,13 @@
    "label": "Date of Birth"
   },
   {
+   "fieldname": "5th_personal_data",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "5th_email_pic",
    "fieldtype": "Data",
-   "label": "Email id",
-   "options": "Email"
+   "label": "Email id"
   },
   {
    "fieldname": "5th_customer_primary_address",
@@ -760,28 +750,6 @@
    "fieldtype": "Link",
    "label": "Designation",
    "options": "Designation"
-  },
-  {
-   "fieldname": "5th_personal_data_section",
-   "fieldtype": "Section Break",
-   "label": "5th Personal Data"
-  },
-  {
-   "fieldname": "5th_personal_data",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "industry_1",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Industry",
-   "options": "Industry Type"
-  },
-  {
-   "fieldname": "industry",
-   "fieldtype": "Link",
-   "label": "Industry",
-   "options": "Industry Type"
   }
  ],
  "icon": "fa fa-user",
@@ -795,7 +763,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2021-11-08 08:58:47.439550",
+ "modified": "2021-11-02 08:50:02.156188",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",
@@ -806,7 +774,6 @@
   {
    "create": 1,
    "email": 1,
-   "if_owner": 1,
    "print": 1,
    "read": 1,
    "report": 1,

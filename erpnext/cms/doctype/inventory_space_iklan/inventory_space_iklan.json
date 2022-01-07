@@ -1,0 +1,264 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-12-08 13:38:30.760587",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "playlist_section",
+  "naming_series",
+  "from_jo",
+  "customer",
+  "period",
+  "slot",
+  "terima_design",
+  "delivery_date",
+  "break11",
+  "item_name",
+  "media_location",
+  "sec23",
+  "from_upload_content",
+  "nama_konten",
+  "tanggal_upload",
+  "colb5",
+  "from_bast",
+  "no_jo",
+  "jo_status",
+  "production_team",
+  "production_name",
+  "sales_rnd",
+  "sales_rnd_name",
+  "finish_date",
+  "sect6",
+  "stock_slot_awal",
+  "slot_jual",
+  "slot_tersedia",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "playlist_section",
+   "fieldtype": "Section Break",
+   "label": "INVENTORY",
+   "options": "fa fa-user"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SAL-INV-.YYYY.-"
+  },
+  {
+   "fieldname": "from_jo",
+   "fieldtype": "Link",
+   "label": "From JO",
+   "options": "Sales Order"
+  },
+  {
+   "fetch_from": "from_jo.customer_name",
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fetch_from": "from_jo.periode_kontrak",
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "label": "Period"
+  },
+  {
+   "fetch_from": "from_jo.qty",
+   "fieldname": "slot",
+   "fieldtype": "Data",
+   "label": "Slot"
+  },
+  {
+   "fetch_from": "from_jo.terima_design",
+   "fieldname": "terima_design",
+   "fieldtype": "Date",
+   "label": "Tgl Terima Design"
+  },
+  {
+   "fetch_from": "from_jo.delivery_date",
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "break11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "from_jo.nm_product",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fetch_from": "from_jo.nm_lokasi",
+   "fieldname": "media_location",
+   "fieldtype": "Data",
+   "label": "Media Location"
+  },
+  {
+   "fieldname": "sec23",
+   "fieldtype": "Section Break",
+   "label": "Link From Upload Content & Link From BAST"
+  },
+  {
+   "fieldname": "from_upload_content",
+   "fieldtype": "Link",
+   "label": "From Upload Content",
+   "options": "Upload Content"
+  },
+  {
+   "fetch_from": "from_upload_content.nama_konten",
+   "fieldname": "nama_konten",
+   "fieldtype": "Data",
+   "label": "Nama Konten",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "from_upload_content.tanggal_upload",
+   "fieldname": "tanggal_upload",
+   "fieldtype": "Data",
+   "label": "Tanggal Upload"
+  },
+  {
+   "fieldname": "colb5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_bast",
+   "fieldtype": "Link",
+   "label": "From BAST",
+   "options": "BAST"
+  },
+  {
+   "fetch_from": "from_bast.no_jo",
+   "fieldname": "no_jo",
+   "fieldtype": "Data",
+   "label": "No JO"
+  },
+  {
+   "fetch_from": "from_bast.jo_status",
+   "fieldname": "jo_status",
+   "fieldtype": "Data",
+   "label": "JO Status"
+  },
+  {
+   "fetch_from": "from_bast.production_team",
+   "fieldname": "production_team",
+   "fieldtype": "Data",
+   "label": "Production Team"
+  },
+  {
+   "fetch_from": "from_bast.production_name",
+   "fieldname": "production_name",
+   "fieldtype": "Data",
+   "label": "Name Prod"
+  },
+  {
+   "fetch_from": "from_bast.sales_rnd",
+   "fieldname": "sales_rnd",
+   "fieldtype": "Data",
+   "label": "Sales / RND"
+  },
+  {
+   "fetch_from": "from_bast.sales_rnd_name",
+   "fieldname": "sales_rnd_name",
+   "fieldtype": "Data",
+   "label": "Name Sales / RND"
+  },
+  {
+   "fetch_from": "from_bast.finish_date",
+   "fieldname": "finish_date",
+   "fieldtype": "Date",
+   "label": "Finish Date"
+  },
+  {
+   "fieldname": "sect6",
+   "fieldtype": "Section Break",
+   "label": "SLOT"
+  },
+  {
+   "fieldname": "stock_slot_awal",
+   "fieldtype": "Data",
+   "label": "Stok Slot Awal"
+  },
+  {
+   "fieldname": "slot_jual",
+   "fieldtype": "Data",
+   "label": "Slot Terjual"
+  },
+  {
+   "fieldname": "slot_tersedia",
+   "fieldtype": "Data",
+   "label": "Slot Tersedia"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Inventory Space Iklan",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-12-10 11:42:41.301716",
+ "modified_by": "Administrator",
+ "module": "CMS",
+ "name": "Inventory Space Iklan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

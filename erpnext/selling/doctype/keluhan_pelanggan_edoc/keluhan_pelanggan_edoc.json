@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 11:57:26.464706",
+ "creation": "2021-11-19 08:04:47.821125",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -29,9 +29,15 @@
   "penanggung_jwb",
   "status_kom",
   "deadline",
-  "file_upload"
+  "file_upload",
+  "amended_from"
  ],
  "fields": [
+  {
+   "fieldname": "sec",
+   "fieldtype": "Section Break",
+   "label": "Keluhan Pelanggan"
+  },
   {
    "fieldname": "data_2",
    "fieldtype": "Data",
@@ -45,7 +51,7 @@
   {
    "fieldname": "tgl",
    "fieldtype": "Date",
-   "label": "Tanggal "
+   "label": "Tanggal"
   },
   {
    "fieldname": "nama",
@@ -55,12 +61,12 @@
   {
    "fieldname": "jabatan",
    "fieldtype": "Data",
-   "label": "Jabatan "
+   "label": "Jabatan"
   },
   {
    "fieldname": "divisi",
    "fieldtype": "Data",
-   "label": "Divisi "
+   "label": "Divisi"
   },
   {
    "fieldname": "tgl_komplain",
@@ -69,34 +75,33 @@
    "options": "Media development\nProduksi\nKreatif\nFinance"
   },
   {
-   "fieldname": "sec",
-   "fieldtype": "Section Break",
-   "label": "Keluhan Pelanggan"
-  },
-  {
    "fieldname": "nama_company",
    "fieldtype": "Data",
-   "label": "Nama company "
+   "label": "Nama company"
   },
   {
    "fieldname": "alamat",
    "fieldtype": "Data",
-   "label": "Alamat "
+   "label": "Alamat"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email "
+   "label": "Email"
+  },
+  {
+   "fieldname": "colb1",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "telp",
    "fieldtype": "Data",
-   "label": "Telp "
+   "label": "Telp"
   },
   {
    "fieldname": "output_design",
    "fieldtype": "Data",
-   "label": "Output design "
+   "label": "Output design"
   },
   {
    "fieldname": "jenis_kom",
@@ -117,7 +122,7 @@
   {
    "fieldname": "tindakan_koreksi",
    "fieldtype": "Data",
-   "label": "Tindakan koreksi "
+   "label": "Tindakan koreksi"
   },
   {
    "fieldname": "penanggung_jwb",
@@ -127,22 +132,18 @@
   {
    "fieldname": "status_kom",
    "fieldtype": "Select",
-   "label": "Status komplain ",
+   "label": "Status komplain",
    "options": "Pengajuan\nOke\nIn progress"
   },
   {
    "fieldname": "deadline",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Deadline"
   },
   {
    "fieldname": "file_upload",
    "fieldtype": "Attach",
    "label": "File upload"
-  },
-  {
-   "fieldname": "colb1",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "naming_series",
@@ -155,13 +156,22 @@
    "label": "No dokumen",
    "options": "FR-MRKT-002-.YYYY.-",
    "print_hide": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Keluhan Pelanggan Edoc",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "max_attachments": 100000,
- "modified": "2021-11-19 16:01:15.713117",
+ "modified": "2021-12-08 16:43:45.416093",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Keluhan Pelanggan Edoc",
@@ -179,11 +189,60 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

@@ -1,14 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
- "creation": "2021-11-18 18:38:58.954683",
+ "creation": "2021-11-19 08:04:46.931209",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "sec11",
-  "naming_series",
+  "no_doc",
   "no_rev",
   "nama",
   "jabatan",
@@ -19,14 +18,23 @@
   "mengajukan",
   "keperluan",
   "alasan_izin",
-  "penjelasan_izin",
-  "amended_from"
+  "penjelasan_izin"
  ],
  "fields": [
   {
+   "fieldname": "sec11",
+   "fieldtype": "Section Break",
+   "label": "Izin"
+  },
+  {
+   "fieldname": "no_doc",
+   "fieldtype": "Data",
+   "label": "No dokumen"
+  },
+  {
    "fieldname": "no_rev",
    "fieldtype": "Data",
-   "label": "No revisi "
+   "label": "No revisi"
   },
   {
    "fieldname": "nama",
@@ -46,7 +54,11 @@
   {
    "fieldname": "tgl_msk",
    "fieldtype": "Data",
-   "label": "Tanggal awal masuk kerja "
+   "label": "Tanggal awal masuk kerja"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "tgl_pengauan",
@@ -67,54 +79,22 @@
   {
    "fieldname": "alasan_izin",
    "fieldtype": "Select",
-   "label": "  Alasan izin",
+   "label": "Alasan izin",
    "options": "Meninggalkan pekerjaan\nPulang cepat\nDatang terlambat\nSakit\nLain lain"
   },
   {
    "fieldname": "penjelasan_izin",
    "fieldtype": "Data",
    "label": "Penjelasan izin"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Izin Edoc",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "sec11",
-   "fieldtype": "Section Break",
-   "label": "Izin"
-  },
-  {
-   "fieldname": "col1",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "in_filter": 1,
-   "in_global_search": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "No dokumen",
-   "options": "FR-Permission-.YYYY.-",
-   "print_hide": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "max_attachments": 10000,
- "modified": "2021-11-19 12:32:49.201924",
+ "modified": "2021-11-19 08:12:45.038437",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Izin Edoc",
- "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -133,6 +113,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

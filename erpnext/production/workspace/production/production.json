@@ -1,7 +1,40 @@
 {
  "category": "Modules",
- "charts": [],
- "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Surat Tugas\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Luar Lapangan\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Konstruksi di Workshop\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Materi Sub   Supplier\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Laporan Harian Project",
+   "label": "Laporan Harian Project"
+  },
+  {
+   "chart_name": "Quality Control Outside",
+   "label": "Quality Control Outside"
+  },
+  {
+   "chart_name": "Surat Tugas Produksi",
+   "label": "Surat Tugas Produksi"
+  },
+  {
+   "chart_name": "Data Survey Chart",
+   "label": "Data Survey"
+  },
+  {
+   "chart_name": "QC Mobil WS",
+   "label": "QC Mobil WS"
+  },
+  {
+   "chart_name": "Surat Tugas Prod",
+   "label": "Surat Tugas Prod"
+  },
+  {
+   "chart_name": "QC Lapangan",
+   "label": "QC Lapangan"
+  },
+  {
+   "chart_name": "BARANG MATERIAL Item",
+   "label": "BARANG MATERIAL Item "
+  }
+ ],
+ "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Surat Tugas Produksi\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Data Survey\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"QC Mobil WS\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Surat Tugas Prod\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"QC Lapangan\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Quality Control Outside\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Laporan Harian Project\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"BARANG MATERIAL Item \",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Quick Access\",\"level\":3,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Upload Content\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Job Order\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Playlist\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Productioin Activity\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Luar Lapangan\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Data Survey\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Kontruksi di Workshop\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Surat Tugas\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Berita Acara Serah Terima Pekerjaan Pemasangan\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Mobil WS\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"QC Lapangan\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Laporan Harian Project\",\"col\":4}}]",
  "creation": "2021-09-27 18:09:46.353904",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -12,10 +45,10 @@
  "icon": "table_2",
  "idx": 0,
  "is_default": 0,
- "is_standard": 1,
+ "is_standard": 0,
  "label": "Production",
  "links": [],
- "modified": "2021-11-15 16:27:24.105225",
+ "modified": "2021-12-28 11:47:39.105513",
  "modified_by": "Administrator",
  "module": "Production",
  "modules": 0,
@@ -23,29 +56,39 @@
  "owner": "Administrator",
  "parent_page": "",
  "pin_to_bottom": 0,
- "pin_to_top": 0,
+ "pin_to_top": 1,
  "public": 1,
  "roles": [
   {
    "role": "Sales Admin"
+  },
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Production Manager"
+  },
+  {
+   "role": "Production User"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Sales Master Manager"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Purchase Master Manager"
+  },
+  {
+   "role": "Purchase User"
   }
  ],
- "sequence_id": 6,
+ "sequence_id": 7,
  "shortcuts": [
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Surat Tugas",
-   "link_to": "Surat Tugas",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "QC Konstruksi di Workshop",
-   "link_to": "QC FR PROD 002",
-   "type": "DocType"
-  },
   {
    "color": "Yellow",
    "doc_view": "List",
@@ -58,6 +101,13 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Dashboard",
+   "link_to": "Production",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "QC Luar Lapangan",
    "link_to": "Quality Control Outside",
    "type": "DocType"
@@ -65,8 +115,71 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "QC Materi Sub   Supplier",
-   "link_to": "QC FR PROD 006",
+   "label": "Data Survey",
+   "link_to": "Data Survey",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Surat Tugas",
+   "link_to": "Surat Tugas Produksi",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Playlist",
+   "link_to": "Playlist",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "QC Mobil WS",
+   "link_to": "QC Mobil WS",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "Calendar",
+   "label": "Upload Content",
+   "link_to": "Upload Content",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Laporan Harian Project",
+   "link_to": "Laporan Harian Project",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "QC Kontruksi di Workshop",
+   "link_to": "Quality Control Kontruksi di Workshop",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Berita Acara Serah Terima Pekerjaan Pemasangan",
+   "link_to": "BAST",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "QC Lapangan",
+   "link_to": "QC Lapangan",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Daily Productioin Activity",
+   "link_to": "Production Activity",
    "type": "DocType"
   }
  ],

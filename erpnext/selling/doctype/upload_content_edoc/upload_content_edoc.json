@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 10:15:01.664305",
+ "creation": "2021-11-19 18:26:24.006727",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -34,6 +34,18 @@
    "fieldname": "sal_sec",
    "fieldtype": "Section Break",
    "label": "Sales"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "No dokumen",
+   "options": "FR-SALES-UC-001-.YYYY.-"
   },
   {
    "default": "0",
@@ -98,7 +110,7 @@
   {
    "fieldname": "perintah_kerja",
    "fieldtype": "Data",
-   "label": "Perintah kerja "
+   "label": "Perintah kerja"
   },
   {
    "fieldname": "kpd",
@@ -108,7 +120,7 @@
   {
    "fieldname": "jenis_media",
    "fieldtype": "Data",
-   "label": "Jenis media "
+   "label": "Jenis media"
   },
   {
    "fieldname": "ket",
@@ -117,7 +129,7 @@
   },
   {
    "fieldname": "list_foto_prev",
-   "fieldtype": "Data",
+   "fieldtype": "Attach",
    "label": "List foto preview content"
   },
   {
@@ -128,24 +140,12 @@
    "options": "Upload Content EDoc",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title",
-   "read_only": 1
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "No dokumen",
-   "options": "FR-SALES-UC-001-.YYYY.-"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 14:33:48.112779",
+ "modified": "2021-11-19 18:45:36.102355",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Upload Content EDoc",
@@ -171,6 +171,5 @@
  "sort_order": "DESC",
  "title_field": "title",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

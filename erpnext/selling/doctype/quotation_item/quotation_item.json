@@ -10,21 +10,34 @@
   "customer_item_code",
   "col_break1",
   "item_name",
+  "column_break_group",
+  "item_type",
   "section_break_5",
   "description",
+  "column_break_desc",
   "area",
   "period",
   "point_of_interest",
   "count_car",
   "count_motor",
   "count_people",
-  "column_break_desc",
   "item_location",
   "dimension",
   "schedule",
   "pixel_pitch",
+  "item_duration",
   "item_spot",
   "brand",
+  "cb_only_marcom",
+  "talent",
+  "wardrobe",
+  "makeup",
+  "perizinan",
+  "spanduk",
+  "filler",
+  "kol",
+  "paid_ig_buzz",
+  "paid_ig_ming",
   "image_section",
   "image",
   "image_view",
@@ -91,7 +104,7 @@
  ],
  "fields": [
   {
-   "columns": 5,
+   "columns": 3,
    "fieldname": "item_code",
    "fieldtype": "Link",
    "in_global_search": 1,
@@ -100,10 +113,10 @@
    "oldfieldname": "item_code",
    "oldfieldtype": "Link",
    "options": "Item",
-   "print_width": "150px",
+   "print_width": "20px",
    "reqd": 1,
    "search_index": 1,
-   "width": "150px"
+   "width": "20px"
   },
   {
    "fieldname": "customer_item_code",
@@ -120,12 +133,12 @@
   {
    "fieldname": "item_name",
    "fieldtype": "Data",
-   "in_global_search": 1,
    "label": "Item Name",
    "oldfieldname": "item_name",
    "oldfieldtype": "Data",
    "print_hide": 1,
    "print_width": "150px",
+   "report_hide": 1,
    "reqd": 1,
    "width": "150px"
   },
@@ -135,23 +148,24 @@
    "label": "Description"
   },
   {
-   "fetch_from": "Item",
-   "fetch_if_empty": 1,
+   "fetch_from": "item_code.area",
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description",
    "oldfieldname": "description",
    "oldfieldtype": "Small Text",
    "print_width": "50px",
-   "reqd": 1,
    "width": "50px"
   },
   {
+   "columns": 1,
    "fetch_from": "item_code.item_location",
    "fieldname": "item_location",
    "fieldtype": "Data",
+   "in_preview": 1,
    "label": "Location",
-   "print_hide": 1
+   "print_width": "20px",
+   "width": "20px"
   },
   {
    "fieldname": "brand",
@@ -192,16 +206,17 @@
   },
   {
    "bold": 1,
-   "columns": 2,
+   "columns": 1,
    "fieldname": "qty",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Quantity",
+   "label": "Qty",
    "oldfieldname": "qty",
    "oldfieldtype": "Currency",
-   "print_width": "100px",
+   "precision": "0",
+   "print_width": "15px",
    "reqd": 1,
-   "width": "100px"
+   "width": "15px"
   },
   {
    "fieldname": "stock_uom",
@@ -338,7 +353,7 @@
   },
   {
    "bold": 1,
-   "columns": 2,
+   "columns": 1,
    "fieldname": "rate",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -346,8 +361,8 @@
    "oldfieldname": "export_rate",
    "oldfieldtype": "Currency",
    "options": "currency",
-   "print_width": "150px",
-   "width": "150px"
+   "print_width": "50px",
+   "width": "50px"
   },
   {
    "fieldname": "net_rate",
@@ -358,7 +373,7 @@
    "read_only": 1
   },
   {
-   "columns": 2,
+   "columns": 1,
    "fieldname": "amount",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -366,9 +381,9 @@
    "oldfieldname": "export_amount",
    "oldfieldtype": "Currency",
    "options": "currency",
-   "print_width": "100px",
+   "print_width": "20px",
    "read_only": 1,
-   "width": "100px"
+   "width": "20px"
   },
   {
    "fieldname": "net_amount",
@@ -485,7 +500,10 @@
    "collapsible": 1,
    "fieldname": "item_weight_details",
    "fieldtype": "Section Break",
-   "label": "Item Weight Details"
+   "hidden": 1,
+   "label": "Item Weight Details",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "weight_per_unit",
@@ -516,7 +534,10 @@
   {
    "fieldname": "reference",
    "fieldtype": "Section Break",
-   "label": "Warehouse and Reference"
+   "hidden": 1,
+   "label": "Warehouse and Reference",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "warehouse",
@@ -588,7 +609,10 @@
    "collapsible_depends_on": "eval:doc.warehouse",
    "fieldname": "item_balance",
    "fieldtype": "Section Break",
-   "label": "Planning"
+   "hidden": 1,
+   "label": "Planning",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "projected_qty",
@@ -631,7 +655,10 @@
    "collapsible": 1,
    "fieldname": "shopping_cart_section",
    "fieldtype": "Section Break",
-   "label": "Shopping Cart"
+   "hidden": 1,
+   "label": "Shopping Cart",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "additional_notes",
@@ -657,17 +684,6 @@
   {
    "fieldname": "column_break_desc",
    "fieldtype": "Column Break"
-  },
-  {
-   "fetch_from": "item_code.item_spot",
-   "fieldname": "item_spot",
-   "fieldtype": "Data",
-   "label": "Spot",
-   "oldfieldname": "item_group",
-   "oldfieldtype": "Link",
-   "options": "Item Group",
-   "print_hide": 1,
-   "read_only": 1
   },
   {
    "fieldname": "pixel_pitch",
@@ -730,17 +746,104 @@
    "label": "Period"
   },
   {
+   "columns": 2,
    "fetch_from": "item_code.area",
    "fieldname": "area",
    "fieldtype": "Data",
-   "label": "Area"
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Area",
+   "print_width": "70px",
+   "width": "70px"
+  },
+  {
+   "fetch_from": "item_code.item_group",
+   "fieldname": "item_type",
+   "fieldtype": "Link",
+   "label": "Media Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "item_duration",
+   "fieldtype": "Data",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "item_spot",
+   "fieldtype": "Data",
+   "label": "Spot"
+  },
+  {
+   "fieldname": "cb_only_marcom",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.item_type==\"Marcom Activity\"",
+   "fieldname": "talent",
+   "fieldtype": "Currency",
+   "label": "Talent"
+  },
+  {
+   "depends_on": "eval:doc.item_type==\"Marcom Activity\"",
+   "fieldname": "wardrobe",
+   "fieldtype": "Currency",
+   "label": "Wardrobe"
+  },
+  {
+   "depends_on": "eval:doc.item_type==\"Marcom Activity\"",
+   "fieldname": "makeup",
+   "fieldtype": "Currency",
+   "label": "Makeup"
+  },
+  {
+   "depends_on": "eval:doc.item_type==\"Marcom Activity\"",
+   "fieldname": "perizinan",
+   "fieldtype": "Currency",
+   "label": "Perizinan"
+  },
+  {
+   "depends_on": "eval:doc.item_type==\"Marcom Activity\"",
+   "fieldname": "spanduk",
+   "fieldtype": "Currency",
+   "label": "Spanduk"
+  },
+  {
+   "depends_on": "eval:doc.item_type==\"Marcom Activity\"",
+   "fieldname": "filler",
+   "fieldtype": "Currency",
+   "label": "Filler"
+  },
+  {
+   "depends_on": "eval:doc.item_type==\"Marcom Activity\"",
+   "fieldname": "kol",
+   "fieldtype": "Currency",
+   "label": "KOL"
+  },
+  {
+   "depends_on": "eval:doc.item_type==\"Marcom Activity\"",
+   "fieldname": "paid_ig_buzz",
+   "fieldtype": "Currency",
+   "label": "Paid Promote Buzzer IG"
+  },
+  {
+   "depends_on": "eval:doc.item_type==\"Marcom Activity\"",
+   "fieldname": "paid_ig_ming",
+   "fieldtype": "Currency",
+   "label": "Paid Promote IG MING"
+  },
+  {
+   "fieldname": "column_break_group",
+   "fieldtype": "Column Break"
   }
  ],
  "idx": 1,
  "istable": 1,
  "links": [],
  "max_attachments": 1000000,
- "modified": "2021-11-10 12:41:55.811809",
+ "modified": "2021-12-15 14:36:24.054118",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation Item",

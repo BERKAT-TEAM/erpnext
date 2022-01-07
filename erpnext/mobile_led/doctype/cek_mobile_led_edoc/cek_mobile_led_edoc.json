@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2021-11-18 16:08:02.946030",
+ "creation": "2021-11-19 08:04:47.456703",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -54,14 +54,19 @@
   "current1",
   "accu1",
   "controller1",
-  "ket1",
-  "amended_from"
+  "ket1"
  ],
  "fields": [
   {
    "fieldname": "sec11",
    "fieldtype": "Section Break",
    "label": "Cek Mobile LED"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "title",
+   "read_only": 1
   },
   {
    "fieldname": "naming_series",
@@ -78,7 +83,7 @@
   {
    "fieldname": "no_rev",
    "fieldtype": "Data",
-   "label": "No revisi "
+   "label": "No revisi"
   },
   {
    "fieldname": "nama",
@@ -93,7 +98,7 @@
   {
    "fieldname": "divisi",
    "fieldtype": "Data",
-   "label": "Divisi "
+   "label": "Divisi"
   },
   {
    "fieldname": "sec1",
@@ -103,7 +108,7 @@
   {
    "fieldname": "nm_b",
    "fieldtype": "Data",
-   "label": "Nama "
+   "label": "Nama"
   },
   {
    "fieldname": "jam_brang",
@@ -113,17 +118,17 @@
   {
    "fieldname": "km_a",
    "fieldtype": "Data",
-   "label": "KM awal "
+   "label": "KM awal"
   },
   {
    "fieldname": "km_ak",
    "fieldtype": "Data",
-   "label": "KM akhir "
+   "label": "KM akhir"
   },
   {
    "fieldname": "jml_rit",
    "fieldtype": "Data",
-   "label": "Jumlah rit "
+   "label": "Jumlah rit"
   },
   {
    "fieldname": "sec2",
@@ -148,7 +153,7 @@
   {
    "fieldname": "body",
    "fieldtype": "Data",
-   "label": "Body "
+   "label": "Body"
   },
   {
    "fieldname": "cuci_kendaraan",
@@ -233,7 +238,7 @@
   {
    "fieldname": "modem",
    "fieldtype": "Data",
-   "label": "Modem / router "
+   "label": "Modem / router"
   },
   {
    "fieldname": "usb_flash_disk",
@@ -253,7 +258,7 @@
   {
    "fieldname": "wt",
    "fieldtype": "Data",
-   "label": "Water temperature "
+   "label": "Water temperature"
   },
   {
    "fieldname": "ampere",
@@ -283,7 +288,7 @@
   {
    "fieldname": "current1",
    "fieldtype": "Data",
-   "label": "Current "
+   "label": "Current"
   },
   {
    "fieldname": "accu1",
@@ -293,33 +298,18 @@
   {
    "fieldname": "controller1",
    "fieldtype": "Data",
-   "label": "Controller "
+   "label": "Controller"
   },
   {
    "fieldname": "ket1",
    "fieldtype": "Data",
-   "label": "Keterangan "
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Cek Mobile LED Edoc",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "title",
-   "read_only": 1
+   "label": "Keterangan"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 14:17:16.069148",
+ "modified": "2021-11-19 18:51:03.792092",
  "modified_by": "Administrator",
  "module": "Mobile LED",
  "name": "Cek Mobile LED Edoc",
@@ -345,6 +335,5 @@
  "sort_order": "DESC",
  "title_field": "title",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

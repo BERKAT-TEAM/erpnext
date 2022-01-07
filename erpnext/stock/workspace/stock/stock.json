@@ -760,7 +760,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-26 16:21:59.086136",
+ "modified": "2021-12-03 16:13:27.341414",
  "modified_by": "Administrator",
  "module": "Stock",
  "modules": 0,
@@ -780,7 +780,7 @@
    "role": "Projects User"
   }
  ],
- "sequence_id": 17,
+ "sequence_id": 20,
  "shortcuts": [
   {
    "color": "Green",

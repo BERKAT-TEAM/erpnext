@@ -1,14 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
- "creation": "2021-11-19 10:20:57.680319",
+ "creation": "2021-11-19 10:56:51.854192",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "sec11",
-  "naming_series",
+  "no_doc",
   "no_rev",
   "nama",
   "jabatan",
@@ -31,6 +30,11 @@
    "fieldname": "sec11",
    "fieldtype": "Section Break",
    "label": "Pengajuan Pelatihan"
+  },
+  {
+   "fieldname": "no_doc",
+   "fieldtype": "Data",
+   "label": "No dokumen"
   },
   {
    "fieldname": "no_rev",
@@ -63,9 +67,13 @@
    "label": "Tujuan / benefit yang akan diperoleh"
   },
   {
+   "fieldname": "colb1",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "nama_pelatihan",
    "fieldtype": "Data",
-   "label": "Nama pelatihan "
+   "label": "Nama pelatihan"
   },
   {
    "fieldname": "tmp",
@@ -80,7 +88,7 @@
   {
    "fieldname": "akomodasi",
    "fieldtype": "Data",
-   "label": "Akomodasi "
+   "label": "Akomodasi"
   },
   {
    "fieldname": "total_b",
@@ -95,7 +103,7 @@
   {
    "fieldname": "transportasi",
    "fieldtype": "Data",
-   "label": "Transportasi "
+   "label": "Transportasi"
   },
   {
    "fieldname": "sec2",
@@ -106,22 +114,12 @@
    "fieldname": "nm_k",
    "fieldtype": "Data",
    "label": "Nama"
-  },
-  {
-   "fieldname": "colb1",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "No dokumen ",
-   "options": "Training-.YYYY.-"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 12:12:56.634971",
+ "modified": "2021-11-19 11:00:01.795075",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Pengajuan Pelatihan Edoc",
@@ -143,6 +141,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

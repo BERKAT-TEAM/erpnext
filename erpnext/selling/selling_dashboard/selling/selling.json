@@ -4,30 +4,38 @@
    "card": "Sales Orders to Deliver"
   },
   {
-   "card": "Sales Orders to Invoice"
-  },
-  {
    "card": "Active Customers"
   },
   {
-   "card": "Annual Sales"
+   "card": "Annual Sales-2"
+  },
+  {
+   "card": "Sales Person Target Variance"
   }
  ],
  "charts": [
   {
    "chart": "Sales Order Trends",
-   "width": "Full"
-  },
-  {
-   "chart": "Top Customers",
-   "width": "Half"
-  },
-  {
-   "chart": "Sales Order Analysis",
    "width": "Half"
   },
   {
    "chart": "Item-wise Annual Sales",
+   "width": "Half"
+  },
+  {
+   "chart": "Item-wise Quotation History",
+   "width": "Half"
+  },
+  {
+   "chart": "Top Sales Person By Fiscal Year",
+   "width": "Half"
+  },
+  {
+   "chart": "Sales Activity",
+   "width": "Full"
+  },
+  {
+   "chart": "Percentage Qty of Item (Quo-wise)",
    "width": "Full"
   },
   {
@@ -35,8 +43,36 @@
    "width": "Half"
   },
   {
-   "chart": "Sales Order Analysis-1",
+   "chart": "Keluhan Pelanggan",
    "width": "Half"
+  },
+  {
+   "chart": "Visit Client",
+   "width": "Half"
+  },
+  {
+   "chart": "Form Upload Content",
+   "width": "Half"
+  },
+  {
+   "chart": "Keluhan Pelanggan",
+   "width": "Half"
+  },
+  {
+   "chart": "Entertain Client",
+   "width": "Half"
+  },
+  {
+   "chart": "Form Upload Content",
+   "width": "Half"
+  },
+  {
+   "chart": "Sales Order Analysis-4",
+   "width": "Half"
+  },
+  {
+   "chart": "Sales Person Target Variance",
+   "width": "Full"
   }
  ],
  "creation": "2020-07-20 20:17:16.688162",
@@ -46,7 +82,7 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "modified": "2021-10-15 14:07:37.409292",
+ "modified": "2022-01-06 18:14:39.613066",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Selling",

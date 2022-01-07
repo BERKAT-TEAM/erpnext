@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2021-11-18 18:54:57.376837",
+ "creation": "2021-11-19 08:04:46.668566",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -18,14 +18,18 @@
   "jam_a",
   "jam_ak",
   "jam_lem",
-  "ket",
-  "amended_from"
+  "ket"
  ],
  "fields": [
   {
+   "fieldname": "sec11",
+   "fieldtype": "Section Break",
+   "label": "Lembur"
+  },
+  {
    "fieldname": "no_doc",
    "fieldtype": "Data",
-   "label": "No dokumen "
+   "label": "No dokumen"
   },
   {
    "fieldname": "no_rev",
@@ -45,12 +49,16 @@
   {
    "fieldname": "divisi",
    "fieldtype": "Data",
-   "label": "Divisi "
+   "label": "Divisi"
   },
   {
    "fieldname": "tgl_lembur",
    "fieldtype": "Data",
-   "label": "Tanggal lembur "
+   "label": "Tanggal lembur"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "vendor",
@@ -70,37 +78,19 @@
   {
    "fieldname": "jam_lem",
    "fieldtype": "Select",
-   "label": "Jam lembur ",
+   "label": "Jam lembur",
    "options": "Lembur jam 1\nLembur jam 2"
   },
   {
    "fieldname": "ket",
    "fieldtype": "Data",
-   "label": "Keterangan "
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Lembur Edoc",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "sec11",
-   "fieldtype": "Section Break",
-   "label": "Lembur"
-  },
-  {
-   "fieldname": "col1",
-   "fieldtype": "Column Break"
+   "label": "Keterangan"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-18 18:58:33.407583",
+ "modified": "2021-11-19 08:12:58.038174",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Lembur Edoc",
@@ -122,6 +112,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

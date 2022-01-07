@@ -9,7 +9,7 @@ def get_data():
 				'items': [
 					'Quotation', 
 					# 'Supplier Quotation'
-				]
+					]
 			},
 		]
 	}

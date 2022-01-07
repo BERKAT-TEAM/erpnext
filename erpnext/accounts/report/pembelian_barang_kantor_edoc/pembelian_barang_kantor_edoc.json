@@ -1,0 +1,40 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-11-23 11:38:04.985451",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Pembelian Barang Kantor Edoc\"],[\"docstatus\",\"Pembelian Barang Kantor Edoc\"],[\"naming_series\",\"Pembelian Barang Kantor Edoc\"],[\"jml\",\"Pembelian Barang Kantor Edoc\"],[\"ket\",\"Pembelian Barang Kantor Edoc\"],[\"jenis\",\"Pembelian Barang Kantor Edoc\"],[\"hrg\",\"Pembelian Barang Kantor Edoc\"]],\"order_by\":\"`tabPembelian Barang Kantor Edoc`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"docstatus\":120,\"naming_series\":120,\"jml\":120,\"ket\":120,\"jenis\":120,\"hrg\":120},\"group_by\":null}",
+ "letter_head": "1",
+ "modified": "2021-11-23 15:24:04.188117",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Pembelian Barang Kantor Edoc",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Pembelian Barang Kantor Edoc",
+ "report_name": "Pembelian Barang Kantor Edoc",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  }
+ ]
+}

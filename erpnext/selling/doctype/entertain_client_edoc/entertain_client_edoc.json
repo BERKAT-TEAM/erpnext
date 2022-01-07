@@ -1,14 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
- "creation": "2021-11-18 10:55:09.035582",
+ "creation": "2021-11-19 08:04:49.579139",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "sec1",
-  "naming_series",
+  "no_doc",
   "no_rev",
   "nama",
   "jabatan",
@@ -20,10 +19,19 @@
   "lokasi_e",
   "penjelasan_e",
   "anggaran_persetujuan",
-  "foto_bon",
-  "amended_from"
+  "foto_bon"
  ],
  "fields": [
+  {
+   "fieldname": "sec1",
+   "fieldtype": "Section Break",
+   "label": "Entertain Client"
+  },
+  {
+   "fieldname": "no_doc",
+   "fieldtype": "Data",
+   "label": "No dokumen"
+  },
   {
    "fieldname": "no_rev",
    "fieldtype": "Data",
@@ -47,17 +55,17 @@
   {
    "fieldname": "rencana_awal",
    "fieldtype": "Date",
-   "label": "Rencana jam awal "
+   "label": "Rencana jam awal"
   },
   {
    "fieldname": "pencana_akhir",
    "fieldtype": "Date",
-   "label": "Rencana jam akhir "
+   "label": "Rencana jam akhir"
   },
   {
    "fieldname": "tgl_e",
    "fieldtype": "Currency",
-   "label": "Tanggal entertain "
+   "label": "Tanggal entertain"
   },
   {
    "fieldname": "nama_klien",
@@ -67,7 +75,7 @@
   {
    "fieldname": "lokasi_e",
    "fieldtype": "Data",
-   "label": "Lokasi entertain "
+   "label": "Lokasi entertain"
   },
   {
    "fieldname": "penjelasan_e",
@@ -83,38 +91,12 @@
    "fieldname": "foto_bon",
    "fieldtype": "Data",
    "label": "Foto bon entertain"
-  },
-  {
-   "fieldname": "sec1",
-   "fieldtype": "Section Break",
-   "label": "Entertain Client "
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "in_filter": 1,
-   "in_global_search": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "No dokumen",
-   "options": "FR-EC-.YYYY.-",
-   "print_hide": 1
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Entertain Client Edoc",
-   "print_hide": 1,
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-11-19 12:44:56.363486",
+ "modified": "2021-11-19 08:08:10.011980",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Entertain Client Edoc",
@@ -136,6 +118,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1,
  "track_views": 1
 }

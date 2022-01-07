@@ -149,7 +149,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-26 16:21:59.267863",
+ "modified": "2021-12-09 14:12:34.031002",
  "modified_by": "Administrator",
  "module": "Quality Management",
  "modules": 0,
@@ -161,8 +161,27 @@
  "pin_to_top": 0,
  "public": 1,
  "restrict_to_domain": "",
- "roles": [],
- "sequence_id": 19,
+ "roles": [
+  {
+   "role": "Quality Manager"
+  },
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Production Manager"
+  },
+  {
+   "role": "Production User"
+  },
+  {
+   "role": "Projects Manager"
+  },
+  {
+   "role": "Projects User"
+  }
+ ],
+ "sequence_id": 22,
  "shortcuts": [
   {
    "color": "Grey",

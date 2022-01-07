@@ -1,0 +1,37 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-01-05 08:54:08.513340",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "1",
+ "modified": "2022-01-06 09:45:41.045759",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Top Sales Person Quotation-based",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    owner as Email, \n    sales_name as 'Sales Name', \n    COUNT(owner) as Qty, \n    SUM(grand_total) as 'Total Value'\nFROM tabQuotation \nWHERE docstatus = 1 AND owner != 'berkatming123@gmail.com'\nGROUP BY owner\nORDER BY SUM(grand_total) DESC;",
+ "ref_doctype": "Quotation",
+ "report_name": "Top Sales Person Quotation-based",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Maintenance Manager"
+  },
+  {
+   "role": "Maintenance User"
+  },
+  {
+   "role": "Sales Admin"
+  }
+ ]
+}

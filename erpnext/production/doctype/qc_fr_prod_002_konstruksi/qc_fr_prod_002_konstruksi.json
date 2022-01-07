@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-12-06 15:10:07.871703",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nm_brg",
+  "type",
+  "kualitas_pengelasan",
+  "ket"
+ ],
+ "fields": [
+  {
+   "fieldname": "nm_brg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Nama Barang"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "kualitas_pengelasan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Kualitas Pengelasan",
+   "options": "OK\nTIDAK"
+  },
+  {
+   "fieldname": "ket",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Keterangan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-12-06 15:10:38.654208",
+ "modified_by": "Administrator",
+ "module": "Production",
+ "name": "QC FR PROD 002 Konstruksi",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

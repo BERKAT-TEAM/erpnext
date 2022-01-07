@@ -8,15 +8,15 @@
  "filters_json": "[[\"Lead\",\"ends_on\",\"Timespan\",\"today\",false],[\"Lead\",\"status\",\"in\",[\"Lead\",\"Open\",null],false]]",
  "function": "Count",
  "idx": 0,
- "is_public": 0,
+ "is_public": 1,
  "is_standard": 1,
  "label": "Lead Ends On (Today)",
- "modified": "2021-10-07 16:28:58.600815",
+ "modified": "2022-01-05 09:02:44.090051",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "New Lead (Last 1 Month)",
  "owner": "Administrator",
  "show_percentage_stats": 1,
- "stats_time_interval": "Daily",
+ "stats_time_interval": "Yearly",
  "type": "Document Type"
 }
